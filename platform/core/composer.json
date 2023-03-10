@@ -1,20 +1,20 @@
 {
     "name": "botble/platform",
-    "description": "The Botble Platform based on Laravel Framework.",
+    "description": "The RealDriss Platform based on Laravel Framework.",
     "keywords": [
-        "botble",
-        "botble cms",
-        "botble platform"
+        "realdriss",
+        "realdriss cms",
+        "realdriss platform"
     ],
-    "homepage": "https://botble.com",
+    "homepage": "https://realdriss.com",
     "support": {
-        "issues": "https://botble.ticksy.com",
-        "document": "https://docs.botble.com"
+        "issues": "https://realdriss.ticksy.com",
+        "document": "https://docs.realdriss.com"
     },
     "authors": [
         {
-            "name": "Botble Technologies",
-            "email": "contact@botble.com"
+            "name": "RealDriss Inc.",
+            "email": "contact@realdriss.com"
         }
     ],
     "type": "project",
