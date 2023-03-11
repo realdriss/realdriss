@@ -65,22 +65,25 @@ class SystemManagement
             'storage_dir_writable' => File::isWritable(base_path('storage')),
             'cache_dir_writable'   => File::isReadable(base_path('bootstrap/cache')),
             'app_size'             => human_file_size(self::folderSize(base_path())),
+          
+            
         ];
     }
 
     /**
-     * Get the system app's size
+     * Get the system app's size #BUG#
      *
-     * @param string $directory
      * @return int
      */
     protected static function folderSize($directory): int
     {
         $size = 0;
-        foreach (File::glob(rtrim($directory, '/') . '/*', GLOB_NOSORT) as $each) {
-            $size += File::isFile($each) ? File::size($each) : self::folderSize($each);
+        $entries = File::glob(rtrim($directory, '/') . '/*', GLOB_NOSORT);
+        foreach ($entries as $each) {
+            //this is a very expensive recursion --implement better
+            //$size += File::isFile($each) ? File::size($each) : self::folderSize($each);
+    
         }
-
         return $size;
     }
 

@@ -86,14 +86,14 @@ if (!function_exists('dashboard_menu')) {
 
 if (!function_exists('get_cms_version')) {
     /**
-     * @return string
+     * @return string //version of our app
      */
     function get_cms_version(): string
     {
         try {
             return trim(get_file_data(core_path('VERSION'), false));
         } catch (Exception $exception) {
-            return '5.14';
+            return '0.00.0';
         }
     }
 }
@@ -101,7 +101,7 @@ if (!function_exists('get_cms_version')) {
 if (!function_exists('platform_path')) {
     /**
      * @param string|null $path
-     * @return string
+     * @return string  //platform root path
      */
     function platform_path($path = null): string
     {
@@ -112,7 +112,7 @@ if (!function_exists('platform_path')) {
 if (!function_exists('core_path')) {
     /**
      * @param string|null $path
-     * @return string
+     * @return string //core root path
      */
     function core_path($path = null): string
     {
@@ -123,7 +123,7 @@ if (!function_exists('core_path')) {
 if (!function_exists('package_path')) {
     /**
      * @param string|null $path
-     * @return string
+     * @return string //packages root path
      */
     function package_path($path = null): string
     {

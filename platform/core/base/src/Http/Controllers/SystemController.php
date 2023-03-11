@@ -36,6 +36,8 @@ class SystemController extends Controller
      * @throws BindingResolutionException
      * @throws FileNotFoundException
      */
+
+     //serves --admin/system/info
     public function getInfo(Request $request, TableBuilder $tableBuilder)
     {
         page_title()->setTitle(trans('core/base::system.info.title'));
@@ -45,6 +47,7 @@ class SystemController extends Controller
 
         $composerArray = SystemManagement::getComposerArray();
         $packages = SystemManagement::getPackagesAndDependencies($composerArray['require']);
+        
 
         $infoTable = $tableBuilder->create(InfoTable::class);
 
@@ -52,6 +55,7 @@ class SystemController extends Controller
             return $infoTable->renderTable();
         }
 
+        //bug
         $systemEnv = SystemManagement::getSystemEnv();
         $serverEnv = SystemManagement::getServerEnv();
 
@@ -61,6 +65,7 @@ class SystemController extends Controller
 
         $matchPHPRequirement = version_compare(phpversion(), $requiredPhpVersion) > 0;
 
+        // dd($systemEnv);
         return view('core/base::system.info', compact(
             'packages',
             'infoTable',
@@ -74,6 +79,7 @@ class SystemController extends Controller
     /**
      * @return Factory|View
      */
+    //serves --admin/system/cache
     public function getCacheManagement()
     {
         page_title()->setTitle(trans('core/base::cache.cache_management'));
@@ -90,6 +96,8 @@ class SystemController extends Controller
      * @param Application $app
      * @return BaseHttpResponse
      */
+
+     //serves --admin/system/cache/clear
     public function postClearCache(Request $request, BaseHttpResponse $response, Filesystem $files, Application $app)
     {
         switch ($request->input('type')) {
@@ -125,6 +133,9 @@ class SystemController extends Controller
      * @param BaseHttpResponse $response
      * @return BaseHttpResponse
      */
+
+
+     //serves --admin/membership/authorize
     public function authorize(MembershipAuthorization $authorization, BaseHttpResponse $response)
     {
         $authorization->authorize();
@@ -138,6 +149,8 @@ class SystemController extends Controller
      * @return RedirectResponse
      * @throws Exception
      */
+
+     //serves --settings-language/{alias}
     public function getLanguage($lang, Request $request)
     {
         if ($lang != false && array_key_exists($lang, Language::getAvailableLocales())) {
