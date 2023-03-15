@@ -9,7 +9,7 @@ app()->booted(function () {
             'label'      => __('Copyright'),
             'attributes' => [
                 'name'    => 'copyright',
-                'value'   => '© 2021 Botble Technologies. All right reserved.',
+                'value'   => '© 2023 RealDriss LLC. All right reserved.',
                 'options' => [
                     'class'        => 'form-control',
                     'placeholder'  => __('Change copyright'),
@@ -110,7 +110,7 @@ app()->booted(function () {
             'label'      => __('Primary color'),
             'attributes' => [
                 'name'  => 'primary_color',
-                'value' => '#FF324D',
+                'value' => '#34d39b',
             ],
         ])
         ->setField([
@@ -120,7 +120,7 @@ app()->booted(function () {
             'label'      => __('Secondary color'),
             'attributes' => [
                 'name'  => 'secondary_color',
-                'value' => '#1D2224',
+                'value' => '#050b08',
             ],
         ])
         ->setField([
