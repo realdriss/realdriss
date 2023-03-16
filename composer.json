@@ -22,6 +22,7 @@
         "doctrine/dbal": "^3.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
+        "gathuku/laravelmpesa": "^1.2",
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "league/flysystem-aws-s3-v3": "^1.0",

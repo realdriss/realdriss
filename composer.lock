@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab061ceef0047cb5dbad12588648de5c",
+    "content-hash": "c5599b62aa3c7026d403f0302f8306f2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -431,7 +431,7 @@
             "dist": {
                 "type": "path",
                 "url": "./platform/core",
-                "reference": "2aee275ad08708a272a1741f5aa90af2e274c1a1"
+                "reference": "d91619f121cac2e1f24362579eab08cd47231596"
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^0.9.0",
@@ -492,20 +492,20 @@
             },
             "authors": [
                 {
-                    "name": "Botble Technologies",
-                    "email": "contact@botble.com"
+                    "name": "RealDriss Inc.",
+                    "email": "contact@realdriss.com"
                 }
             ],
-            "description": "The Botble Platform based on Laravel Framework.",
-            "homepage": "https://botble.com",
+            "description": "The RealDriss Platform based on Laravel Framework.",
+            "homepage": "https://realdriss.com",
             "keywords": [
-                "botble",
-                "botble cms",
-                "botble platform"
+                "realdriss",
+                "realdriss cms",
+                "realdriss platform"
             ],
             "support": {
-                "issues": "https://botble.ticksy.com",
-                "document": "https://docs.botble.com"
+                "issues": "https://realdriss.ticksy.com",
+                "document": "https://docs.realdriss.com"
             },
             "transport-options": {
                 "relative": true
@@ -2205,6 +2205,73 @@
                 }
             ],
             "time": "2021-04-26T11:24:25+00:00"
+        },
+        {
+            "name": "gathuku/laravelmpesa",
+            "version": "v1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gathuku/laravel_mpesa.git",
+                "reference": "ace7024633d7b24015c69daa459df23ea0438523"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gathuku/laravel_mpesa/zipball/ace7024633d7b24015c69daa459df23ea0438523",
+                "reference": "ace7024633d7b24015c69daa459df23ea0438523",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0",
+                "php": "^7.1|^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "laravel",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gathuku\\Mpesa\\MpesaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Mpesa": "Gathuku\\Mpesa\\Facades\\Mpesa"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gathuku\\Mpesa\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "moses gathuku",
+                    "email": "mosesgathuku95@gmail.com"
+                }
+            ],
+            "description": "A simple mpesa package for laravel framework",
+            "homepage": "https://github/gathuku/laravel_mpesa",
+            "keywords": [
+                "gathuku",
+                "laravel",
+                "mpesa"
+            ],
+            "support": {
+                "issues": "https://github.com/gathuku/laravel_mpesa/issues",
+                "source": "https://github.com/gathuku/laravel_mpesa/tree/v1.2.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/gathuku",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-11-13T09:48:05+00:00"
         },
         {
             "name": "google/apiclient",

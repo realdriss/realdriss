@@ -13,6 +13,6 @@ return [
         'learn_more_url'  => 'Learn more URL',
         'learn_more_text' => 'Learn more text',
     ],
-    'message'         => 'Your experience on this site will be improved by allowing cookies.',
+    'message'         => 'Your experience on RealDriss will be improved by allowing cookies.',
     'button_text'     => 'Allow cookies',
 ];
