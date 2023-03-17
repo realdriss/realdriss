@@ -13,7 +13,7 @@
                                 <li><i class="ti-calendar"></i> {{ $post->created_at->translatedFormat('M d, Y') }}</li>
                                 <li><i class="ti-eye"></i> {{ number_format($post->views) }} {{ __('Views') }}</li>
                             </ul>
-                            <p>{{ Str::limit($post->description, 110) }}</p>
+                            <p>{{ Str::limit($post->description, 50) }}</p>
                             <a href="{{ $post->url }}" class="btn btn-fill-line border-2 btn-xs rounded-0">{{ __('Read More') }}</a>
                         </div>
                     </div>
