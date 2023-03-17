@@ -9,7 +9,7 @@ app()->booted(function () {
             'label'      => __('Copyright'),
             'attributes' => [
                 'name'    => 'copyright',
-                'value'   => '© 2023 RealDriss LLC. All right reserved.',
+                'value'   => '© 2023 RealDriss Inc. All right reserved.',
                 'options' => [
                     'class'        => 'form-control',
                     'placeholder'  => __('Change copyright'),
