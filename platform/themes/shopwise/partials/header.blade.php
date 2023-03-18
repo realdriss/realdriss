@@ -11,8 +11,8 @@
 
         <style>
             :root {
-                --color-1st: {{ theme_option('primary_color', '#FF324D') }};
-                --color-2nd: {{ theme_option('secondary_color', '#1D2224') }};
+                --color-1st: {{ theme_option('primary_color', '#34d39b') }};
+                --color-2nd: {{ theme_option('secondary_color', '#050b08') }};
                 --primary-font: '{{ theme_option('primary_font', 'Poppins') }}', sans-serif;
             }
         </style>

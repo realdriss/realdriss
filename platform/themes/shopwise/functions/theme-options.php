@@ -100,7 +100,7 @@ app()->booted(function () {
             'label'      => __('Primary font'),
             'attributes' => [
                 'name'  => 'primary_font',
-                'value' => 'Poppins',
+                'value' => 'Open Sans',
             ],
         ])
         ->setField([
