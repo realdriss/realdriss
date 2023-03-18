@@ -22,9 +22,3 @@ Route::get('/broadcast', function () {
 
 
 
-
-Route::get('/playground', function (Request $request) {
-	
-	return null;
-});
-
