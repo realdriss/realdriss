@@ -864,7 +864,7 @@ class Theme implements ThemeContract
 
         // Set up a content regional.
         $this->regions['content'] = $content;
-
+        
         return $this;
     }
 

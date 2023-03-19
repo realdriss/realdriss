@@ -64,11 +64,13 @@ class PublicController extends Controller
     {
         if (defined('PAGE_MODULE_SCREEN_NAME')) {
             $homepageId = BaseHelper::getHomepageId();
+
             if ($homepageId) {
                 $slug = SlugHelper::getSlug(null, SlugHelper::getPrefix(Page::class), Page::class, $homepageId);
 
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
+                    //dd($data);
 
                     return Theme::scope($data['view'], $data['data'], $data['default_view'])->render();
                 }
@@ -80,6 +82,7 @@ class PublicController extends Controller
         Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
         event(RenderingHomePageEvent::class);
+
 
         return Theme::scope('index')->render();
     }
