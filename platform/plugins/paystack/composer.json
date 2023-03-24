@@ -1,8 +1,0 @@
-{
-    "name": "botble/paystack",
-    "description": "Paystack",
-    "type": "package",
-    "require": {
-        "unicodeveloper/laravel-paystack": "^1.0"
-    }
-}
