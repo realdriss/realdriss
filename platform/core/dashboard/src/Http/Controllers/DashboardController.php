@@ -54,9 +54,12 @@ class DashboardController extends BaseController
      * @return Factory|View
      */
     public function getDashboard(Request $request)
+
     {
+        //set the page title
         page_title()->setTitle(trans('core/dashboard::dashboard.title'));
 
+        //add scripts
         Assets::addScripts(['blockui', 'sortable', 'equal-height', 'counterup'])
             ->addScriptsDirectly('vendor/core/core/dashboard/js/dashboard.js')
             ->addStylesDirectly('vendor/core/core/dashboard/css/dashboard.css');
@@ -80,6 +83,8 @@ class DashboardController extends BaseController
         $widgetData = apply_filters(DASHBOARD_FILTER_ADMIN_LIST, [], $widgets);
         ksort($widgetData);
 
+
+
         $availableWidgetIds = collect($widgetData)->pluck('id')->all();
 
         $widgets = $widgets->reject(function ($item) use ($availableWidgetIds) {
@@ -87,6 +92,7 @@ class DashboardController extends BaseController
         });
 
         $userWidgets = collect($widgetData)->pluck('view')->all();
+        //dd($userWidgets);
 
         return view('core/dashboard::list', compact('widgets', 'userWidgets'));
     }

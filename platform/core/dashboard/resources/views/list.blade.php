@@ -1,7 +1,7 @@
 @extends('core/base::layouts.master')
 @section('content')
     <div id="dashboard-alerts">
-        <verify-license-component verify-url="{{ route('settings.license.verify') }}" setting-url="{{ route('settings.options') }}"></verify-license-component>
+        
     </div>
     {!! apply_filters(DASHBOARD_FILTER_ADMIN_NOTIFICATIONS, null) !!}
     <div class="row">
