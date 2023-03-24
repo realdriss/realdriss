@@ -1,7 +1,7 @@
 @extends('core/base::layouts.master')
 @section('content')
     <div id="main-settings">
-        
+
     </div>
     {!! Form::open(['route' => ['settings.edit']]) !!}
         <div class="max-width-1200">
@@ -18,7 +18,7 @@
 
                 <div class="flexbox-annotated-section-content">
                     <div class="wrapper-content pd-all-20">
-                        @php $maxEmailCount = 4 @endphp
+                        @php $maxEmailCount = 2 @endphp
                         <div class="form-group" id="admin_email_wrapper" data-emails="{{ json_encode(get_admin_email()) }}" data-max="{{ $maxEmailCount }}">
                             <label class="text-title-field"
                                    for="admin_email">{{ trans('core/setting::setting.general.admin_email') }}</label>
