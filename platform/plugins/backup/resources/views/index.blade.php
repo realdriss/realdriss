@@ -14,7 +14,11 @@
     </div>
 
     @if (auth()->user()->hasPermission('backups.create'))
-        <p><button class="btn btn-primary" id="generate_backup">{{ trans('plugins/backup::backup.generate_btn') }}</button></p>
+        <p>
+        <button class="btn btn-primary" id="generate_backup">
+            {{ trans('plugins/backup::backup.generate_btn') }}
+        </button>
+        </p>
     @endif
 
     <table class="table table-striped" id="table-backups">
@@ -28,19 +32,28 @@
             </tr>
         </thead>
         <tbody>
-            @if (count($backups) > 0)
-                @foreach($backups as $key => $backup)
-                    @include('plugins/backup::partials.backup-item', ['data' => $backup, 'backupManager' => $backupManager, 'key' => $key, 'odd' => $loop->index % 2 == 0 ? true : false])
-                @endforeach
-            @else
+
+            @forelse ($backups as $key => $backup)
+                @include('plugins/backup::partials.backup-item', 
+                [
+                    'data' => $backup, 
+                    'backupManager' => $backupManager, 
+                    'key' => $key, 
+                    'odd' => $loop->index % 2 == 0 ? true : false
+                ])
+
+            @empty
                 <tr class="text-center no-backup-row">
                     <td colspan="5">{{ trans('plugins/backup::backup.no_backups') }}</td>
                 </tr>
-            @endif
+
+            @endforelse
+
         </tbody>
     </table>
 
     @if (auth()->user()->hasPermission('backups.create'))
+
         {!! Form::modalAction('create-backup-modal', trans('plugins/backup::backup.create'), 'info', view('plugins/backup::partials.create')->render(), 'create-backup-button', trans('plugins/backup::backup.create_btn')) !!}
         <div data-route-create="{{ route('backups.create') }}"></div>
     @endif

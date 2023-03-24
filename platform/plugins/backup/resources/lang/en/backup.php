@@ -18,7 +18,8 @@ return [
     'demo_alert'                        => 'Hi guest, if you see demo site is destroyed, please help me <a href=":link">go here</a> and restore demo site to the latest revision! Thank you so much!',
     'menu_name'                         => 'Backups',
     'size'                              => 'Size',
-    'no_backups'                        => 'There is no backup now!',
+
+    'no_backups'                        => 'No backups found.',
     'proc_open_disabled_error'          => 'Function <strong>proc_open()</strong> has been disabled so the system cannot backup the database. Please contact your hosting provider to enable it.',
     'database_backup_not_existed'       => 'Backup database is not existed!',
     'uploads_folder_backup_not_existed' => 'Backup uploads folder is not existed!',

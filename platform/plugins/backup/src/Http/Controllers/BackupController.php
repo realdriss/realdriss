@@ -43,7 +43,7 @@ class BackupController extends BaseController
         $backupManager = $this->backup;
 
         $backups = $this->backup->getBackupList();
-
+        
         return view('plugins/backup::index', compact('backups', 'backupManager'));
     }
 

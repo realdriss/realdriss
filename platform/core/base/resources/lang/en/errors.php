@@ -6,11 +6,7 @@ return [
 	                <li>You are not authorized to view the requested resource.</li>
 	                <li>Your subscription may have expired.</li>',
     '404_title' => 'Page could not be found',
-    '404_msg'   => '<li>The page you requested does not exist.</li>
-	                <li>The link you clicked is no longer.</li>
-	                <li>The page may have moved to a new location.</li>
-	                <li>An error may have occurred.</li>
-	                <li>You are not authorized to view the requested resource.</li>',
+    '404_msg'   => '<li>The page you requested does not exist.</li>',
     '500_title' => 'Page could not be loaded',
     '500_msg'   => '<li>The page you requested does not exist.</li>
 	                <li>The link you clicked is no longer.</li>
