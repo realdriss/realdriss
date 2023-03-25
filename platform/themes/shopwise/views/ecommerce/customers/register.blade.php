@@ -1,4 +1,4 @@
-@php Theme::set('pageName', __('Sign up')) @endphp
+@php Theme::set('pageName', __('Register')) @endphp
 
 <!-- START LOGIN SECTION -->
 <div class="login_register_wrap section">
@@ -7,9 +7,7 @@
             <div class="col-xl-6 col-md-10">
                 <div class="login_wrap">
                     <div class="padding_eight_all bg-white">
-                        <div class="heading_s1">
-                            <h3>{{ __('Login') }}</h3>
-                        </div>
+                       
                         <form method="POST" action="{{ route('customer.register.post') }}">
                             @csrf
                             <div class="form-group">
@@ -41,7 +39,7 @@
                                     <div class="custome-checkbox">
                                         <input type="hidden" name="agree_terms_and_policy" value="0">
                                         <input class="form-check-input" type="checkbox" name="agree_terms_and_policy" id="terms-policy" value="1">
-                                        <label class="form-check-label" for="terms-policy"><span>{{ __('I agree to terms & Policy.') }}</span></label>
+                                        <label class="form-check-label" for="terms-policy"><span>{{ __('I agree to the terms & policies.') }}</span></label>
                                     </div>
                                     @if ($errors->has('agree_terms_and_policy'))
                                         <span class="text-danger">{{ $errors->first('agree_terms_and_policy') }}</span>
@@ -52,7 +50,7 @@
                                 {!! Captcha::display() !!}
                             @endif
                             <div class="form-group">
-                                <button type="submit" class="btn btn-fill-out btn-block">{{ __('Sign up') }}</button>
+                                <button type="submit" class="btn btn-fill-out btn-block">{{ __('Register') }}</button>
                             </div>
                         </form>
 
@@ -60,7 +58,7 @@
                             {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \Botble\Ecommerce\Models\Customer::class) !!}
                         </div>
 
-                        <div class="form-note text-center">{{ __('Already have an account?') }} <a href="{{ route('customer.login') }}">{{ __('Log in') }}</a></div>
+                        <div class="form-note text-center">{{ __('Already have an account?') }} <a href="{{ route('customer.login') }}">{{ __('Login') }}</a></div>
                     </div>
                 </div>
             </div>

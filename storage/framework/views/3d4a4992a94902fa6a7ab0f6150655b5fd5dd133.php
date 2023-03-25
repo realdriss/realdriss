@@ -12,7 +12,7 @@
                                 <div id="account-avatar">
                                     <div class="profile-image">
                                         <div class="avatar-view mt-card-avatar">
-                                            <img class="br2" src="{{ auth('customer')->user()->avatar_url }}" alt="{{ auth('customer')->user()->name }}" width="150">
+                                            <img class="br2" src="<?php echo e(auth('customer')->user()->avatar_url); ?>" alt="<?php echo e(auth('customer')->user()->name); ?>" width="150">
                                             <div class="mt-overlay br2">
                                                 <span><i class="linearicons-pencil"></i></span>
                                             </div>
@@ -26,29 +26,29 @@
                     <div class="dashboard_menu">
                         <ul class="nav nav-tabs flex-column" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link @if (Route::currentRouteName() == 'customer.overview') active @endif" href="{{ route('customer.overview') }}"><i class="ti-layout-grid2"></i>{{ __('Overview') }}</a>
+                                <a class="nav-link <?php if(Route::currentRouteName() == 'customer.overview'): ?> active <?php endif; ?>" href="<?php echo e(route('customer.overview')); ?>"><i class="ti-layout-grid2"></i><?php echo e(__('Overview')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link @if (Route::currentRouteName() == 'customer.orders' || Route::currentRouteName() == 'customer.orders.view') active @endif" href="{{ route('customer.orders') }}"><i class="ti-shopping-cart-full"></i>{{ __('Orders') }}</a>
+                                <a class="nav-link <?php if(Route::currentRouteName() == 'customer.orders' || Route::currentRouteName() == 'customer.orders.view'): ?> active <?php endif; ?>" href="<?php echo e(route('customer.orders')); ?>"><i class="ti-shopping-cart-full"></i><?php echo e(__('Orders')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link @if (Route::currentRouteName() == 'customer.address' || Route::currentRouteName() == 'customer.address.create' || Route::currentRouteName() == 'customer.address.edit') active @endif" href="{{ route('customer.address') }}"><i class="ti-location-pin"></i>{{ __('My Addresses') }}</a>
+                                <a class="nav-link <?php if(Route::currentRouteName() == 'customer.address' || Route::currentRouteName() == 'customer.address.create' || Route::currentRouteName() == 'customer.address.edit'): ?> active <?php endif; ?>" href="<?php echo e(route('customer.address')); ?>"><i class="ti-location-pin"></i><?php echo e(__('My Addresses')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link @if (Route::currentRouteName() == 'customer.edit-account') active @endif" href="{{ route('customer.edit-account') }}"><i class="ti-id-badge"></i>{{ __('Account details') }}</a>
+                                <a class="nav-link <?php if(Route::currentRouteName() == 'customer.edit-account'): ?> active <?php endif; ?>" href="<?php echo e(route('customer.edit-account')); ?>"><i class="ti-id-badge"></i><?php echo e(__('Account details')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link @if (Route::currentRouteName() == 'customer.change-password') active @endif" href="{{ route('customer.change-password') }}"><i class="ti-id-badge"></i>{{ __('Change password') }}</a>
+                                <a class="nav-link <?php if(Route::currentRouteName() == 'customer.change-password'): ?> active <?php endif; ?>" href="<?php echo e(route('customer.change-password')); ?>"><i class="ti-id-badge"></i><?php echo e(__('Change password')); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('customer.logout') }}"><i class="ti-lock"></i>{{ __('Logout') }}</a>
+                                <a class="nav-link" href="<?php echo e(route('customer.logout')); ?>"><i class="ti-lock"></i><?php echo e(__('Logout')); ?></a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-8">
                     <div class="dashboard_content">
-                        @yield('content')
+                        <?php echo $__env->yieldContent('content'); ?>
                     </div>
                 </div>
             </div>
@@ -59,9 +59,9 @@
     <div class="modal fade" id="avatar-modal" tabindex="-1" role="dialog" aria-labelledby="avatar-modal-label" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <form class="avatar-form" method="post" action="{{ route('customer.avatar') }}" enctype="multipart/form-data">
+                <form class="avatar-form" method="post" action="<?php echo e(route('customer.avatar')); ?>" enctype="multipart/form-data">
                     <div class="modal-header">
-                        <h4 class="modal-title" id="avatar-modal-label"><i class="til_img"></i><strong>{{ __('Edit profile image') }}</strong></h4>
+                        <h4 class="modal-title" id="avatar-modal-label"><i class="til_img"></i><strong><?php echo e(__('Edit profile image')); ?></strong></h4>
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -72,8 +72,9 @@
                             <div class="avatar-upload">
                                 <input class="avatar-src" name="avatar_src" type="hidden">
                                 <input class="avatar-data" name="avatar_data" type="hidden">
-                                {!! csrf_field() !!}
-                                <label for="avatarInput">{{ __('New image') }}</label>
+                                <?php echo csrf_field(); ?>
+
+                                <label for="avatarInput"><?php echo e(__('New image')); ?></label>
                                 <input class="avatar-input" id="avatarInput" name="avatar_file" type="file">
                             </div>
 
@@ -92,11 +93,12 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button class="btn btn-dark btn-sm" type="button" data-dismiss="modal">{{ __('Close') }}</button>
-                        <button class="btn btn-fill-out btn-sm avatar-save" type="submit">{{ __('Save') }}</button>
+                        <button class="btn btn-dark btn-sm" type="button" data-dismiss="modal"><?php echo e(__('Close')); ?></button>
+                        <button class="btn btn-fill-out btn-sm avatar-save" type="submit"><?php echo e(__('Save')); ?></button>
                     </div>
                 </form>
             </div>
         </div>
     </div><!-- /.modal -->
 </div>
+<?php /**PATH C:\xampp\htdocs\projects\realdriss-hook\core\platform/themes/shopwise/views/ecommerce/customers/master.blade.php ENDPATH**/ ?>

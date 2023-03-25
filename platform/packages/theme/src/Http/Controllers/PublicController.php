@@ -70,7 +70,7 @@ class PublicController extends Controller
 
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
-                    //dd($data);
+                    //dd(Theme::scope($data['view'], $data['data'], $data['default_view']));
 
                     return Theme::scope($data['view'], $data['data'], $data['default_view'])->render();
                 }
