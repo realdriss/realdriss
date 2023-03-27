@@ -1,0 +1,1 @@
+<i class="fa fa-plus"></i> <?php echo e(trans('core/base::forms.create')); ?><?php /**PATH C:\xampp\htdocs\realdriss-hook\core\platform/core/table/resources/views//partials/create.blade.php ENDPATH**/ ?>
