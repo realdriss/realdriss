@@ -38,7 +38,6 @@
 
     <?php echo $__env->yieldPushContent('header'); ?>
 </head>
-<body <?php if(BaseHelper::adminLanguageDirection() == 'rtl'): ?> dir="rtl" <?php endif; ?> class="<?php echo $__env->yieldContent('body-class', 'page-sidebar-closed-hide-logo page-content-white page-container-bg-solid'); ?>" >
     <?php echo apply_filters(BASE_FILTER_HEADER_LAYOUT_TEMPLATE, null); ?>
 
 
