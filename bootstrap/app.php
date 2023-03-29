@@ -11,7 +11,7 @@
 |
 */
 
-$app = new Illuminate\Foundation\Application(
+$app = new Illuminate\Foundation\Application(  //we are able to call this class directly because we included the autoloader
     $_ENV['APP_BASE_PATH'] ?? dirname(__DIR__)
 );
 

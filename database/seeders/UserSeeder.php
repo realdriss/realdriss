@@ -21,11 +21,11 @@ class UserSeeder extends BaseSeeder
         User::truncate();
 
         $user = new User;
-        $user->first_name = 'System';
-        $user->last_name = 'Admin';
+        $user->first_name = 'Godwin';
+        $user->last_name = 'Waswa';
         $user->email = 'admin@realdriss.com';
         $user->username = 'admin';
-        $user->password = bcrypt('12345678');
+        $user->password = bcrypt('godwin@18');
         $user->super_user = 1;
         $user->manage_supers = 1;
         $user->save();
