@@ -1,8 +1,13 @@
 <?php
 
+/**
+ * 
+ * Login controller for the admin page.
+ */
+
 namespace Botble\ACL\Http\Controllers\Auth;
 
-use Assets;
+use Assets; //injects assets like scripts to the view, permits call binding
 use BaseHelper;
 use Botble\ACL\Repositories\Interfaces\ActivationInterface;
 use Botble\ACL\Repositories\Interfaces\UserInterface;
@@ -58,9 +63,9 @@ class LoginController extends BaseController
     /**
      * @return Factory|View
      */
-    public function showLoginForm()
+    public function showLoginForm() //shows the admin login page
     {
-        page_title()->setTitle(trans('core/acl::auth.login_title'));
+        page_title()->setTitle(trans('core/acl::auth.login_title')); //admin
 
         Assets::addScripts(['jquery-validation'])
             ->addScriptsDirectly('vendor/core/core/acl/js/login.js')

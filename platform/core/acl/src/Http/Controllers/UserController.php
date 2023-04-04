@@ -206,7 +206,7 @@ class UserController extends BaseController
             ->create(PasswordForm::class)
             ->setUrl(route('users.change-password', $user->id));
 
-        $canChangeProfile = $request->user()->getKey() == $id || $request->user()->isSuperUser();
+        $canChangeProfile = $request->user()->getKey() == $id || $request->user()->isSuperUser(); //true if super
 
         if (!$canChangeProfile) {
             $form->disableFields();
@@ -220,8 +220,9 @@ class UserController extends BaseController
         if ($request->user()->isSuperUser()) {
             $passwordForm->remove('old_password');
         }
-        $form = $form->renderForm();
-        $passwordForm = $passwordForm->renderForm();
+        $form = $form->renderForm(); //update user profile form
+        $passwordForm = $passwordForm->renderForm(); //change user password form
+        //dd($form);
 
         return view('core/acl::users.profile.base', compact('user', 'form', 'passwordForm', 'canChangeProfile'));
     }

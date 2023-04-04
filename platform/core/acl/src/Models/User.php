@@ -92,7 +92,7 @@ class User extends Authenticatable
 
     /**
      * @return string
-     * @deprecated since v5.15
+     * @deprecated since v5.15 //remove
      */
     public function getFullName()
     {
@@ -108,7 +108,7 @@ class User extends Authenticatable
     }
 
     /**
-     * @return BelongsTo
+     * @return BelongsTo //avatar_id
      */
     public function avatar()
     {
@@ -127,7 +127,7 @@ class User extends Authenticatable
         try {
             return (new Avatar)->create($this->name)->toBase64();
         } catch (Exception $exception) {
-            return RvMedia::getDefaultImage();
+            return RvMedia::getDefaultImage(); //fallback image no matter what
         }
     }
 
@@ -262,8 +262,8 @@ class User extends Authenticatable
     public function delete()
     {
         if ($this->exists) {
-            $this->activations()->delete();
-            $this->roles()->detach();
+            $this->activations()->delete(); //remove activations FK
+            $this->roles()->detach(); //remove roles FK
         }
 
         return parent::delete();
