@@ -67,6 +67,7 @@ class LoginController extends BaseController
     {
         page_title()->setTitle(trans('core/acl::auth.login_title')); //admin
 
+        // compiled assets
         Assets::addScripts(['jquery-validation'])
             ->addScriptsDirectly('vendor/core/core/acl/js/login.js')
             ->addStylesDirectly('vendor/core/core/acl/css/animate.min.css')

@@ -1,0 +1,1 @@
+removed the bg-img in auth.master
