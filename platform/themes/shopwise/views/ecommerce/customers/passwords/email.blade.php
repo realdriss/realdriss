@@ -7,9 +7,9 @@
             <div class="col-xl-6 col-md-10">
                 <div class="login_wrap">
                     <div class="padding_eight_all bg-white">
-                        <div class="heading_s1">
+                       <!--  <div class="heading_s1">
                             <h3>{{ __('Reset Password') }}</h3>
-                        </div>
+                        </div> -->
                         <form method="POST" action="{{ route('customer.password.request') }}">
                             @csrf
                             <div class="form-group">
