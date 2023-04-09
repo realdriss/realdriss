@@ -31,6 +31,7 @@ class PublicController extends Controller
         }
 
         $slug = SlugHelper::getSlug($key, '');
+        //dd($slug);
 
         if (!$slug) {
             abort(404);
@@ -43,6 +44,7 @@ class PublicController extends Controller
         }
 
         $result = apply_filters(BASE_FILTER_PUBLIC_SINGLE_DATA, $slug);
+        //dd($result);
 
         if (isset($result['slug']) && $result['slug'] !== $key) {
             return redirect()->route('public.single', $result['slug']);
@@ -51,6 +53,13 @@ class PublicController extends Controller
         event(new RenderingSingleEvent($slug));
 
         if (!empty($result) && is_array($result)) {
+            /**
+             * @param $result['view'] e.g 'page'
+             * @param $result['data'] e.g ['page' => Botble\Page\Models\Page]
+             * @param Arr::get($result, 'default_view') e.g "packages/page::themes.page"
+             * 
+             * 
+            */
             return Theme::scope($result['view'], $result['data'], Arr::get($result, 'default_view'))->render();
         }
 
