@@ -13,7 +13,7 @@ class CreateAclTables extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('name');
+            $table->dropColumn('name'); //name became deprecated
         });
 
         Schema::table('users', function (Blueprint $table) {
@@ -30,7 +30,7 @@ class CreateAclTables extends Migration
 
         Schema::create('activations', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned()->references('id')->on('users')->index();
+            $table->integer('user_id')->unsigned()->references('id')->on('users')->index(); //FK on users
             $table->string('code', 120);
             $table->boolean('completed')->default(0);
             $table->timestamp('completed_at')->nullable();
@@ -44,15 +44,15 @@ class CreateAclTables extends Migration
             $table->text('permissions')->nullable();
             $table->string('description', 255)->nullable();
             $table->tinyInteger('is_default')->unsigned()->default(0);
-            $table->integer('created_by')->unsigned()->references('id')->on('users')->index();
-            $table->integer('updated_by')->unsigned()->references('id')->on('users')->index();
+            $table->integer('created_by')->unsigned()->references('id')->on('users')->index(); //FK on users
+            $table->integer('updated_by')->unsigned()->references('id')->on('users')->index(); //FK on users
             $table->timestamps();
         });
 
         Schema::create('role_users', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->unsigned()->references('id')->on('users')->index();
-            $table->integer('role_id')->unsigned()->references('id')->on('roles')->index();
+            $table->integer('user_id')->unsigned()->references('id')->on('users')->index(); //FK on users
+            $table->integer('role_id')->unsigned()->references('id')->on('roles')->index(); //FK on roles
             $table->nullableTimestamps();
         });
 
@@ -60,7 +60,7 @@ class CreateAclTables extends Migration
             $table->id();
             $table->string('key')->nullable();
             $table->string('value')->nullable();
-            $table->integer('user_id')->unsigned()->references('id')->on('users')->index();
+            $table->integer('user_id')->unsigned()->references('id')->on('users')->index(); //FK on users
             $table->timestamps();
         });
     }
