@@ -1,5 +1,5 @@
 @extends('core/base::layouts.master')
-{{ dd($user->name) }}
+{{-- {{ dd($user->name) }} --}}
 
 @section('content')
     <div class="user-profile row">
