@@ -38,7 +38,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | A pieces of theme collections
+    | Pieces of theme collections
     |--------------------------------------------------------------------------
     |
     | Inside a theme path we need to set up directories to
@@ -58,8 +58,8 @@ return [
     | Listener from events
     |--------------------------------------------------------------------------
     |
-    | You can hook a theme when event fired on activities
-    | this is cool feature to set up a title, meta, default styles and scripts.
+    | You can hook a theme when an event is fired on activities
+    | this is a cool feature to set up a title, meta, default styles and scripts.
     |
     */
 

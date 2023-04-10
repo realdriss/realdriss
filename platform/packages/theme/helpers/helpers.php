@@ -18,6 +18,7 @@ if (!function_exists('sanitize_html_class')) {
         //Limit to A-Z,a-z,0-9,_,-
         $sanitized = preg_replace('/[^A-Za-z0-9_-]/', '', $sanitized);
 
+        //if the sanitized string is exhaustively sanitized to '', return the fallback
         if ('' == $sanitized && $fallback) {
             return sanitize_html_class($fallback);
         }
@@ -28,7 +29,7 @@ if (!function_exists('sanitize_html_class')) {
          * @param string $sanitized The sanitized HTML class.
          * @param string $class HTML class before sanitization.
          * @param string $fallback The fallback string.
-         * @since 2.8.0
+         * @since 2.8.0 //correct the version progress flow
          */
         return apply_filters('sanitize_html_class', $sanitized, $class, $fallback);
     }
