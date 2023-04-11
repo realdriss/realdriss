@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5599b62aa3c7026d403f0302f8306f2",
+    "content-hash": "115f7048fd1d5cad29229ecb1046a5bc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -364,11 +364,11 @@
         },
         {
             "name": "botble/menu",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/menu",
-                "reference": "5fff8b21785faa48430ffc75e9861ce2ac76ca07"
+                "reference": "4fb766d69e77acbb6d1d7b5678e50f4b02e13cdf"
             },
             "require": {
                 "botble/platform": "*@dev",
@@ -397,11 +397,11 @@
         },
         {
             "name": "botble/page",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/page",
-                "reference": "8d9c7ae7f59cbe2c285f6d93b5349026a3a53699"
+                "reference": "fd000c29162ceafe1b5a9254ad108c3bb2cbcc2b"
             },
             "require": {
                 "botble/platform": "*@dev",
@@ -427,11 +427,11 @@
         },
         {
             "name": "botble/platform",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/core",
-                "reference": "d91619f121cac2e1f24362579eab08cd47231596"
+                "reference": "959b3c2dacfa0db5d7dfe49d2ab5d6827792ccca"
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^0.9.0",
@@ -493,7 +493,7 @@
             "authors": [
                 {
                     "name": "RealDriss Inc.",
-                    "email": "contact@realdriss.com"
+                    "email": "info@realdriss.com"
                 }
             ],
             "description": "The RealDriss Platform based on Laravel Framework.",
@@ -513,11 +513,11 @@
         },
         {
             "name": "botble/plugin-management",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/plugin-management",
-                "reference": "727593235ee65c9d2709a191d90b0b3d2c5a08d5"
+                "reference": "29751744a6f03d965862838828b299c983e29c2f"
             },
             "require": {
                 "botble/platform": "*@dev"
@@ -542,11 +542,11 @@
         },
         {
             "name": "botble/revision",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/revision",
-                "reference": "52dae12c951542b1bc1aabb8ffb3bc7802abf71f"
+                "reference": "da70c1cea160555306a0a9a71e11586e03638fd0"
             },
             "require": {
                 "botble/platform": "*@dev"
@@ -571,11 +571,11 @@
         },
         {
             "name": "botble/seo-helper",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/seo-helper",
-                "reference": "c0fcd1f748b82aa42965fa2399580b77642e1f04"
+                "reference": "4faaadc9ce31b6758c30deef29e4593903a1f2a2"
             },
             "require": {
                 "botble/platform": "*@dev",
@@ -604,11 +604,11 @@
         },
         {
             "name": "botble/shortcode",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/shortcode",
-                "reference": "f5ef965b0d5df3d7de53570dc0c28c29d5430adc"
+                "reference": "496b22ab769f3b01ccc9abffe328350f9571984b"
             },
             "require": {
                 "botble/platform": "*@dev"
@@ -633,11 +633,11 @@
         },
         {
             "name": "botble/sitemap",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/sitemap",
-                "reference": "14fa340b4dda37f8bcc7b9371515c3d0a21cc83e"
+                "reference": "4b7b511d95523705ca390ac337b88f9fee3bce30"
             },
             "type": "library",
             "extra": {
@@ -662,11 +662,11 @@
         },
         {
             "name": "botble/slug",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/slug",
-                "reference": "a6b384fb207b07efa35c683e8d30c1f95f158891"
+                "reference": "a10c9ff93719f5e8967ec4702d102d4b4e00f341"
             },
             "require": {
                 "botble/platform": "*@dev"
@@ -694,11 +694,11 @@
         },
         {
             "name": "botble/theme",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/theme",
-                "reference": "2bf5dbbfaf0c88f3c920dadff8f726bd3632a5df"
+                "reference": "b17de8ae85c7745f3e5619834fac0b3448cfd31d"
             },
             "require": {
                 "botble/platform": "*@dev",
@@ -735,11 +735,11 @@
         },
         {
             "name": "botble/widget",
-            "version": "dev-main",
+            "version": "dev-dev",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/widget",
-                "reference": "bc2384c97d87c5367085c4c4e42848db384c93e7"
+                "reference": "b09777a9fabc10e51daace18201d12a08ef8c78a"
             },
             "require": {
                 "botble/platform": "*@dev",
@@ -885,82 +885,6 @@
                 "source": "https://github.com/ratchetphp/Ratchet/tree/v0.4.4"
             },
             "time": "2021-12-14T00:20:41+00:00"
-        },
-        {
-            "name": "composer/ca-bundle",
-            "version": "1.2.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
-                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-openssl": "*",
-                "ext-pcre": "*",
-                "php": "^5.3.2 || ^7.0 || ^8.0"
-            },
-            "require-dev": {
-                "phpstan/phpstan": "^0.12.55",
-                "psr/log": "^1.0",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Composer\\CaBundle\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be",
-                    "homepage": "http://seld.be"
-                }
-            ],
-            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
-            "keywords": [
-                "cabundle",
-                "cacert",
-                "certificate",
-                "ssl",
-                "tls"
-            ],
-            "support": {
-                "irc": "irc://irc.freenode.org/composer",
-                "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.2.10"
-            },
-            "funding": [
-                {
-                    "url": "https://packagist.com",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/composer",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2021-06-07T13:58:28+00:00"
         },
         {
             "name": "composer/package-versions-deprecated",
@@ -4116,195 +4040,6 @@
             "time": "2021-05-17T00:17:01+00:00"
         },
         {
-            "name": "mollie/laravel-mollie",
-            "version": "v2.15.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mollie/laravel-mollie.git",
-                "reference": "c971f68cb454580498856bf1729659e54f63669d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mollie/laravel-mollie/zipball/c971f68cb454580498856bf1729659e54f63669d",
-                "reference": "c971f68cb454580498856bf1729659e54f63669d",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "illuminate/support": "^6.0|^7.0|^8.0",
-                "mollie/mollie-api-php": "^2.36",
-                "php": "^7.2|^8.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "graham-campbell/testbench": "^5.5",
-                "laravel/socialite": "^4.0|^5.0",
-                "mockery/mockery": "^1.0",
-                "phpunit/phpunit": "^7.5|^8.0"
-            },
-            "suggest": {
-                "laravel/socialite": "Use Mollie Connect (OAuth) to authenticate via Laravel Socialite with the Mollie API. This is needed for some endpoints."
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Mollie\\Laravel\\MollieServiceProvider"
-                    ],
-                    "aliases": {
-                        "Mollie": "Mollie\\Laravel\\Facades\\Mollie"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Mollie\\Laravel\\": "src/"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mollie B.V.",
-                    "email": "info@mollie.com"
-                }
-            ],
-            "description": "Mollie API client wrapper for Laravel & Mollie Connect provider for Laravel Socialite",
-            "homepage": "https://github.com/mollie/laravel-mollie",
-            "keywords": [
-                "Apple Pay",
-                "Przelewy24",
-                "api",
-                "bancontact",
-                "banktransfer",
-                "belfius",
-                "belfius direct net",
-                "charges",
-                "creditcard",
-                "direct debit",
-                "gateway",
-                "ideal",
-                "laravel",
-                "lumen",
-                "mistercash",
-                "mollie",
-                "payment",
-                "payments",
-                "paypal",
-                "paysafecard",
-                "podiumcadeaukaart",
-                "recurring",
-                "refunds",
-                "sepa",
-                "service",
-                "socialite",
-                "sofort",
-                "sofortbanking",
-                "subscriptions"
-            ],
-            "support": {
-                "issues": "https://github.com/mollie/laravel-mollie/issues",
-                "source": "https://github.com/mollie/laravel-mollie/tree/v2.15.0"
-            },
-            "time": "2021-06-28T14:29:07+00:00"
-        },
-        {
-            "name": "mollie/mollie-api-php",
-            "version": "v2.37.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mollie/mollie-api-php.git",
-                "reference": "8e599a4f133341aa8623e0a61e2e77d65725c011"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mollie/mollie-api-php/zipball/8e599a4f133341aa8623e0a61e2e77d65725c011",
-                "reference": "8e599a4f133341aa8623e0a61e2e77d65725c011",
-                "shasum": ""
-            },
-            "require": {
-                "composer/ca-bundle": "^1.1",
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-openssl": "*",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "eloquent/liberator": "^2.0",
-                "friendsofphp/php-cs-fixer": "^3.0",
-                "guzzlehttp/guzzle": "^6.3 || ^7.0",
-                "phpunit/phpunit": "^5.7 || ^6.5 || ^7.1 || ^8.5"
-            },
-            "suggest": {
-                "mollie/oauth2-mollie-php": "Use OAuth to authenticate with the Mollie API. This is needed for some endpoints. Visit https://docs.mollie.com/ for more information."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Mollie\\Api\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Mollie B.V.",
-                    "email": "info@mollie.com"
-                }
-            ],
-            "description": "Mollie API client library for PHP. Mollie is a European Payment Service provider and offers international payment methods such as Mastercard, VISA, American Express and PayPal, and local payment methods such as iDEAL, Bancontact, SOFORT Banking, SEPA direct debit, Belfius Direct Net, KBC Payment Button and various gift cards such as Podiumcadeaukaart and fashioncheque.",
-            "homepage": "https://www.mollie.com/en/developers",
-            "keywords": [
-                "Apple Pay",
-                "CBC",
-                "Przelewy24",
-                "api",
-                "bancontact",
-                "banktransfer",
-                "belfius",
-                "belfius direct net",
-                "charges",
-                "creditcard",
-                "direct debit",
-                "fashioncheque",
-                "gateway",
-                "gift cards",
-                "ideal",
-                "inghomepay",
-                "intersolve",
-                "kbc",
-                "klarna",
-                "mistercash",
-                "mollie",
-                "paylater",
-                "payment",
-                "payments",
-                "paypal",
-                "paysafecard",
-                "podiumcadeaukaart",
-                "recurring",
-                "refunds",
-                "sepa",
-                "service",
-                "sliceit",
-                "sofort",
-                "sofortbanking",
-                "subscriptions"
-            ],
-            "support": {
-                "issues": "https://github.com/mollie/mollie-api-php/issues",
-                "source": "https://github.com/mollie/mollie-api-php/tree/v2.37.0"
-            },
-            "time": "2021-07-28T16:35:52+00:00"
-        },
-        {
             "name": "moneyphp/money",
             "version": "v3.3.1",
             "source": {
@@ -6172,68 +5907,6 @@
             "time": "2021-12-09T23:20:49+00:00"
         },
         {
-            "name": "razorpay/razorpay",
-            "version": "2.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/razorpay/razorpay-php.git",
-                "reference": "e28454acdc110b544fc80bec9518b9b86b275a2c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/razorpay/razorpay-php/zipball/e28454acdc110b544fc80bec9518b9b86b275a2c",
-                "reference": "e28454acdc110b544fc80bec9518b9b86b275a2c",
-                "shasum": ""
-            },
-            "require": {
-                "ext-json": "*",
-                "php": ">=5.3.0",
-                "rmccue/requests": "v1.8.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8|~5.0",
-                "raveren/kint": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Razorpay\\Api\\": "src/",
-                    "Razorpay\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Abhay Rana",
-                    "email": "nemo@razorpay.com",
-                    "homepage": "https://captnemo.in",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Shashank Kumar",
-                    "email": "shashank@razorpay.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Razorpay PHP Client Library",
-            "homepage": "https://docs.razorpay.com",
-            "keywords": [
-                "api",
-                "client",
-                "php",
-                "razorpay"
-            ],
-            "support": {
-                "email": "contact@razorpay.com",
-                "issues": "https://github.com/Razorpay/razorpay-php/issues",
-                "source": "https://github.com/Razorpay/razorpay-php"
-            },
-            "time": "2021-05-07T11:30:17+00:00"
-        },
-        {
             "name": "react/cache",
             "version": "v1.2.0",
             "source": {
@@ -7001,66 +6674,6 @@
                 "source": "https://github.com/ringcentral/psr7/tree/master"
             },
             "time": "2018-05-29T20:21:04+00:00"
-        },
-        {
-            "name": "rmccue/requests",
-            "version": "v1.8.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WordPress/Requests.git",
-                "reference": "afbe4790e4def03581c4a0963a1e8aa01f6030f1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/Requests/zipball/afbe4790e4def03581c4a0963a1e8aa01f6030f1",
-                "reference": "afbe4790e4def03581c4a0963a1e8aa01f6030f1",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-                "php-parallel-lint/php-console-highlighter": "^0.5.0",
-                "php-parallel-lint/php-parallel-lint": "^1.3",
-                "phpcompatibility/php-compatibility": "^9.0",
-                "phpunit/phpunit": "^4.8 || ^5.7 || ^6.5 || ^7.5",
-                "requests/test-server": "dev-master",
-                "squizlabs/php_codesniffer": "^3.5",
-                "wp-coding-standards/wpcs": "^2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Requests": "library/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "ISC"
-            ],
-            "authors": [
-                {
-                    "name": "Ryan McCue",
-                    "homepage": "http://ryanmccue.info"
-                }
-            ],
-            "description": "A HTTP library written in PHP, for human beings.",
-            "homepage": "http://github.com/WordPress/Requests",
-            "keywords": [
-                "curl",
-                "fsockopen",
-                "http",
-                "idna",
-                "ipv6",
-                "iri",
-                "sockets"
-            ],
-            "support": {
-                "issues": "https://github.com/WordPress/Requests/issues",
-                "source": "https://github.com/WordPress/Requests/tree/v1.8.0"
-            },
-            "time": "2021-04-27T11:05:25+00:00"
         },
         {
             "name": "sabberworm/php-css-parser",
@@ -10208,84 +9821,6 @@
             "time": "2020-07-13T06:12:54+00:00"
         },
         {
-            "name": "unicodeveloper/laravel-paystack",
-            "version": "1.0.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unicodeveloper/laravel-paystack.git",
-                "reference": "bfcb92255c29d92b0c4e80355a65de14e2e156f3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unicodeveloper/laravel-paystack/zipball/bfcb92255c29d92b0c4e80355a65de14e2e156f3",
-                "reference": "bfcb92255c29d92b0c4e80355a65de14e2e156f3",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "~6|~7|~8",
-                "illuminate/support": "~6|~7|~8",
-                "php": "^7.2|^8.0"
-            },
-            "require-dev": {
-                "mockery/mockery": "^1.3",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^8.4|^9.0",
-                "scrutinizer/ocular": "~1.1"
-            },
-            "type": "library",
-            "extra": {
-                "laravel": {
-                    "providers": [
-                        "Unicodeveloper\\Paystack\\PaystackServiceProvider"
-                    ],
-                    "aliases": {
-                        "Paystack": "Unicodeveloper\\Paystack\\Facades\\Paystack"
-                    }
-                }
-            },
-            "autoload": {
-                "files": [
-                    "src/Support/helpers.php"
-                ],
-                "psr-4": {
-                    "Unicodeveloper\\Paystack\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "unicodeveloper",
-                    "email": "prosperotemuyiwa@gmail.com"
-                },
-                {
-                    "name": "iamfunsho",
-                    "email": "info@devfunsho.com"
-                }
-            ],
-            "description": "A Laravel Package for Paystack",
-            "keywords": [
-                "github",
-                "laravel",
-                "laravel 6",
-                "laravel 7",
-                "laravel 8",
-                "open source",
-                "payments",
-                "paystack",
-                "paystack.co",
-                "php",
-                "subscription"
-            ],
-            "support": {
-                "issues": "https://github.com/unicodeveloper/laravel-paystack/issues",
-                "source": "https://github.com/unicodeveloper/laravel-paystack/tree/1.0.7"
-            },
-            "time": "2021-06-18T16:05:07+00:00"
-        },
-        {
             "name": "vlucas/phpdotenv",
             "version": "v5.3.0",
             "source": {
@@ -11063,6 +10598,207 @@
                 "source": "https://github.com/barryvdh/ReflectionDocBlock/tree/v2.0.6"
             },
             "time": "2018-12-13T10:34:14+00:00"
+        },
+        {
+            "name": "beyondcode/laravel-dump-server",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-dump-server.git",
+                "reference": "1f2452617afc64e47b3cf49978beb7beeef084df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-dump-server/zipball/1f2452617afc64e47b3cf49978beb7beeef084df",
+                "reference": "1f2452617afc64e47b3cf49978beb7beeef084df",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/http": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0|^9.0|^10.0",
+                "php": ">=7.2.5",
+                "symfony/var-dumper": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^7.0|^9.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\DumpServer\\DumpServerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "helpers.php"
+                ],
+                "psr-4": {
+                    "BeyondCode\\DumpServer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondco.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Symfony Var-Dump Server for Laravel",
+            "homepage": "https://github.com/beyondcode/laravel-dump-server",
+            "keywords": [
+                "beyondcode",
+                "laravel-dump-server"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-dump-server/issues",
+                "source": "https://github.com/beyondcode/laravel-dump-server/tree/1.9.0"
+            },
+            "time": "2023-02-15T10:29:26+00:00"
+        },
+        {
+            "name": "beyondcode/laravel-view-xray",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/beyondcode/laravel-view-xray.git",
+                "reference": "9acdecf0cec95d036dccaa57d32564d6e1b04bc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/beyondcode/laravel-view-xray/zipball/9acdecf0cec95d036dccaa57d32564d6e1b04bc4",
+                "reference": "9acdecf0cec95d036dccaa57d32564d6e1b04bc4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.6|^3.7|^3.8|^4.0|^5.0",
+                "phpunit/phpunit": "^7.0|^8.0",
+                "spatie/phpunit-snapshot-assertions": "^1.3|^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BeyondCode\\ViewXray\\ViewXrayServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BeyondCode\\ViewXray\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marcel Pociot",
+                    "email": "marcel@beyondco.de",
+                    "homepage": "https://beyondcode.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Take a look into your Laravel views.",
+            "homepage": "https://github.com/beyondcode/laravel-view-xray",
+            "keywords": [
+                "beyondcode",
+                "laravel-view-xray"
+            ],
+            "support": {
+                "issues": "https://github.com/beyondcode/laravel-view-xray/issues",
+                "source": "https://github.com/beyondcode/laravel-view-xray/tree/1.4.0"
+            },
+            "time": "2020-10-16T13:15:08+00:00"
+        },
+        {
+            "name": "composer/ca-bundle",
+            "version": "1.2.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/9fdb22c2e97a614657716178093cd1da90a64aa8",
+                "reference": "9fdb22c2e97a614657716178093cd1da90a64aa8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.55",
+                "psr/log": "^1.0",
+                "symfony/phpunit-bridge": "^4.2 || ^5",
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CaBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+            "keywords": [
+                "cabundle",
+                "cacert",
+                "certificate",
+                "ssl",
+                "tls"
+            ],
+            "support": {
+                "irc": "irc://irc.freenode.org/composer",
+                "issues": "https://github.com/composer/ca-bundle/issues",
+                "source": "https://github.com/composer/ca-bundle/tree/1.2.10"
+            },
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-06-07T13:58:28+00:00"
         },
         {
             "name": "composer/composer",
