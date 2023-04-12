@@ -19,3 +19,11 @@ use App\Events\Test;
 Route::get('/broadcast', function () {
 	broadcast(new Test());
 });
+
+
+
+Route::get('/dev', function () {
+	dump('test');
+	return 'This is the dev route.';
+	
+});

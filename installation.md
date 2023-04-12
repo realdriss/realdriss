@@ -74,3 +74,14 @@ page](https://laravel.com/docs) for more information.
     - Go to `/admin` to access the admin panel.
     - If you're using sample data, the default admin account is `a@realdriss.com` - `realdriss`.
     - If you don't use sample data, you need to go to Admin -> Plugins then activate all plugins.
+
+
+## Installation steps
+
+1.Run -> git clone <https://github.com/RealDriss/core.git>
+2.Run -> a. composer install --prefer-source
+3.Configure the .env file
+4.Create an empty db - realdriss
+5.Run -> php artisan migrate --seed
+6.Run -> php artisan vendor:publish --tag=cms-public --force
+7.Run -> php artisan cms:theme:assets:publish

@@ -1,5 +1,5 @@
 @extends('core/acl::auth.master')
-
+{{ dump(auth()->check()) }}
 @section('content')
     <p>{{ trans('core/acl::auth.sign_in_below') }}:</p>
 
