@@ -1,9 +1,12 @@
 <?php
 
 Route::group(['namespace' => 'Botble\Translation\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+    // /admin
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
+        // /admin/translations
         Route::group(['prefix' => 'translations'], function () {
 
+            // /admin/translations/locales
             Route::group(['prefix' => 'locales'], function () {
                 Route::get('', [
                     'as'         => 'translations.locales',
@@ -33,6 +36,8 @@ Route::group(['namespace' => 'Botble\Translation\Http\Controllers', 'middleware'
                 ]);
             });
 
+            // /admin/translations/admin
+
             Route::group(['prefix' => 'admin'], function () {
                 Route::get('/', [
                     'as'         => 'translations.index',
@@ -60,6 +65,7 @@ Route::group(['namespace' => 'Botble\Translation\Http\Controllers', 'middleware'
                 ]);
             });
 
+            // /admin/translations/theme
             Route::group(['prefix' => 'theme'], function () {
                 Route::get('', [
                     'as'         => 'translations.theme-translations',
