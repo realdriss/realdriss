@@ -173,6 +173,7 @@ class TranslationController extends BaseController
 
         $existingLocales = Language::getAvailableLocales();
         $languages = Language::getListLanguages();
+        dump($languages);
         $flags = Language::getListLanguageFlags();
 
         $locales = [];
@@ -334,7 +335,7 @@ class TranslationController extends BaseController
                 $translations = get_file_data($jsonFile, true);
             }
 
-            dump($translations);
+            // dump($translations);
 
             if ($group['locale'] != 'en') {
                 $defaultEnglishFile = theme_path(Theme::getThemeName() . '/lang/en.json');
