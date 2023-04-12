@@ -5,6 +5,13 @@ use Botble\ACL\Http\Controllers\Auth\LoginController;
 use Botble\ACL\Http\Controllers\Auth\ResetPasswordController;
 use Botble\ACL\Http\Controllers\UserController;
 
+/**
+ * level 0 group -> namespace { Botble\ACL\Http\Controllers }, middleware { web, core }
+ * level 0.1 group -> prefix { BaseHelper::getAdminPrefix() }
+ * level 0.1.1 group -> middleware { guest }
+ * level 0.1.2 group -> middleware { auth }
+ * level 0.2 group -> prefix { BaseHelper::getAdminPrefix() }, middleware { auth }
+*/
 Route::group(['namespace' => 'Botble\ACL\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix()], function () {
         Route::group(['middleware' => 'guest'], function () {
@@ -24,11 +31,14 @@ Route::group(['namespace' => 'Botble\ACL\Http\Controllers', 'middleware' => ['we
         });
 
         Route::group(['middleware' => 'auth'], function () {
-            Route::get('logout', [
-                'as'         => 'access.logout',
-                'uses'       => 'Auth\LoginController@logout',
-                'permission' => false,
-            ]);
+            Route::get('logout', [LoginController::class, 'logout'])
+                ->name('access.logout');
+                
+            // Route::get('logout', [
+            //     'as'         => 'access.logout',
+            //     'uses'       => 'Auth\LoginController@logout',
+            //     'permission' => false,
+            // ]);
         });
     });
 
