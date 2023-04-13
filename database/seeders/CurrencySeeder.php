@@ -30,15 +30,6 @@ class CurrencySeeder extends BaseSeeder
                 'is_default'       => 0,
                 'exchange_rate'    => 0.84,
             ],
-            [
-                'title'            => 'VND',
-                'symbol'           => '₫',
-                'is_prefix_symbol' => false,
-                'order'            => 2,
-                'decimals'         => 0,
-                'is_default'       => 0,
-                'exchange_rate'    => 23203,
-            ],
         ];
 
         foreach ($currencies as $currency) {

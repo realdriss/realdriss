@@ -4,7 +4,7 @@
             <div class="page-logo">
                 @if (setting('admin_logo') || config('core.base.general.logo'))
                     <a href="{{ route('dashboard.index') }}">
-                        <img src="{{ setting('admin_logo') ? RvMedia::getImageUrl(setting('admin_logo')) : url(config('core.base.general.logo')) }}" alt="logo" class="logo-default" />
+                        <img src="{{ setting('admin_logo') ? RvMedia::getImageUrl(setting('admin_logo')) : url(config('core.base.general.logo')) }}" alt="RealDriss" class="logo-default" />
                     </a>
                 @endif
 
