@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\Customer;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Address;
+use RealDriss\Ecommerce\Models\Customer;
 use Faker\Factory;
 
 class CustomerSeeder extends BaseSeeder
@@ -25,7 +25,7 @@ class CustomerSeeder extends BaseSeeder
 
         $customer = Customer::create([
             'name'     => 'John Smith',
-            'email'    => 'john.smith@botble.com',
+            'email'    => 'john.smith@RealDriss.com',
             'password' => bcrypt('12345678'),
             'phone'    => $faker->e164PhoneNumber,
             'avatar'   => 'customers/1.jpg',

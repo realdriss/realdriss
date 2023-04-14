@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Models\MetaBox as MetaBoxModel;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Page\Models\Page;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Models\MetaBox as MetaBoxModel;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Page\Models\Page;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use Html;
 use Illuminate\Support\Str;

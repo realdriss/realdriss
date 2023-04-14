@@ -2,16 +2,16 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Tag;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Menu\Models\Menu as MenuModel;
-use Botble\Menu\Models\MenuLocation;
-use Botble\Menu\Models\MenuNode;
-use Botble\Page\Models\Page;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Ecommerce\Models\ProductTag;
+use RealDriss\Menu\Models\Menu as MenuModel;
+use RealDriss\Menu\Models\MenuLocation;
+use RealDriss\Menu\Models\MenuNode;
+use RealDriss\Page\Models\Page;
 use Illuminate\Support\Arr;
 use Menu;
 

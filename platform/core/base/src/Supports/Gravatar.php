@@ -2,7 +2,7 @@
 
 namespace Botble\Base\Supports;
 
-// implement the multiavatar from here.
+// implement the realavatar from here.
 class Gravatar
 {
     /**

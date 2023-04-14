@@ -1,5 +1,5 @@
 {
-    "name": "botble/platform",
+    "name": "RealDriss/platform",
     "description": "The RealDriss Platform based on Laravel Framework.",
     "keywords": [
         "realdriss",
@@ -20,7 +20,7 @@
     "type": "project",
     "require": {
         "barryvdh/laravel-dompdf": "^0.9.0",
-        "botble/assets": "^1.0",
+        "RealDriss/assets": "^1.0",
         "intervention/image": "^2.4",
         "kris/laravel-form-builder": "1.16.x-dev",
         "laravelcollective/html": "^6.1",
@@ -33,44 +33,44 @@
     },
     "autoload": {
         "psr-4": {
-            "Botble\\Support\\": "support/src",
-            "Botble\\ACL\\": "acl/src",
-            "Botble\\Base\\": "base/src",
-            "Botble\\Dashboard\\": "dashboard/src",
-            "Botble\\Media\\": "media/src",
-            "Botble\\Setting\\": "setting/src",
-            "Botble\\Table\\": "table/src",
-            "Botble\\JsValidation\\": "js-validation/src",
-            "Botble\\Chart\\": "chart/src"
+            "RealDriss\\Support\\": "support/src",
+            "RealDriss\\ACL\\": "acl/src",
+            "RealDriss\\Base\\": "base/src",
+            "RealDriss\\Dashboard\\": "dashboard/src",
+            "RealDriss\\Media\\": "media/src",
+            "RealDriss\\Setting\\": "setting/src",
+            "RealDriss\\Table\\": "table/src",
+            "RealDriss\\JsValidation\\": "js-validation/src",
+            "RealDriss\\Chart\\": "chart/src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Base\\Providers\\BaseServiceProvider",
-                "Botble\\Base\\Providers\\CommandServiceProvider",
-                "Botble\\Base\\Providers\\EventServiceProvider",
-                "Botble\\Base\\Providers\\BreadcrumbsServiceProvider",
-                "Botble\\Base\\Providers\\ComposerServiceProvider",
-                "Botble\\Base\\Providers\\MailConfigServiceProvider",
-                "Botble\\Base\\Providers\\FormServiceProvider",
-                "Botble\\Support\\Providers\\SupportServiceProvider",
-                "Botble\\Table\\Providers\\TableServiceProvider",
-                "Botble\\ACL\\Providers\\AclServiceProvider",
-                "Botble\\Dashboard\\Providers\\DashboardServiceProvider",
-                "Botble\\Media\\Providers\\MediaServiceProvider",
-                "Botble\\JsValidation\\Providers\\JsValidationServiceProvider",
-                "Botble\\Chart\\Providers\\ChartServiceProvider"
+                "RealDriss\\Base\\Providers\\BaseServiceProvider",
+                "RealDriss\\Base\\Providers\\CommandServiceProvider",
+                "RealDriss\\Base\\Providers\\EventServiceProvider",
+                "RealDriss\\Base\\Providers\\BreadcrumbsServiceProvider",
+                "RealDriss\\Base\\Providers\\ComposerServiceProvider",
+                "RealDriss\\Base\\Providers\\MailConfigServiceProvider",
+                "RealDriss\\Base\\Providers\\FormServiceProvider",
+                "RealDriss\\Support\\Providers\\SupportServiceProvider",
+                "RealDriss\\Table\\Providers\\TableServiceProvider",
+                "RealDriss\\ACL\\Providers\\AclServiceProvider",
+                "RealDriss\\Dashboard\\Providers\\DashboardServiceProvider",
+                "RealDriss\\Media\\Providers\\MediaServiceProvider",
+                "RealDriss\\JsValidation\\Providers\\JsValidationServiceProvider",
+                "RealDriss\\Chart\\Providers\\ChartServiceProvider"
             ],
             "aliases": {
-                "Assets": "Botble\\Base\\Facades\\AssetsFacade",
-                "BaseHelper": "Botble\\Base\\Facades\\BaseHelperFacade",
-                "MetaBox": "Botble\\Base\\Facades\\MetaBoxFacade",
-                "Action": "Botble\\Base\\Facades\\ActionFacade",
-                "Filter": "Botble\\Base\\Facades\\FilterFacade",
-                "EmailHandler": "Botble\\Base\\Facades\\EmailHandlerFacade",
-                "Breadcrumbs": "Botble\\Base\\Facades\\BreadcrumbsFacade",
-                "JsValidator": "Botble\\JsValidation\\Facades\\JsValidatorFacade"
+                "Assets": "RealDriss\\Base\\Facades\\AssetsFacade",
+                "BaseHelper": "RealDriss\\Base\\Facades\\BaseHelperFacade",
+                "MetaBox": "RealDriss\\Base\\Facades\\MetaBoxFacade",
+                "Action": "RealDriss\\Base\\Facades\\ActionFacade",
+                "Filter": "RealDriss\\Base\\Facades\\FilterFacade",
+                "EmailHandler": "RealDriss\\Base\\Facades\\EmailHandlerFacade",
+                "Breadcrumbs": "RealDriss\\Base\\Facades\\BreadcrumbsFacade",
+                "JsValidator": "RealDriss\\JsValidation\\Facades\\JsValidatorFacade"
             }
         }
     },

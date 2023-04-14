@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Models\Product;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\FlashSale;
+use RealDriss\Ecommerce\Models\Product;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\DB;
 

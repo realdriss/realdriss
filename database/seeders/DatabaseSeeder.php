@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
+use RealDriss\Base\Supports\BaseSeeder;
 
 class DatabaseSeeder extends BaseSeeder
 {

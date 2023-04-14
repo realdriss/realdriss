@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductCollection;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\ProductCollection;
 use Illuminate\Support\Str;
 
 class ProductCollectionSeeder extends BaseSeeder

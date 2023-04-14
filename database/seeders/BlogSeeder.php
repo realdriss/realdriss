@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Slug\Models\Slug;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use Illuminate\Support\Str;
 use SlugHelper;

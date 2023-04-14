@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Botble\Ecommerce\Models\ProductLabel;
+use RealDrississ\Ecommerce\Models\ProductLabel;
 use Illuminate\Database\Seeder;
 
 class ProductLabelSeeder extends Seeder

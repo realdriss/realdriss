@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Setting\Models\Setting as SettingModel;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Setting\Models\Setting as SettingModel;
 use Theme;
 
 class ThemeOptionSeeder extends BaseSeeder
@@ -31,7 +31,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-copyright',
-                'value' => '© ' . now()->format('Y') . ' Botble Technologies. All Rights Reserved.',
+                'value' => '© ' . now()->format('Y') . ' RealDriss Technologies. All Rights Reserved.',
             ],
             [
                 'key'   => 'theme-' . $theme . '-favicon',

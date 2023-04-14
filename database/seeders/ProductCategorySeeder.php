@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;

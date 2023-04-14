@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\Base\Supports\BaseSeeder;
+use RealDriss\ACL\Models\User;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\Base\Supports\BaseSeeder;
 use Illuminate\Support\Facades\Schema;
 
 class UserSeeder extends BaseSeeder
