@@ -301,16 +301,16 @@
             "time": "2023-02-15T10:40:49+00:00"
         },
         {
-            "name": "botble/assets",
+            "name": "RealDriss/assets",
             "version": "1.0.18",
             "source": {
                 "type": "git",
-                "url": "https://github.com/botble/laravel-assets.git",
+                "url": "https://github.com/RealDriss/laravel-assets.git",
                 "reference": "a07f042284f863586d6fffcd8c9cb284a7e1e9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/botble/laravel-assets/zipball/a07f042284f863586d6fffcd8c9cb284a7e1e9f0",
+                "url": "https://api.github.com/repos/RealDriss/laravel-assets/zipball/a07f042284f863586d6fffcd8c9cb284a7e1e9f0",
                 "reference": "a07f042284f863586d6fffcd8c9cb284a7e1e9f0",
                 "shasum": ""
             },
@@ -326,16 +326,16 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Assets\\Providers\\AssetsServiceProvider"
+                        "RealDriss\\Assets\\Providers\\AssetsServiceProvider"
                     ],
                     "aliases": {
-                        "Assets": "Botble\\Assets\\Facades\\AssetsFacade"
+                        "Assets": "RealDriss\\Assets\\Facades\\AssetsFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Assets\\": "src"
+                    "RealDriss\\Assets\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -349,21 +349,21 @@
                 }
             ],
             "description": "Laravel assets management",
-            "homepage": "https://botble.com",
+            "homepage": "https://RealDriss.com",
             "keywords": [
-                "botble",
-                "botble assets",
-                "botble cms",
-                "botble platform"
+                "RealDriss",
+                "RealDriss assets",
+                "RealDriss cms",
+                "RealDriss platform"
             ],
             "support": {
-                "issues": "https://github.com/botble/laravel-assets/issues",
-                "source": "https://github.com/botble/laravel-assets/tree/1.0.18"
+                "issues": "https://github.com/RealDriss/laravel-assets/issues",
+                "source": "https://github.com/RealDriss/laravel-assets/tree/1.0.18"
             },
             "time": "2021-01-26T13:34:33+00:00"
         },
         {
-            "name": "botble/menu",
+            "name": "RealDriss/menu",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -371,23 +371,23 @@
                 "reference": "4fb766d69e77acbb6d1d7b5678e50f4b02e13cdf"
             },
             "require": {
-                "botble/platform": "*@dev",
-                "botble/theme": "*@dev"
+                "RealDriss/platform": "*@dev",
+                "RealDriss/theme": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Menu\\Providers\\MenuServiceProvider"
+                        "RealDriss\\Menu\\Providers\\MenuServiceProvider"
                     ],
                     "aliases": {
-                        "Menu": "Botble\\Menu\\Facades\\MenuFacade"
+                        "Menu": "RealDriss\\Menu\\Facades\\MenuFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Menu\\": "src"
+                    "RealDriss\\Menu\\": "src"
                 }
             },
             "description": "Menu package",
@@ -396,7 +396,7 @@
             }
         },
         {
-            "name": "botble/page",
+            "name": "RealDriss/page",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -404,20 +404,20 @@
                 "reference": "fd000c29162ceafe1b5a9254ad108c3bb2cbcc2b"
             },
             "require": {
-                "botble/platform": "*@dev",
-                "botble/revision": "*@dev"
+                "RealDriss/platform": "*@dev",
+                "RealDriss/revision": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Page\\Providers\\PageServiceProvider"
+                        "RealDriss\\Page\\Providers\\PageServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Page\\": "src"
+                    "RealDriss\\Page\\": "src"
                 }
             },
             "description": "Page package",
@@ -426,7 +426,7 @@
             }
         },
         {
-            "name": "botble/platform",
+            "name": "RealDriss/platform",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -435,7 +435,7 @@
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^0.9.0",
-                "botble/assets": "^1.0",
+                "RealDriss/assets": "^1.0",
                 "guzzlehttp/guzzle": "^6.0|^7.0",
                 "intervention/image": "^2.4",
                 "kris/laravel-form-builder": "1.16.x-dev",
@@ -450,44 +450,44 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Base\\Providers\\BaseServiceProvider",
-                        "Botble\\Base\\Providers\\CommandServiceProvider",
-                        "Botble\\Base\\Providers\\EventServiceProvider",
-                        "Botble\\Base\\Providers\\BreadcrumbsServiceProvider",
-                        "Botble\\Base\\Providers\\ComposerServiceProvider",
-                        "Botble\\Base\\Providers\\MailConfigServiceProvider",
-                        "Botble\\Base\\Providers\\FormServiceProvider",
-                        "Botble\\Support\\Providers\\SupportServiceProvider",
-                        "Botble\\Table\\Providers\\TableServiceProvider",
-                        "Botble\\ACL\\Providers\\AclServiceProvider",
-                        "Botble\\Dashboard\\Providers\\DashboardServiceProvider",
-                        "Botble\\Media\\Providers\\MediaServiceProvider",
-                        "Botble\\JsValidation\\Providers\\JsValidationServiceProvider",
-                        "Botble\\Chart\\Providers\\ChartServiceProvider"
+                        "RealDriss\\Base\\Providers\\BaseServiceProvider",
+                        "RealDriss\\Base\\Providers\\CommandServiceProvider",
+                        "RealDriss\\Base\\Providers\\EventServiceProvider",
+                        "RealDriss\\Base\\Providers\\BreadcrumbsServiceProvider",
+                        "RealDriss\\Base\\Providers\\ComposerServiceProvider",
+                        "RealDriss\\Base\\Providers\\MailConfigServiceProvider",
+                        "RealDriss\\Base\\Providers\\FormServiceProvider",
+                        "RealDriss\\Support\\Providers\\SupportServiceProvider",
+                        "RealDriss\\Table\\Providers\\TableServiceProvider",
+                        "RealDriss\\ACL\\Providers\\AclServiceProvider",
+                        "RealDriss\\Dashboard\\Providers\\DashboardServiceProvider",
+                        "RealDriss\\Media\\Providers\\MediaServiceProvider",
+                        "RealDriss\\JsValidation\\Providers\\JsValidationServiceProvider",
+                        "RealDriss\\Chart\\Providers\\ChartServiceProvider"
                     ],
                     "aliases": {
-                        "Assets": "Botble\\Base\\Facades\\AssetsFacade",
-                        "BaseHelper": "Botble\\Base\\Facades\\BaseHelperFacade",
-                        "MetaBox": "Botble\\Base\\Facades\\MetaBoxFacade",
-                        "Action": "Botble\\Base\\Facades\\ActionFacade",
-                        "Filter": "Botble\\Base\\Facades\\FilterFacade",
-                        "EmailHandler": "Botble\\Base\\Facades\\EmailHandlerFacade",
-                        "Breadcrumbs": "Botble\\Base\\Facades\\BreadcrumbsFacade",
-                        "JsValidator": "Botble\\JsValidation\\Facades\\JsValidatorFacade"
+                        "Assets": "RealDriss\\Base\\Facades\\AssetsFacade",
+                        "BaseHelper": "RealDriss\\Base\\Facades\\BaseHelperFacade",
+                        "MetaBox": "RealDriss\\Base\\Facades\\MetaBoxFacade",
+                        "Action": "RealDriss\\Base\\Facades\\ActionFacade",
+                        "Filter": "RealDriss\\Base\\Facades\\FilterFacade",
+                        "EmailHandler": "RealDriss\\Base\\Facades\\EmailHandlerFacade",
+                        "Breadcrumbs": "RealDriss\\Base\\Facades\\BreadcrumbsFacade",
+                        "JsValidator": "RealDriss\\JsValidation\\Facades\\JsValidatorFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Support\\": "support/src",
-                    "Botble\\ACL\\": "acl/src",
-                    "Botble\\Base\\": "base/src",
-                    "Botble\\Dashboard\\": "dashboard/src",
-                    "Botble\\Media\\": "media/src",
-                    "Botble\\Setting\\": "setting/src",
-                    "Botble\\Table\\": "table/src",
-                    "Botble\\JsValidation\\": "js-validation/src",
-                    "Botble\\Chart\\": "chart/src"
+                    "RealDriss\\Support\\": "support/src",
+                    "RealDriss\\ACL\\": "acl/src",
+                    "RealDriss\\Base\\": "base/src",
+                    "RealDriss\\Dashboard\\": "dashboard/src",
+                    "RealDriss\\Media\\": "media/src",
+                    "RealDriss\\Setting\\": "setting/src",
+                    "RealDriss\\Table\\": "table/src",
+                    "RealDriss\\JsValidation\\": "js-validation/src",
+                    "RealDriss\\Chart\\": "chart/src"
                 }
             },
             "authors": [
@@ -512,7 +512,7 @@
             }
         },
         {
-            "name": "botble/plugin-management",
+            "name": "RealDriss/plugin-management",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -520,19 +520,19 @@
                 "reference": "29751744a6f03d965862838828b299c983e29c2f"
             },
             "require": {
-                "botble/platform": "*@dev"
+                "RealDriss/platform": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+                        "RealDriss\\PluginManagement\\Providers\\PluginManagementServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\PluginManagement\\": "src"
+                    "RealDriss\\PluginManagement\\": "src"
                 }
             },
             "description": "Plugin management package",
@@ -541,7 +541,7 @@
             }
         },
         {
-            "name": "botble/revision",
+            "name": "RealDriss/revision",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -549,19 +549,19 @@
                 "reference": "da70c1cea160555306a0a9a71e11586e03638fd0"
             },
             "require": {
-                "botble/platform": "*@dev"
+                "RealDriss/platform": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Revision\\Providers\\RevisionServiceProvider"
+                        "RealDriss\\Revision\\Providers\\RevisionServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Revision\\": "src"
+                    "RealDriss\\Revision\\": "src"
                 }
             },
             "description": "Revision package",
@@ -570,7 +570,7 @@
             }
         },
         {
-            "name": "botble/seo-helper",
+            "name": "RealDriss/seo-helper",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -578,23 +578,23 @@
                 "reference": "4faaadc9ce31b6758c30deef29e4593903a1f2a2"
             },
             "require": {
-                "botble/platform": "*@dev",
-                "botble/theme": "*@dev"
+                "RealDriss/platform": "*@dev",
+                "RealDriss/theme": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+                        "RealDriss\\SeoHelper\\Providers\\SeoHelperServiceProvider"
                     ],
                     "aliases": {
-                        "SeoHelper": "Botble\\SeoHelper\\Facades\\SeoHelperFacade"
+                        "SeoHelper": "RealDriss\\SeoHelper\\Facades\\SeoHelperFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\SeoHelper\\": "src"
+                    "RealDriss\\SeoHelper\\": "src"
                 }
             },
             "description": "SEO helper package",
@@ -603,7 +603,7 @@
             }
         },
         {
-            "name": "botble/shortcode",
+            "name": "RealDriss/shortcode",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -611,19 +611,19 @@
                 "reference": "496b22ab769f3b01ccc9abffe328350f9571984b"
             },
             "require": {
-                "botble/platform": "*@dev"
+                "RealDriss/platform": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Shortcode\\Providers\\ShortcodeServiceProvider"
+                        "RealDriss\\Shortcode\\Providers\\ShortcodeServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Shortcode\\": "src"
+                    "RealDriss\\Shortcode\\": "src"
                 }
             },
             "description": "Shortcode package",
@@ -632,7 +632,7 @@
             }
         },
         {
-            "name": "botble/sitemap",
+            "name": "RealDriss/sitemap",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -643,13 +643,13 @@
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Sitemap\\Providers\\SitemapServiceProvider"
+                        "RealDriss\\Sitemap\\Providers\\SitemapServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Sitemap\\": "src"
+                    "RealDriss\\Sitemap\\": "src"
                 }
             },
             "license": [
@@ -661,7 +661,7 @@
             }
         },
         {
-            "name": "botble/slug",
+            "name": "RealDriss/slug",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -669,22 +669,22 @@
                 "reference": "a10c9ff93719f5e8967ec4702d102d4b4e00f341"
             },
             "require": {
-                "botble/platform": "*@dev"
+                "RealDriss/platform": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Slug\\Providers\\SlugServiceProvider"
+                        "RealDriss\\Slug\\Providers\\SlugServiceProvider"
                     ],
                     "aliases": {
-                        "SlugHelper": "Botble\\Slug\\Facades\\SlugHelperFacade"
+                        "SlugHelper": "RealDriss\\Slug\\Facades\\SlugHelperFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Slug\\": "src"
+                    "RealDriss\\Slug\\": "src"
                 }
             },
             "description": "Slug/Permalink",
@@ -693,7 +693,7 @@
             }
         },
         {
-            "name": "botble/theme",
+            "name": "RealDriss/theme",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -701,31 +701,31 @@
                 "reference": "b17de8ae85c7745f3e5619834fac0b3448cfd31d"
             },
             "require": {
-                "botble/platform": "*@dev",
-                "botble/seo-helper": "*@dev",
-                "botble/sitemap": "*@dev",
-                "botble/slug": "*@dev",
-                "botble/widget": "*@dev"
+                "RealDriss/platform": "*@dev",
+                "RealDriss/seo-helper": "*@dev",
+                "RealDriss/sitemap": "*@dev",
+                "RealDriss/slug": "*@dev",
+                "RealDriss/widget": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Theme\\Providers\\ThemeServiceProvider",
-                        "Botble\\Theme\\Providers\\RouteServiceProvider"
+                        "RealDriss\\Theme\\Providers\\ThemeServiceProvider",
+                        "RealDriss\\Theme\\Providers\\RouteServiceProvider"
                     ],
                     "aliases": {
-                        "Theme": "Botble\\Theme\\Facades\\ThemeFacade",
-                        "ThemeOption": "Botble\\Theme\\Facades\\ThemeOptionFacade",
-                        "ThemeManager": "Botble\\Theme\\Facades\\ManagerFacade",
-                        "AdminBar": "Botble\\Theme\\Facades\\AdminBarFacade",
-                        "SiteMapManager": "Botble\\Theme\\Facades\\SiteMapManagerFacade"
+                        "Theme": "RealDriss\\Theme\\Facades\\ThemeFacade",
+                        "ThemeOption": "RealDriss\\Theme\\Facades\\ThemeOptionFacade",
+                        "ThemeManager": "RealDriss\\Theme\\Facades\\ManagerFacade",
+                        "AdminBar": "RealDriss\\Theme\\Facades\\AdminBarFacade",
+                        "SiteMapManager": "RealDriss\\Theme\\Facades\\SiteMapManagerFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Theme\\": "src"
+                    "RealDriss\\Theme\\": "src"
                 }
             },
             "description": "Theme package",
@@ -734,7 +734,7 @@
             }
         },
         {
-            "name": "botble/widget",
+            "name": "RealDriss/widget",
             "version": "dev-dev",
             "dist": {
                 "type": "path",
@@ -742,24 +742,24 @@
                 "reference": "b09777a9fabc10e51daace18201d12a08ef8c78a"
             },
             "require": {
-                "botble/platform": "*@dev",
-                "botble/theme": "*@dev"
+                "RealDriss/platform": "*@dev",
+                "RealDriss/theme": "*@dev"
             },
             "type": "package",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "Botble\\Widget\\Providers\\WidgetServiceProvider"
+                        "RealDriss\\Widget\\Providers\\WidgetServiceProvider"
                     ],
                     "aliases": {
-                        "Widget": "Botble\\Widget\\Facades\\WidgetFacade",
-                        "WidgetGroup": "Botble\\Widget\\Facades\\WidgetGroupFacade"
+                        "Widget": "RealDriss\\Widget\\Facades\\WidgetFacade",
+                        "WidgetGroup": "RealDriss\\Widget\\Facades\\WidgetGroupFacade"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Botble\\Widget\\": "src"
+                    "RealDriss\\Widget\\": "src"
                 }
             },
             "description": "Widget package",
@@ -14218,12 +14218,12 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "botble/menu": 20,
-        "botble/page": 20,
-        "botble/platform": 20,
-        "botble/plugin-management": 20,
-        "botble/shortcode": 20,
-        "botble/theme": 20
+        "RealDriss/menu": 20,
+        "RealDriss/page": 20,
+        "RealDriss/platform": 20,
+        "RealDriss/plugin-management": 20,
+        "RealDriss/shortcode": 20,
+        "RealDriss/theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
