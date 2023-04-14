@@ -1,6 +1,6 @@
 <?php
 
-namespace Theme\Shopwise\Http\Controllers;
+namespace Theme\RealDriss\Http\Controllers;
 
 use RealDriss\Base\Enums\BaseStatusEnum;
 use RealDriss\Base\Http\Responses\BaseHttpResponse;
@@ -21,7 +21,7 @@ use Theme\Shopwise\Http\Resources\ProductCategoryResource;
 use Theme\Shopwise\Http\Resources\ReviewResource;
 use Theme\Shopwise\Http\Resources\TestimonialResource;
 
-class ShopwiseController extends PublicController
+class RealDrissController extends PublicController
 {
     /**
      * @param Request $request

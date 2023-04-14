@@ -1,8 +1,8 @@
 {
-    "name": "Shopwise",
-    "namespace": "Theme\\Shopwise\\",
+    "name": "RealDriss",
+    "namespace": "Theme\\RealDriss\\",
     "description": "Ecommerce shopping theme",
-    "author": "RealDriss Technologies",
-    "version": "1.12",
+    "author": "RealDriss Inc.",
+    "version": "0.0.0",
     "required_plugins": []
 }
