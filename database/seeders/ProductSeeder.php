@@ -2,20 +2,20 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderAddress;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Ecommerce\Models\Wishlist;
-use Botble\Payment\Models\Payment;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Order;
+use RealDriss\Ecommerce\Models\OrderAddress;
+use RealDriss\Ecommerce\Models\OrderHistory;
+use RealDriss\Ecommerce\Models\OrderProduct;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductVariation;
+use RealDriss\Ecommerce\Models\ProductVariationItem;
+use RealDriss\Ecommerce\Models\Shipment;
+use RealDriss\Ecommerce\Models\ShipmentHistory;
+use RealDriss\Ecommerce\Models\Wishlist;
+use RealDriss\Payment\Models\Payment;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use File;
 use Illuminate\Support\Arr;

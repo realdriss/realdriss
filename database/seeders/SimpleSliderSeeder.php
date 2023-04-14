@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\SimpleSlider\Models\SimpleSlider;
+use RealDriss\SimpleSlider\Models\SimpleSliderItem;
 use Illuminate\Support\Arr;
 use MetaBox;
 

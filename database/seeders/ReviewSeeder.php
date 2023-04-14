@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Review;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Customer;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\Review;
 use Faker\Factory;
 
 class ReviewSeeder extends BaseSeeder

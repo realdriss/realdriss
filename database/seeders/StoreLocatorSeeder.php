@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use Botble\Ecommerce\Models\StoreLocator;
+use RealDriss\Ecommerce\Models\StoreLocator;
 use Illuminate\Database\Seeder;
 
 class StoreLocatorSeeder extends Seeder
@@ -18,7 +18,7 @@ class StoreLocatorSeeder extends Seeder
 
         StoreLocator::create([
             'name'                 => 'Shopwise',
-            'email'                => 'sales@botble.com',
+            'email'                => 'sales@RealDriss.com',
             'phone'                => '123-456-7890',
             'address'              => '123 Street, Old Trafford',
             'state'                => 'New York',

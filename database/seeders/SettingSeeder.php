@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Setting\Models\Setting as SettingModel;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Setting\Models\Setting as SettingModel;
+use RealDriss\Slug\Models\Slug;
 use SlugHelper;
 
 class SettingSeeder extends BaseSeeder
