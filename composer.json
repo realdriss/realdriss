@@ -33,7 +33,6 @@
         "barryvdh/laravel-debugbar": "^3.2",
         "barryvdh/laravel-ide-helper": "^2.6",
         "beyondcode/laravel-dump-server": "^1.9",
-        "beyondcode/laravel-view-xray": "^1.4",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.10",
         "laravel/sail": "^1.0.1",

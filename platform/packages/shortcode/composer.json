@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/shortcode",
+    "name": "realdriss/shortcode",
     "description": "Shortcode package",
     "type": "package",
     "autoload": {
@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev"
+        "realdriss/platform": "*@dev"
     },
     "extra": {
         "laravel": {

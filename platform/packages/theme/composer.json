@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/theme",
+    "name": "realdriss/theme",
     "description": "Theme package",
     "type": "package",
     "autoload": {
@@ -8,11 +8,11 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev",
-        "RealDriss/sitemap": "*@dev",
-        "RealDriss/widget": "*@dev",
-        "RealDriss/slug": "*@dev",
-        "RealDriss/seo-helper": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/sitemap": "*@dev",
+        "realdriss/widget": "*@dev",
+        "realdriss/slug": "*@dev",
+        "realdriss/seo-helper": "*@dev"
     },
     "extra": {
         "laravel": {

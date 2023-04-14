@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/revision",
+    "name": "realdriss/revision",
     "description": "Revision package",
     "type": "package",
     "autoload": {
@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev"
+        "realdriss/platform": "*@dev"
     },
     "extra": {
         "laravel": {

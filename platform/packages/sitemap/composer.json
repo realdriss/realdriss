@@ -1,5 +1,5 @@
 {
-	"name": "RealDriss/sitemap",
+	"name": "realdriss/sitemap",
 	"description": "Sitemap package for Laravel.",
 	"license": "MIT",
 	"require": {

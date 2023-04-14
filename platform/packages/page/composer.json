@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/page",
+    "name": "realdriss/page",
     "description": "Page package",
     "type": "package",
     "autoload": {
@@ -8,8 +8,8 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev",
-        "RealDriss/revision": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/revision": "*@dev"
     },
     "extra": {
         "laravel": {

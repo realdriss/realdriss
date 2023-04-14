@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/seo-helper",
+    "name": "realdriss/seo-helper",
     "description": "SEO helper package",
     "type": "package",
     "autoload": {
@@ -8,8 +8,8 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev",
-        "RealDriss/theme": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
     },
     "extra": {
         "laravel": {

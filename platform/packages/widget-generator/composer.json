@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/widget-generator",
+    "name": "realdriss/widget-generator",
     "description": "Widget generator",
     "type": "package",
     "autoload": {
@@ -8,8 +8,8 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev",
-        "RealDriss/widget": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/widget": "*@dev"
     },
     "extra": {
         "laravel": {

@@ -15,7 +15,7 @@
         "barryvdh/laravel-ide-helper": "^2.6",
         "phpmd/phpmd": "^2.8",
         "doctrine/dbal": "^3.0",
-        "RealDriss/git-commit-checker": "^1.0"
+        "realdriss/git-commit-checker": "^1.0"
     },
     "extra": {
         "laravel": {

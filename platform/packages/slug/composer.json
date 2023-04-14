@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/slug",
+    "name": "realdriss/slug",
     "description": "Slug/Permalink",
     "type": "package",
     "autoload": {
@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "RealDriss/platform": "*@dev"
+        "realdriss/platform": "*@dev"
     },
     "extra": {
         "laravel": {
