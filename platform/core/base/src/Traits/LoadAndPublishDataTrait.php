@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Traits;
+namespace RealDriss\Base\Traits;
 
 use Exception;
 use Illuminate\Support\ServiceProvider;

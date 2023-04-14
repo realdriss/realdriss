@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Repositories\Interfaces;
+namespace RealDriss\Setting\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface SettingInterface extends RepositoryInterface
 {

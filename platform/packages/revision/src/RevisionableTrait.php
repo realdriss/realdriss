@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Revision;
+namespace RealDriss\Revision;
 
 use DateTime;
 use Exception;

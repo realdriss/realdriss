@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace RealDriss\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Repositories\Interfaces\CurrencyInterface;
 use Illuminate\Http\Request;
 
 class PublicEcommerceController

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Misc;
+namespace RealDriss\Widget\Misc;
 
-use Botble\Widget\AbstractWidget;
+use RealDriss\Widget\AbstractWidget;
 use Exception;
 
 class InvalidWidgetClassException extends Exception

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Contact\Providers;
+namespace RealDriss\Contact\Providers;
 
 use Html;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
 use Theme;
 
 class HookServiceProvider extends ServiceProvider

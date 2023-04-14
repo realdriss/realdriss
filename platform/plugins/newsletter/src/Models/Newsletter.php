@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Newsletter\Models;
+namespace RealDriss\Newsletter\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Newsletter\Enums\NewsletterStatusEnum;
 
 class Newsletter extends BaseModel
 {

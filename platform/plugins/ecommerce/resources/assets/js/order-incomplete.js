@@ -13,14 +13,14 @@ class OrderIncompleteManagement {
                 data: _self.closest('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -44,15 +44,15 @@ class OrderIncompleteManagement {
                 url: _self.data('action'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#send-order-recover-email-modal').modal('hide');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

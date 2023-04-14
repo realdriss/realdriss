@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Commands;
+namespace RealDriss\Theme\Commands;
 
-use Botble\Theme\Commands\Traits\ThemeTrait;
-use Botble\Theme\Services\ThemeService;
+use RealDriss\Theme\Commands\Traits\ThemeTrait;
+use RealDriss\Theme\Services\ThemeService;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Testimonial\Tables;
+namespace RealDriss\Testimonial\Tables;
 
-use Botble\Table\Abstracts\TableAbstract;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
+use RealDriss\Testimonial\Repositories\Interfaces\TestimonialInterface;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;

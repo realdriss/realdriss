@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Theme\Http\Controllers;
+namespace RealDriss\Theme\Http\Controllers;
 
 use BaseHelper;
-use Botble\Page\Models\Page;
-use Botble\Page\Services\PageService;
-use Botble\Theme\Events\RenderingHomePageEvent;
-use Botble\Theme\Events\RenderingSingleEvent;
-use Botble\Theme\Events\RenderingSiteMapEvent;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Services\PageService;
+use RealDriss\Theme\Events\RenderingHomePageEvent;
+use RealDriss\Theme\Events\RenderingSingleEvent;
+use RealDriss\Theme\Events\RenderingSiteMapEvent;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Arr;
@@ -55,7 +55,7 @@ class PublicController extends Controller
         if (!empty($result) && is_array($result)) {
             /**
              * @param $result['view'] e.g 'page'
-             * @param $result['data'] e.g ['page' => Botble\Page\Models\Page]
+             * @param $result['data'] e.g ['page' => RealDriss\Page\Models\Page]
              * @param Arr::get($result, 'default_view') e.g "packages/page::themes.page"
              * 
              * 

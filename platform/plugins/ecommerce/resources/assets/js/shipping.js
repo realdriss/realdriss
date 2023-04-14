@@ -32,15 +32,15 @@ class ShippingManagement {
                 success: res => {
                     if (!res.error) {
                         $('.wrap-table-shipping-' + _self.data('id')).remove();
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#confirm-delete-region-item-modal').modal('hide');
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                     _self.removeClass('button-loading');
                 }
             });
@@ -71,15 +71,15 @@ class ShippingManagement {
                         if (res.data.count === 0) {
                             $('.wrap-table-shipping-' + res.data.shipping_id).remove();
                         }
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#confirm-delete-price-item-modal').modal('hide');
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                     _self.removeClass('button-loading');
                 }
             });
@@ -113,13 +113,13 @@ class ShippingManagement {
                 data: formData,
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         if (shippingId && res.data) {
                             $('.wrap-table-shipping-' + shippingId + ' .pd-all-20.border-bottom').append(res.data);
-                            Botble.initResources();
+                            RealDriss.initResources();
                         }
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
 
                     if (shippingId) {
@@ -128,7 +128,7 @@ class ShippingManagement {
                     _self.removeClass('button-loading');
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                     _self.removeClass('button-loading');
                 }
             });
@@ -173,14 +173,14 @@ class ShippingManagement {
                     if (!res.error) {
                         $('.btn-secondary.btn-connect-shipping-provider').addClass('hidden');
                         $('.btn-trigger-delete-shipping-method-item-modal').removeClass('hidden');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -211,15 +211,15 @@ class ShippingManagement {
                         $current_block.find('.btn-secondary.btn-connect-shipping-provider').removeClass('hidden');
                         $current_block.find('.btn-trigger-delete-shipping-method-item-modal').addClass('hidden');
                         $current_block.find('.sub-card').addClass('hidden');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#confirm-delete-shipping-method-item-modal').modal('hide');
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                     _self.removeClass('button-loading');
                 }
             });
@@ -230,7 +230,7 @@ class ShippingManagement {
             if (!number || isNaN(number)) {
                 number = 0;
             }
-            $(event.currentTarget).closest('.input-shipping-sync-wrapper').find($(event.currentTarget).data('target')).text(Botble.numberFormat(parseFloat(number), 2));
+            $(event.currentTarget).closest('.input-shipping-sync-wrapper').find($(event.currentTarget).data('target')).text(RealDriss.numberFormat(parseFloat(number), 2));
         });
 
         $(document).on('keyup', '.input-sync-text-item', event => {
@@ -281,16 +281,16 @@ class ShippingManagement {
                 data: $form.serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.wrapper-content').load(window.location.href + ' .wrapper-content > *');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#select-country-modal').modal('hide');
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                     _self.removeClass('button-loading');
                 }
             });
@@ -326,7 +326,7 @@ class ShippingManagement {
             if (!adjustmentPrice || isNaN(adjustmentPrice)) {
                 adjustmentPrice = 0;
             }
-            _self.closest('tr').find('.support-shipping .rule-adjustment-price-item').text(Botble.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice), 2));
+            _self.closest('tr').find('.support-shipping .rule-adjustment-price-item').text(RealDriss.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice), 2));
         });
 
         $(document).on('keyup', '.base-price-rule-item', event => {
@@ -342,7 +342,7 @@ class ShippingManagement {
                 if (!adjustmentPrice || isNaN(adjustmentPrice)) {
                     adjustmentPrice = 0;
                 }
-                $(item).text(Botble.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice)), 2);
+                $(item).text(RealDriss.numberFormat(parseFloat(basePrice) + parseFloat(adjustmentPrice)), 2);
             });
         });
     }

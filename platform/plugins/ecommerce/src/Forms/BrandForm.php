@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\BrandRequest;
-use Botble\Ecommerce\Models\Brand;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Http\Requests\BrandRequest;
+use RealDriss\Ecommerce\Models\Brand;
 
 class BrandForm extends FormAbstract
 {

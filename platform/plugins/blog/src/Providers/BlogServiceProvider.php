@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Blog\Providers;
+namespace RealDriss\Blog\Providers;
 
-use Botble\Shortcode\View\View;
+use RealDriss\Shortcode\View\View;
 use Illuminate\Routing\Events\RouteMatched;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Caches\PostCacheDecorator;
-use Botble\Blog\Repositories\Eloquent\PostRepository;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Repositories\Caches\PostCacheDecorator;
+use RealDriss\Blog\Repositories\Eloquent\PostRepository;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Repositories\Caches\CategoryCacheDecorator;
-use Botble\Blog\Repositories\Eloquent\CategoryRepository;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Models\Tag;
-use Botble\Blog\Repositories\Caches\TagCacheDecorator;
-use Botble\Blog\Repositories\Eloquent\TagRepository;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Repositories\Caches\CategoryCacheDecorator;
+use RealDriss\Blog\Repositories\Eloquent\CategoryRepository;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Blog\Repositories\Caches\TagCacheDecorator;
+use RealDriss\Blog\Repositories\Eloquent\TagRepository;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
 use Language;
 use Note;
 use SeoHelper;

@@ -51,11 +51,11 @@
                                 <select name="locale" class="ui-select form-control select-search-full" id="locale">
                                     @php
                                         $defaultLocale = setting('locale', config('app.locale'));
-                                        if (app()->environment('demo') && session('site-locale') && array_key_exists(session('site-locale'), \Botble\Base\Supports\Language::getAvailableLocales())) {
+                                        if (app()->environment('demo') && session('site-locale') && array_key_exists(session('site-locale'), \RealDriss\Base\Supports\Language::getAvailableLocales())) {
                                             $defaultLocale = session('site-locale');
                                         }
                                     @endphp
-                                    @foreach (\Botble\Base\Supports\Language::getAvailableLocales() as $key => $locale)
+                                    @foreach (\RealDriss\Base\Supports\Language::getAvailableLocales() as $key => $locale)
                                         <option value="{{ $locale['locale'] }}" @if ($defaultLocale === $locale['locale']) selected @endif>{{ $locale['name'] }} - {{ $locale['locale'] }}</option>
                                     @endforeach
                                 </select>

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Eloquent;
+namespace RealDriss\Dashboard\Repositories\Eloquent;
 
 use Illuminate\Support\Facades\Auth;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class DashboardWidgetSettingRepository extends RepositoriesAbstract implements DashboardWidgetSettingInterface
 {

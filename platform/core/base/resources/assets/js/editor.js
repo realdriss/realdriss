@@ -253,7 +253,7 @@ class EditorManagement {
                     url: $(this).prop('href'),
                     success: res => {
                         if (res.error) {
-                            Botble.showError(res.message);
+                            RealDriss.showError(res.message);
                             return false;
                         }
 
@@ -261,14 +261,14 @@ class EditorManagement {
                         $('.short_code_input_key').val($(this).data('key'));
                         $('.half-circle-spinner').hide();
                         $('.short-code-admin-config').html(res.data);
-                        Botble.initResources();
-                        Botble.initMediaIntegrate();
+                        RealDriss.initResources();
+                        RealDriss.initMediaIntegrate();
                         if ($(this).data('description') !== '' && $(this).data('description') != null) {
                             $('.short_code_modal .modal-title strong').text($(this).data('description'));
                         }
                     },
                     error: data => {
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                     }
                 });
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
-use Botble\Ecommerce\Models\ProductAttribute;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Http\Requests\ProductAttributeSetsRequest;
+use RealDriss\Ecommerce\Models\ProductAttribute;
 
 class ProductAttributeSetForm extends FormAbstract
 {

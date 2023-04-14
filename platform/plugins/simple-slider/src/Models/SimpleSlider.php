@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SimpleSlider\Models;
+namespace RealDriss\SimpleSlider\Models;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Base\Models\BaseModel;
 
 class SimpleSlider extends BaseModel
 {

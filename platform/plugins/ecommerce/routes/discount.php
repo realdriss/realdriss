@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
         Route::group(['prefix' => 'discounts', 'as' => 'discounts.'], function () {
             Route::resource('', 'DiscountController')->parameters(['' => 'discount'])->except(['edit', 'update']);
@@ -20,7 +20,7 @@ Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'middleware' =
     });
 });
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Fronts', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers\Fronts', 'middleware' => ['web', 'core']], function () {
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
         Route::group(['prefix' => 'coupon', 'as' => 'public.coupon.'], function () {

@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Setting\Models\Setting as SettingModel;
+use RealDriss\Setting\Models\Setting as SettingModel;
 use Illuminate\Database\Migrations\Migration;
 
 class FixOldThemeOptions extends Migration

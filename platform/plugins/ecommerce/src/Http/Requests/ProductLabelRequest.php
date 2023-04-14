@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace RealDriss\Ecommerce\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class ProductLabelRequest extends Request

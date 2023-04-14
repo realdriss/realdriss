@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace RealDriss\PluginManagement\Commands;
 
-use Botble\PluginManagement\Services\PluginService;
+use RealDriss\PluginManagement\Services\PluginService;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
 

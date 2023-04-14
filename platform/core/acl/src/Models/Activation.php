@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Models;
+namespace RealDriss\ACL\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 
 class Activation extends BaseModel
 {

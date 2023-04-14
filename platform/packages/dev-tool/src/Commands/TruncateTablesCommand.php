@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace RealDriss\DevTool\Commands;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Console\Command;

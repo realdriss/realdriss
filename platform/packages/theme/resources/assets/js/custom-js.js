@@ -1,5 +1,5 @@
 $(document).ready(() => {
-    Botble.initCodeEditor('header_js', 'javascript');
-    Botble.initCodeEditor('body_js', 'javascript');
-    Botble.initCodeEditor('footer_js', 'javascript');
+    RealDriss.initCodeEditor('header_js', 'javascript');
+    RealDriss.initCodeEditor('body_js', 'javascript');
+    RealDriss.initCodeEditor('footer_js', 'javascript');
 });

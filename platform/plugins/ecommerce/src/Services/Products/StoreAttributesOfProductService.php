@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace RealDriss\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
-use Botble\Ecommerce\Repositories\Eloquent\ProductVariationRepository;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductVariationRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
 use Exception;
 
 class StoreAttributesOfProductService

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget;
+namespace RealDriss\Widget;
 
-use Botble\Widget\Contracts\ApplicationWrapperContract;
-use Botble\Widget\Misc\ViewExpressionTrait;
+use RealDriss\Widget\Contracts\ApplicationWrapperContract;
+use RealDriss\Widget\Misc\ViewExpressionTrait;
 use Illuminate\Support\Arr;
 use stdClass;
 
@@ -111,7 +111,7 @@ class WidgetGroup
         $widget['arguments'][] = $this->id;
         $widget['arguments'][] = $position;
 
-        $factory = $this->app->make('botble.widget');
+        $factory = $this->app->make('RealDriss.widget');
 
         return $factory->run(...$widget['arguments']);
     }

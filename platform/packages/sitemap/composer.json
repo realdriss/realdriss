@@ -1,18 +1,18 @@
 {
-	"name": "botble/sitemap",
+	"name": "RealDriss/sitemap",
 	"description": "Sitemap package for Laravel.",
 	"license": "MIT",
 	"require": {
 	},
 	"autoload": {
 		"psr-4": {
-			"Botble\\Sitemap\\": "src"
+			"RealDriss\\Sitemap\\": "src"
 		}
 	},
 	"extra": {
 		"laravel": {
 			"providers": [
-				"Botble\\Sitemap\\Providers\\SitemapServiceProvider"
+				"RealDriss\\Sitemap\\Providers\\SitemapServiceProvider"
 			]
 		}
 	},

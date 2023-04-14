@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Translation\Providers;
+namespace RealDriss\Translation\Providers;
 
-use Botble\Translation\Console\RemoveUnusedTranslationsCommand;
-use Botble\Translation\Console\UpdateThemeTranslationCommand;
+use RealDriss\Translation\Console\RemoveUnusedTranslationsCommand;
+use RealDriss\Translation\Console\UpdateThemeTranslationCommand;
 use Illuminate\Routing\Events\RouteMatched;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Translation\Console\CleanCommand;
-use Botble\Translation\Console\ExportCommand;
-use Botble\Translation\Console\ImportCommand;
-use Botble\Translation\Console\ResetCommand;
-use Botble\Translation\Manager;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Translation\Console\CleanCommand;
+use RealDriss\Translation\Console\ExportCommand;
+use RealDriss\Translation\Console\ImportCommand;
+use RealDriss\Translation\Console\ResetCommand;
+use RealDriss\Translation\Manager;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 

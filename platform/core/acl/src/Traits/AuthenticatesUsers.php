@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\ACL\Traits;
+namespace RealDriss\ACL\Traits;
 
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Contracts\View\Factory;

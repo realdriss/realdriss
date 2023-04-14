@@ -14,7 +14,7 @@
                     <li>
                         <a href="{{ route('orders.edit', $order->id) }}">
                             <span class="photo">
-                                <img src="{{ \Botble\Base\Supports\Gravatar::image($order->address->email) }}" class="rounded-circle" alt="{{ $order->address->name }}">
+                                <img src="{{ \RealDriss\Base\Supports\Gravatar::image($order->address->email) }}" class="rounded-circle" alt="{{ $order->address->name }}">
                             </span>
                             <span class="subject"><span class="from"> {{ $order->address->name }} </span><span class="time">{{ $order->created_at->toDateTimeString() }} </span></span>
                             <span class="message"> {{ $order->address->phone }} - {{ $order->address->email }} </span>

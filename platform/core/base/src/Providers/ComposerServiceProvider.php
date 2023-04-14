@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
 use Assets;
-use Botble\ACL\Models\UserMeta;
+use RealDriss\ACL\Models\UserMeta;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;

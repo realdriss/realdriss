@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Shipping extends BaseModel

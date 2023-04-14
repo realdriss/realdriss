@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget\Repositories\Caches;
+namespace RealDriss\Widget\Repositories\Caches;
 
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 
 class WidgetCacheDecorator extends CacheAbstractDecorator implements WidgetInterface
 {

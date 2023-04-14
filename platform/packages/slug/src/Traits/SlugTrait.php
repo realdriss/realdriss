@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Slug\Traits;
+namespace RealDriss\Slug\Traits;
 
 /**
  * @deprecated 5.9

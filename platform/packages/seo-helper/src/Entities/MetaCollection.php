@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace RealDriss\SeoHelper\Entities;
 
-use Botble\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
-use Botble\SeoHelper\Helpers\Meta;
+use RealDriss\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
+use RealDriss\SeoHelper\Helpers\Meta;
 
 class MetaCollection extends BaseMetaCollection
 {

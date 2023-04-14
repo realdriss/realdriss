@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Page\Http\Controllers;
+namespace RealDriss\Page\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Traits\HasDeleteManyItemsTrait;
-use Botble\Page\Forms\PageForm;
-use Botble\Page\Http\Requests\PageRequest;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Page\Tables\PageTable;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Traits\HasDeleteManyItemsTrait;
+use RealDriss\Page\Forms\PageForm;
+use RealDriss\Page\Http\Requests\PageRequest;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Page\Tables\PageTable;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;

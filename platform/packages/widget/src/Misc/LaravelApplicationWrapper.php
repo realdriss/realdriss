@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget\Misc;
+namespace RealDriss\Widget\Misc;
 
 use App;
-use Botble\Widget\Contracts\ApplicationWrapperContract;
+use RealDriss\Widget\Contracts\ApplicationWrapperContract;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
 

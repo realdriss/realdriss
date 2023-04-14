@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Newsletter\Http\Controllers;
+namespace RealDriss\Newsletter\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
-use Botble\Newsletter\Http\Requests\NewsletterRequest;
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Newsletter\Enums\NewsletterStatusEnum;
+use RealDriss\Newsletter\Events\SubscribeNewsletterEvent;
+use RealDriss\Newsletter\Http\Requests\NewsletterRequest;
+use RealDriss\Newsletter\Repositories\Interfaces\NewsletterInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

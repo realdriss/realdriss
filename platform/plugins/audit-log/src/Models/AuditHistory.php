@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Models;
+namespace RealDriss\AuditLog\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\MassPrunable;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

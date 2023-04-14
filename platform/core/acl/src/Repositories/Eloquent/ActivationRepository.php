@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\ACL\Repositories\Eloquent;
+namespace RealDriss\ACL\Repositories\Eloquent;
 
-use Botble\ACL\Models\Activation;
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\ACL\Models\Activation;
+use RealDriss\ACL\Models\User;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Database\Query\Builder;

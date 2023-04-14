@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\PageTitle;
+use RealDriss\Base\Supports\PageTitle;
 use Illuminate\Support\Facades\Facade;
 
 class PageTitleFacade extends Facade

@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Blog\Providers;
+namespace RealDriss\Blog\Providers;
 
 use Assets;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Tag;
-use Botble\Blog\Services\BlogService;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
-use Botble\Page\Models\Page;
-use Botble\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Blog\Services\BlogService;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
 use Eloquent;
 use Html;
 use Illuminate\Contracts\Container\BindingResolutionException;

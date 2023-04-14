@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Payment\Supports;
+namespace RealDriss\Payment\Supports;
 
 use Illuminate\Support\Facades\Auth;
 use Request;

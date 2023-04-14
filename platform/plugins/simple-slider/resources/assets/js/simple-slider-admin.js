@@ -52,12 +52,12 @@ class SimpleSliderAdminManagement {
                         items: items
                     },
                     success: res => {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $box.find('.btn-save-sort-order').removeClass('button-loading').hide();
                         _self.removeClass('sort-button-active');
                     },
                     error: res => {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                         _self.removeClass('sort-button-active');
                     }
                 });

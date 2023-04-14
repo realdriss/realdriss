@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Blog\Listeners;
+namespace RealDriss\Blog\Listeners;
 
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
 use SiteMapManager;
 
 class RenderingSiteMapListener

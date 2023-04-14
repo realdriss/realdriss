@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog\Tables;
+namespace RealDriss\Blog\Tables;
 
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Blog\Exports\PostExport;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Blog\Exports\PostExport;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Carbon\Carbon;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;

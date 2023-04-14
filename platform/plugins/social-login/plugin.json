@@ -1,9 +1,9 @@
 {
     "name": "Social Login",
-    "namespace": "Botble\\SocialLogin\\",
-    "provider": "Botble\\SocialLogin\\Providers\\SocialLoginServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\SocialLogin\\",
+    "provider": "RealDriss\\SocialLogin\\Providers\\SocialLoginServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.7",
     "description": "Easier and faster login with Facebook, LinkedIn, Github or Google."
 }

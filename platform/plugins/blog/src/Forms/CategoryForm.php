@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Blog\Forms;
+namespace RealDriss\Blog\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Blog\Http\Requests\CategoryRequest;
-use Botble\Blog\Models\Category;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Blog\Http\Requests\CategoryRequest;
+use RealDriss\Blog\Models\Category;
 
 class CategoryForm extends FormAbstract
 {

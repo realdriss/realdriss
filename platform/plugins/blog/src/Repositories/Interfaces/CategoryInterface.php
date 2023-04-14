@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Blog\Repositories\Interfaces;
+namespace RealDriss\Blog\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Support\Collection;
 
 interface CategoryInterface extends RepositoryInterface

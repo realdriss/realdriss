@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Exceptions;
+namespace RealDriss\Base\Exceptions;
 
 use App\Exceptions\Handler as ExceptionHandler;
 use BaseHelper;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use EmailHandler;
 use Exception;
 use Illuminate\Auth\AuthenticationException;

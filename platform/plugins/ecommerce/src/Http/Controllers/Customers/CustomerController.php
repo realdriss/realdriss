@@ -1,22 +1,22 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
 use Assets;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Forms\CustomerForm;
-use Botble\Ecommerce\Http\Requests\AddCustomerWhenCreateOrderRequest;
-use Botble\Ecommerce\Http\Requests\CustomerCreateRequest;
-use Botble\Ecommerce\Http\Requests\CustomerEditRequest;
-use Botble\Ecommerce\Http\Requests\CustomerUpdateEmailRequest;
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Ecommerce\Tables\CustomerTable;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Forms\CustomerForm;
+use RealDriss\Ecommerce\Http\Requests\AddCustomerWhenCreateOrderRequest;
+use RealDriss\Ecommerce\Http\Requests\CustomerCreateRequest;
+use RealDriss\Ecommerce\Http\Requests\CustomerEditRequest;
+use RealDriss\Ecommerce\Http\Requests\CustomerUpdateEmailRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Ecommerce\Tables\CustomerTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

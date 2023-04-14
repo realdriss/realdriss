@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace RealDriss\Ecommerce\Facades;
 
-use Botble\Ecommerce\Cart\Cart;
+use RealDriss\Ecommerce\Cart\Cart;
 use Illuminate\Support\Facades\Facade;
 
 class CartFacade extends Facade

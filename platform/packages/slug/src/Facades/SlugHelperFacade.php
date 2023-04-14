@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Facades;
+namespace RealDriss\Slug\Facades;
 
-use Botble\Slug\SlugHelper;
+use RealDriss\Slug\SlugHelper;
 use Illuminate\Support\Facades\Facade;
 
 class SlugHelperFacade extends Facade

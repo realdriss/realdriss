@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Page\Repositories\Eloquent;
+namespace RealDriss\Page\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class PageRepository extends RepositoriesAbstract implements PageInterface
 {

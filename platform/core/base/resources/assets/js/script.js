@@ -1,13 +1,13 @@
-class Botble {
+class RealDriss {
     constructor() {
         this.countCharacter();
         this.manageSidebar();
         this.handleWayPoint();
         this.handlePortletTools();
-        Botble.initResources();
-        Botble.handleCounterUp();
-        Botble.initMediaIntegrate();
-        if (BotbleVariables && BotbleVariables.authorized === '0') {
+        RealDriss.initResources();
+        RealDriss.handleCounterUp();
+        RealDriss.initMediaIntegrate();
+        if (RealDrissVariables && RealDrissVariables.authorized === '0') {
             this.processAuthorize();
         }
     }
@@ -97,10 +97,10 @@ class Botble {
         if (!messageHeader) {
             switch (messageType) {
                 case 'error':
-                    messageHeader = BotbleVariables.languages.notices_msg.error;
+                    messageHeader = RealDrissVariables.languages.notices_msg.error;
                     break;
                 case 'success':
-                    messageHeader = BotbleVariables.languages.notices_msg.success;
+                    messageHeader = RealDrissVariables.languages.notices_msg.success;
                     break;
             }
         }
@@ -118,24 +118,24 @@ class Botble {
 
     static handleError(data) {
         if (typeof (data.errors) !== 'undefined' && !_.isArray(data.errors)) {
-            Botble.handleValidationError(data.errors);
+            RealDriss.handleValidationError(data.errors);
         } else {
             if (typeof (data.responseJSON) !== 'undefined') {
                 if (typeof (data.responseJSON.errors) !== 'undefined') {
                     if (data.status === 422) {
-                        Botble.handleValidationError(data.responseJSON.errors);
+                        RealDriss.handleValidationError(data.responseJSON.errors);
                     }
                 } else if (typeof (data.responseJSON.message) !== 'undefined') {
-                    Botble.showError(data.responseJSON.message);
+                    RealDriss.showError(data.responseJSON.message);
                 } else {
                     $.each(data.responseJSON, (index, el) => {
                         $.each(el, (key, item) => {
-                            Botble.showError(item);
+                            RealDriss.showError(item);
                         });
                     });
                 }
             } else {
-                Botble.showError(data.statusText);
+                RealDriss.showError(data.statusText);
             }
         }
     }
@@ -160,7 +160,7 @@ class Botble {
                 $input_array.addClass('field-has-error');
             }
         });
-        Botble.showError(message);
+        RealDriss.showError(message);
     }
 
     countCharacter() {
@@ -169,7 +169,7 @@ class Botble {
             settings = $.extend({
                 container: '<span></span>',
                 classname: 'charcounter',
-                format: '(%1 ' + BotbleVariables.languages.system.character_remain + ')',
+                format: '(%1 ' + RealDrissVariables.languages.system.character_remain + ')',
                 pulse: true,
                 delay: 0
             }, settings);
@@ -440,9 +440,9 @@ class Botble {
             $('form').areYouSure();
         }
 
-        Botble.initDatePicker('.datepicker');
+        RealDriss.initDatePicker('.datepicker');
         if (jQuery().mCustomScrollbar) {
-            Botble.callScroll($('.list-item-checkbox'));
+            RealDriss.callScroll($('.list-item-checkbox'));
         }
 
         if (jQuery().textareaAutoSize) {
@@ -737,7 +737,7 @@ class Botble {
                 $('body').removeClass('page-portlet-fullscreen');
                 portlet.children('.portlet-body').css('height', 'auto');
             } else {
-                let height = Botble.getViewPort().height -
+                let height = RealDriss.getViewPort().height -
                     portlet.children('.portlet-title').outerHeight() -
                     parseInt(portlet.children('.portlet-body').css('padding-top')) -
                     parseInt(portlet.children('.portlet-body').css('padding-bottom'));
@@ -777,8 +777,8 @@ class Botble {
         $('.handle-tool-drag').mousedown(event => {
             let _self = $(event.currentTarget);
             _self.attr('data-start_h', _self.parent().find('.CodeMirror').height()).attr('data-start_y', event.pageY);
-            $('body').attr('data-dragtool', _self.attr('id')).on('mousemove', Botble.onDragTool);
-            $(window).on('mouseup', Botble.onReleaseTool);
+            $('body').attr('data-dragtool', _self.attr('id')).on('mousemove', RealDriss.onDragTool);
+            $(window).on('mouseup', RealDriss.onReleaseTool);
         });
     }
 
@@ -790,8 +790,8 @@ class Botble {
     }
 
     static onReleaseTool() {
-        $('body').off('mousemove', Botble.onDragTool);
-        $(window).off('mouseup', Botble.onReleaseTool);
+        $('body').off('mousemove', RealDriss.onDragTool);
+        $(window).off('mouseup', RealDriss.onReleaseTool);
     }
 
     processAuthorize() {
@@ -807,6 +807,6 @@ if (jQuery().datepicker && jQuery().datepicker.noConflict) {
 }
 
 $(document).ready(() => {
-    new Botble();
-    window.Botble = Botble;
+    new RealDriss();
+    window.RealDriss = RealDriss;
 });

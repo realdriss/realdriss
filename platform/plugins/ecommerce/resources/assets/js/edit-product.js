@@ -104,7 +104,7 @@ class EcommerceProduct {
             });
 
             if (ids.length === 0) {
-                Botble.showError(BotbleVariables.languages.tables.please_select_record);
+                RealDriss.showError(RealDrissVariables.languages.tables.please_select_record);
                 return false;
             }
 
@@ -135,9 +135,9 @@ class EcommerceProduct {
                 },
                 success: data => {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                     }
 
                     $('.btn-trigger-delete-selected-variations').hide();
@@ -157,7 +157,7 @@ class EcommerceProduct {
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     $current.removeClass('button-loading');
                 }
             });
@@ -258,9 +258,9 @@ class EcommerceProduct {
                 },
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
 
                         $('#main-manage-product-type').load(window.location.href + ' #main-manage-product-type > *', () => {
                             _self.initElements();
@@ -275,7 +275,7 @@ class EcommerceProduct {
                     $current.removeClass('button-loading');
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     $current.removeClass('button-loading');
                 },
             })
@@ -297,9 +297,9 @@ class EcommerceProduct {
                 },
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $current.closest('.modal.fade').modal('hide');
 
                         $('#product-variations-wrapper').load(window.location.href + ' #product-variations-wrapper > *', () => {
@@ -313,7 +313,7 @@ class EcommerceProduct {
                     $current.removeClass('button-loading');
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     $current.removeClass('button-loading');
                 },
             })
@@ -341,9 +341,9 @@ class EcommerceProduct {
                 },
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
 
                         $('#generate-all-versions-modal').modal('hide');
                         $('#product-variations-wrapper').load(window.location.href + ' #product-variations-wrapper > *', () => {
@@ -357,7 +357,7 @@ class EcommerceProduct {
                     $current.removeClass('button-loading');
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     $current.removeClass('button-loading');
                 },
             })
@@ -376,12 +376,12 @@ class EcommerceProduct {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $('#add-new-product-variation-modal .modal-body .loading-spinner').hide();
                         $('#add-new-product-variation-modal .modal-body').append(res.data);
                         _self.initElements();
-                        Botble.initResources();
+                        RealDriss.initResources();
                         $('#store-product-variation-button').data('target', $current.data('target'));
 
                         $('.list-gallery-media-images').each((index, item) => {
@@ -394,7 +394,7 @@ class EcommerceProduct {
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 },
             })
         });
@@ -413,12 +413,12 @@ class EcommerceProduct {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $('#edit-product-variation-modal .modal-body .loading-spinner').hide();
                         $('#edit-product-variation-modal .modal-body').append(res.data);
                         _self.initElements();
-                        Botble.initResources();
+                        RealDriss.initResources();
                         $('.list-gallery-media-images').each((index, item) => {
                             let $current = $(item);
                             if ($current.data('ui-sortable')) {
@@ -429,7 +429,7 @@ class EcommerceProduct {
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 },
             })
         });
@@ -463,14 +463,14 @@ class EcommerceProduct {
                     },
                     success: res => {
                         if (res.error) {
-                            Botble.showError(res.message);
+                            RealDriss.showError(res.message);
                         } else {
                             $('#main-manage-product-type').load(window.location.href + ' #main-manage-product-type > *', () => {
                                 _self.initElements();
                                 _self.handleEvents();
                             });
                             $('#confirm-delete-version-modal').modal('hide');
-                            Botble.showSuccess(res.message);
+                            RealDriss.showSuccess(res.message);
                         }
                         $current.removeClass('button-loading');
                     },
@@ -479,7 +479,7 @@ class EcommerceProduct {
                     },
                     error: data => {
                         $current.removeClass('button-loading');
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                     },
                 });
             }
@@ -508,7 +508,7 @@ class EcommerceProduct {
                 },
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         let $table = $('.table-hover-variants');
 
@@ -522,7 +522,7 @@ class EcommerceProduct {
                         }
 
                         $('#confirm-delete-version-modal').modal('hide');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     }
                     $current.removeClass('button-loading');
                 },
@@ -531,7 +531,7 @@ class EcommerceProduct {
                 },
                 error: data => {
                     $current.removeClass('button-loading');
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 },
             })
         })
@@ -727,7 +727,7 @@ $(window).on('load', () => {
         $formBody.removeClass('hidden');
         $formBody.addClass('active');
         if ($formBody.find('.panel-body').length === 0) {
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -738,15 +738,15 @@ $(window).on('load', () => {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }
@@ -756,7 +756,7 @@ $(window).on('load', () => {
         let _self = $(event.currentTarget);
         let $formBody = _self.closest('.box-search-advance').find('.panel');
         setTimeout(() => {
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -767,15 +767,15 @@ $(window).on('load', () => {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }, 500);
@@ -786,7 +786,7 @@ $(window).on('load', () => {
         let _self = $(event.currentTarget);
         if (!_self.closest('.page-item').hasClass('disabled') && _self.prop('href')) {
             let $formBody = _self.closest('.box-search-advance').find('.panel');
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -797,15 +797,15 @@ $(window).on('load', () => {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }
@@ -846,7 +846,7 @@ $(window).on('load', () => {
     let loadRelationBoxes = () => {
         let $wrapBody = $('.wrap-relation-product');
         if ($wrapBody.length) {
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $wrapBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -857,15 +857,15 @@ $(window).on('load', () => {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $wrapBody.html(res.data);
-                        Botble.unblockUI($wrapBody);
+                        RealDriss.unblockUI($wrapBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($wrapBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($wrapBody);
                 },
             });
         }

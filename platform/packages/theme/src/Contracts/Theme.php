@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Contracts;
+namespace RealDriss\Theme\Contracts;
 
 interface Theme
 {

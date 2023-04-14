@@ -1,9 +1,9 @@
 {
     "name": "Audit Log",
-    "namespace": "Botble\\AuditLog\\",
-    "provider": "Botble\\AuditLog\\Providers\\AuditLogServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\AuditLog\\",
+    "provider": "RealDriss\\AuditLog\\Providers\\AuditLogServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Record activities logs"
 }

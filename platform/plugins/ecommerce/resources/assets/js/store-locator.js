@@ -19,10 +19,10 @@ class StoreLocatorManagement {
                 },
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $modalBody.html(res.data);
-                        Botble.initResources();
+                        RealDriss.initResources();
                         $modalBody.closest('.modal.fade').modal('show');
                     }
                     $current.removeClass('button-loading');
@@ -32,7 +32,7 @@ class StoreLocatorManagement {
                 },
                 error: data => {
                     $current.removeClass('button-loading');
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 },
             });
         });
@@ -48,17 +48,17 @@ class StoreLocatorManagement {
                 data: _self.closest('.modal-content').find('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.store-locator-wrap').load(window.location.href + ' .store-locator-wrap > *');
                         _self.removeClass('button-loading');
                         _self.closest('.modal.fade').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                         _self.removeClass('button-loading');
                     }
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -93,17 +93,17 @@ class StoreLocatorManagement {
                 url: _self.data('target'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.store-locator-wrap').load(window.location.href + ' .store-locator-wrap > *');
                         _self.removeClass('button-loading');
                         _self.closest('.modal.fade').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                         _self.removeClass('button-loading');
                     }
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -123,17 +123,17 @@ class StoreLocatorManagement {
                 data: _self.closest('.modal-content').find('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.store-locator-wrap').load(window.location.href + ' .store-locator-wrap > *');
                         _self.removeClass('button-loading');
                         _self.closest('.modal.fade').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                         _self.removeClass('button-loading');
                     }
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

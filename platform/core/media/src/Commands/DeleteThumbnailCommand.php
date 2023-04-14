@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace RealDriss\Media\Commands;
 
-use Botble\Media\Repositories\Eloquent\MediaFileRepository;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Repositories\Eloquent\MediaFileRepository;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

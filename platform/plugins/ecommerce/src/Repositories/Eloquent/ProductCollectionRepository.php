@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Support\Str;
 
 class ProductCollectionRepository extends RepositoriesAbstract implements ProductCollectionInterface

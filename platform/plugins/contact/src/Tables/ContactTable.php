@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Contact\Tables;
+namespace RealDriss\Contact\Tables;
 
 use BaseHelper;
-use Botble\Contact\Exports\ContactExport;
+use RealDriss\Contact\Exports\ContactExport;
 use Html;
 use Illuminate\Support\Facades\Auth;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Contact\Enums\ContactStatusEnum;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Validation\Rule;
 use Yajra\DataTables\DataTables;

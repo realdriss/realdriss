@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace RealDriss\Base\Http\Middleware;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;

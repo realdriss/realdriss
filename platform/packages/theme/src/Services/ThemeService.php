@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Theme\Services;
+namespace RealDriss\Theme\Services;
 
-use Botble\Base\Supports\Helper;
-use Botble\PluginManagement\Services\PluginService;
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
-use Botble\Setting\Supports\SettingStore;
-use Botble\Theme\Events\ThemeRemoveEvent;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\PluginManagement\Services\PluginService;
+use RealDriss\Setting\Repositories\Interfaces\SettingInterface;
+use RealDriss\Setting\Supports\SettingStore;
+use RealDriss\Theme\Events\ThemeRemoveEvent;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 use Exception;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Arr;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Facades;
+namespace RealDriss\Setting\Facades;
 
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Setting\Supports\SettingStore;
 use Illuminate\Support\Facades\Facade;
 
 class SettingFacade extends Facade

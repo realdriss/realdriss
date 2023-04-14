@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Models;
+namespace RealDriss\ACL\Models;
 
-use Botble\ACL\Traits\PermissionTrait;
-use Botble\Base\Models\BaseModel;
+use RealDriss\ACL\Traits\PermissionTrait;
+use RealDriss\Base\Models\BaseModel;
 use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

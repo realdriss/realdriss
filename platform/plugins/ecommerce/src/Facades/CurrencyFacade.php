@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace RealDriss\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\CurrencySupport;
+use RealDriss\Ecommerce\Supports\CurrencySupport;
 use Illuminate\Support\Facades\Facade;
 
 class CurrencyFacade extends Facade

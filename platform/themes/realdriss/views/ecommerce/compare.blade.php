@@ -16,10 +16,10 @@
                                     },
                                 ];
                             }
-                            $products = app(\Botble\Ecommerce\Repositories\Interfaces\ProductInterface::class)->advancedGet([
+                            $products = app(\RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface::class)->advancedGet([
                                'condition' => [
                                     ['ec_products.id', 'IN', Cart::instance('compare')->content()->pluck('id')->all()],
-                                    'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+                                    'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
                                 ],
                                'with' => [
                                     'variations',
@@ -111,7 +111,7 @@
                                 </tr>
 
                                 @php
-                                    $attributeSets = app(\Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface::class)->getAllWithSelected(Cart::instance('compare')->content()->pluck('id'));
+                                    $attributeSets = app(\RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface::class)->getAllWithSelected(Cart::instance('compare')->content()->pluck('id'));
                                 @endphp
 
                                 @foreach($attributeSets as $attributeSet)
@@ -127,7 +127,7 @@
 
                                             @if (!empty($product))
                                                 @php
-                                                    $attributes = app(\Botble\Ecommerce\Repositories\Interfaces\ProductInterface::class)->getRelatedProductAttributes($product)->where('attribute_set_id', $attributeSet->id)->sortBy('order');
+                                                    $attributes = app(\RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface::class)->getRelatedProductAttributes($product)->where('attribute_set_id', $attributeSet->id)->sortBy('order');
                                                 @endphp
 
                                                 @if ($attributes->count())

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace RealDriss\Slug\Providers;
 
-use Botble\Slug\Commands\ChangeSlugPrefixCommand;
+use RealDriss\Slug\Commands\ChangeSlugPrefixCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

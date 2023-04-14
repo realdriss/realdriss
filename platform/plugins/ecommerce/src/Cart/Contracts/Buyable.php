@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Cart\Contracts;
+namespace RealDriss\Ecommerce\Cart\Contracts;
 
 interface Buyable
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Repositories\Interfaces;
+namespace RealDriss\Contact\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface ContactReplyInterface extends RepositoryInterface
 {

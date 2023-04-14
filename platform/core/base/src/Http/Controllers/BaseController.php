@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Controllers;
+namespace RealDriss\Base\Http\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

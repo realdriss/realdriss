@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace RealDriss\Contact\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 
 class ContactReply extends BaseModel
 {

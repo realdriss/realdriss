@@ -40,8 +40,8 @@ BPayment.init = function () {
             Stripe.setPublishableKey($('#payment-stripe-key').data('value'));
             Stripe.card.createToken(form, function (status, response) {
                 if (response.error) {
-                    if (typeof Botble != 'undefined') {
-                        Botble.showError(response.error.message, _self.data('error-header'));
+                    if (typeof RealDriss != 'undefined') {
+                        RealDriss.showError(response.error.message, _self.data('error-header'));
                     } else {
                         alert(response.error.message);
                     }

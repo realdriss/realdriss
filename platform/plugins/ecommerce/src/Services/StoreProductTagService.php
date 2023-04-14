@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductTagInterface;
 use Illuminate\Http\Request;
 
 class StoreProductTagService

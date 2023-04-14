@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\MetaBox;
+use RealDriss\Base\Supports\MetaBox;
 use Illuminate\Support\Facades\Facade;
 
 class MetaBoxFacade extends Facade

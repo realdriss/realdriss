@@ -1,9 +1,9 @@
 {
   "name": "Simple Slider",
-  "namespace": "Botble\\SimpleSlider\\",
-  "provider": "Botble\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
-  "author": "Botble Technologies",
-  "url": "https://botble.com",
+  "namespace": "RealDriss\\SimpleSlider\\",
+  "provider": "RealDriss\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
+  "author": "RealDriss Technologies",
+  "url": "https://RealDriss.com",
   "version": "5.8",
   "description": "A plugin to create sliders"
 }

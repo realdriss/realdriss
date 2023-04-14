@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\MacroableModels;
+use RealDriss\Base\Supports\MacroableModels;
 use Illuminate\Support\Facades\Facade;
 
 class MacroableModelsFacade extends Facade

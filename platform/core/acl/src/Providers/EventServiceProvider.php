@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace RealDriss\ACL\Providers;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
-use Botble\ACL\Events\RoleUpdateEvent;
-use Botble\ACL\Listeners\LoginListener;
-use Botble\ACL\Listeners\RoleAssignmentListener;
-use Botble\ACL\Listeners\RoleUpdateListener;
+use RealDriss\ACL\Events\RoleAssignmentEvent;
+use RealDriss\ACL\Events\RoleUpdateEvent;
+use RealDriss\ACL\Listeners\LoginListener;
+use RealDriss\ACL\Listeners\RoleAssignmentListener;
+use RealDriss\ACL\Listeners\RoleUpdateListener;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

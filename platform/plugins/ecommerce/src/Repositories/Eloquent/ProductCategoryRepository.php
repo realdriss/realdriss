@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ProductCategoryRepository extends RepositoriesAbstract implements ProductCategoryInterface
 {

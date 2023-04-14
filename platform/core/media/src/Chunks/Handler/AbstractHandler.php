@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Chunks\Handler;
+namespace RealDriss\Media\Chunks\Handler;
 
-use Botble\Media\Chunks\Save\AbstractSave;
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use RealDriss\Media\Chunks\Save\AbstractSave;
+use RealDriss\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Http\Request;
 use Illuminate\Http\UploadedFile;
 use Session;

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace RealDriss\Ecommerce\Tables;
 
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;

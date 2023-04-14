@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\ACL\Tables;
+namespace RealDriss\ACL\Tables;
 
 use BaseHelper;
 use Illuminate\Support\Facades\Auth;
-use Botble\ACL\Enums\UserStatusEnum;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\ACL\Services\ActivateUserService;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\ACL\Enums\UserStatusEnum;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\ACL\Services\ActivateUserService;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Exception;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;

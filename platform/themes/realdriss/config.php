@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Theme\Theme;
+use RealDriss\Theme\Theme;
 
 return [
 
@@ -74,7 +74,7 @@ return [
             $theme->asset()->container('footer')->usePath()->add('countdown', 'js/jquery.countdown.min.js', ['jquery']);
 
             if (function_exists('shortcode')) {
-                $theme->composer(['index', 'page', 'post', 'ecommerce.product'], function (\Botble\Shortcode\View\View $view) use ($theme, $version) {
+                $theme->composer(['index', 'page', 'post', 'ecommerce.product'], function (\RealDriss\Shortcode\View\View $view) use ($theme, $version) {
                     $theme->asset()->container('footer')->usePath()->add('app-js', 'js/app.js', ['jquery', 'carousel-js'], [], $version);
                     $view->withShortcodes();
                 });

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha;
+namespace RealDriss\Captcha;
 
 use Illuminate\Contracts\Config\Repository;
 use Illuminate\Contracts\Foundation\Application;

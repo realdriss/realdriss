@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Dashboard\Providers;
+namespace RealDriss\Dashboard\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Dashboard\Models\DashboardWidgetSetting;
-use Botble\Dashboard\Repositories\Caches\DashboardWidgetCacheDecorator;
-use Botble\Dashboard\Repositories\Caches\DashboardWidgetSettingCacheDecorator;
-use Botble\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
-use Botble\Dashboard\Repositories\Eloquent\DashboardWidgetSettingRepository;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Dashboard\Models\DashboardWidget;
+use RealDriss\Dashboard\Models\DashboardWidgetSetting;
+use RealDriss\Dashboard\Repositories\Caches\DashboardWidgetCacheDecorator;
+use RealDriss\Dashboard\Repositories\Caches\DashboardWidgetSettingCacheDecorator;
+use RealDriss\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
+use RealDriss\Dashboard\Repositories\Eloquent\DashboardWidgetSettingRepository;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;

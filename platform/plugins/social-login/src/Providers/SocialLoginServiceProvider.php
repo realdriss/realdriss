@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SocialLogin\Providers;
+namespace RealDriss\SocialLogin\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\SocialLogin\Facades\SocialServiceFacade;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\SocialLogin\Facades\SocialServiceFacade;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Event;

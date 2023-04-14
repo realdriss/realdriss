@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Blog\Http\Requests;
+namespace RealDriss\Blog\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Blog\Supports\PostFormat;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Blog\Supports\PostFormat;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PostRequest extends Request

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Menu\Repositories\Eloquent;
+namespace RealDriss\Menu\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Menu\Repositories\Interfaces\MenuInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Menu\Repositories\Interfaces\MenuInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Support\Str;
 
 class MenuRepository extends RepositoriesAbstract implements MenuInterface

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace RealDriss\Ecommerce\Supports;
 
-use Botble\Base\Supports\Helper;
+use RealDriss\Base\Supports\Helper;
 use Exception;
 
 class EcommerceHelper

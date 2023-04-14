@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Blog\Services;
+namespace RealDriss\Blog\Services;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Services\Abstracts\StoreTagServiceAbstract;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Services\Abstracts\StoreTagServiceAbstract;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

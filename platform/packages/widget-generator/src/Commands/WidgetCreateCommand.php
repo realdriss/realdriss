@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\WidgetGenerator\Commands;
+namespace RealDriss\WidgetGenerator\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use RealDriss\DevTool\Commands\Abstracts\BaseMakeCommand;
 use Illuminate\Filesystem\Filesystem as File;
 use Illuminate\Support\Str;
 use League\Flysystem\FileNotFoundException;

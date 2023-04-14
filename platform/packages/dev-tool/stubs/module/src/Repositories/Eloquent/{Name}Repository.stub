@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\{Module}\Repositories\Eloquent;
+namespace RealDriss\{Module}\Repositories\Eloquent;
 
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
-use Botble\{Module}\Repositories\Interfaces\{Name}Interface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\{Module}\Repositories\Interfaces\{Name}Interface;
 
 class {Name}Repository extends RepositoriesAbstract implements {Name}Interface
 {

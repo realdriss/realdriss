@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha\Facades;
+namespace RealDriss\Captcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

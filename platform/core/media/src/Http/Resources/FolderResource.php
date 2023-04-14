@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Http\Resources;
+namespace RealDriss\Media\Http\Resources;
 
 use BaseHelper;
 use Illuminate\Http\Request;

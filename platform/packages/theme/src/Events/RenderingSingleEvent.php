@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Events;
+namespace RealDriss\Theme\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Events\Event;
+use RealDriss\Slug\Models\Slug;
 use Illuminate\Queue\SerializesModels;
 
 class RenderingSingleEvent extends Event

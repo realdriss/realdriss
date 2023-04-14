@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics;
+namespace RealDriss\Analytics;
 
 use Google\Client;
 use Google\Exception;

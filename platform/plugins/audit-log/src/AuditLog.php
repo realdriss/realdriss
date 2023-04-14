@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog;
+namespace RealDriss\AuditLog;
 
-use Botble\ACL\Models\User;
-use Botble\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\ACL\Models\User;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
 use Eloquent;
 use stdClass;
 

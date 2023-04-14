@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Blog\Supports;
+namespace RealDriss\Blog\Supports;
 
-use Botble\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Enums\BaseStatusEnum;
 
 class FilterPost
 {

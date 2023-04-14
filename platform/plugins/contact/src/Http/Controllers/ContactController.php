@@ -1,25 +1,25 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers;
+namespace RealDriss\Contact\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Traits\HasDeleteManyItemsTrait;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Forms\ContactForm;
-use Botble\Contact\Http\Requests\ContactReplyRequest;
-use Botble\Contact\Http\Requests\EditContactRequest;
-use Botble\Contact\Repositories\Interfaces\ContactReplyInterface;
-use Botble\Contact\Tables\ContactTable;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Traits\HasDeleteManyItemsTrait;
+use RealDriss\Contact\Enums\ContactStatusEnum;
+use RealDriss\Contact\Forms\ContactForm;
+use RealDriss\Contact\Http\Requests\ContactReplyRequest;
+use RealDriss\Contact\Http\Requests\EditContactRequest;
+use RealDriss\Contact\Repositories\Interfaces\ContactReplyInterface;
+use RealDriss\Contact\Tables\ContactTable;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Setting\Supports\SettingStore;
 use EmailHandler;
 use Exception;
 use Illuminate\Http\Request;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
 
 class ContactController extends BaseController
 {

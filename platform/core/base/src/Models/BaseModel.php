@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Models;
+namespace RealDriss\Base\Models;
 
 use Eloquent;
 use Illuminate\Support\Str;

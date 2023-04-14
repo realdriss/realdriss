@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SocialLogin\Providers;
+namespace RealDriss\SocialLogin\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use SocialService;

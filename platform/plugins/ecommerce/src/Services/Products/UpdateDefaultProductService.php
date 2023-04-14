@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace RealDriss\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Eloquent\ProductRepository;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 
 class UpdateDefaultProductService
 {

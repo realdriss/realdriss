@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Services\Products\UpdateDefaultProductService;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Ecommerce\Services\Products\UpdateDefaultProductService;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;

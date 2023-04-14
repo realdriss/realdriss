@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Chart;
+namespace RealDriss\Chart;
 
-use Botble\Chart\Supports\Chart;
+use RealDriss\Chart\Supports\Chart;
 
 class LineChart extends Chart
 {

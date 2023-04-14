@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\JsValidation;
+namespace RealDriss\JsValidation;
 
-use Botble\JsValidation\Javascript\JavascriptValidator;
-use Botble\JsValidation\Javascript\MessageParser;
-use Botble\JsValidation\Javascript\RuleParser;
-use Botble\JsValidation\Javascript\ValidatorHandler;
-use Botble\JsValidation\Support\DelegatedValidator;
-use Botble\JsValidation\Support\ValidationRuleParserProxy;
+use RealDriss\JsValidation\Javascript\JavascriptValidator;
+use RealDriss\JsValidation\Javascript\MessageParser;
+use RealDriss\JsValidation\Javascript\RuleParser;
+use RealDriss\JsValidation\Javascript\ValidatorHandler;
+use RealDriss\JsValidation\Support\DelegatedValidator;
+use RealDriss\JsValidation\Support\ValidationRuleParserProxy;
 use Illuminate\Container\Container;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;

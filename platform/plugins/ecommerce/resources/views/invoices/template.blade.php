@@ -8,7 +8,7 @@
 </head>
 <body @if (BaseHelper::siteLanguageDirection() == 'rtl') dir="rtl" @endif>
 
-<span class="stamp @if ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED) is-completed @else is-failed @endif">{{ $order->payment->status->label() }}</span>
+<span class="stamp @if ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED) is-completed @else is-failed @endif">{{ $order->payment->status->label() }}</span>
 
 @php
     $logo = theme_option('logo_in_invoices') ?: theme_option('logo');
@@ -71,7 +71,7 @@
             @php
                 $product = get_products([
                     'condition' => [
-                        'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+                        'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
                         'ec_products.id' => $orderProduct->product_id,
                     ],
                     'take' => 1,

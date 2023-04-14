@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Http\Requests\AddressRequest;
-use Botble\Ecommerce\Http\Requests\AvatarRequest;
-use Botble\Ecommerce\Http\Requests\EditAccountRequest;
-use Botble\Ecommerce\Http\Requests\UpdatePasswordRequest;
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Media\Services\ThumbnailService;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Enums\OrderStatusEnum;
+use RealDriss\Ecommerce\Http\Requests\AddressRequest;
+use RealDriss\Ecommerce\Http\Requests\AvatarRequest;
+use RealDriss\Ecommerce\Http\Requests\EditAccountRequest;
+use RealDriss\Ecommerce\Http\Requests\UpdatePasswordRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Media\Services\ThumbnailService;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
 use EmailHandler;
 use Exception;
 use File;

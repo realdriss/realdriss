@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Page\Models\Page;
+use RealDriss\Page\Models\Page;
 
 return [
     // List supported modules or plugins

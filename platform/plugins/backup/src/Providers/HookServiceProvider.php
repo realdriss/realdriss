@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Backup\Providers;
+namespace RealDriss\Backup\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

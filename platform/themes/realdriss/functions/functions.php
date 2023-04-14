@@ -1,7 +1,7 @@
 <?php
 
-use Botble\SimpleSlider\Models\SimpleSliderItem;
-use Botble\Ecommerce\Models\ProductCategory;
+use RealDriss\SimpleSlider\Models\SimpleSliderItem;
+use RealDriss\Ecommerce\Models\ProductCategory;
 
 register_page_template([
     'homepage'     => __('Homepage'),
@@ -56,7 +56,7 @@ Form::component('themeIcon', Theme::getThemeNamespace() . '::partials.icons-fiel
 app()->booted(function () {
     if (is_plugin_active('ecommerce')) {
         ProductCategory::resolveRelationUsing('icon', function ($model) {
-            return $model->morphOne(\Botble\Base\Models\MetaBox::class, 'reference')->where('meta_key', 'icon');
+            return $model->morphOne(\RealDriss\Base\Models\MetaBox::class, 'reference')->where('meta_key', 'icon');
         });
     }
 });
@@ -87,7 +87,7 @@ if (is_plugin_active('simple-slider')) {
     /**
      * @param string $screen
      * @param Request $request
-     * @param \Botble\Base\Models\BaseModel $data
+     * @param \RealDriss\Base\Models\BaseModel $data
      */
     function save_addition_slider_fields($screen, $request, $data)
     {

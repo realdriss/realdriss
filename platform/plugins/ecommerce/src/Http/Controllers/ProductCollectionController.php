@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Forms\ProductCollectionForm;
-use Botble\Ecommerce\Http\Requests\ProductCollectionRequest;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
-use Botble\Ecommerce\Tables\ProductCollectionTable;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Forms\ProductCollectionForm;
+use RealDriss\Ecommerce\Http\Requests\ProductCollectionRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
+use RealDriss\Ecommerce\Tables\ProductCollectionTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

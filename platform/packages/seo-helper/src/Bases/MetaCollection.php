@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SeoHelper\Bases;
+namespace RealDriss\SeoHelper\Bases;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Helpers\MetaContract;
-use Botble\SeoHelper\Contracts\RenderableContract;
-use Botble\SeoHelper\Helpers\Meta;
+use RealDriss\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use RealDriss\SeoHelper\Contracts\Helpers\MetaContract;
+use RealDriss\SeoHelper\Contracts\RenderableContract;
+use RealDriss\SeoHelper\Helpers\Meta;
 use Illuminate\Support\Collection;
 
 abstract class MetaCollection extends Collection implements MetaCollectionContract

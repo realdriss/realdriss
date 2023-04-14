@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace RealDriss\ACL\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class UpdateProfileRequest extends Request
 {

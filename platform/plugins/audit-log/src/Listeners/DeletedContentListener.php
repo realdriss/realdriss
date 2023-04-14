@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace RealDriss\AuditLog\Listeners;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\Base\Events\DeletedContentEvent;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
 use Exception;
 use AuditLog;
 

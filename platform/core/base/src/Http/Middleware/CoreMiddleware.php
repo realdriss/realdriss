@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace RealDriss\Base\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\RedirectResponse;

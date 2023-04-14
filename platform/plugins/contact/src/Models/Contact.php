@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Contact\Models;
+namespace RealDriss\Contact\Models;
 
-use Botble\Base\Supports\Avatar;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Supports\Avatar;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Contact\Enums\ContactStatusEnum;
+use RealDriss\Base\Models\BaseModel;
 use Exception;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use RvMedia;

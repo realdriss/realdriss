@@ -10,16 +10,16 @@ class PluginManagement {
                 type: 'PUT',
                 success: data =>  {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         $('#plugin-list #app-' + _self.data('plugin')).load(window.location.href + ' #plugin-list #app-' + _self.data('plugin') + ' > *');
                         window.location.reload();
                     }
                     _self.removeClass('button-loading');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     _self.removeClass('button-loading');
                 }
             });
@@ -41,16 +41,16 @@ class PluginManagement {
                 type: 'DELETE',
                 success: data =>  {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         window.location.reload();
                     }
                     _self.removeClass('button-loading');
                     $('#remove-plugin-modal').modal('hide');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     _self.removeClass('button-loading');
                     $('#remove-plugin-modal').modal('hide');
                 }

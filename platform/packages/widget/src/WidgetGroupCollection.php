@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget;
+namespace RealDriss\Widget;
 
-use Botble\Widget\Contracts\ApplicationWrapperContract;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Widget\Contracts\ApplicationWrapperContract;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

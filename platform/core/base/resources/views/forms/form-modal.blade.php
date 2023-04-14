@@ -30,7 +30,7 @@
         @include('core/media::partials.media')
         <script>
             "use strict";
-            Botble.initMediaIntegrate();
+            RealDriss.initMediaIntegrate();
         </script>
     @else
         @push('footer')

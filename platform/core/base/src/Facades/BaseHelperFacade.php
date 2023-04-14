@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Helpers\BaseHelper;
+use RealDriss\Base\Helpers\BaseHelper;
 use Illuminate\Support\Facades\Facade;
 
 class BaseHelperFacade extends Facade

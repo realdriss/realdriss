@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace RealDriss\Ecommerce\Services\Products;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;

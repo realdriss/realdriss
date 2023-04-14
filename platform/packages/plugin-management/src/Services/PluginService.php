@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\PluginManagement\Services;
+namespace RealDriss\PluginManagement\Services;
 
-use Botble\Base\Supports\Helper;
-use Botble\PluginManagement\Events\ActivatedPluginEvent;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\PluginManagement\Events\ActivatedPluginEvent;
+use RealDriss\Setting\Supports\SettingStore;
 use Composer\Autoload\ClassLoader;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Filesystem\Filesystem;

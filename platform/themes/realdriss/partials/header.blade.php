@@ -97,7 +97,7 @@
 
     @php
         if (is_plugin_active('ecommerce')) {
-            $categories = get_product_categories(['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable', 'children', 'children.slugable', 'icon'], [], true);
+            $categories = get_product_categories(['status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable', 'children', 'children.slugable', 'icon'], [], true);
         } else {
             $categories = [];
         }

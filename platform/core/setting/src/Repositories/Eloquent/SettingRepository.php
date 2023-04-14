@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Repositories\Eloquent;
+namespace RealDriss\Setting\Repositories\Eloquent;
 
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Setting\Repositories\Interfaces\SettingInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class SettingRepository extends RepositoriesAbstract implements SettingInterface
 {

@@ -5,15 +5,15 @@
  * Login controller for the admin page.
  */
 
-namespace Botble\ACL\Http\Controllers\Auth;
+namespace RealDriss\ACL\Http\Controllers\Auth;
 
 use Assets; //injects assets like scripts to the view, permits call binding
 use BaseHelper;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\ACL\Traits\AuthenticatesUsers;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\ACL\Traits\AuthenticatesUsers;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;

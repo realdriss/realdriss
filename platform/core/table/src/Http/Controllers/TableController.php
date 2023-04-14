@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Table\Http\Controllers;
+namespace RealDriss\Table\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Table\Http\Requests\BulkChangeRequest;
-use Botble\Table\Http\Requests\FilterRequest;
-use Botble\Table\TableBuilder;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Table\Http\Requests\BulkChangeRequest;
+use RealDriss\Table\Http\Requests\FilterRequest;
+use RealDriss\Table\TableBuilder;
 use Exception;
 use Form;
 use Illuminate\Contracts\Container\BindingResolutionException;

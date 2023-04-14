@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Enums\BaseStatusEnum;
 
 app()->booted(function () {
     if (is_plugin_active('ecommerce')) {

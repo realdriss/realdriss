@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductVariationItem;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ProductVariationRepository extends RepositoriesAbstract implements ProductVariationInterface
 {

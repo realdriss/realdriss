@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
 use App\Http\Controllers\Controller;
-use Botble\ACL\Traits\RegistersUsers;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Marketplace\Models\Store;
+use RealDriss\ACL\Traits\RegistersUsers;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Models\Customer;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Marketplace\Models\Store;
 use EmailHandler;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Auth\StatefulGuard;

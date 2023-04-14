@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Repositories\Interfaces;
+namespace RealDriss\Payment\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface PaymentInterface extends RepositoryInterface
 {

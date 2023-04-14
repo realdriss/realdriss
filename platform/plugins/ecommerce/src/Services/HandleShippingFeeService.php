@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Models\ShippingRule;
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
-use Botble\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Ecommerce\Models\ShippingRule;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
 

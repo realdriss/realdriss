@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Listeners;
+namespace RealDriss\ACL\Listeners;
 
 use Exception;
-use Botble\ACL\Models\User;
+use RealDriss\ACL\Models\User;
 use Illuminate\Auth\Events\Login;
 
 class LoginListener

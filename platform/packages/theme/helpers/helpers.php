@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Theme\Facades\AdminBarFacade;
-use Botble\Theme\Facades\ThemeOptionFacade;
+use RealDriss\Theme\Facades\AdminBarFacade;
+use RealDriss\Theme\Facades\ThemeOptionFacade;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 if (!function_exists('sanitize_html_class')) {
@@ -84,7 +84,7 @@ if (!function_exists('theme')) {
 
 if (!function_exists('theme_option')) {
     /**
-     * @return \Botble\Theme\ThemeOption|string
+     * @return \RealDriss\Theme\ThemeOption|string
      */
     function theme_option($key = null, $default = '')
     {
@@ -112,7 +112,7 @@ if (!function_exists('theme_path')) {
 
 if (!function_exists('admin_bar')) {
     /**
-     * @return Botble\Theme\Supports\AdminBar
+     * @return RealDriss\Theme\Supports\AdminBar
      */
     function admin_bar()
     {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Events;
+namespace RealDriss\ACL\Events;
 
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\Base\Events\Event;
+use RealDriss\ACL\Models\Role;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class RoleAssignmentEvent extends Event

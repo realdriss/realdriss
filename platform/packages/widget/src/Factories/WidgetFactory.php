@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Factories;
+namespace RealDriss\Widget\Factories;
 
-use Botble\Widget\Misc\InvalidWidgetClassException;
+use RealDriss\Widget\Misc\InvalidWidgetClassException;
 use Exception;
 
 class WidgetFactory extends AbstractWidgetFactory

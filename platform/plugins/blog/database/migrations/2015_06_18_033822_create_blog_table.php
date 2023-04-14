@@ -1,6 +1,6 @@
 <?php
 
-use Botble\ACL\Models\User;
+use RealDriss\ACL\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 

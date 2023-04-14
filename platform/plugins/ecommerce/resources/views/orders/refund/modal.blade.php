@@ -19,7 +19,7 @@
                         @php
                             $product = get_products([
                                 'condition' => [
-                                    'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+                                    'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
                                     'ec_products.id'     => $orderProduct->product_id,
                                 ],
                                 'take'   => 1,
@@ -92,7 +92,7 @@
                     <tr>
                         <td class="text-right">{{ trans('plugins/ecommerce::order.total_amount_can_be_refunded') }}:</td>
                         <td class="text-right quantity text-no-bold">
-                            @if ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                            @if ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::PENDING)
                                 <span>{{ format_price(0) }}</span>
                             @else
                                 <span>{{ format_price($order->payment->amount - $order->payment->refunded_amount) }}</span>
@@ -102,7 +102,7 @@
                     </tbody>
                 </table>
             </div>
-            @if ($order->payment->status !== \Botble\Payment\Enums\PaymentStatusEnum::PENDING && ($order->payment->amount - $order->payment->refunded_amount) > 0)
+            @if ($order->payment->status !== \RealDriss\Payment\Enums\PaymentStatusEnum::PENDING && ($order->payment->amount - $order->payment->refunded_amount) > 0)
                 <div class="table-wrapper p-none">
                     <table class="refund-payments">
                         <tbody>

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Theme;
+namespace RealDriss\Theme;
 
-use Botble\Base\Supports\Helper;
-use Botble\Theme\Contracts\Theme as ThemeContract;
-use Botble\Theme\Exceptions\UnknownLayoutFileException;
-use Botble\Theme\Exceptions\UnknownPartialFileException;
-use Botble\Theme\Exceptions\UnknownThemeException;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Theme\Contracts\Theme as ThemeContract;
+use RealDriss\Theme\Exceptions\UnknownLayoutFileException;
+use RealDriss\Theme\Exceptions\UnknownPartialFileException;
+use RealDriss\Theme\Exceptions\UnknownThemeException;
 use Closure;
 use Exception;
 use File;

@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Blog\Forms;
+namespace RealDriss\Blog\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\Fields\TagField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Blog\Forms\Fields\CategoryMultiField;
-use Botble\Blog\Http\Requests\PostRequest;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\Fields\TagField;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Blog\Forms\Fields\CategoryMultiField;
+use RealDriss\Blog\Http\Requests\PostRequest;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
 
 class PostForm extends FormAbstract
 {

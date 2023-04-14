@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Cart;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;

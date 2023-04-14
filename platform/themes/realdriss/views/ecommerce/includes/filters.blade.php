@@ -1,8 +1,8 @@
 @php
-    $brands = get_all_brands(['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable'], ['products']);
-    $categories = get_product_categories(['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable'], ['products'], true);
-    $tags = app(\Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface::class)->advancedGet([
-        'condition' => ['status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED],
+    $brands = get_all_brands(['status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable'], ['products']);
+    $categories = get_product_categories(['status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED], ['slugable'], ['products'], true);
+    $tags = app(\RealDriss\Ecommerce\Repositories\Interfaces\ProductTagInterface::class)->advancedGet([
+        'condition' => ['status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED],
         'with'      => ['slugable'],
         'withCount' => ['products'],
         'order_by'  => ['products_count' => 'desc'],

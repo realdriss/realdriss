@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
 use App\Http\Controllers\Controller;
-use Botble\ACL\Traits\AuthenticatesUsers;
-use Botble\ACL\Traits\LogoutGuardTrait;
+use RealDriss\ACL\Traits\AuthenticatesUsers;
+use RealDriss\ACL\Traits\LogoutGuardTrait;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;

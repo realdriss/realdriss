@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics;
+namespace RealDriss\Analytics;
 
 use DateTimeInterface;
 use Google_Service_Analytics;

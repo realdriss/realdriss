@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Repositories\Eloquent;
+namespace RealDriss\Newsletter\Repositories\Eloquent;
 
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class NewsletterRepository extends RepositoriesAbstract implements NewsletterInterface
 {

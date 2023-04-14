@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace RealDriss\DevTool\Commands;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use RealDriss\DevTool\Commands\Abstracts\BaseMakeCommand;
 use File;
 use Illuminate\Support\Str;
 use League\Flysystem\FileNotFoundException;
@@ -48,7 +48,7 @@ class PackageCreateCommand extends BaseMakeCommand
         $this->searchAndReplaceInFiles($package, $location);
         $this->line('------------------');
         $this->line('<info>The package</info> <comment>' . $package . '</comment> <info>was created in</info> <comment>' . $location . '</comment><info>, customize it!</info>');
-        $this->line('<info>Add</info> <comment>"botble/' . $package . '": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to install this package!');
+        $this->line('<info>Add</info> <comment>"RealDriss/' . $package . '": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to install this package!');
         $this->line('------------------');
         $this->call('cache:clear');
 

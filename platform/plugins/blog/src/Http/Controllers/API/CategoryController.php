@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\API;
+namespace RealDriss\Blog\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Blog\Http\Resources\CategoryResource;
-use Botble\Blog\Http\Resources\ListCategoryResource;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Supports\FilterCategory;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Blog\Http\Resources\CategoryResource;
+use RealDriss\Blog\Http\Resources\ListCategoryResource;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Supports\FilterCategory;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use SlugHelper;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Helper;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Supports\Helper;
 
 class StoreLocator extends BaseModel
 {

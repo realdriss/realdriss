@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Repositories\Caches;
+namespace RealDriss\Base\Repositories\Caches;
 
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Base\Repositories\Interfaces\MetaBoxInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class MetaBoxCacheDecorator extends CacheAbstractDecorator implements MetaBoxInterface
 {

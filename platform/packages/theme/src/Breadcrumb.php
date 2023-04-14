@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme;
+namespace RealDriss\Theme;
 
 use Throwable;
 use URL;

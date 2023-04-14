@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Repositories\Interfaces;
+namespace RealDriss\Base\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface MetaBoxInterface extends RepositoryInterface
 {

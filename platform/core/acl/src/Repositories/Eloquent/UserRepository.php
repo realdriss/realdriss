@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Repositories\Eloquent;
+namespace RealDriss\ACL\Repositories\Eloquent;
 
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class UserRepository extends RepositoriesAbstract implements UserInterface
 {

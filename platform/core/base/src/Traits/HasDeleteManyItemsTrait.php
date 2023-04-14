@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Traits;
+namespace RealDriss\Base\Traits;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 use Exception;
 use Illuminate\Http\Request;
 

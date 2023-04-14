@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace RealDriss\Slug\Providers;
 
 use Assets;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Models\BaseModel;
-use Botble\Slug\Forms\Fields\PermalinkField;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Slug\Forms\Fields\PermalinkField;
 use Eloquent;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder;

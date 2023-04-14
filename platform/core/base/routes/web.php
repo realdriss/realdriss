@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Http\Controllers\SystemController;
+use RealDriss\Base\Http\Controllers\SystemController;
 
 
-Route::group(['namespace' => 'Botble\Base\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Base\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     //a.prefixed e.g --admin/**/
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
         //i.prefixed --admin/system/info/**/

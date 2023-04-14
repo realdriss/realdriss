@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SeoHelper\Providers;
+namespace RealDriss\SeoHelper\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\SeoHelper\Listeners\CreatedContentListener;
-use Botble\SeoHelper\Listeners\DeletedContentListener;
-use Botble\SeoHelper\Listeners\UpdatedContentListener;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\SeoHelper\Listeners\CreatedContentListener;
+use RealDriss\SeoHelper\Listeners\DeletedContentListener;
+use RealDriss\SeoHelper\Listeners\UpdatedContentListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

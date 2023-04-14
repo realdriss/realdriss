@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Page\Repositories\Caches;
+namespace RealDriss\Page\Repositories\Caches;
 
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class PageCacheDecorator extends CacheAbstractDecorator implements PageInterface
 {

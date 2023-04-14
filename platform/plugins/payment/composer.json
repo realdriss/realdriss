@@ -1,5 +1,5 @@
 {
-    "name": "botble/payment",
+    "name": "RealDriss/payment",
     "description": "Payment plugin",
     "type": "package",
     "require": {

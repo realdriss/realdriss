@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Media;
+namespace RealDriss\Media;
 
-use Botble\Media\Http\Resources\FileResource;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
-use Botble\Media\Services\ThumbnailService;
-use Botble\Media\Services\UploadsManager;
+use RealDriss\Media\Http\Resources\FileResource;
+use RealDriss\Media\Models\MediaFile;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Repositories\Interfaces\MediaFolderInterface;
+use RealDriss\Media\Services\ThumbnailService;
+use RealDriss\Media\Services\UploadsManager;
 use Exception;
 use File;
 use Illuminate\Contracts\Foundation\Application;

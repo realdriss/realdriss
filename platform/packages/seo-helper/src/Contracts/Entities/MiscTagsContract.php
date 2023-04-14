@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts\Entities;
+namespace RealDriss\SeoHelper\Contracts\Entities;
 
-use Botble\SeoHelper\Contracts\RenderableContract;
+use RealDriss\SeoHelper\Contracts\RenderableContract;
 
 interface MiscTagsContract extends RenderableContract
 {

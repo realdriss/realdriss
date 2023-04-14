@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace RealDriss\Ecommerce\Services\Products;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Eloquent\ProductRepository;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 

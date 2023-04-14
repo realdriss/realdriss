@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Cart;
+namespace RealDriss\Ecommerce\Cart;
 
 use Illuminate\Support\Collection;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\ProductLabelRequest;
-use Botble\Ecommerce\Models\ProductLabel;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Http\Requests\ProductLabelRequest;
+use RealDriss\Ecommerce\Models\ProductLabel;
 
 class ProductLabelForm extends FormAbstract
 {

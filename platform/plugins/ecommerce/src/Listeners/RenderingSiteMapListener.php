@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Listeners;
+namespace RealDriss\Ecommerce\Listeners;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\BrandInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\BrandInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductTagInterface;
 use SiteMapManager;
 
 class RenderingSiteMapListener

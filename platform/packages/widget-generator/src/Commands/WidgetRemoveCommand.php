@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\WidgetGenerator\Commands;
+namespace RealDriss\WidgetGenerator\Commands;
 
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;

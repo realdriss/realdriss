@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace RealDriss\AuditLog\Listeners;
 
-use Botble\ACL\Models\User;
-use Botble\AuditLog\Models\AuditHistory;
+use RealDriss\ACL\Models\User;
+use RealDriss\AuditLog\Models\AuditHistory;
 use Illuminate\Auth\Events\Login;
 
 class LoginListener

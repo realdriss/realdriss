@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Charts\TimeChart;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Tables\Reports\TopSellingProductsTable;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Charts\TimeChart;
+use RealDriss\Ecommerce\Enums\OrderStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Tables\Reports\TopSellingProductsTable;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
 use Carbon\Carbon;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\JsonResponse;

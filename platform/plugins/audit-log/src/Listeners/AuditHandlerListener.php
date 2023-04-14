@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace RealDriss\AuditLog\Listeners;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\AuditLog\Repositories\Interfaces\AuditLogInterface;
 use Exception;
 use Illuminate\Http\Request;
 

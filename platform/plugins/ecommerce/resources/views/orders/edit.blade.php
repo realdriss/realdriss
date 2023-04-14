@@ -3,7 +3,7 @@
     <div class="max-width-1200">
         <div class="ui-layout">
             <div class="flexbox-layout-sections" id="main-order-content">
-                @if ($order->status == \Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                @if ($order->status == \RealDriss\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                     <div class="ui-layout__section">
                         <div class="ui-layout__item">
                             <div class="ui-banner ui-banner--status-warning">
@@ -53,7 +53,7 @@
                                                 @php
                                                     $product = get_products([
                                                         'condition' => [
-                                                            'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+                                                            'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
                                                             'ec_products.id' => $orderProduct->product_id,
                                                         ],
                                                         'take' => 1,
@@ -215,14 +215,14 @@
                                                     <td class="text-right color-subtext pl10">
                                                         @if ($order->payment->id)
                                                             <a href="{{ route('payment.show', $order->payment->id) }}" target="_blank">
-                                                                <span>{{ format_price($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                                                                <span>{{ format_price($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                                                             </a>
                                                         @else
-                                                            <span>{{ format_price($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
+                                                            <span>{{ format_price($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->payment->amount : 0) }}</span>
                                                         @endif
                                                     </td>
                                                 </tr>
-                                                @if ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::REFUNDED)
+                                                @if ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::REFUNDED)
                                                     <tr class="hidden">
                                                         <td class="text-right color-subtext">{{ trans('plugins/ecommerce::order.refunded_amount') }}</td>
                                                         <td class="text-right pl10">
@@ -233,7 +233,7 @@
                                                 <tr class="hidden">
                                                     <td class="text-right color-subtext">{{ trans('plugins/ecommerce::order.amount_received') }}</td>
                                                     <td class="text-right pl10">
-                                                        <span>{{ format_price($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->amount : 0) }}</span>
+                                                        <span>{{ format_price($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED ? $order->amount : 0) }}</span>
                                                     </td>
                                                 </tr>
                                                 </tbody>
@@ -283,7 +283,7 @@
                             </div>
                             <div class="pd-all-20 border-top-title-main">
                                 <div class="flexbox-grid-default flexbox-flex-wrap flexbox-align-items-center">
-                                    @if ($order->status == \Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED)
+                                    @if ($order->status == \RealDriss\Ecommerce\Enums\OrderStatusEnum::CANCELED)
                                         <div class="flexbox-auto-left">
                                             <svg class="svg-next-icon svg-next-icon-size-24 svg-next-icon-gray">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-error"></use>
@@ -294,31 +294,31 @@
                                         </div>
                                     @elseif ($order->payment->id)
                                         <div class="flexbox-auto-left">
-                                            @if (!$order->payment->status || $order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                            @if (!$order->payment->status || $order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::PENDING)
                                                 <svg class="svg-next-icon svg-next-icon-size-24 svg-next-icon-gray">
                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-credit-card"></use>
                                                 </svg>
-                                            @elseif ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED || $order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                            @elseif ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED || $order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::PENDING)
                                                 <svg class="svg-next-icon svg-next-icon-size-20 svg-next-icon-green">
                                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use>
                                                 </svg>
                                             @endif
                                         </div>
                                         <div class="flexbox-auto-content ml15 mr15 text-upper">
-                                            @if (!$order->payment->status || $order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::PENDING)
+                                            @if (!$order->payment->status || $order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::PENDING)
                                                 <span>{{ trans('plugins/ecommerce::order.pending_payment') }}</span>
-                                            @elseif ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED)
+                                            @elseif ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED)
                                                 <span>{{ trans('plugins/ecommerce::order.payment_was_accepted', ['money' => format_price($order->payment->amount - $order->payment->refunded_amount)]) }}</span>
                                             @elseif ($order->payment->amount - $order->payment->refunded_amount == 0)
                                                 <span>{{ trans('plugins/ecommerce::order.payment_was_refunded') }}</span>
                                             @endif
                                         </div>
-                                        @if (!$order->payment->status || in_array($order->payment->status, [\Botble\Payment\Enums\PaymentStatusEnum::PENDING]))
+                                        @if (!$order->payment->status || in_array($order->payment->status, [\RealDriss\Payment\Enums\PaymentStatusEnum::PENDING]))
                                             <div class="flexbox-auto-left">
                                                 <button class="btn btn-primary btn-trigger-confirm-payment" data-target="{{ route('orders.confirm-payment', $order->id) }}">{{ trans('plugins/ecommerce::order.confirm_payment') }}</button>
                                             </div>
                                         @endif
-                                        @if ($order->payment->status == \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED && (($order->payment->amount - $order->payment->refunded_amount > 0) || ($order->products->sum('qty') - $order->products->sum('restock_quantity') > 0)))
+                                        @if ($order->payment->status == \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED && (($order->payment->amount - $order->payment->refunded_amount > 0) || ($order->products->sum('qty') - $order->products->sum('restock_quantity') > 0)))
                                             <div class="flexbox-auto-left">
                                                 <button class="btn btn-secondary ml10 btn-trigger-refund">{{ trans('plugins/ecommerce::order.refund') }}</button>
                                             </div>
@@ -328,7 +328,7 @@
                             </div>
                             <div class="pd-all-20 border-top-title-main">
                                 <div class="flexbox-grid-default flexbox-flex-wrap flexbox-align-items-center">
-                                    @if ($order->status == \Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
+                                    @if ($order->status == \RealDriss\Ecommerce\Enums\OrderStatusEnum::CANCELED && !$order->shipment->id)
                                         <div class="flexbox-auto-left">
                                             <svg class="svg-next-icon svg-next-icon-size-20 svg-next-icon-green">
                                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-checkmark"></use>
@@ -569,7 +569,7 @@
                         <div class="wrapper-content bg-gray-white mb20">
                             <div class="pd-all-20">
                                 <a href="{{ route('orders.reorder', ['order_id' => $order->id]) }}" class="btn btn-info">{{ trans('plugins/ecommerce::order.reorder') }}</a>&nbsp;
-                                @if (!in_array($order->status, [\Botble\Ecommerce\Enums\OrderStatusEnum::CANCELED, \Botble\Ecommerce\Enums\OrderStatusEnum::COMPLETED]))
+                                @if (!in_array($order->status, [\RealDriss\Ecommerce\Enums\OrderStatusEnum::CANCELED, \RealDriss\Ecommerce\Enums\OrderStatusEnum::COMPLETED]))
                                     <a href="#" class="btn btn-secondary btn-trigger-cancel-order" data-target="{{ route('orders.cancel', $order->id) }}">{{ trans('plugins/ecommerce::order.cancel') }}</a>
                                 @endif
                             </div>

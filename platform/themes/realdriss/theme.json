@@ -2,7 +2,7 @@
     "name": "Shopwise",
     "namespace": "Theme\\Shopwise\\",
     "description": "Ecommerce shopping theme",
-    "author": "Botble Technologies",
+    "author": "RealDriss Technologies",
     "version": "1.12",
     "required_plugins": []
 }

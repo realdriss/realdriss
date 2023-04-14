@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace RealDriss\Slug\Listeners;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
 use Exception;
 use SlugHelper;
 

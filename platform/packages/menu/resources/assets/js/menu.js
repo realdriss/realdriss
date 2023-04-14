@@ -238,7 +238,7 @@ class MenuNestable {
         accordion.on('hidden.bs.collapse', toggleChevron);
         accordion.on('shown.bs.collapse', toggleChevron);
 
-        Botble.callScroll($('.list-item'));
+        RealDriss.callScroll($('.list-item'));
     }
 }
 

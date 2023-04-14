@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Chart;
+namespace RealDriss\Chart;
 
-use Botble\Chart\Supports\Chart;
-use Botble\Chart\Supports\ChartTypes;
+use RealDriss\Chart\Supports\Chart;
+use RealDriss\Chart\Supports\ChartTypes;
 
 class BarChart extends Chart
 {

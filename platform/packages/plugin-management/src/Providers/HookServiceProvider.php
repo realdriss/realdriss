@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace RealDriss\PluginManagement\Providers;
 
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Throwable;

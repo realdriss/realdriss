@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Ecommerce\Repositories\Eloquent\CurrencyRepository;
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use RealDriss\Ecommerce\Repositories\Eloquent\CurrencyRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\CurrencyInterface;
 use Exception;
 
 class StoreCurrenciesService

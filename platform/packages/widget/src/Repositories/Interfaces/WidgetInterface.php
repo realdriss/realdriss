@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Repositories\Interfaces;
+namespace RealDriss\Widget\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface WidgetInterface extends RepositoryInterface
 {

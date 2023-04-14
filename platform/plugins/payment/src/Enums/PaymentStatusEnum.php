@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Enums;
+namespace RealDriss\Payment\Enums;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 use Html;
 
 /**

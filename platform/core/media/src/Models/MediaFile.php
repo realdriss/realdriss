@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Models;
+namespace RealDriss\Media\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use RvMedia;

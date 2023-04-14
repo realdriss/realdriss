@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Menu\Providers;
+namespace RealDriss\Menu\Providers;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Menu\Listeners\DeleteMenuNodeListener;
-use Botble\Menu\Listeners\UpdateMenuNodeUrlListener;
-use Botble\Slug\Events\UpdatedSlugEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Menu\Listeners\DeleteMenuNodeListener;
+use RealDriss\Menu\Listeners\UpdateMenuNodeUrlListener;
+use RealDriss\Slug\Events\UpdatedSlugEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

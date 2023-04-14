@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Dashboard\Http\Controllers;
+namespace RealDriss\Dashboard\Http\Controllers;
 
 use Assets;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Database\Eloquent\Relations\HasMany;

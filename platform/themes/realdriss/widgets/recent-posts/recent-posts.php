@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Widget\AbstractWidget;
+use RealDriss\Widget\AbstractWidget;
 
 class RecentPostsWidget extends AbstractWidget
 {

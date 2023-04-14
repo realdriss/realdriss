@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Chunks\Storage;
+namespace RealDriss\Media\Chunks\Storage;
 
-use Botble\Media\Chunks\ChunkFile;
+use RealDriss\Media\Chunks\ChunkFile;
 use Closure;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Support\Collection;

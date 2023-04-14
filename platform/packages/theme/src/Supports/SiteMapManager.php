@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace RealDriss\Theme\Supports;
 
 use AdminBar;
 use BaseHelper;
 use Illuminate\Contracts\Container\BindingResolutionException;
-use Botble\Sitemap\Sitemap;
+use RealDriss\Sitemap\Sitemap;
 
 class SiteMapManager
 {

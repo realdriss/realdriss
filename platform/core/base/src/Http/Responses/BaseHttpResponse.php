@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Http\Responses;
+namespace RealDriss\Base\Http\Responses;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;

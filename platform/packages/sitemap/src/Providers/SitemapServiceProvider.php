@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Sitemap\Providers;
+namespace RealDriss\Sitemap\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Sitemap\Sitemap;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Sitemap\Sitemap;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 

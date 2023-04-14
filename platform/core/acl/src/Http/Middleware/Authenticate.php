@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\ACL\Http\Middleware;
+namespace RealDriss\ACL\Http\Middleware;
 
 use Closure;
 use Illuminate\Auth\AuthenticationException;

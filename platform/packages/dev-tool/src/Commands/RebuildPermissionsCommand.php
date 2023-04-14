@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace RealDriss\DevTool\Commands;
 
-use Botble\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
 use Illuminate\Support\Facades\DB;
 use Exception;
 use Illuminate\Console\Command;

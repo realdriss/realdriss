@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Table\Http\Controllers\TableController;
+use RealDriss\Table\Http\Controllers\TableController;
 
 Route::group(['middleware' => ['web', 'core', 'auth'], 'prefix' => 'tables', 'permission' => false], function () {
     Route::get('bulk-change/data', [TableController::class, 'getDataForBulkChanges'])->name('tables.bulk-change.data');

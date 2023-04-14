@@ -1,31 +1,31 @@
 {
-    "name": "botble/theme",
+    "name": "RealDriss/theme",
     "description": "Theme package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Theme\\": "src"
+            "RealDriss\\Theme\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/sitemap": "*@dev",
-        "botble/widget": "*@dev",
-        "botble/slug": "*@dev",
-        "botble/seo-helper": "*@dev"
+        "RealDriss/platform": "*@dev",
+        "RealDriss/sitemap": "*@dev",
+        "RealDriss/widget": "*@dev",
+        "RealDriss/slug": "*@dev",
+        "RealDriss/seo-helper": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Theme\\Providers\\ThemeServiceProvider",
-                "Botble\\Theme\\Providers\\RouteServiceProvider"
+                "RealDriss\\Theme\\Providers\\ThemeServiceProvider",
+                "RealDriss\\Theme\\Providers\\RouteServiceProvider"
             ],
             "aliases": {
-                "Theme": "Botble\\Theme\\Facades\\ThemeFacade",
-                "ThemeOption": "Botble\\Theme\\Facades\\ThemeOptionFacade",
-                "ThemeManager": "Botble\\Theme\\Facades\\ManagerFacade",
-                "AdminBar": "Botble\\Theme\\Facades\\AdminBarFacade",
-                "SiteMapManager": "Botble\\Theme\\Facades\\SiteMapManagerFacade"
+                "Theme": "RealDriss\\Theme\\Facades\\ThemeFacade",
+                "ThemeOption": "RealDriss\\Theme\\Facades\\ThemeOptionFacade",
+                "ThemeManager": "RealDriss\\Theme\\Facades\\ManagerFacade",
+                "AdminBar": "RealDriss\\Theme\\Facades\\AdminBarFacade",
+                "SiteMapManager": "RealDriss\\Theme\\Facades\\SiteMapManagerFacade"
             }
         }
     }

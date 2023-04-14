@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha\Providers;
+namespace RealDriss\Captcha\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

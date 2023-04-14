@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Payment\Tables;
+namespace RealDriss\Payment\Tables;
 
 use BaseHelper;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;

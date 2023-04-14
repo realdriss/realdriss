@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Page\Providers;
+namespace RealDriss\Page\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Page\Models\Page;
-use Botble\Page\Repositories\Caches\PageCacheDecorator;
-use Botble\Page\Repositories\Eloquent\PageRepository;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Shortcode\View\View;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Repositories\Caches\PageCacheDecorator;
+use RealDriss\Page\Repositories\Eloquent\PageRepository;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Shortcode\View\View;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;

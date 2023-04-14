@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Payment\Providers;
+namespace RealDriss\Payment\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Services\Gateways\PayPalPaymentService;
-use Botble\Payment\Services\Gateways\StripePaymentService;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Models\Payment;
+use RealDriss\Payment\Services\Gateways\PayPalPaymentService;
+use RealDriss\Payment\Services\Gateways\StripePaymentService;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;
-use Botble\Payment\Repositories\Caches\PaymentCacheDecorator;
-use Botble\Payment\Repositories\Eloquent\PaymentRepository;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Payment\Repositories\Caches\PaymentCacheDecorator;
+use RealDriss\Payment\Repositories\Eloquent\PaymentRepository;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
 use Laravel\Cashier\Cashier;
 
 class PaymentServiceProvider extends ServiceProvider

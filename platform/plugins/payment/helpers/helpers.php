@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Payment\Supports\StripeHelper;
-use Botble\Payment\Models\Payment;
+use RealDriss\Payment\Supports\StripeHelper;
+use RealDriss\Payment\Models\Payment;
 
 if (!function_exists('convert_stripe_amount_from_api')) {
     /**

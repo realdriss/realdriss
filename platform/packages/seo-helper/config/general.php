@@ -75,7 +75,7 @@ return [
     ],
 
     'supported' => [
-        'Botble\Page\Models\Page',
+        'RealDriss\Page\Models\Page',
     ],
 
 ];

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\AuditLog\Tables;
+namespace RealDriss\AuditLog\Tables;
 
 use Illuminate\Support\Facades\Auth;
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Yajra\DataTables\DataTables;

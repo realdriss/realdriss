@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Repositories\Caches;
+namespace RealDriss\ACL\Repositories\Caches;
 
-use Botble\ACL\Repositories\Interfaces\RoleInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\ACL\Repositories\Interfaces\RoleInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class RoleCacheDecorator extends CacheAbstractDecorator implements RoleInterface
 {

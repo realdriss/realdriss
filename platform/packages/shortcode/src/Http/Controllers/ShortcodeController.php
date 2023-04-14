@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shortcode\Http\Controllers;
+namespace RealDriss\Shortcode\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Closure;
 use Illuminate\Support\Arr;
 

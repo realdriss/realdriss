@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Translation\Http\Requests;
+namespace RealDriss\Translation\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class TranslationRequest extends Request
 {

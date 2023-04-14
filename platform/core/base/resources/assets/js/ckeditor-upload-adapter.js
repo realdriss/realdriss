@@ -1,5 +1,5 @@
 /**
- * Upload file adapter for Botble ckeditor
+ * Upload file adapter for RealDriss ckeditor
  */
 class CKEditorUploadAdapter {
     /**

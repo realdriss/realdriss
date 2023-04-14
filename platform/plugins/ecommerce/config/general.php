@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Notifications\ConfirmEmailNotification;
+use RealDriss\Ecommerce\Notifications\ConfirmEmailNotification;
 
 return [
     'prefix'                               => 'ecommerce_',

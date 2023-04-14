@@ -1,6 +1,6 @@
 <?php
 
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
 
 if (!function_exists('get_all_simple_sliders')) {
     /**

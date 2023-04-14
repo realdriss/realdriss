@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Media\Chunks\Save;
+namespace RealDriss\Media\Chunks\Save;
 
-use Botble\Media\Chunks\Exceptions\ChunkSaveException;
-use Botble\Media\Chunks\FileMerger;
-use Botble\Media\Chunks\Handler\AbstractHandler;
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use RealDriss\Media\Chunks\Exceptions\ChunkSaveException;
+use RealDriss\Media\Chunks\FileMerger;
+use RealDriss\Media\Chunks\Handler\AbstractHandler;
+use RealDriss\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Filesystem\FilesystemAdapter;
 use Illuminate\Http\UploadedFile;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
 use BadMethodCallException;
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 use Closure;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

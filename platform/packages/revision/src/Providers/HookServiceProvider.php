@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Revision\Providers;
+namespace RealDriss\Revision\Providers;
 
 use Assets;
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Support\ServiceProvider;
 use Throwable;
 

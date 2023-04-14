@@ -1,9 +1,9 @@
 {
     "name": "Payment",
-    "namespace": "Botble\\Payment\\",
-    "provider": "Botble\\Payment\\Providers\\PaymentServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Payment\\",
+    "provider": "RealDriss\\Payment\\Providers\\PaymentServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "1.1",
     "description": "Payment plugin"
 }

@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\{Module}\Providers;
+namespace RealDriss\{Module}\Providers;
 
-use Botble\{Module}\Models\{Name};
+use RealDriss\{Module}\Models\{Name};
 use Illuminate\Support\ServiceProvider;
-use Botble\{Module}\Repositories\Caches\{Name}CacheDecorator;
-use Botble\{Module}\Repositories\Eloquent\{Name}Repository;
-use Botble\{Module}\Repositories\Interfaces\{Name}Interface;
-use Botble\Base\Supports\Helper;
+use RealDriss\{Module}\Repositories\Caches\{Name}CacheDecorator;
+use RealDriss\{Module}\Repositories\Eloquent\{Name}Repository;
+use RealDriss\{Module}\Repositories\Interfaces\{Name}Interface;
+use RealDriss\Base\Supports\Helper;
 use Illuminate\Support\Facades\Event;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Routing\Events\RouteMatched;
 
 class {Module}ServiceProvider extends ServiceProvider

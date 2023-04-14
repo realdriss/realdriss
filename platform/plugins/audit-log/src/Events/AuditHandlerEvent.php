@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Events;
+namespace RealDriss\AuditLog\Events;
 
-use Botble\Base\Events\Event;
+use RealDriss\Base\Events\Event;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Queue\SerializesModels;
 

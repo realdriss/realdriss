@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Services\Traits;
+namespace RealDriss\Payment\Services\Traits;
 
-use Botble\Payment\Supports\PaymentHelper;
+use RealDriss\Payment\Supports\PaymentHelper;
 
 /**
  * @deprecated

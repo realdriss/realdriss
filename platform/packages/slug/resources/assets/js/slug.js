@@ -47,7 +47,7 @@ class SlugBoxManagement {
                     $('#edit-slug-box').removeClass('hidden');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         };

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Services\Gateways;
+namespace RealDriss\Payment\Services\Gateways;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Services\Abstracts\PayPalPaymentAbstract;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Services\Abstracts\PayPalPaymentAbstract;
 use Exception;
 use Illuminate\Http\Request;
 

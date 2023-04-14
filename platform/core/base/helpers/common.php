@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Base\Facades\DashboardMenuFacade;
-use Botble\Base\Facades\PageTitleFacade;
-use Botble\Base\Supports\Editor;
-use Botble\Base\Supports\PageTitle;
+use RealDriss\Base\Facades\DashboardMenuFacade;
+use RealDriss\Base\Facades\PageTitleFacade;
+use RealDriss\Base\Supports\Editor;
+use RealDriss\Base\Supports\PageTitle;
 
 if (!function_exists('anchor_link')) {
     /**
@@ -76,7 +76,7 @@ if (!function_exists('page_title')) {
 
 if (!function_exists('dashboard_menu')) {
     /**
-     * @return \Botble\Base\Supports\DashboardMenu
+     * @return \RealDriss\Base\Supports\DashboardMenu
      */
     function dashboard_menu()
     {

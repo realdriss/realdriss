@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Repositories\Caches;
+namespace RealDriss\Blog\Repositories\Caches;
 
-use Botble\Blog\Repositories\Interfaces\TagInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class TagCacheDecorator extends CacheAbstractDecorator implements TagInterface
 {

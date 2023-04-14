@@ -1,8 +1,8 @@
 <?php
 
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\WishlistInterface;
+use RealDriss\Ecommerce\Models\Address;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\WishlistInterface;
 
 if (!function_exists('is_added_to_wishlist')) {
     /**

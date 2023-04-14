@@ -9,13 +9,13 @@
                     <p>{{ trans('plugins/payment::payment.payment_methods_description') }}</p>
                 </div>
                 <div class="col-md-9">
-                    @php do_action(BASE_ACTION_META_BOXES, 'top', new \Botble\Payment\Models\Payment) @endphp
+                    @php do_action(BASE_ACTION_META_BOXES, 'top', new \RealDriss\Payment\Models\Payment) @endphp
 
                     <div class="wrapper-content pd-all-20">
                         {!! Form::open(['route' => 'payments.settings']) !!}
                         <div class="form-group">
                             <label for="default_payment_method">{{ trans('plugins/payment::payment.default_payment_method') }}</label>
-                            {!! Form::customSelect('default_payment_method', \Botble\Payment\Enums\PaymentMethodEnum::labels(), setting('default_payment_method', Botble\Payment\Enums\PaymentMethodEnum::STRIPE)) !!}
+                            {!! Form::customSelect('default_payment_method', \RealDriss\Payment\Enums\PaymentMethodEnum::labels(), setting('default_payment_method', RealDriss\Payment\Enums\PaymentMethodEnum::STRIPE)) !!}
                         </div>
                         <button type="button" class="btn btn-info button-save-payment-settings">{{ trans('core/base::forms.save') }}</button>
                         {!! Form::close() !!}
@@ -57,7 +57,7 @@
                         <tr class="paypal-online-payment payment-content-item hidden">
                             <td class="border-left" colspan="3">
                                 {!! Form::open() !!}
-                                {!! Form::hidden('type', \Botble\Payment\Enums\PaymentMethodEnum::STRIPE, ['class' => 'payment_type']) !!}
+                                {!! Form::hidden('type', \RealDriss\Payment\Enums\PaymentMethodEnum::STRIPE, ['class' => 'payment_type']) !!}
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
@@ -154,7 +154,7 @@
                         <tr class="paypal-online-payment payment-content-item hidden">
                             <td class="border-left" colspan="3">
                                 {!! Form::open() !!}
-                                {!! Form::hidden('type', \Botble\Payment\Enums\PaymentMethodEnum::PAYPAL, ['class' => 'payment_type']) !!}
+                                {!! Form::hidden('type', \RealDriss\Payment\Enums\PaymentMethodEnum::PAYPAL, ['class' => 'payment_type']) !!}
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <ul>
@@ -249,7 +249,7 @@
                                 <td colspan="3">
                                     <div class="float-left" style="margin-top: 5px;">
                                         <div class="payment-name-label-group">
-                                            @if ($codStatus != 0)<span class="payment-note v-a-t">{{ trans('plugins/payment::payment.use') }}:</span>@endif <label class="ws-nm inline-display method-name-label">{{ setting('payment_cod_name', \Botble\Payment\Enums\PaymentMethodEnum::COD()->label()) }}</label>
+                                            @if ($codStatus != 0)<span class="payment-note v-a-t">{{ trans('plugins/payment::payment.use') }}:</span>@endif <label class="ws-nm inline-display method-name-label">{{ setting('payment_cod_name', \RealDriss\Payment\Enums\PaymentMethodEnum::COD()->label()) }}</label>
                                         </div>
                                     </div>
                                     <div class="float-right">
@@ -266,7 +266,7 @@
                                         <div class="well bg-white">
                                             <div class="form-group">
                                                 <label class="text-title-field" for="payment_cod_name">{{ trans('plugins/payment::payment.method_name') }}</label>
-                                                <input type="text" class="next-input" name="payment_cod_name" id="payment_cod_name" data-counter="400" value="{{ setting('payment_cod_name', \Botble\Payment\Enums\PaymentMethodEnum::COD()->label()) }}">
+                                                <input type="text" class="next-input" name="payment_cod_name" id="payment_cod_name" data-counter="400" value="{{ setting('payment_cod_name', \RealDriss\Payment\Enums\PaymentMethodEnum::COD()->label()) }}">
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-title-field" for="payment_cod_description">{{ trans('plugins/payment::payment.payment_method_description') }}</label>
@@ -290,7 +290,7 @@
                                 <td colspan="3">
                                     <div class="float-left" style="margin-top: 5px;">
                                         <div class="payment-name-label-group">
-                                            @if ($bankTransferStatus != 0) <span class="payment-note v-a-t">{{ trans('plugins/payment::payment.use') }}:</span>@endif <label class="ws-nm inline-display method-name-label">{{ setting('payment_bank_transfer_name', \Botble\Payment\Enums\PaymentMethodEnum::BANK_TRANSFER()->label()) }}</label>
+                                            @if ($bankTransferStatus != 0) <span class="payment-note v-a-t">{{ trans('plugins/payment::payment.use') }}:</span>@endif <label class="ws-nm inline-display method-name-label">{{ setting('payment_bank_transfer_name', \RealDriss\Payment\Enums\PaymentMethodEnum::BANK_TRANSFER()->label()) }}</label>
                                         </div>
                                     </div>
                                     <div class="float-right">
@@ -307,7 +307,7 @@
                                         <div class="well bg-white">
                                             <div class="form-group">
                                                 <label class="text-title-field" for="payment_bank_transfer_name">{{ trans('plugins/payment::payment.method_name') }}</label>
-                                                <input type="text" class="next-input" name="payment_bank_transfer_name" id="payment_bank_transfer_name" data-counter="400" value="{{ setting('payment_bank_transfer_name', \Botble\Payment\Enums\PaymentMethodEnum::BANK_TRANSFER()->label()) }}">
+                                                <input type="text" class="next-input" name="payment_bank_transfer_name" id="payment_bank_transfer_name" data-counter="400" value="{{ setting('payment_bank_transfer_name', \RealDriss\Payment\Enums\PaymentMethodEnum::BANK_TRANSFER()->label()) }}">
                                             </div>
                                             <div class="form-group">
                                                 <label class="text-title-field" for="payment_bank_transfer_description">{{ trans('plugins/payment::payment.payment_method_description') }}</label>
@@ -328,13 +328,13 @@
                     </div>
                 </div>
             </div>
-            @php do_action(BASE_ACTION_META_BOXES, 'main', new \Botble\Payment\Models\Payment) @endphp
+            @php do_action(BASE_ACTION_META_BOXES, 'main', new \RealDriss\Payment\Models\Payment) @endphp
             <div class="group">
                 <div class="col-md-3">
 
                 </div>
                 <div class="col-md-9">
-                    @php do_action(BASE_ACTION_META_BOXES, 'advanced', new \Botble\Payment\Models\Payment) @endphp
+                    @php do_action(BASE_ACTION_META_BOXES, 'advanced', new \RealDriss\Payment\Models\Payment) @endphp
                 </div>
             </div>
         </div>

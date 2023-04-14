@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Facades;
+namespace RealDriss\Theme\Facades;
 
-use Botble\Theme\ThemeOption;
+use RealDriss\Theme\ThemeOption;
 use Illuminate\Support\Facades\Facade;
 
 class ThemeOptionFacade extends Facade

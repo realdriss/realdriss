@@ -19,7 +19,7 @@
 
     @php
         SeoHelper::setTitle(__('Oops! The page you requested was not found!'));
-        Theme::fire('beforeRenderTheme', app(\Botble\Theme\Contracts\Theme::class));
+        Theme::fire('beforeRenderTheme', app(\RealDriss\Theme\Contracts\Theme::class));
     @endphp
     {!! Theme::header() !!}
 </head>

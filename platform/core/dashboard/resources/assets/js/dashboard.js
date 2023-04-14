@@ -9,7 +9,7 @@ new Vue({
 
 class BDashboard {
     static loadWidget(el, url, data, callback) {
-        Botble.blockUI({
+        RealDriss.blockUI({
             target: el,
             iconOnly: true,
             overlayColor: 'none'
@@ -25,14 +25,14 @@ class BDashboard {
             url: url,
             data: data,
             success: res =>  {
-                Botble.unblockUI(el);
+                RealDriss.unblockUI(el);
                 if (!res.error) {
                     el.html(res.data);
                     if (typeof (callback) !== 'undefined') {
                         callback();
                     }
                     if (el.find('.scroller').length !== 0) {
-                        Botble.callScroll(el.find('.scroller'));
+                        RealDriss.callScroll(el.find('.scroller'));
                     }
                     $('.equal-height').equalHeights();
 
@@ -42,8 +42,8 @@ class BDashboard {
                 }
             },
             error: res =>  {
-                Botble.unblockUI(el);
-                Botble.handleError(res);
+                RealDriss.unblockUI(el);
+                RealDriss.handleError(res);
             }
         });
     };
@@ -86,13 +86,13 @@ class BDashboard {
                         },
                         success: res =>  {
                             if (!res.error) {
-                                Botble.showSuccess(res.message);
+                                RealDriss.showSuccess(res.message);
                             } else {
-                                Botble.showError(res.message);
+                                RealDriss.showError(res.message);
                             }
                         },
                         error: data =>  {
-                            Botble.handleError(data);
+                            RealDriss.handleError(data);
                         }
                     });
                 }
@@ -120,7 +120,7 @@ class BDashboard {
             if (!isNaN(paginate)) {
                 BDashboard.loadWidget($(event.currentTarget).closest('.portlet').find('.portlet-body'), $(event.currentTarget).closest('.widget_item').attr('data-url'), {paginate: paginate});
             } else {
-                Botble.showError('Please input a number!')
+                RealDriss.showError('Please input a number!')
             }
 
         });
@@ -153,9 +153,9 @@ class BDashboard {
                 success: res =>  {
                     if (!res.error) {
                         $('#' + name).fadeOut();
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     $('#hide_widget_modal').modal('hide');
                     let portlet = $(event.currentTarget).closest('.portlet');
@@ -173,7 +173,7 @@ class BDashboard {
                     portlet.remove();
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         });
@@ -212,7 +212,7 @@ class BDashboard {
                     }
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         });

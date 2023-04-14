@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts;
+namespace RealDriss\SeoHelper\Contracts;
 
 interface SeoHelperContract extends RenderableContract
 {

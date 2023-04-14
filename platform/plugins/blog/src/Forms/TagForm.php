@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Blog\Forms;
+namespace RealDriss\Blog\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Blog\Http\Requests\TagRequest;
-use Botble\Blog\Models\Tag;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Blog\Http\Requests\TagRequest;
+use RealDriss\Blog\Models\Tag;
 
 class TagForm extends FormAbstract
 {

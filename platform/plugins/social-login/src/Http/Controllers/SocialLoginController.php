@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SocialLogin\Http\Controllers;
+namespace RealDriss\SocialLogin\Http\Controllers;
 
 use Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Setting\Supports\SettingStore;
-use Botble\SocialLogin\Http\Requests\SocialLoginRequest;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Setting\Supports\SettingStore;
+use RealDriss\SocialLogin\Http\Requests\SocialLoginRequest;
 use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Events;
+namespace RealDriss\PluginManagement\Events;
 
-use Botble\Base\Events\Event;
+use RealDriss\Base\Events\Event;
 use Illuminate\Queue\SerializesModels;
 
 class ActivatedPluginEvent extends Event

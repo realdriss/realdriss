@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SocialLogin\Supports;
+namespace RealDriss\SocialLogin\Supports;
 
 class SocialService
 {

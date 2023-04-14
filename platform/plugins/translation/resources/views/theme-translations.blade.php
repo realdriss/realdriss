@@ -5,7 +5,7 @@
             <h4>&nbsp; {{ trans('plugins/translation::translation.theme-translations') }}</h4>
         </div>
         <div class="widget-body box-translation">
-            @if (count(\Botble\Base\Supports\Language::getAvailableLocales()) > 0)
+            @if (count(\RealDriss\Base\Supports\Language::getAvailableLocales()) > 0)
                 {!! Form::open(['role' => 'form', 'route' => 'translations.theme-translations', 'method' => 'POST']) !!}
                     <input type="hidden" name="locale" value="{{ $group['locale'] }}">
                     <div class="row">

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\SeoHelper\Exceptions;
+namespace RealDriss\SeoHelper\Exceptions;
 
 class InvalidArgumentException extends SeoHelperException
 {

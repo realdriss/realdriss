@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace RealDriss\Media\Http\Controllers;
 
-use Botble\Media\Chunks\Exceptions\UploadMissingFileException;
-use Botble\Media\Chunks\Handler\DropZoneUploadHandler;
-use Botble\Media\Chunks\Receiver\FileReceiver;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Chunks\Exceptions\UploadMissingFileException;
+use RealDriss\Media\Chunks\Handler\DropZoneUploadHandler;
+use RealDriss\Media\Chunks\Receiver\FileReceiver;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
 use Exception;
 use Illuminate\Contracts\Routing\ResponseFactory;
 use Illuminate\Http\JsonResponse;

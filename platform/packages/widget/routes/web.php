@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Widget\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Widget\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
         Route::group(['prefix' => 'widgets'], function () {
             Route::get('load-widget', 'WidgetController@showWidget');

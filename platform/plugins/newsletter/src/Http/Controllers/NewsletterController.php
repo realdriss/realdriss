@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Newsletter\Http\Controllers;
+namespace RealDriss\Newsletter\Http\Controllers;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Traits\HasDeleteManyItemsTrait;
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
-use Botble\Newsletter\Tables\NewsletterTable;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Traits\HasDeleteManyItemsTrait;
+use RealDriss\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use RealDriss\Newsletter\Tables\NewsletterTable;
 use Exception;
 use Illuminate\Http\Request;
 

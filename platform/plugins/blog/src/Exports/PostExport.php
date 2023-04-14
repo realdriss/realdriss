@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Exports;
+namespace RealDriss\Blog\Exports;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Table\Supports\TableExportHandler;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Table\Supports\TableExportHandler;
 use Maatwebsite\Excel\Events\AfterSheet;
 use PhpOffice\PhpSpreadsheet\Style\Alignment;
 

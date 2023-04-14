@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Supports;
+namespace RealDriss\Setting\Supports;
 
-use Botble\Base\Supports\Helper;
-use Botble\Setting\Models\Setting;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Setting\Models\Setting;
 use Exception;
 use File;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;

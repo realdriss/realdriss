@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Testimonial\Providers;
+namespace RealDriss\Testimonial\Providers;
 
 use Illuminate\Routing\Events\RouteMatched;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Testimonial\Models\Testimonial;
-use Botble\Testimonial\Repositories\Caches\TestimonialCacheDecorator;
-use Botble\Testimonial\Repositories\Eloquent\TestimonialRepository;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Testimonial\Models\Testimonial;
+use RealDriss\Testimonial\Repositories\Caches\TestimonialCacheDecorator;
+use RealDriss\Testimonial\Repositories\Eloquent\TestimonialRepository;
+use RealDriss\Testimonial\Repositories\Interfaces\TestimonialInterface;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Language;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace RealDriss\SeoHelper;
 
-use Botble\SeoHelper\Contracts\Entities\TwitterCardContract;
-use Botble\SeoHelper\Contracts\SeoTwitterContract;
+use RealDriss\SeoHelper\Contracts\Entities\TwitterCardContract;
+use RealDriss\SeoHelper\Contracts\SeoTwitterContract;
 
 class SeoTwitter implements SeoTwitterContract
 {

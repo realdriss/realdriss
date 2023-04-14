@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Repositories\Caches;
+namespace RealDriss\Slug\Repositories\Caches;
 
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class SlugCacheDecorator extends CacheAbstractDecorator implements SlugInterface
 {

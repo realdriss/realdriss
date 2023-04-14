@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Page\Http\Controllers;
+namespace RealDriss\Page\Http\Controllers;
 
-use Botble\Page\Models\Page;
-use Botble\Page\Services\PageService;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Services\PageService;
 use Illuminate\Routing\Controller;
 use Response;
 use SlugHelper;

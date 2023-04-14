@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Repositories\Eloquent;
+namespace RealDriss\Contact\Repositories\Eloquent;
 
-use Botble\Contact\Repositories\Interfaces\ContactReplyInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Contact\Repositories\Interfaces\ContactReplyInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ContactReplyRepository extends RepositoriesAbstract implements ContactReplyInterface
 {

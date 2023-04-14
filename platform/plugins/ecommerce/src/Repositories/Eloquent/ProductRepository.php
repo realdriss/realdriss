@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\ProductAttribute;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Models\ProductAttribute;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Database\Query\Builder;

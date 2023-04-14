@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Events;
+namespace RealDriss\Base\Events;
 
 use Eloquent;
 use Illuminate\Http\Request;

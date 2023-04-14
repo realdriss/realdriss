@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\Action;
+use RealDriss\Base\Supports\Action;
 use Illuminate\Support\Facades\Facade;
 
 class ActionFacade extends Facade

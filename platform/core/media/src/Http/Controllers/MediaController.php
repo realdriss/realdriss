@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace RealDriss\Media\Http\Controllers;
 
-use Botble\Media\Http\Resources\FileResource;
-use Botble\Media\Http\Resources\FolderResource;
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
-use Botble\Media\Repositories\Interfaces\MediaSettingInterface;
-use Botble\Media\Services\UploadsManager;
-use Botble\Media\Supports\Zipper;
+use RealDriss\Media\Http\Resources\FileResource;
+use RealDriss\Media\Http\Resources\FolderResource;
+use RealDriss\Media\Models\MediaFile;
+use RealDriss\Media\Models\MediaFolder;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Repositories\Interfaces\MediaFolderInterface;
+use RealDriss\Media\Repositories\Interfaces\MediaSettingInterface;
+use RealDriss\Media\Services\UploadsManager;
+use RealDriss\Media\Supports\Zipper;
 use Eloquent;
 use Exception;
 use File;

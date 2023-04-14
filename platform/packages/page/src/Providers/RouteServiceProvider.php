@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Page\Providers;
+namespace RealDriss\Page\Providers;
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 

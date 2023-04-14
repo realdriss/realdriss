@@ -3,7 +3,7 @@
 if (!function_exists('register_widget')) {
     /**
      * @param string $widgetId
-     * @return \Botble\Widget\Factories\WidgetFactory
+     * @return \RealDriss\Widget\Factories\WidgetFactory
      */
     function register_widget($widgetId)
     {
@@ -25,7 +25,7 @@ if (!function_exists('register_sidebar')) {
 if (!function_exists('remove_sidebar')) {
     /**
      * @param string $sidebarId
-     * @return \Botble\Widget\WidgetGroupCollection
+     * @return \RealDriss\Widget\WidgetGroupCollection
      */
     function remove_sidebar(string $sidebarId)
     {

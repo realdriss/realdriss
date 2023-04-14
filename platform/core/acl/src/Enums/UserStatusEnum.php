@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Enums;
+namespace RealDriss\ACL\Enums;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 use Html;
 
 /**

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Analytics\Providers;
+namespace RealDriss\Analytics\Providers;
 
 use Assets;
 use Illuminate\Support\Facades\Auth;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Throwable;

@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Newsletter\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Newsletter\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
 
         Route::group(['prefix' => 'newsletters', 'as' => 'newsletter.'], function () {

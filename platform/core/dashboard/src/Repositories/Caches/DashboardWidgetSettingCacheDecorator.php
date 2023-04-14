@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Caches;
+namespace RealDriss\Dashboard\Repositories\Caches;
 
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class DashboardWidgetSettingCacheDecorator extends CacheAbstractDecorator implements DashboardWidgetSettingInterface
 {

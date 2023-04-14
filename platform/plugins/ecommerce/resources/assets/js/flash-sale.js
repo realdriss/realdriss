@@ -39,7 +39,7 @@ $(document).ready(function () {
         $formBody.removeClass('hidden');
         $formBody.addClass('active');
         if ($formBody.find('.panel-body').length === 0) {
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -50,15 +50,15 @@ $(document).ready(function () {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }
@@ -68,7 +68,7 @@ $(document).ready(function () {
         let _self = $(event.currentTarget);
         let $formBody = _self.closest('.box-search-advance').find('.panel');
         setTimeout(() => {
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -79,15 +79,15 @@ $(document).ready(function () {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }, 500);
@@ -98,7 +98,7 @@ $(document).ready(function () {
         let _self = $(event.currentTarget);
         if (!_self.closest('.page-item').hasClass('disabled') && _self.prop('href')) {
             let $formBody = _self.closest('.box-search-advance').find('.panel');
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
@@ -109,15 +109,15 @@ $(document).ready(function () {
                 type: 'GET',
                 success: res => {
                     if (res.error) {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     } else {
                         $formBody.html(res.data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
-                    Botble.unblockUI($formBody);
+                    RealDriss.handleError(data);
+                    RealDriss.unblockUI($formBody);
                 },
             });
         }

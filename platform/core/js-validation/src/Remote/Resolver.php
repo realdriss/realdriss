@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\JsValidation\Remote;
+namespace RealDriss\JsValidation\Remote;
 
-use Botble\JsValidation\Support\AccessProtectedTrait;
+use RealDriss\JsValidation\Support\AccessProtectedTrait;
 use Closure;
 use Illuminate\Contracts\Validation\Factory as ValidationFactory;
 use Illuminate\Support\Arr;

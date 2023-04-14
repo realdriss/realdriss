@@ -42,7 +42,7 @@
                          </form>
 
                          <div class="text-center">
-                             {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \Botble\Ecommerce\Models\Customer::class) !!}
+                             {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \RealDriss\Ecommerce\Models\Customer::class) !!}
                          </div>
 
                          <div class="form-note text-center">{{ __("Don't Have an Account?") }} <a href="{{ route('customer.register') }}">{{ __('Register now') }}</a></div>

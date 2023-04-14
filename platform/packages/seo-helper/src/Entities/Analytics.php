@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace RealDriss\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\AnalyticsContract;
+use RealDriss\SeoHelper\Contracts\Entities\AnalyticsContract;
 
 class Analytics implements AnalyticsContract
 {

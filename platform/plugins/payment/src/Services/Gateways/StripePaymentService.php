@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Payment\Services\Gateways;
+namespace RealDriss\Payment\Services\Gateways;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Services\Abstracts\StripePaymentAbstract;
-use Botble\Payment\Supports\StripeHelper;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Services\Abstracts\StripePaymentAbstract;
+use RealDriss\Payment\Supports\StripeHelper;
 use Exception;
 use Illuminate\Http\Request;
 use Stripe\Charge;

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\WidgetGenerator\Providers;
+namespace RealDriss\WidgetGenerator\Providers;
 
-use Botble\WidgetGenerator\Commands\WidgetCreateCommand;
-use Botble\WidgetGenerator\Commands\WidgetRemoveCommand;
+use RealDriss\WidgetGenerator\Commands\WidgetCreateCommand;
+use RealDriss\WidgetGenerator\Commands\WidgetRemoveCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

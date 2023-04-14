@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Widget\Facades;
+namespace RealDriss\Widget\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -11,6 +11,6 @@ class WidgetGroupFacade extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'botble.widget-group-collection';
+        return 'RealDriss.widget-group-collection';
     }
 }

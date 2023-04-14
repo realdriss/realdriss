@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace RealDriss\Theme\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Theme\Commands\ThemeActivateCommand;
-use Botble\Theme\Commands\ThemeAssetsPublishCommand;
-use Botble\Theme\Commands\ThemeAssetsRemoveCommand;
-use Botble\Theme\Commands\ThemeRemoveCommand;
-use Botble\Theme\Commands\ThemeRenameCommand;
-use Botble\Theme\Contracts\Theme as ThemeContract;
-use Botble\Theme\Http\Middleware\AdminBarMiddleware;
-use Botble\Theme\Theme;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Theme\Commands\ThemeActivateCommand;
+use RealDriss\Theme\Commands\ThemeAssetsPublishCommand;
+use RealDriss\Theme\Commands\ThemeAssetsRemoveCommand;
+use RealDriss\Theme\Commands\ThemeRemoveCommand;
+use RealDriss\Theme\Commands\ThemeRenameCommand;
+use RealDriss\Theme\Contracts\Theme as ThemeContract;
+use RealDriss\Theme\Http\Middleware\AdminBarMiddleware;
+use RealDriss\Theme\Theme;
 use File;
 use Html;
 use Illuminate\Routing\Events\RouteMatched;

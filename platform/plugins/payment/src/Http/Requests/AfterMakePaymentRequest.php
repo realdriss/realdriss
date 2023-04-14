@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Payment\Http\Requests;
+namespace RealDriss\Payment\Http\Requests;
 
 /**
  * @deprecated

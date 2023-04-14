@@ -59,9 +59,9 @@ export default {
         items(value) {
             if (value) {
                 this.$nextTick(() => {
-                    if (window.Botble) {
-                        window.Botble.initResources();
-                        window.Botble.initMediaIntegrate();
+                    if (window.RealDriss) {
+                        window.RealDriss.initResources();
+                        window.RealDriss.initMediaIntegrate();
                     }
                 });
             }

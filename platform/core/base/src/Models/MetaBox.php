@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Models;
+namespace RealDriss\Base\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 

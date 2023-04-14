@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\Filter;
+use RealDriss\Base\Supports\Filter;
 use Illuminate\Support\Facades\Facade;
 
 class FilterFacade extends Facade

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Theme\Http\Middleware;
+namespace RealDriss\Theme\Http\Middleware;
 
 use BaseHelper;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Setting\Supports\SettingStore;
 use Closure;
 use Html;
 use Illuminate\Contracts\Container\BindingResolutionException;

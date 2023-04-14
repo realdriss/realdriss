@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Services\Abstracts;
+namespace RealDriss\Payment\Services\Abstracts;
 
-use Botble\Payment\Services\Traits\PaymentErrorTrait;
-use Botble\Payment\Supports\StripeHelper;
-use Botble\Support\Services\ProduceServiceInterface;
+use RealDriss\Payment\Services\Traits\PaymentErrorTrait;
+use RealDriss\Payment\Supports\StripeHelper;
+use RealDriss\Support\Services\ProduceServiceInterface;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

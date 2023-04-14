@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\SeoHelper\Providers;
+namespace RealDriss\SeoHelper\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\SeoHelper\Contracts\SeoHelperContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
-use Botble\SeoHelper\Contracts\SeoOpenGraphContract;
-use Botble\SeoHelper\Contracts\SeoTwitterContract;
-use Botble\SeoHelper\SeoHelper;
-use Botble\SeoHelper\SeoMeta;
-use Botble\SeoHelper\SeoOpenGraph;
-use Botble\SeoHelper\SeoTwitter;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\SeoHelper\Contracts\SeoHelperContract;
+use RealDriss\SeoHelper\Contracts\SeoMetaContract;
+use RealDriss\SeoHelper\Contracts\SeoOpenGraphContract;
+use RealDriss\SeoHelper\Contracts\SeoTwitterContract;
+use RealDriss\SeoHelper\SeoHelper;
+use RealDriss\SeoHelper\SeoMeta;
+use RealDriss\SeoHelper\SeoOpenGraph;
+use RealDriss\SeoHelper\SeoTwitter;
 use Illuminate\Support\ServiceProvider;
 
 /**

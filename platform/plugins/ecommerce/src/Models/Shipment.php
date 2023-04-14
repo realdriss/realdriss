@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Ecommerce\Enums\ShippingCodStatusEnum;
+use RealDriss\Ecommerce\Enums\ShippingStatusEnum;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;

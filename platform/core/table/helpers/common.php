@@ -16,7 +16,7 @@ if (!function_exists('table_actions')) {
     /**
      * @param string $edit
      * @param string $delete
-     * @param \Botble\Base\Models\BaseModel $item
+     * @param \RealDriss\Base\Models\BaseModel $item
      * @param string $extra
      * @return string
      * @throws Throwable

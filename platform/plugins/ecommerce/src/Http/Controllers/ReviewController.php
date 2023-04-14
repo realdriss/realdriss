@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Repositories\Interfaces\ReviewInterface;
-use Botble\Ecommerce\Tables\ReviewTable;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
+use RealDriss\Ecommerce\Tables\ReviewTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

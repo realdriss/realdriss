@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace RealDriss\Translation\Console;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

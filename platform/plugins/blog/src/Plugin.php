@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Blog;
+namespace RealDriss\Blog;
 
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Tag;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
-use Botble\Menu\Repositories\Interfaces\MenuNodeInterface;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\Menu\Repositories\Interfaces\MenuNodeInterface;
 use Illuminate\Support\Facades\Schema;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
 
 class Plugin extends PluginOperationAbstract
 {

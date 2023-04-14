@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Repositories\Interfaces;
+namespace RealDriss\Menu\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface MenuInterface extends RepositoryInterface
 {

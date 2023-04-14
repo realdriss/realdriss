@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Backup;
+namespace RealDriss\Backup;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
 use File;
 
 class Plugin extends PluginOperationAbstract

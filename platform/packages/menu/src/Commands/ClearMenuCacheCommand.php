@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Menu\Commands;
+namespace RealDriss\Menu\Commands;
 
 use Illuminate\Console\Command;
 use Menu;

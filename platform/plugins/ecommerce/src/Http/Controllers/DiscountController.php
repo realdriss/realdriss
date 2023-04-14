@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Http\Requests\DiscountRequest;
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
-use Botble\Ecommerce\Tables\DiscountTable;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Http\Requests\DiscountRequest;
+use RealDriss\Ecommerce\Models\Discount;
+use RealDriss\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use RealDriss\Ecommerce\Tables\DiscountTable;
 use Carbon\Carbon;
 use Exception;
 use Illuminate\Contracts\View\Factory;

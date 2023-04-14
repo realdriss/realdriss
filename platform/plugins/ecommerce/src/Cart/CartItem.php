@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Cart;
+namespace RealDriss\Ecommerce\Cart;
 
-use Botble\Ecommerce\Cart\Contracts\Buyable;
+use RealDriss\Ecommerce\Cart\Contracts\Buyable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Support\Arr;

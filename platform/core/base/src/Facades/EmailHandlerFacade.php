@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\EmailHandler;
+use RealDriss\Base\Supports\EmailHandler;
 use Illuminate\Support\Facades\Facade;
 
 class EmailHandlerFacade extends Facade

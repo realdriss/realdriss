@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace RealDriss\SeoHelper;
 
 use Arr;
-use Botble\Base\Models\BaseModel;
-use Botble\SeoHelper\Contracts\SeoHelperContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
-use Botble\SeoHelper\Contracts\SeoOpenGraphContract;
-use Botble\SeoHelper\Contracts\SeoTwitterContract;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\SeoHelper\Contracts\SeoHelperContract;
+use RealDriss\SeoHelper\Contracts\SeoMetaContract;
+use RealDriss\SeoHelper\Contracts\SeoOpenGraphContract;
+use RealDriss\SeoHelper\Contracts\SeoTwitterContract;
 use Exception;
 use Illuminate\Http\Request;
 use MetaBox;

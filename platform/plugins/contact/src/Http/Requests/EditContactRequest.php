@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Contact\Http\Requests;
+namespace RealDriss\Contact\Http\Requests;
 
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Contact\Enums\ContactStatusEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class EditContactRequest extends Request

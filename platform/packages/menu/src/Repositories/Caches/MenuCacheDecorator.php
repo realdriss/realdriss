@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Repositories\Caches;
+namespace RealDriss\Menu\Repositories\Caches;
 
-use Botble\Menu\Repositories\Interfaces\MenuInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Menu\Repositories\Interfaces\MenuInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class MenuCacheDecorator extends CacheAbstractDecorator implements MenuInterface
 {

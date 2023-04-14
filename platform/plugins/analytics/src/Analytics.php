@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics;
+namespace RealDriss\Analytics;
 
 use Carbon\Carbon;
 use Google_Service_Analytics;
@@ -22,7 +22,7 @@ class Analytics
     protected $viewId;
 
     /**
-     * @param \Botble\Analytics\AnalyticsClient $client
+     * @param \RealDriss\Analytics\AnalyticsClient $client
      * @param string $viewId
      */
     public function __construct(AnalyticsClient $client, string $viewId)

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace RealDriss\PluginManagement\Providers;
 
-use Botble\PluginManagement\Commands\PluginActivateAllCommand;
-use Botble\PluginManagement\Commands\PluginActivateCommand;
-use Botble\PluginManagement\Commands\PluginAssetsPublishCommand;
-use Botble\PluginManagement\Commands\PluginDeactivateCommand;
-use Botble\PluginManagement\Commands\PluginRemoveCommand;
+use RealDriss\PluginManagement\Commands\PluginActivateAllCommand;
+use RealDriss\PluginManagement\Commands\PluginActivateCommand;
+use RealDriss\PluginManagement\Commands\PluginAssetsPublishCommand;
+use RealDriss\PluginManagement\Commands\PluginDeactivateCommand;
+use RealDriss\PluginManagement\Commands\PluginRemoveCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

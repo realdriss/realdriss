@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Repositories\Interfaces;
+namespace RealDriss\SimpleSlider\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface SimpleSliderItemInterface extends RepositoryInterface
 {

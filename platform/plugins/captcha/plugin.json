@@ -1,9 +1,9 @@
 {
   "name": "Captcha",
-  "namespace": "Botble\\Captcha\\",
-  "provider": "Botble\\Captcha\\Providers\\CaptchaServiceProvider",
-  "author": "Botble Technologies",
-  "url": "https://botble.com",
+  "namespace": "RealDriss\\Captcha\\",
+  "provider": "RealDriss\\Captcha\\Providers\\CaptchaServiceProvider",
+  "author": "RealDriss Technologies",
+  "url": "https://RealDriss.com",
   "version": "5.8",
   "description": "Captcha for higher security"
 }

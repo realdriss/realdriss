@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SeoHelper;
+namespace RealDriss\SeoHelper;
 
-use Botble\SeoHelper\Contracts\Entities\AnalyticsContract;
-use Botble\SeoHelper\Contracts\Entities\DescriptionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
-use Botble\SeoHelper\Contracts\Entities\TitleContract;
-use Botble\SeoHelper\Contracts\Entities\WebmastersContract;
-use Botble\SeoHelper\Contracts\SeoMetaContract;
+use RealDriss\SeoHelper\Contracts\Entities\AnalyticsContract;
+use RealDriss\SeoHelper\Contracts\Entities\DescriptionContract;
+use RealDriss\SeoHelper\Contracts\Entities\MiscTagsContract;
+use RealDriss\SeoHelper\Contracts\Entities\TitleContract;
+use RealDriss\SeoHelper\Contracts\Entities\WebmastersContract;
+use RealDriss\SeoHelper\Contracts\SeoMetaContract;
 
 class SeoMeta implements SeoMetaContract
 {

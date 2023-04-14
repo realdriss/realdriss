@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\ACL\Notifications;
+namespace RealDriss\ACL\Notifications;
 
 use EmailHandler;
 use Illuminate\Notifications\Messages\MailMessage;

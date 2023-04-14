@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\JsValidation\Javascript;
+namespace RealDriss\JsValidation\Javascript;
 
-use Botble\JsValidation\Support\DelegatedValidator;
-use Botble\JsValidation\Support\RuleListTrait;
-use Botble\JsValidation\Support\UseDelegatedValidatorTrait;
+use RealDriss\JsValidation\Support\DelegatedValidator;
+use RealDriss\JsValidation\Support\RuleListTrait;
+use RealDriss\JsValidation\Support\UseDelegatedValidatorTrait;
 
 class RuleParser
 {

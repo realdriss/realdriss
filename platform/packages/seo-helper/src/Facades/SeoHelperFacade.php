@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Facades;
+namespace RealDriss\SeoHelper\Facades;
 
-use Botble\SeoHelper\SeoHelper;
+use RealDriss\SeoHelper\SeoHelper;
 use Illuminate\Support\Facades\Facade;
 
 /**

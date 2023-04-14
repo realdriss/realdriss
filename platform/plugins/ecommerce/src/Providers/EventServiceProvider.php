@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Providers;
+namespace RealDriss\Ecommerce\Providers;
 
-use Botble\Ecommerce\Listeners\RenderingSiteMapListener;
-use Botble\Theme\Events\RenderingSiteMapEvent;
+use RealDriss\Ecommerce\Listeners\RenderingSiteMapListener;
+use RealDriss\Theme\Events\RenderingSiteMapEvent;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

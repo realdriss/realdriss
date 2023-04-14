@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Contact\Http\Controllers;
+namespace RealDriss\Contact\Http\Controllers;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Contact\Events\SentContactEvent;
-use Botble\Contact\Http\Requests\ContactRequest;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Contact\Events\SentContactEvent;
+use RealDriss\Contact\Http\Requests\ContactRequest;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
 use EmailHandler;
 use Exception;
 use Illuminate\Routing\Controller;

@@ -7,10 +7,10 @@
         }
     });
 
-    window.botbleCookieNewsletter = (() => {
+    window.RealDrissCookieNewsletter = (() => {
 
         const COOKIE_VALUE = 1;
-        const COOKIE_NAME = 'botble_cookie_newsletter';
+        const COOKIE_NAME = 'RealDriss_cookie_newsletter';
         const COOKIE_DOMAIN = $('div[data-session-domain]').data('session-domain');
         const COOKIE_MODAL = $('#newsletter-modal');
         const COOKIE_MODAL_TIME = COOKIE_MODAL.data('time');
@@ -142,7 +142,7 @@
                     }
 
                     if (!res.error) {
-                        window.botbleCookieNewsletter.newsletterWithCookies(30);
+                        window.RealDrissCookieNewsletter.newsletterWithCookies(30);
                         _self.closest('form').find('input[type=email]').val('');
                         showSuccess(res.message);
                         setTimeout(() => {

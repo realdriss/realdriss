@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Captcha;
+namespace RealDriss\Captcha;
 
 use GuzzleHttp\Client;
 use Illuminate\Contracts\Foundation\Application;
@@ -112,7 +112,7 @@ class CaptchaV3
     }
 
     /**
-     * @return \Botble\Theme\AssetContainer
+     * @return \RealDriss\Theme\AssetContainer
      */
     public function initJs($fieldId = null, $action = 'form')
     {

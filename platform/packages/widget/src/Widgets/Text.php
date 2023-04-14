@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Widgets;
+namespace RealDriss\Widget\Widgets;
 
-use Botble\Widget\AbstractWidget;
+use RealDriss\Widget\AbstractWidget;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 class Text extends AbstractWidget

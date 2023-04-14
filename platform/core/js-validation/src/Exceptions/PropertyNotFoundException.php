@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\JsValidation\Exceptions;
+namespace RealDriss\JsValidation\Exceptions;
 
 use Exception;
 

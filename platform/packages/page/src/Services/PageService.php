@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Page\Services;
+namespace RealDriss\Page\Services;
 
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Page\Models\Page;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\SeoHelper\SeoOpenGraph;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\SeoHelper\SeoOpenGraph;
 use Eloquent;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;

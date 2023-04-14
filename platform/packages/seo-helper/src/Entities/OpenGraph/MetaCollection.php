@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Entities\OpenGraph;
+namespace RealDriss\SeoHelper\Entities\OpenGraph;
 
-use Botble\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
+use RealDriss\SeoHelper\Bases\MetaCollection as BaseMetaCollection;
 
 class MetaCollection extends BaseMetaCollection
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Models\Discount;
+use RealDriss\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Cart;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

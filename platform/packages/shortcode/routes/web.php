@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Shortcode\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Shortcode\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
         Route::group(['prefix' => 'short-codes'], function () {
             Route::get('ajax-get-admin-config/{key}', [

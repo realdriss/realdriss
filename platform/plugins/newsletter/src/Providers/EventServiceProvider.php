@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Providers;
+namespace RealDriss\Newsletter\Providers;
 
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
-use Botble\Newsletter\Listeners\SubscribeNewsletterListener;
+use RealDriss\Newsletter\Events\SubscribeNewsletterEvent;
+use RealDriss\Newsletter\Listeners\SubscribeNewsletterListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

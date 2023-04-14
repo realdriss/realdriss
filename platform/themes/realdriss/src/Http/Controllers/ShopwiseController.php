@@ -2,14 +2,14 @@
 
 namespace Theme\Shopwise\Http\Controllers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ReviewInterface;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
-use Botble\Theme\Http\Controllers\PublicController;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
+use RealDriss\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use RealDriss\Theme\Http\Controllers\PublicController;
 use Cart;
 use DB;
 use EcommerceHelper;

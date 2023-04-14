@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\DevTool\Providers;
+namespace RealDriss\DevTool\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

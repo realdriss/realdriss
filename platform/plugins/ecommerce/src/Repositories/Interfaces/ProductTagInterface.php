@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Interfaces;
+namespace RealDriss\Ecommerce\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface ProductTagInterface extends RepositoryInterface
 {

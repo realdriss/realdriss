@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\PluginManagement\Providers;
+namespace RealDriss\PluginManagement\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Composer\Autoload\ClassLoader;
 use Exception;
 use Illuminate\Routing\Events\RouteMatched;

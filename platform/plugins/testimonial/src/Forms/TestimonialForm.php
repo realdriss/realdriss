@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Testimonial\Forms;
+namespace RealDriss\Testimonial\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Testimonial\Http\Requests\TestimonialRequest;
-use Botble\Testimonial\Models\Testimonial;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Testimonial\Http\Requests\TestimonialRequest;
+use RealDriss\Testimonial\Models\Testimonial;
 
 class TestimonialForm extends FormAbstract
 {

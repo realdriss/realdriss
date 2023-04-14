@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Testimonial\Repositories\Eloquent;
+namespace RealDriss\Testimonial\Repositories\Eloquent;
 
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
-use Botble\Testimonial\Repositories\Interfaces\TestimonialInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Testimonial\Repositories\Interfaces\TestimonialInterface;
 
 class TestimonialRepository extends RepositoriesAbstract implements TestimonialInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Repositories\Interfaces;
+namespace RealDriss\ACL\Repositories\Interfaces;
 
-use Botble\ACL\Models\Activation;
-use Botble\ACL\Models\User;
+use RealDriss\ACL\Models\Activation;
+use RealDriss\ACL\Models\User;
 
 interface ActivationInterface
 {

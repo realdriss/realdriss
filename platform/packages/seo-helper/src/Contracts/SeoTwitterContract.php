@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts;
+namespace RealDriss\SeoHelper\Contracts;
 
-use Botble\SeoHelper\Contracts\Entities\TwitterCardContract;
+use RealDriss\SeoHelper\Contracts\Entities\TwitterCardContract;
 
 interface SeoTwitterContract extends RenderableContract
 {

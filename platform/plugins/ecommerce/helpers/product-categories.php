@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Base\Supports\SortItemsWithChildrenHelper;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
+use RealDriss\Base\Supports\SortItemsWithChildrenHelper;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
 
 if (!function_exists('get_product_categories')) {
     /**

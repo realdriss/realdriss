@@ -54,7 +54,7 @@
                                 @if (Cart::instance('wishlist')->count())
                                     @foreach(Cart::instance('wishlist')->content() as $cartItem)
                                         @php
-                                            $item = app(\Botble\Ecommerce\Repositories\Interfaces\ProductInterface::class)->findById($cartItem->id);
+                                            $item = app(\RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface::class)->findById($cartItem->id);
                                         @endphp
                                         @if (!empty($item))
                                             <tr>

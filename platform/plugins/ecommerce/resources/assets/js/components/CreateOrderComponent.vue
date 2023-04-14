@@ -929,7 +929,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -958,7 +958,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -973,7 +973,7 @@
             },
             selectProductVariant: function (product, variation = null) {
                 if ((!_.isEmpty(variation) && variation.is_out_of_stock) || (_.isEmpty(variation) && product.is_out_of_stock)) {
-                    Botble.showError('Cannot select out of stock product!');
+                    RealDriss.showError('Cannot select out of stock product!');
                     return false;
                 }
 
@@ -1053,7 +1053,7 @@
                             context.countries = res.data.data;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -1089,10 +1089,10 @@
                     .then(res => {
                         let data = res.data.data;
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                             $($event.target).find('.btn-primary').removeClass('button-loading');
                         } else {
-                            Botble.showSuccess(res.data.message);
+                            RealDriss.showSuccess(res.data.message);
                             if (paid) {
                                 context.$root.$emit('bv::hide::modal', 'make-paid');
                             } else {
@@ -1105,7 +1105,7 @@
                         }
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         $($event.target).find('.btn-primary').removeClass('button-loading');
                     });
             },
@@ -1118,7 +1118,7 @@
                     .post(route('products.create-product-when-creating-order'), context.product)
                     .then(res => {
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                             $($event.target).find('.btn-primary').removeClass('button-loading');
                         } else {
 
@@ -1139,14 +1139,14 @@
 
                             context.hidden_product_search_panel = true;
 
-                            Botble.showSuccess(res.data.message);
+                            RealDriss.showSuccess(res.data.message);
 
                             context.$root.$emit('bv::hide::modal', 'add-product-item');
                         }
                     })
                     .catch(res => {
                         $($event.target).find('.btn-primary').removeClass('button-loading');
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                     });
             },
             updateCustomerEmail: function ($event) {
@@ -1161,17 +1161,17 @@
                     })
                     .then(res => {
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                             $($event.target).find('.btn-primary').removeClass('button-loading');
                         } else {
-                            Botble.showSuccess(res.data.message);
+                            RealDriss.showSuccess(res.data.message);
 
                             context.$root.$emit('bv::hide::modal', 'edit-email')
                         }
                         $($event.target).find('.btn-primary').removeClass('button-loading');
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         $($event.target).find('.btn-primary').removeClass('button-loading');
                     });
             },
@@ -1221,7 +1221,7 @@
                     })
                     .then(res => {
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                             $($event.target).find('.btn-primary').removeClass('button-loading');
                         } else {
                             context.child_customer_address = res.data.data.address;
@@ -1232,7 +1232,7 @@
                                 data: [],
                             };
 
-                            Botble.showSuccess(res.data.message);
+                            RealDriss.showSuccess(res.data.message);
 
                             context.$root.$emit('bv::hide::modal', 'add-customer');
                         }
@@ -1240,7 +1240,7 @@
                         $($event.target).find('.btn-primary').removeClass('button-loading');
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         $($event.target).find('.btn-primary').removeClass('button-loading');
                     });
             },
@@ -1260,7 +1260,7 @@
                         context.child_customer_order_numbers = res.data.data;
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                     });
             },
             loadCustomerAddress: function () {
@@ -1274,7 +1274,7 @@
                         }
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                     });
             },
             selectShippingMethod: function ($event) {
@@ -1318,7 +1318,7 @@
                         context.shipping_methods = res.data.data;
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                     });
             },
             changeDiscountType: function (event) {
@@ -1353,7 +1353,7 @@
                         })
                         .then(res => {
                             if (res.data.error) {
-                                Botble.showError(res.data.message);
+                                RealDriss.showError(res.data.message);
                                 button.removeClass('button-loading');
                                 context.has_invalid_coupon = true;
                             } else {
@@ -1361,14 +1361,14 @@
                                 if (res.data.data.is_free_shipping) {
                                     context.child_shipping_amount = 0;
                                 }
-                                Botble.showSuccess(res.data.message);
+                                RealDriss.showSuccess(res.data.message);
                             }
                             button.removeClass('button-loading');
 
                             context.$root.$emit('bv::hide::modal', 'add-discounts');
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                             button.removeClass('button-loading');
                         });
                 } else {

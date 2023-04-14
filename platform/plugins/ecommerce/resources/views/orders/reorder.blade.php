@@ -16,11 +16,11 @@
                 @if ($order->coupon_code) :discount_coupon_code="'{{ $order->coupon_code }}'" @endif
                 @if ($order->discount_description) :discount_description="'{{ $order->discount_description }}'" @endif
                 :shipping_amount="{{ $order->shipping_amount }}"
-                @if ($order->shipping_method != \Botble\Ecommerce\Enums\ShippingMethodEnum::DEFAULT)
+                @if ($order->shipping_method != \RealDriss\Ecommerce\Enums\ShippingMethodEnum::DEFAULT)
                     :shipping_method="'{{ $order->shipping_method }}'"
                 @endif
                 @if ($order->shipping_option) :shipping_option="'{{ $order->shipping_option }}'" @endif
-                @if ($order->shipping_method != \Botble\Ecommerce\Enums\ShippingMethodEnum::DEFAULT && false)
+                @if ($order->shipping_method != \RealDriss\Ecommerce\Enums\ShippingMethodEnum::DEFAULT && false)
                     :shipping_method_name="'{{ OrderHelper::getShippingMethod($order->shipping_method, $order->shipping_option) }}'"
                 @endif
                 :is_selected_shipping="true"

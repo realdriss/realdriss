@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Services;
+namespace RealDriss\Blog\Services;
 
-use Botble\Blog\Models\Post;
-use Botble\Blog\Services\Abstracts\StoreCategoryServiceAbstract;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Services\Abstracts\StoreCategoryServiceAbstract;
 use Illuminate\Http\Request;
 
 class StoreCategoryService extends StoreCategoryServiceAbstract

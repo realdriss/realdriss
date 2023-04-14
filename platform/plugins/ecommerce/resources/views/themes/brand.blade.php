@@ -3,7 +3,7 @@
     $products = get_product_by_brand([
         'brand_id' => $brand->id,
         'condition' => [
-            'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+            'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
             'ec_products.is_variation' => 0,
         ],
         'order_by' => [

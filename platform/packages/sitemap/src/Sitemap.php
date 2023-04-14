@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Sitemap;
+namespace RealDriss\Sitemap;
 
 use Carbon\Carbon;
 use DateTime;

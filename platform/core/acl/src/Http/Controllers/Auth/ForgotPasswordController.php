@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers\Auth;
+namespace RealDriss\ACL\Http\Controllers\Auth;
 
 use Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Contracts\View\Factory;
-use Botble\ACL\Traits\SendsPasswordResetEmails;
+use RealDriss\ACL\Traits\SendsPasswordResetEmails;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 

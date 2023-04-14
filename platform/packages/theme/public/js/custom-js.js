@@ -1,1 +1,1 @@
-$(document).ready((function(){Botble.initCodeEditor("header_js","javascript"),Botble.initCodeEditor("body_js","javascript"),Botble.initCodeEditor("footer_js","javascript")}));
+$(document).ready((function(){RealDriss.initCodeEditor("header_js","javascript"),RealDriss.initCodeEditor("body_js","javascript"),RealDriss.initCodeEditor("footer_js","javascript")}));

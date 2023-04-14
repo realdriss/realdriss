@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Repositories\Caches;
+namespace RealDriss\Media\Repositories\Caches;
 
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class MediaFileCacheDecorator extends CacheAbstractDecorator implements MediaFileInterface
 {
