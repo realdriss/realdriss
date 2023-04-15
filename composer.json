@@ -96,5 +96,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
+        {
+            "type": "path",
+            "url": "./platform/core"
+        },
+        {
+            "type": "path",
+            "url": "./platform/packages/*"
+        }
     ]
 }
