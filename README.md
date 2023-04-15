@@ -22,3 +22,13 @@ A peer to peer marketplace driven on liquidity pooled and utilized by market par
 - Widgets system.
 - Theme options. Easy to change theme config from the admin panel.
 - Plugin system, able to extend features by adding plugins.
+
+
+
+
+        "realdriss/menu": "dev-main",
+        "realdriss/page": "dev-main",
+        "realdriss/platform": "dev-main",
+        "realdriss/plugin-management": "dev-main",
+        "realdriss/shortcode": "dev-main",
+        "realdriss/theme": "dev-main",
