@@ -7,6 +7,13 @@
             "RealDriss\\DevTool\\": "src"
         }
     },
+    
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
     "require": {
         "realdriss/platform": "*@dev",
         "php-parallel-lint/php-parallel-lint": "^1.0",

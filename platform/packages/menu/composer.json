@@ -1,6 +1,13 @@
 {
     "name": "realdriss/menu",
     "description": "Menu package",
+    
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
     "type": "package",
     "autoload": {
         "psr-4": {

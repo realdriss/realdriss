@@ -2,6 +2,13 @@
     "name": "realdriss/revision",
     "description": "Revision package",
     "type": "package",
+    
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "RealDriss\\Revision\\": "src"

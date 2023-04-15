@@ -2,6 +2,13 @@
     "name": "realdriss/widget-generator",
     "description": "Widget generator",
     "type": "package",
+    
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "RealDriss\\WidgetGenerator\\": "src"

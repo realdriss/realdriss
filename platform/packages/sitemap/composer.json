@@ -2,6 +2,13 @@
 	"name": "realdriss/sitemap",
 	"description": "Sitemap package for Laravel.",
 	"license": "MIT",
+	
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
 	"require": {
 	},
 	"autoload": {
