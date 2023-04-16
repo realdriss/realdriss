@@ -11,6 +11,8 @@ use RealDriss\Setting\Repositories\Eloquent\SettingRepository;
 use RealDriss\Setting\Repositories\Interfaces\SettingInterface;
 use RealDriss\Setting\Supports\SettingsManager;
 use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use EmailHandler;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\AliasLoader;

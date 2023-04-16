@@ -12,6 +12,8 @@ use RealDriss\Dashboard\Repositories\Eloquent\DashboardWidgetRepository;
 use RealDriss\Dashboard\Repositories\Eloquent\DashboardWidgetSettingRepository;
 use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
 use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetSettingInterface;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;

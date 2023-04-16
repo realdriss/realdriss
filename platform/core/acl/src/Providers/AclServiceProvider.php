@@ -16,6 +16,8 @@ use RealDriss\ACL\Repositories\Interfaces\RoleInterface;
 use RealDriss\ACL\Repositories\Interfaces\UserInterface;
 use RealDriss\Base\Supports\Helper;
 use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+// EO RealDriss namespaced classes.
+
 use EmailHandler;
 use Exception;
 use Illuminate\Contracts\Container\BindingResolutionException;

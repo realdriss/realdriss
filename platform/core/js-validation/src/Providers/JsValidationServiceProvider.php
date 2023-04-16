@@ -6,6 +6,8 @@ use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use RealDriss\JsValidation\Javascript\ValidatorHandler;
 use RealDriss\JsValidation\JsValidatorFactory;
 use RealDriss\JsValidation\RemoteValidationMiddleware;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Support\ServiceProvider;
 

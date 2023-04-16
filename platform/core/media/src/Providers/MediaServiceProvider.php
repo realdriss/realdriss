@@ -3,6 +3,8 @@
 namespace RealDriss\Media\Providers;
 
 use Aws\S3\S3Client;
+
+// SO RealDriss namespaced classes.
 use RealDriss\Base\Supports\Helper;
 use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use RealDriss\Media\Chunks\Storage\ChunkStorage;
@@ -23,6 +25,8 @@ use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
 use RealDriss\Media\Repositories\Interfaces\MediaFolderInterface;
 use RealDriss\Media\Repositories\Interfaces\MediaSettingInterface;
 use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Events\RouteMatched;
