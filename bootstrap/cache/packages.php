@@ -104,11 +104,29 @@
       'FormBuilder' => 'Kris\\LaravelFormBuilder\\Facades\\FormBuilder',
     ),
   ),
+  'laravel/cashier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Cashier\\CashierServiceProvider',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
     array (
       0 => 'Laravel\\Sail\\SailServiceProvider',
+    ),
+  ),
+  'laravel/socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
     ),
   ),
   'laravel/tinker' => 
@@ -302,6 +320,17 @@
     array (
       'Widget' => 'RealDriss\\Widget\\Facades\\WidgetFacade',
       'WidgetGroup' => 'RealDriss\\Widget\\Facades\\WidgetGroupFacade',
+    ),
+  ),
+  'spatie/laravel-newsletter' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\Newsletter\\NewsletterServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Newsletter' => 'Spatie\\Newsletter\\NewsletterFacade',
     ),
   ),
   'tightenco/ziggy' => 
