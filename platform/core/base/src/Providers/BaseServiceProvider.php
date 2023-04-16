@@ -8,7 +8,7 @@ use RealDriss\Base\Http\Middleware\CoreMiddleware;
 use RealDriss\Base\Http\Middleware\DisableInDemoModeMiddleware;
 use RealDriss\Base\Http\Middleware\HttpsProtocolMiddleware;
 use RealDriss\Base\Http\Middleware\LocaleMiddleware;
-use RealDriss\Base\Models\MetaBox as MetaBoxModel;
+use RealDriss\Base\Models\MetaBox as MetaBoxModel; //prevents conflicting with /MetaBox
 use RealDriss\Base\Repositories\Caches\MetaBoxCacheDecorator;
 use RealDriss\Base\Repositories\Eloquent\MetaBoxRepository;
 use RealDriss\Base\Repositories\Interfaces\MetaBoxInterface;
@@ -18,6 +18,8 @@ use RealDriss\Base\Supports\Helper;
 use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use RealDriss\Setting\Providers\SettingServiceProvider;
 use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use DateTimeZone;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Contracts\Container\BindingResolutionException;

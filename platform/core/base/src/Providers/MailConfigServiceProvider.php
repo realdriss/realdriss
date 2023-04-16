@@ -3,6 +3,8 @@
 namespace RealDriss\Base\Providers;
 
 use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\ServiceProvider;
 
 class MailConfigServiceProvider extends ServiceProvider

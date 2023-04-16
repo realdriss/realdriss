@@ -12,6 +12,8 @@ use RealDriss\Base\Listeners\CreatedContentListener;
 use RealDriss\Base\Listeners\DeletedContentListener;
 use RealDriss\Base\Listeners\SendMailListener;
 use RealDriss\Base\Listeners\UpdatedContentListener;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\Facades\Event;
 use File;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;

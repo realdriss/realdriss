@@ -4,6 +4,8 @@ namespace RealDriss\Base\Providers;
 
 use Assets;
 use RealDriss\ACL\Models\UserMeta;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Auth;

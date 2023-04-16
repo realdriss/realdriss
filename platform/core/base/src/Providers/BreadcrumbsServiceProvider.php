@@ -3,6 +3,8 @@
 namespace RealDriss\Base\Providers;
 
 use RealDriss\Base\Supports\BreadcrumbsGenerator;
+// EO RealDriss namespaced classes.
+
 use Breadcrumbs;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
