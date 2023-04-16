@@ -15,11 +15,11 @@ use DB;
 use EcommerceHelper;
 use Illuminate\Http\Request;
 use Theme;
-use Theme\Shopwise\Http\Resources\BrandResource;
-use Theme\Shopwise\Http\Resources\PostResource;
-use Theme\Shopwise\Http\Resources\ProductCategoryResource;
-use Theme\Shopwise\Http\Resources\ReviewResource;
-use Theme\Shopwise\Http\Resources\TestimonialResource;
+use Theme\RealDriss\Http\Resources\BrandResource;
+use Theme\RealDriss\Http\Resources\PostResource;
+use Theme\RealDriss\Http\Resources\ProductCategoryResource;
+use Theme\RealDriss\Http\Resources\ReviewResource;
+use Theme\RealDriss\Http\Resources\TestimonialResource;
 
 class RealDrissController extends PublicController
 {

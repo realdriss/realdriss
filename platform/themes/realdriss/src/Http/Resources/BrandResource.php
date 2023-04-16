@@ -1,6 +1,6 @@
 <?php
 
-namespace Theme\Shopwise\Http\Resources;
+namespace Theme\RealDriss\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
