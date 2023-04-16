@@ -7,7 +7,7 @@
     ),
     'aliases' => 
     array (
-      'Debugbar' => 'Barryvdh\\Debugbar\\Facade',
+      'Debugbar' => 'Barryvdh\\Debugbar\\Facades\\Debugbar',
     ),
   ),
   'barryvdh/laravel-dompdf' => 
@@ -28,6 +28,13 @@
       0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
     ),
   ),
+  'beyondcode/laravel-dump-server' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
+    ),
+  ),
   'beyondcode/laravel-websockets' => 
   array (
     'providers' => 
@@ -37,6 +44,126 @@
     'aliases' => 
     array (
       'WebSocketRouter' => 'BeyondCode\\LaravelWebSockets\\Facades\\WebSocketRouter',
+    ),
+  ),
+  'facade/ignition' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Facade\\Ignition\\IgnitionServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Flare' => 'Facade\\Ignition\\Facades\\Flare',
+    ),
+  ),
+  'fideloper/proxy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    ),
+  ),
+  'fruitcake/laravel-cors' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fruitcake\\Cors\\CorsServiceProvider',
+    ),
+  ),
+  'gathuku/laravelmpesa' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Gathuku\\Mpesa\\MpesaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Mpesa' => 'Gathuku\\Mpesa\\Facades\\Mpesa',
+    ),
+  ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
+  'kris/laravel-form-builder' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Kris\\LaravelFormBuilder\\FormBuilderServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FormBuilder' => 'Kris\\LaravelFormBuilder\\Facades\\FormBuilder',
+    ),
+  ),
+  'laravel/sail' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Sail\\SailServiceProvider',
+    ),
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'laravelcollective/html' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Collective\\Html\\HtmlServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Form' => 'Collective\\Html\\FormFacade',
+      'Html' => 'Collective\\Html\\HtmlFacade',
+    ),
+  ),
+  'maatwebsite/excel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
+    ),
+  ),
+  'mews/purifier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mews\\Purifier\\PurifierServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Purifier' => 'Mews\\Purifier\\Facades\\Purifier',
+    ),
+  ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
+  'nunomaduro/collision' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
     ),
   ),
   'realdriss/assets' => 
@@ -177,182 +304,11 @@
       'WidgetGroup' => 'RealDriss\\Widget\\Facades\\WidgetGroupFacade',
     ),
   ),
-  'facade/ignition' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Facade\\Ignition\\IgnitionServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Flare' => 'Facade\\Ignition\\Facades\\Flare',
-    ),
-  ),
-  'fideloper/proxy' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
-    ),
-  ),
-  'fruitcake/laravel-cors' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Fruitcake\\Cors\\CorsServiceProvider',
-    ),
-  ),
-  'gathuku/laravelmpesa' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Gathuku\\Mpesa\\MpesaServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Mpesa' => 'Gathuku\\Mpesa\\Facades\\Mpesa',
-    ),
-  ),
-  'intervention/image' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Intervention\\Image\\ImageServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Image' => 'Intervention\\Image\\Facades\\Image',
-    ),
-  ),
-  'kris/laravel-form-builder' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Kris\\LaravelFormBuilder\\FormBuilderServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'FormBuilder' => 'Kris\\LaravelFormBuilder\\Facades\\FormBuilder',
-    ),
-  ),
-  'laravel/cashier' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Cashier\\CashierServiceProvider',
-    ),
-  ),
-  'laravel/sail' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Sail\\SailServiceProvider',
-    ),
-  ),
-  'laravel/socialite' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
-    ),
-  ),
-  'laravel/tinker' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
-    ),
-  ),
-  'laravelcollective/html' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Collective\\Html\\HtmlServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Form' => 'Collective\\Html\\FormFacade',
-      'Html' => 'Collective\\Html\\HtmlFacade',
-    ),
-  ),
-  'maatwebsite/excel' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
-    ),
-  ),
-  'mews/purifier' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Mews\\Purifier\\PurifierServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Purifier' => 'Mews\\Purifier\\Facades\\Purifier',
-    ),
-  ),
-  'mollie/laravel-mollie' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Mollie\\Laravel\\MollieServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Mollie' => 'Mollie\\Laravel\\Facades\\Mollie',
-    ),
-  ),
-  'nesbot/carbon' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Carbon\\Laravel\\ServiceProvider',
-    ),
-  ),
-  'nunomaduro/collision' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
-    ),
-  ),
-  'spatie/laravel-newsletter' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Spatie\\Newsletter\\NewsletterServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Newsletter' => 'Spatie\\Newsletter\\NewsletterFacade',
-    ),
-  ),
   'tightenco/ziggy' => 
   array (
     'providers' => 
     array (
       0 => 'Tightenco\\Ziggy\\ZiggyServiceProvider',
-    ),
-  ),
-  'unicodeveloper/laravel-paystack' => 
-  array (
-    'providers' => 
-    array (
-      0 => 'Unicodeveloper\\Paystack\\PaystackServiceProvider',
-    ),
-    'aliases' => 
-    array (
-      'Paystack' => 'Unicodeveloper\\Paystack\\Facades\\Paystack',
     ),
   ),
   'yajra/laravel-datatables-buttons' => 

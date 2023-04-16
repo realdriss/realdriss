@@ -13,6 +13,13 @@
         "ext-json": "*",
         "ext-zip": "*",
         "beyondcode/laravel-websockets": "^1.14",
+        
+        "realdriss/menu": "^1.0",
+        "realdriss/page": "^1.0",
+        "realdriss/platform": "^1.0",
+        "realdriss/plugin-management": "^1.0",
+        "realdriss/shortcode": "^1.0",
+        "realdriss/theme": "^1.0",
         "doctrine/dbal": "^3.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -55,8 +62,6 @@
         },
         "merge-plugin": {
             "include": [
-                "./platform/plugins/*/composer.json",
-                "./platform/themes/*/composer.json"
             ],
             "recurse": false,
             "replace": false,
@@ -96,13 +101,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
-        {
-            "type": "path",
-            "url": "./platform/core"
-        },
-        {
-            "type": "path",
-            "url": "./platform/packages/*"
-        }
+   
     ]
 }
