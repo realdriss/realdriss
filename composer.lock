@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45c3e9f1a50f03b2aaaf74f7b45146a1",
+    "content-hash": "19370a93f0ad5feecfdf993f1acd985e",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6786,17 +6786,11 @@
         },
         {
             "name": "realdriss/menu",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/menu.git",
-                "reference": "4adda09fbfed9b15aee42b9fa24c49275b241a56"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/menu/zipball/4adda09fbfed9b15aee42b9fa24c49275b241a56",
-                "reference": "4adda09fbfed9b15aee42b9fa24c49275b241a56",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/menu",
+                "reference": "73d25cc6051c13273f3a68a140b52c5404b6ce5e"
             },
             "require": {
                 "realdriss/platform": "*@dev",
@@ -6818,27 +6812,18 @@
                     "RealDriss\\Menu\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Menu package",
-            "support": {
-                "issues": "https://github.com/realdriss/menu/issues",
-                "source": "https://github.com/realdriss/menu/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:46:38+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/page",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/page.git",
-                "reference": "cb7f53a81666b08a4e8176e104df1f85dcd284f3"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/page/zipball/cb7f53a81666b08a4e8176e104df1f85dcd284f3",
-                "reference": "cb7f53a81666b08a4e8176e104df1f85dcd284f3",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/page",
+                "reference": "adbd51e852e90d0643557d2fa7f0e9b311cdfe7e"
             },
             "require": {
                 "realdriss/platform": "*@dev",
@@ -6857,27 +6842,18 @@
                     "RealDriss\\Page\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Page package",
-            "support": {
-                "issues": "https://github.com/realdriss/page/issues",
-                "source": "https://github.com/realdriss/page/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:47:22+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/platform",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/platform.git",
-                "reference": "d67c062fa3c91a89b6ae7e323e9f1d9ffbb7a60d"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/platform/zipball/d67c062fa3c91a89b6ae7e323e9f1d9ffbb7a60d",
-                "reference": "d67c062fa3c91a89b6ae7e323e9f1d9ffbb7a60d",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/core",
+                "reference": "9ee8dc95a56dd8d5caba121ccec56f47e7054a7e"
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^0.9.0",
@@ -6925,18 +6901,17 @@
             },
             "autoload": {
                 "psr-4": {
+                    "RealDriss\\Support\\": "support/src",
                     "RealDriss\\ACL\\": "acl/src",
                     "RealDriss\\Base\\": "base/src",
-                    "RealDriss\\Chart\\": "chart/src",
-                    "RealDriss\\Media\\": "media/src",
-                    "RealDriss\\Table\\": "table/src",
-                    "RealDriss\\Setting\\": "setting/src",
-                    "RealDriss\\Support\\": "support/src",
                     "RealDriss\\Dashboard\\": "dashboard/src",
-                    "RealDriss\\JsValidation\\": "js-validation/src"
+                    "RealDriss\\Media\\": "media/src",
+                    "RealDriss\\Setting\\": "setting/src",
+                    "RealDriss\\Table\\": "table/src",
+                    "RealDriss\\JsValidation\\": "js-validation/src",
+                    "RealDriss\\Chart\\": "chart/src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -6954,25 +6929,20 @@
                 "realdriss platform"
             ],
             "support": {
-                "document": "https://docs.realdriss.com",
                 "issues": "https://realdriss.ticksy.com",
-                "source": "https://github.com/realdriss/platform/tree/v1.0.0"
+                "document": "https://docs.realdriss.com"
             },
-            "time": "2023-04-16T03:24:00+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/plugin-management",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/plugin-management.git",
-                "reference": "d325a720c48000312df751500d7f16b0ea0c3254"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/plugin-management/zipball/d325a720c48000312df751500d7f16b0ea0c3254",
-                "reference": "d325a720c48000312df751500d7f16b0ea0c3254",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/plugin-management",
+                "reference": "194ac59076cfc508646ab5405b266c1a209e50bf"
             },
             "require": {
                 "realdriss/platform": "*@dev"
@@ -6990,27 +6960,18 @@
                     "RealDriss\\PluginManagement\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Plugin management package",
-            "support": {
-                "issues": "https://github.com/realdriss/plugin-management/issues",
-                "source": "https://github.com/realdriss/plugin-management/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:48:00+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/revision",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/revision.git",
-                "reference": "730c0565ba862de2655e547f90a63fc7187cab5e"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/revision/zipball/730c0565ba862de2655e547f90a63fc7187cab5e",
-                "reference": "730c0565ba862de2655e547f90a63fc7187cab5e",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/revision",
+                "reference": "f142bf108be0275b68dc160aff79ddf9af61e18a"
             },
             "require": {
                 "realdriss/platform": "*@dev"
@@ -7028,27 +6989,18 @@
                     "RealDriss\\Revision\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Revision package",
-            "support": {
-                "issues": "https://github.com/realdriss/revision/issues",
-                "source": "https://github.com/realdriss/revision/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:48:31+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/seo-helper",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/seo-helper.git",
-                "reference": "2e65d15193a1f5ef409042d9ca19f0d1146bdccc"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/seo-helper/zipball/2e65d15193a1f5ef409042d9ca19f0d1146bdccc",
-                "reference": "2e65d15193a1f5ef409042d9ca19f0d1146bdccc",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/seo-helper",
+                "reference": "f1cb456950e6ea46a4222d844bc58189bc660cf4"
             },
             "require": {
                 "realdriss/platform": "*@dev",
@@ -7070,27 +7022,18 @@
                     "RealDriss\\SeoHelper\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "SEO helper package",
-            "support": {
-                "issues": "https://github.com/realdriss/seo-helper/issues",
-                "source": "https://github.com/realdriss/seo-helper/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:49:16+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/shortcode",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/shortcode.git",
-                "reference": "8d8c50244fe0f2a8b8ba377b5c27d962055ee984"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/shortcode/zipball/8d8c50244fe0f2a8b8ba377b5c27d962055ee984",
-                "reference": "8d8c50244fe0f2a8b8ba377b5c27d962055ee984",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/shortcode",
+                "reference": "1f751acd4c0e5a3266aac17d3aad52d658f2d86e"
             },
             "require": {
                 "realdriss/platform": "*@dev"
@@ -7108,27 +7051,18 @@
                     "RealDriss\\Shortcode\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Shortcode package",
-            "support": {
-                "issues": "https://github.com/realdriss/shortcode/issues",
-                "source": "https://github.com/realdriss/shortcode/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:49:49+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/sitemap",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/sitemap.git",
-                "reference": "8e5b27bc2f5b92056a274bef4567beb2b6bf108d"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/sitemap/zipball/8e5b27bc2f5b92056a274bef4567beb2b6bf108d",
-                "reference": "8e5b27bc2f5b92056a274bef4567beb2b6bf108d",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/sitemap",
+                "reference": "eade2531c0225577821442289ba6f0a69c4634c3"
             },
             "type": "library",
             "extra": {
@@ -7143,30 +7077,21 @@
                     "RealDriss\\Sitemap\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Sitemap package for Laravel.",
-            "support": {
-                "issues": "https://github.com/realdriss/sitemap/issues",
-                "source": "https://github.com/realdriss/sitemap/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:50:19+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/slug",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/slug.git",
-                "reference": "cf3ad2803ecb6d0c91d3ad2321a27a3caa94c72d"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/slug/zipball/cf3ad2803ecb6d0c91d3ad2321a27a3caa94c72d",
-                "reference": "cf3ad2803ecb6d0c91d3ad2321a27a3caa94c72d",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/slug",
+                "reference": "82aaef8dd24e6e12df6fdeac38dfde1e8723231d"
             },
             "require": {
                 "realdriss/platform": "*@dev"
@@ -7187,27 +7112,18 @@
                     "RealDriss\\Slug\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Slug/Permalink",
-            "support": {
-                "issues": "https://github.com/realdriss/slug/issues",
-                "source": "https://github.com/realdriss/slug/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:51:05+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/theme",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/theme.git",
-                "reference": "4f48ca59324c86a2f8c40fbfcea81db9c41c6ef1"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/theme/zipball/4f48ca59324c86a2f8c40fbfcea81db9c41c6ef1",
-                "reference": "4f48ca59324c86a2f8c40fbfcea81db9c41c6ef1",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/theme",
+                "reference": "ac757fb36a0744a8e17dfc2ab208dddaa73417d1"
             },
             "require": {
                 "realdriss/platform": "*@dev",
@@ -7237,27 +7153,18 @@
                     "RealDriss\\Theme\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Theme package",
-            "support": {
-                "issues": "https://github.com/realdriss/theme/issues",
-                "source": "https://github.com/realdriss/theme/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:51:43+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "realdriss/widget",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/realdriss/widget.git",
-                "reference": "11a285065c81010aadb96dfe75c64e9934ac37eb"
-            },
+            "version": "dev-dev",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/realdriss/widget/zipball/11a285065c81010aadb96dfe75c64e9934ac37eb",
-                "reference": "11a285065c81010aadb96dfe75c64e9934ac37eb",
-                "shasum": ""
+                "type": "path",
+                "url": "./platform/packages/widget",
+                "reference": "1e3125eb10f8be75acb1864324d2a9b1921060a2"
             },
             "require": {
                 "realdriss/platform": "*@dev",
@@ -7280,13 +7187,10 @@
                     "RealDriss\\Widget\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "description": "Widget package",
-            "support": {
-                "issues": "https://github.com/realdriss/widget/issues",
-                "source": "https://github.com/realdriss/widget/tree/v1.0.0"
-            },
-            "time": "2023-04-14T11:52:17+00:00"
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "ringcentral/psr7",
@@ -14179,7 +14083,14 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "realdriss/menu": 20,
+        "realdriss/page": 20,
+        "realdriss/platform": 20,
+        "realdriss/plugin-management": 20,
+        "realdriss/shortcode": 20,
+        "realdriss/theme": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
