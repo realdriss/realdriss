@@ -2,13 +2,6 @@
     "name": "realdriss/shortcode",
     "description": "Shortcode package",
     "type": "package",
-    
-    "authors": [
-        {
-            "name": "Godwin Waswa",
-            "email": "godwin@realdriss.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "RealDriss\\Shortcode\\": "src"

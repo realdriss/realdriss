@@ -1,5 +1,5 @@
 {
-    "name": "RealDriss/payment",
+    "name": "realdriss/payment",
     "description": "Payment plugin",
     "type": "package",
     "require": {

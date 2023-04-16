@@ -2,13 +2,6 @@
     "name": "realdriss/slug",
     "description": "Slug/Permalink",
     "type": "package",
-    
-    "authors": [
-        {
-            "name": "Godwin Waswa",
-            "email": "godwin@realdriss.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "RealDriss\\Slug\\": "src"

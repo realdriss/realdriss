@@ -2,13 +2,6 @@
     "name": "realdriss/theme",
     "description": "Theme package",
     "type": "package",
-    
-    "authors": [
-        {
-            "name": "Godwin Waswa",
-            "email": "godwin@realdriss.com"
-        }
-    ],
     "autoload": {
         "psr-4": {
             "RealDriss\\Theme\\": "src"

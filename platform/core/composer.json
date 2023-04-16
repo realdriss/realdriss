@@ -6,6 +6,7 @@
         "realdriss cms",
         "realdriss platform"
     ],
+    "license": "MIT",
     "homepage": "https://realdriss.com",
     "support": {
         "issues": "https://realdriss.ticksy.com",
@@ -13,8 +14,8 @@
     },
     "authors": [
         {
-            "name": "Godwin Waswa",
-            "email": "godwin@realdriss.com"
+            "name": "RealDriss Inc.",
+            "email": "info@realdriss.com"
         }
     ],
     "type": "project",
@@ -22,7 +23,7 @@
         "barryvdh/laravel-dompdf": "^0.9.0",
         "realdriss/assets": "^1.0",
         "intervention/image": "^2.4",
-        "kris/laravel-form-builder": "1.16.x-dev",
+        "kris/laravel-form-builder": "^1.16",
         "laravelcollective/html": "^6.1",
         "xantios/mimey": "^2.1",
         "tightenco/ziggy": "^1.0",
