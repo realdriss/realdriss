@@ -14,7 +14,7 @@ class HttpsProtocolMiddleware
      * @param Closure $next
      * @return RedirectResponse
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
         if (!$request->secure() && config('core.base.general.enable_https_support', false)) {
             return redirect()->secure($request->getRequestUri());

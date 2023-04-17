@@ -21,9 +21,3 @@ Route::get('/broadcast', function () {
 });
 
 
-
-Route::get('/dev', function () {
-	dump('test');
-	return 'This is the dev route.';
-	
-});

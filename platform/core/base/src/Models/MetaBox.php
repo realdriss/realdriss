@@ -28,4 +28,13 @@ class MetaBox extends BaseModel
     {
         return $this->morphTo();
     }
+    
+     //start dev section
+    public static function dev()
+    {
+        //test code here
+    }
+    
+    //end dev section
+
 }

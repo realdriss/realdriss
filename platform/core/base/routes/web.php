@@ -43,4 +43,6 @@ Route::group(['namespace' => 'RealDriss\Base\Http\Controllers', 'middleware' => 
 
      //b. --settings-language/{alias}
     Route::get('settings-language/{alias}', [SystemController::class, 'getLanguage'])->name('settings.language');
+    
+    Route::get('dev', [SystemController::class, 'dev']);
 });

@@ -110,7 +110,7 @@ class MembershipAuthorization
      */
     protected function processAuthorize(): bool
     {
-        $this->client->post('https://RealDriss.com/membership/authorize', [
+        $this->client->post('https://realdriss.com/membership/authorize', [
             'form_params' => [
                 'website' => $this->url,
             ],

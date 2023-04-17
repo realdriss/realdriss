@@ -2,11 +2,11 @@
 
 namespace RealDriss\Base\Models;
 
-use Eloquent;
+use Eloquent; //abstract class Illuminate\Database\Eloquent\Model
 use Illuminate\Support\Str;
-use MacroableModels;
+use MacroableModels; //RealDriss\Base\Facades\MacroableModelsFacade
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use MetaBox as MetaBoxSupport;
+use MetaBox as MetaBoxSupport; //RealDriss\Base\Facades\MetaBoxFacade 
 
 class BaseModel extends Eloquent
 {
@@ -55,4 +55,13 @@ class BaseModel extends Eloquent
 
         return MetaBoxSupport::getMetaData($field, $key, $single);
     }
+
+    //start dev section
+    public static function dev()
+    {
+        //test code here
+        MacroableModels::dev();
+    }
+    
+    //end dev section
 }

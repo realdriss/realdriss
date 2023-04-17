@@ -2,7 +2,7 @@
     "name": "RealDriss",
     "namespace": "Theme\\RealDriss\\",
     "description": "Ecommerce shopping theme",
-    "author": "RealDriss Inc.",
-    "version": "0.0.0",
+    "author": "Godwin Waswa",
+    "version": "v1.0.0",
     "required_plugins": []
 }

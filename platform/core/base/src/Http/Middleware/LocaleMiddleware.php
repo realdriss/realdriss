@@ -31,7 +31,7 @@ class LocaleMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
         $this->app->setLocale(config('app.locale'));
 

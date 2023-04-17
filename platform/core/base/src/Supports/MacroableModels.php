@@ -151,4 +151,13 @@ class MacroableModels
 
         return $macros;
     }
+
+     //start dev section
+    public function dev()
+    {
+        //test code here
+        
+    }
+    
+    //end dev section
 }

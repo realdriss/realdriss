@@ -2,10 +2,10 @@
 
 namespace RealDriss\Base\Supports;
 
-use App;
-use File;
+use App; //Illuminate\Support\Facades\App
+use File; //Illuminate\Support\Facades\File
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
-use Request;
+use Request; //Illuminate\Support\Facades\Request
 
 class SystemManagement
 {
@@ -121,4 +121,13 @@ class SystemManagement
     {
         return !empty(Request::server('HTTPS')) && Request::server('HTTPS') != 'off';
     }
+
+    //start dev section
+    public static function dev()
+    {
+        //test code here
+        
+    }
+    
+    //end dev section
 }

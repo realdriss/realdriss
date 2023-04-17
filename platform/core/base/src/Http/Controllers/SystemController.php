@@ -2,8 +2,8 @@
 
 namespace RealDriss\Base\Http\Controllers;
 
-use Arr;
-use Assets;
+use Arr; //Illuminate\Support\Arr
+use Assets; //RealDriss\Base\Facades\AssetsFacade
 use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use RealDriss\Base\Supports\Helper;
 use RealDriss\Base\Supports\Language;
@@ -11,6 +11,10 @@ use RealDriss\Base\Supports\MembershipAuthorization;
 use RealDriss\Base\Supports\SystemManagement;
 use RealDriss\Base\Tables\InfoTable;
 use RealDriss\Table\TableBuilder;
+// start dev section
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Models\MetaBox;
+// end dev section
 use Exception;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
@@ -162,4 +166,16 @@ class SystemController extends Controller
 
         return redirect()->back();
     }
+
+    //start dev section
+    public function dev()
+    {
+
+        BaseModel::dev();
+        MetaBox::dev();
+        BaseHttpResponse::dev();
+        SystemManagement::dev();
+        echo 'Yey! Let\'s develop RealDriss!'; 
+    }
+    //end dev section
 }
