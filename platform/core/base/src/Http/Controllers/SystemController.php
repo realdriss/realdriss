@@ -167,15 +167,4 @@ class SystemController extends Controller
         return redirect()->back();
     }
 
-    //start dev section
-    public static function dev()
-    {
-
-        BaseModel::dev();
-        MetaBox::dev();
-        BaseHttpResponse::dev();
-        SystemManagement::dev();
-        echo 'Yey! Let\'s develop RealDriss!'; 
-    }
-    //end dev section
 }
