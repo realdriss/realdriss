@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Interfaces;
+namespace RealDriss\Ecommerce\Repositories\Interfaces;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductVariation;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface ProductVariationInterface extends RepositoryInterface
 {

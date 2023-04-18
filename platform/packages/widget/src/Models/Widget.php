@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget\Models;
+namespace RealDriss\Widget\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 
 class Widget extends BaseModel
 {

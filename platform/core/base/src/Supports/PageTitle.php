@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
 class PageTitle
 {
@@ -31,6 +31,6 @@ class PageTitle
             return $this->title;
         }
 
-        return $this->title . ' | ' . setting('admin_title', config('core.base.general.base_name'));
+        return $this->title . ' — ' . setting('admin_title', config('core.base.general.base_name'));
     }
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Facades;
+namespace RealDriss\Theme\Facades;
 
-use Botble\Theme\Supports\SiteMapManager;
+use RealDriss\Theme\Supports\SiteMapManager;
 use Illuminate\Support\Facades\Facade;
 
 class SiteMapManagerFacade extends Facade

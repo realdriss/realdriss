@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Services\Abstracts;
+namespace RealDriss\Blog\Services\Abstracts;
 
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
 use Illuminate\Http\Request;
 
 abstract class StoreCategoryServiceAbstract

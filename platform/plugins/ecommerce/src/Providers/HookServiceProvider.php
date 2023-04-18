@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Providers;
+namespace RealDriss\Ecommerce\Providers;
 
 use Assets;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ReviewInterface;
-use Botble\Payment\Supports\PaymentHelper;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\Customer;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
+use RealDriss\Payment\Supports\PaymentHelper;
 use Form;
 use Html;
 use Illuminate\Contracts\Container\BindingResolutionException;

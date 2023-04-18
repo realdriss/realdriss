@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Widget\Models\Widget as WidgetModel;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Widget\Models\Widget as WidgetModel;
 use Theme;
 
 class WidgetSeeder extends BaseSeeder

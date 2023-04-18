@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Contact\Repositories\Eloquent;
+namespace RealDriss\Contact\Repositories\Eloquent;
 
-use Botble\Contact\Enums\ContactStatusEnum;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Contact\Enums\ContactStatusEnum;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ContactRepository extends RepositoriesAbstract implements ContactInterface
 {

@@ -1,7 +1,7 @@
 @extends('core/base::layouts.master')
 @section('content')
     <div class="max-width-1200">
-        @if ($shipment->status == \Botble\Ecommerce\Enums\ShippingStatusEnum::CANCELED)
+        @if ($shipment->status == \RealDriss\Ecommerce\Enums\ShippingStatusEnum::CANCELED)
             <div class="ui-layout__item mb20">
                 <div class="ui-banner ui-banner--status-warning">
                     <div class="ui-banner__ribbon">
@@ -31,7 +31,7 @@
                                         @php
                                             $product = get_products([
                                                 'condition' => [
-                                                    'ec_products.status' => \Botble\Base\Enums\BaseStatusEnum::PUBLISHED,
+                                                    'ec_products.status' => \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED,
                                                     'ec_products.id'     => $orderProduct->product_id,
                                                 ],
                                                 'take'   => 1,
@@ -111,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                @if ($shipment->status != \Botble\Ecommerce\Enums\ShippingStatusEnum::CANCELED)
+                @if ($shipment->status != \RealDriss\Ecommerce\Enums\ShippingStatusEnum::CANCELED)
                     <br>
                     <div class="shipment-actions">
                         <div class="dropdown btn-group">
@@ -122,11 +122,11 @@
                             <div class="dropdown dropdown-menu dropdown-ps-left applist-style animate-scale-dropdown min-width-200-px" role="menu" aria-labelledby="dropdownfilter">
                                 <div>
                                     <ul class="applist-menu">
-                                        <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::PICKING }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::PICKING()->label() }}</a></li>
-                                        <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::DELIVERING }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::DELIVERING()->label() }}</a></li>
-                                        <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::DELIVERED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::DELIVERED()->label() }}</a></li>
-                                        <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::NOT_DELIVERED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::NOT_DELIVERED()->label() }}</a></li>
-                                        <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::CANCELED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingStatusEnum::CANCELED()->label() }}</a></li>
+                                        <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::PICKING }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::PICKING()->label() }}</a></li>
+                                        <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::DELIVERING }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::DELIVERING()->label() }}</a></li>
+                                        <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::DELIVERED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::DELIVERED()->label() }}</a></li>
+                                        <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::NOT_DELIVERED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::NOT_DELIVERED()->label() }}</a></li>
+                                        <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::CANCELED }}" data-target="{{ route('ecommerce.shipments.update-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingStatusEnum::CANCELED()->label() }}</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -140,8 +140,8 @@
                                 <div class="dropdown dropdown-menu dropdown-ps-left applist-style animate-scale-dropdown min-width-200-px" role="menu" aria-labelledby="dropdownfilter">
                                     <div>
                                         <ul class="applist-menu">
-                                            <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingCodStatusEnum::PENDING }}" data-target="{{ route('ecommerce.shipments.update-cod-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingCodStatusEnum::PENDING()->label() }}</a></li>
-                                            <li><a data-value="{{ \Botble\Ecommerce\Enums\ShippingCodStatusEnum::COMPLETED }}" data-target="{{ route('ecommerce.shipments.update-cod-status', $shipment->id) }}">{{ \Botble\Ecommerce\Enums\ShippingCodStatusEnum::COMPLETED()->label() }}</a></li>
+                                            <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingCodStatusEnum::PENDING }}" data-target="{{ route('ecommerce.shipments.update-cod-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingCodStatusEnum::PENDING()->label() }}</a></li>
+                                            <li><a data-value="{{ \RealDriss\Ecommerce\Enums\ShippingCodStatusEnum::COMPLETED }}" data-target="{{ route('ecommerce.shipments.update-cod-status', $shipment->id) }}">{{ \RealDriss\Ecommerce\Enums\ShippingCodStatusEnum::COMPLETED()->label() }}</a></li>
                                         </ul>
                                     </div>
                                 </div>

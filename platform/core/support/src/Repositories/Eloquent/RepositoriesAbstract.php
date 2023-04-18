@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Support\Repositories\Eloquent;
+namespace RealDriss\Support\Repositories\Eloquent;
 
-use Botble\Base\Supports\RepositoryHelper;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Base\Supports\RepositoryHelper;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 use Eloquent;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;

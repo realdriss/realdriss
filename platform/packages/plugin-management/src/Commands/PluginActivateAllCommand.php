@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\PluginManagement\Commands;
+namespace RealDriss\PluginManagement\Commands;
 
-use Botble\PluginManagement\Services\PluginService;
+use RealDriss\PluginManagement\Services\PluginService;
 use File;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;

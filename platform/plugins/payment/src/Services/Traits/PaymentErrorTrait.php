@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Services\Traits;
+namespace RealDriss\Payment\Services\Traits;
 
-use Botble\Payment\Supports\StripeHelper;
+use RealDriss\Payment\Supports\StripeHelper;
 use Exception;
 use Illuminate\Support\Arr;
 use Log;

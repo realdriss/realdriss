@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Cart;
+namespace RealDriss\Ecommerce\Cart;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Cart\Contracts\Buyable;
-use Botble\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
-use Botble\Ecommerce\Cart\Exceptions\InvalidRowIDException;
-use Botble\Ecommerce\Cart\Exceptions\UnknownModelException;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Cart\Contracts\Buyable;
+use RealDriss\Ecommerce\Cart\Exceptions\CartAlreadyStoredException;
+use RealDriss\Ecommerce\Cart\Exceptions\InvalidRowIDException;
+use RealDriss\Ecommerce\Cart\Exceptions\UnknownModelException;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Carbon\Carbon;
 use Closure;
 use EcommerceHelper;

@@ -101,7 +101,7 @@
 
 <div class="form-group stock-status-wrapper @if (old('with_storehouse_management', $product ? $product->with_storehouse_management : ($originalProduct->with_storehouse_management ?? 0)) == 1) hidden @endif">
     <label class="text-title-field">{{ trans('plugins/ecommerce::products.form.stock_status') }}</label>
-    {!! Form::customSelect('stock_status', \Botble\Ecommerce\Enums\StockStatusEnum::labels(), $product ? $product->stock_status : null) !!}
+    {!! Form::customSelect('stock_status', \RealDriss\Ecommerce\Enums\StockStatusEnum::labels(), $product ? $product->stock_status : null) !!}
 </div>
 
 <hr/>

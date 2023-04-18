@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\JsValidation\Support;
+namespace RealDriss\JsValidation\Support;
 
 use Closure;
 use Illuminate\Validation\ValidationRuleParser;

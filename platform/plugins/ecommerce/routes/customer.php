@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Customers', 'middleware' => ['web', 'core']],
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers\Customers', 'middleware' => ['web', 'core']],
     function () {
         Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
             Route::group(['prefix' => 'customers', 'as' => 'customer.'], function () {
@@ -54,7 +54,7 @@ Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Customers', 'mid
     });
 
 Route::group([
-    'namespace'  => 'Botble\Ecommerce\Http\Controllers\Customers',
+    'namespace'  => 'RealDriss\Ecommerce\Http\Controllers\Customers',
     'middleware' => ['web', 'core', 'customer.guest'],
     'as'         => 'customer.',
 ], function () {
@@ -74,7 +74,7 @@ Route::group([
 });
 
 Route::group([
-    'namespace'  => 'Botble\Ecommerce\Http\Controllers\Customers',
+    'namespace'  => 'RealDriss\Ecommerce\Http\Controllers\Customers',
     'middleware' => [
         'web',
         'core',
@@ -89,7 +89,7 @@ Route::group([
 });
 
 Route::group([
-    'namespace'  => 'Botble\Ecommerce\Http\Controllers\Customers',
+    'namespace'  => 'RealDriss\Ecommerce\Http\Controllers\Customers',
     'middleware' => ['web', 'core', 'customer'],
     'prefix'     => 'customer',
     'as'         => 'customer.',

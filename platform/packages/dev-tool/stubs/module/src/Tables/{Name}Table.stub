@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\{Module}\Tables;
+namespace RealDriss\{Module}\Tables;
 
 use Illuminate\Support\Facades\Auth;
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\{Module}\Repositories\Interfaces\{Name}Interface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\{Module}\Repositories\Interfaces\{Name}Interface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Yajra\DataTables\DataTables;
 use Html;

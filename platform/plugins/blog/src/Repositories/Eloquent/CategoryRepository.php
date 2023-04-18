@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Blog\Repositories\Eloquent;
+namespace RealDriss\Blog\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Eloquent;
 
 class CategoryRepository extends RepositoriesAbstract implements CategoryInterface

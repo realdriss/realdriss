@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Support\Facades\DB;
 
 class OrderRepository extends RepositoriesAbstract implements OrderInterface

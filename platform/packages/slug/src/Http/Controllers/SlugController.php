@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Slug\Http\Controllers;
+namespace RealDriss\Slug\Http\Controllers;
 
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Setting\Supports\SettingStore;
-use Botble\Slug\Http\Requests\SlugRequest;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Slug\Services\SlugService;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Setting\Supports\SettingStore;
+use RealDriss\Slug\Http\Requests\SlugRequest;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Slug\Services\SlugService;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;

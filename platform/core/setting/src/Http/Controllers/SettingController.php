@@ -1,24 +1,24 @@
 <?php
 
-namespace Botble\Setting\Http\Controllers;
+namespace RealDriss\Setting\Http\Controllers;
 
 use Assets;
-use Botble\Base\Supports\Core;
-use Botble\Base\Supports\Language;
-use Botble\Setting\Http\Requests\EmailTemplateRequest;
-use Botble\Setting\Http\Requests\LicenseSettingRequest;
-use Botble\Setting\Http\Requests\MediaSettingRequest;
-use Botble\Setting\Http\Requests\SendTestEmailRequest;
-use Botble\Setting\Http\Requests\SettingRequest;
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
+use RealDriss\Base\Supports\Core;
+use RealDriss\Base\Supports\Language;
+use RealDriss\Setting\Http\Requests\EmailTemplateRequest;
+use RealDriss\Setting\Http\Requests\LicenseSettingRequest;
+use RealDriss\Setting\Http\Requests\MediaSettingRequest;
+use RealDriss\Setting\Http\Requests\SendTestEmailRequest;
+use RealDriss\Setting\Http\Requests\SettingRequest;
+use RealDriss\Setting\Repositories\Interfaces\SettingInterface;
 use Carbon\Carbon;
 use EmailHandler;
 use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Facades\File;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Throwable;

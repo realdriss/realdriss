@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Table;
+namespace RealDriss\Table;
 
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Container\Container;
 use InvalidArgumentException;

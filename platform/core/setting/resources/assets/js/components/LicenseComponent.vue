@@ -54,7 +54,7 @@
                             <p><small class="text-danger">Note: Your site IP will be added to blacklist after 5 failed attempts.</small></p>
                             <p>
                                 <small>A purchase code (license) is only valid for One Domain. Are you using this theme on a new domain? Purchase a
-                                <a href="https://codecanyon.net/user/botble/portfolio" target="_blank" rel="nofollow">new license here</a> to get a new purchase code.</small>
+                                <a href="https://codecanyon.net/user/RealDriss/portfolio" target="_blank" rel="nofollow">new license here</a> to get a new purchase code.</small>
                             </p>
                         </div>
                     </div>
@@ -123,7 +123,7 @@
                         this.isLoading = false;
                     })
                     .catch(res =>  {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         this.isLoading = false;
                     });
             },
@@ -133,7 +133,7 @@
                 axios.post(this.activateLicenseUrl, {purchase_code: this.purchaseCode, buyer: this.buyer, license_rules_agreement: this.licenseRulesAgreement})
                     .then(res =>  {
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                         } else {
                             this.verified = true;
                             this.license = res.data.data;
@@ -141,7 +141,7 @@
                         this.activating = false;
                     })
                     .catch(res =>  {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         this.activating = false;
                     });
             },
@@ -150,14 +150,14 @@
                 axios.post(this.deactivateLicenseUrl)
                     .then(res =>  {
                         if (res.data.error) {
-                            Botble.showError(res.data.message);
+                            RealDriss.showError(res.data.message);
                         } else {
                             this.verified = false;
                         }
                         this.deactivating = false;
                     })
                     .catch(res =>  {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                         this.deactivating = false;
                     });
             },

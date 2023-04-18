@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace RealDriss\Base\Listeners;
 
-use Botble\Base\Events\SendMailEvent;
-use Botble\Base\Supports\EmailAbstract;
+use RealDriss\Base\Events\SendMailEvent;
+use RealDriss\Base\Supports\EmailAbstract;
 use Exception;
 use Illuminate\Contracts\Mail\Mailer;
 use Log;

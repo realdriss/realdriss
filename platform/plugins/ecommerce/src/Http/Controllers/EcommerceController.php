@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Http\Requests\StoreLocatorRequest;
-use Botble\Ecommerce\Http\Requests\UpdatePrimaryStoreRequest;
-use Botble\Ecommerce\Http\Requests\UpdateSettingsRequest;
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
-use Botble\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
-use Botble\Ecommerce\Services\StoreCurrenciesService;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Http\Requests\StoreLocatorRequest;
+use RealDriss\Ecommerce\Http\Requests\UpdatePrimaryStoreRequest;
+use RealDriss\Ecommerce\Http\Requests\UpdateSettingsRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
+use RealDriss\Ecommerce\Services\StoreCurrenciesService;
+use RealDriss\Setting\Supports\SettingStore;
 use EcommerceHelper;
 use Exception;
 use Illuminate\Contracts\View\Factory;

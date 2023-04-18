@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Repositories\Interfaces;
+namespace RealDriss\Newsletter\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface NewsletterInterface extends RepositoryInterface
 {

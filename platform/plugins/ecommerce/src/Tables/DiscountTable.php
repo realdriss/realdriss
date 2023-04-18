@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace RealDriss\Ecommerce\Tables;
 
 use BaseHelper;
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;
 use Yajra\DataTables\DataTables;

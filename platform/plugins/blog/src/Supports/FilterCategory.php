@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Blog\Supports;
+namespace RealDriss\Blog\Supports;
 
 class FilterCategory
 {

@@ -5,7 +5,7 @@ if (!defined('ECOMMERCE_MODULE_SCREEN_NAME')) {
 }
 
 if (!defined('ECOMMERCE_GROUP_CACHE_KEY')) {
-    define('ECOMMERCE_GROUP_CACHE_KEY', 'Botble\Ecommerce\Repositories');
+    define('ECOMMERCE_GROUP_CACHE_KEY', 'RealDriss\Ecommerce\Repositories');
 }
 
 if (!defined('PRODUCT_MODULE_SCREEN_NAME')) {

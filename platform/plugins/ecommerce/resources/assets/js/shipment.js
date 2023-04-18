@@ -24,18 +24,18 @@ class ShipmentManagement {
                 },
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.max-width-1200').load(window.location.href + ' .max-width-1200 > *', () => {
                             $('#confirm-change-status-modal').modal('hide');
                             _self.removeClass('button-loading');
                         });
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                         _self.removeClass('button-loading');
                     }
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace RealDriss\Theme\Providers;
 
-use Botble\Base\Supports\Helper;
+use RealDriss\Base\Supports\Helper;
 use Composer\Autoload\ClassLoader;
 use File;
 use Illuminate\Contracts\Container\BindingResolutionException;

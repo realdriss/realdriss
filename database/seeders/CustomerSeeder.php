@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Address;
-use Botble\Ecommerce\Models\Customer;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Address;
+use RealDriss\Ecommerce\Models\Customer;
 use Faker\Factory;
 
 class CustomerSeeder extends BaseSeeder
@@ -24,9 +24,9 @@ class CustomerSeeder extends BaseSeeder
         Address::truncate();
 
         $customer = Customer::create([
-            'name'     => 'John Smith',
-            'email'    => 'john.smith@botble.com',
-            'password' => bcrypt('12345678'),
+            'name'     => 'Godwin Waswa',
+            'email'    => 'godwnwaswa.com',
+            'password' => bcrypt('godwin@18'),
             'phone'    => $faker->e164PhoneNumber,
             'avatar'   => 'customers/1.jpg',
         ]);
@@ -60,11 +60,11 @@ class CustomerSeeder extends BaseSeeder
             'is_default'  => false,
         ]);
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 3; $i++) {
             $customer = Customer::create([
                 'name'     => $faker->name,
                 'email'    => $faker->unique()->safeEmail,
-                'password' => bcrypt('12345678'),
+                'password' => bcrypt('realdriss@2023'),
                 'phone'    => $faker->e164PhoneNumber,
                 'avatar'   => 'customers/' . ($i + 1) . '.jpg',
             ]);

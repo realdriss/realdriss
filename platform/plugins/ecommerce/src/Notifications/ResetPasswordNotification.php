@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Notifications;
+namespace RealDriss\Ecommerce\Notifications;
 
 use EmailHandler;
 use Illuminate\Notifications\Messages\MailMessage;

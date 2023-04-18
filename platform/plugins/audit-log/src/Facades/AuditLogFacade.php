@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Facades;
+namespace RealDriss\AuditLog\Facades;
 
-use Botble\AuditLog\AuditLog;
+use RealDriss\AuditLog\AuditLog;
 use Illuminate\Support\Facades\Facade;
 
 class AuditLogFacade extends Facade

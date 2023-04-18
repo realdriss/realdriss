@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Services;
+namespace RealDriss\Slug\Services;
 
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
 use Illuminate\Support\Str;
 use SlugHelper;
 

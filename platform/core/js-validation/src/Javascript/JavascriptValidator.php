@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\JsValidation\Javascript;
+namespace RealDriss\JsValidation\Javascript;
 
-use Botble\JsValidation\Exceptions\PropertyNotFoundException;
+use RealDriss\JsValidation\Exceptions\PropertyNotFoundException;
 use Exception;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\View\View;

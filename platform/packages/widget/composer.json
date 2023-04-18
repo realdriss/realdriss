@@ -1,24 +1,24 @@
 {
-    "name": "botble/widget",
+    "name": "realdriss/widget",
     "description": "Widget package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Widget\\": "src"
+            "RealDriss\\Widget\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/theme": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Widget\\Providers\\WidgetServiceProvider"
+                "RealDriss\\Widget\\Providers\\WidgetServiceProvider"
             ],
             "aliases": {
-                "Widget": "Botble\\Widget\\Facades\\WidgetFacade",
-                "WidgetGroup": "Botble\\Widget\\Facades\\WidgetGroupFacade"
+                "Widget": "RealDriss\\Widget\\Facades\\WidgetFacade",
+                "WidgetGroup": "RealDriss\\Widget\\Facades\\WidgetGroupFacade"
             }
         }
     }

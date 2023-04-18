@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\AuditLog\Http\Controllers;
+namespace RealDriss\AuditLog\Http\Controllers;
 
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
-use Botble\AuditLog\Tables\AuditLogTable;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Traits\HasDeleteManyItemsTrait;
+use RealDriss\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use RealDriss\AuditLog\Tables\AuditLogTable;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Traits\HasDeleteManyItemsTrait;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Ecommerce\Facades\CurrencyFacade;
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
-use Botble\Ecommerce\Supports\CurrencySupport;
+use RealDriss\Ecommerce\Facades\CurrencyFacade;
+use RealDriss\Ecommerce\Models\Currency;
+use RealDriss\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use RealDriss\Ecommerce\Supports\CurrencySupport;
 use Illuminate\Support\Collection;
 
 if (!function_exists('format_price')) {

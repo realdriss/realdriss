@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Events;
+namespace RealDriss\Theme\Events;
 
-use Botble\Base\Events\Event;
+use RealDriss\Base\Events\Event;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Queue\SerializesModels;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Page\Models;
+namespace RealDriss\Page\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Revision\RevisionableTrait;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Revision\RevisionableTrait;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Page extends BaseModel

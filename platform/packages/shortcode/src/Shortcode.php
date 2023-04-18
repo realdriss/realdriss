@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Shortcode;
+namespace RealDriss\Shortcode;
 
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
+use RealDriss\Shortcode\Compilers\ShortcodeCompiler;
 
 class Shortcode
 {

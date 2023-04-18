@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Http\Requests;
+namespace RealDriss\ACL\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Support\Facades\Auth;
 
 class UpdatePasswordRequest extends Request

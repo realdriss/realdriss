@@ -15,14 +15,14 @@ class CacheManagement {
                     _self.removeClass('button-loading');
 
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                     }
                 },
                 error: data =>  {
                     _self.removeClass('button-loading');
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         });

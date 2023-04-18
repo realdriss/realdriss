@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Events;
+namespace RealDriss\Contact\Events;
 
-use Botble\Base\Events\Event;
+use RealDriss\Base\Events\Event;
 use Eloquent;
 use Illuminate\Queue\SerializesModels;
 use stdClass;

@@ -1,5 +1,5 @@
 {
-    "name": "botble/newsletter",
+    "name": "realdriss/newsletter",
     "description": "Newsletter plugin",
     "type": "package",
     "require": {

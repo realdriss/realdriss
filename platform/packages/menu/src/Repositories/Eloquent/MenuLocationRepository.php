@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Repositories\Eloquent;
+namespace RealDriss\Menu\Repositories\Eloquent;
 
-use Botble\Menu\Repositories\Interfaces\MenuLocationInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Menu\Repositories\Interfaces\MenuLocationInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class MenuLocationRepository extends RepositoriesAbstract implements MenuLocationInterface
 {

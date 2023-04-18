@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\CookieConsent;
+namespace RealDriss\CookieConsent;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
 
 class Plugin extends PluginOperationAbstract
 {

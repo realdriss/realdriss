@@ -1,9 +1,9 @@
 <?php
 
-use Botble\Ecommerce\Models\Discount;
-use Botble\Ecommerce\Models\DiscountCustomer;
-use Botble\Ecommerce\Models\DiscountProduct;
-use Botble\Ecommerce\Models\DiscountProductCollection;
+use RealDriss\Ecommerce\Models\Discount;
+use RealDriss\Ecommerce\Models\DiscountCustomer;
+use RealDriss\Ecommerce\Models\DiscountProduct;
+use RealDriss\Ecommerce\Models\DiscountProductCollection;
 
 if (!function_exists('get_discount_description')) {
     /**

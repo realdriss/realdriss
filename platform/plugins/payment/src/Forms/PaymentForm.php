@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Payment\Forms;
+namespace RealDriss\Payment\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Payment\Http\Requests\PaymentRequest;
-use Botble\Payment\Models\Payment;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Payment\Http\Requests\PaymentRequest;
+use RealDriss\Payment\Models\Payment;
 
 class PaymentForm extends FormAbstract
 {

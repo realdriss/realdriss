@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace RealDriss\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class ShippingRuleItemCacheDecorator extends CacheAbstractDecorator implements ShippingRuleItemInterface
 {

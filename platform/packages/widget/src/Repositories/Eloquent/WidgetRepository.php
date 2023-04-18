@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Widget\Repositories\Eloquent;
+namespace RealDriss\Widget\Repositories\Eloquent;
 
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 
 class WidgetRepository extends RepositoriesAbstract implements WidgetInterface
 {

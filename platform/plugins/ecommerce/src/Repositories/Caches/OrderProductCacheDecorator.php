@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace RealDriss\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Interfaces\OrderProductInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderProductInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class OrderProductCacheDecorator extends CacheAbstractDecorator implements OrderProductInterface
 {

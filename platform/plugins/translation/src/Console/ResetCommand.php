@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace RealDriss\Translation\Console;
 
 use Illuminate\Console\Command;
-use Botble\Translation\Manager;
+use RealDriss\Translation\Manager;
 
 class ResetCommand extends Command
 {

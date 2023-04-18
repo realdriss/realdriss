@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -40,26 +40,14 @@ class ProductCategorySeeder extends BaseSeeder
                     [
                         'name' => $faker->text(25),
                     ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
                 ],
             ],
             [
-                'name'        => 'Mobile',
+                'name'        => 'Mobile & Tablet',
                 'icon'        => 'flaticon-responsive',
                 'image'       => 'product-categories/p-2.png',
                 'is_featured' => true,
                 'children'    => [
-                    [
-                        'name' => $faker->text(25),
-                    ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
                     [
                         'name' => $faker->text(25),
                     ],
@@ -86,12 +74,6 @@ class ProductCategorySeeder extends BaseSeeder
                     [
                         'name' => $faker->text(25),
                     ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
                 ],
             ],
             [
@@ -100,12 +82,6 @@ class ProductCategorySeeder extends BaseSeeder
                 'image'       => 'product-categories/p-4.png',
                 'is_featured' => true,
                 'children'    => [
-                    [
-                        'name' => $faker->text(25),
-                    ],
-                    [
-                        'name' => $faker->text(25),
-                    ],
                     [
                         'name' => $faker->text(25),
                     ],
@@ -136,10 +112,6 @@ class ProductCategorySeeder extends BaseSeeder
                 'is_featured' => true,
             ],
             [
-                'name' => 'Mobile & Tablet',
-                'icon' => 'flaticon-responsive',
-            ],
-            [
                 'name' => 'Accessories',
                 'icon' => 'flaticon-plugins',
             ],
@@ -158,10 +130,6 @@ class ProductCategorySeeder extends BaseSeeder
             [
                 'name' => 'Computer',
                 'icon' => 'flaticon-tv',
-            ],
-            [
-                'name' => 'Fax Machine',
-                'icon' => 'flaticon-fax',
             ],
             [
                 'name' => 'Mouse',

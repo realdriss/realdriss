@@ -19,3 +19,5 @@ use App\Events\Test;
 Route::get('/broadcast', function () {
 	broadcast(new Test());
 });
+
+

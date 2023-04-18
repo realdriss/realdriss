@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace RealDriss\AuditLog\Providers;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\AuditLog\Listeners\AuditHandlerListener;
-use Botble\AuditLog\Listeners\CreatedContentListener;
-use Botble\AuditLog\Listeners\DeletedContentListener;
-use Botble\AuditLog\Listeners\LoginListener;
-use Botble\AuditLog\Listeners\UpdatedContentListener;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\AuditLog\Listeners\AuditHandlerListener;
+use RealDriss\AuditLog\Listeners\CreatedContentListener;
+use RealDriss\AuditLog\Listeners\DeletedContentListener;
+use RealDriss\AuditLog\Listeners\LoginListener;
+use RealDriss\AuditLog\Listeners\UpdatedContentListener;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
 use Illuminate\Auth\Events\Login;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 

@@ -1,19 +1,19 @@
 {
-    "name": "botble/plugin-management",
+    "name": "realdriss/plugin-management",
     "description": "Plugin management package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\PluginManagement\\": "src"
+            "RealDriss\\PluginManagement\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev"
+        "realdriss/platform": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\PluginManagement\\Providers\\PluginManagementServiceProvider"
+                "RealDriss\\PluginManagement\\Providers\\PluginManagementServiceProvider"
             ]
         }
     }

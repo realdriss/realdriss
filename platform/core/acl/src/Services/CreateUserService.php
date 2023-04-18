@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\ACL\Services;
+namespace RealDriss\ACL\Services;
 
-use Botble\ACL\Events\RoleAssignmentEvent;
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\RoleInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Support\Services\ProduceServiceInterface;
+use RealDriss\ACL\Events\RoleAssignmentEvent;
+use RealDriss\ACL\Models\User;
+use RealDriss\ACL\Repositories\Interfaces\RoleInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Support\Services\ProduceServiceInterface;
 use Hash;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;

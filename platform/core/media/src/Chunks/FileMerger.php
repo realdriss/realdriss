@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Chunks;
+namespace RealDriss\Media\Chunks;
 
-use Botble\Media\Chunks\Exceptions\ChunkSaveException;
+use RealDriss\Media\Chunks\Exceptions\ChunkSaveException;
 
 class FileMerger
 {

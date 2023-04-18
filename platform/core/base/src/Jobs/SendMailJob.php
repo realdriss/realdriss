@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Jobs;
+namespace RealDriss\Base\Jobs;
 
-use Botble\Base\Supports\EmailAbstract;
+use RealDriss\Base\Supports\EmailAbstract;
 use Exception;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;

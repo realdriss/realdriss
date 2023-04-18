@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
-use Botble\Assets\Assets as BaseAssets;
-use Botble\Assets\HtmlBuilder;
+use RealDriss\Assets\Assets as BaseAssets;
+use RealDriss\Assets\HtmlBuilder;
 use File;
 use Illuminate\Config\Repository;
 use Illuminate\Support\Str;

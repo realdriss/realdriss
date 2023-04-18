@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Supports\Avatar;
-use Botble\Ecommerce\Notifications\ResetPasswordNotification;
+use RealDriss\Base\Supports\Avatar;
+use RealDriss\Ecommerce\Notifications\ResetPasswordNotification;
 use Eloquent;
 use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;

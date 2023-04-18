@@ -2,12 +2,12 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Setting\Models\Setting as SettingModel;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Setting\Models\Setting as SettingModel;
+use RealDriss\Slug\Models\Slug;
 use SlugHelper;
 
 class SettingSeeder extends BaseSeeder
@@ -26,7 +26,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => SlugHelper::getPermalinkSettingKey(Category::class),
-                'value' => 'news',
+                'value' => 'category',
             ],
             [
                 'key'   => SlugHelper::getPermalinkSettingKey(Tag::class),
@@ -38,7 +38,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'payment_cod_description',
-                'value' => 'Please pay money directly to the postman, if you choose cash on delivery method (COD).',
+                'value' => 'Please pay money directly to the vendor, if you use Cash On Delivery payment method(COD).',
             ],
             [
                 'key'   => 'payment_bank_transfer_status',
@@ -58,27 +58,27 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'ecommerce_store_name',
-                'value' => 'Shopwise',
+                'value' => 'RealDriss',
             ],
             [
                 'key'   => 'ecommerce_store_phone',
-                'value' => '123-456-7890',
+                'value' => '+2547-9906-6109',
             ],
             [
                 'key'   => 'ecommerce_store_address',
-                'value' => '123 Street, Old Trafford',
+                'value' => 'Pioneer Business Center',
             ],
             [
-                'key'   => 'New York',
-                'value' => 'Singapore',
+                'key'   => 'USA',
+                'value' => 'New York',
             ],
             [
-                'key'   => 'New York',
-                'value' => 'Singapore',
+                'key'   => 'Kenya',
+                'value' => 'Eldoret',
             ],
             [
                 'key'   => 'ecommerce_store_country',
-                'value' => 'US',
+                'value' => 'KE',
             ],
         ]);
 

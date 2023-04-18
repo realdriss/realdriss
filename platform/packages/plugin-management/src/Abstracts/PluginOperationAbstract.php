@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\PluginManagement\Abstracts;
+namespace RealDriss\PluginManagement\Abstracts;
 
 abstract class PluginOperationAbstract
 {

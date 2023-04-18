@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Widget;
+namespace RealDriss\Widget;
 
 class WidgetId
 {

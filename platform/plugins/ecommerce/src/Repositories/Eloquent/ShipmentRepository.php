@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\ShipmentInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShipmentInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class ShipmentRepository extends RepositoriesAbstract implements ShipmentInterface
 {

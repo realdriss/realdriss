@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Repositories\Caches;
+namespace RealDriss\Payment\Repositories\Caches;
 
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
 
 class PaymentCacheDecorator extends CacheAbstractDecorator implements PaymentInterface
 {

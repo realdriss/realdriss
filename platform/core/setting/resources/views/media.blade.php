@@ -55,13 +55,13 @@
                             <label class="text-title-field"
                                    for="media_aws_bucket">{{ trans('core/setting::setting.media.aws_bucket') }}</label>
                             <input type="text" class="next-input" name="media_aws_bucket" id="media_aws_bucket"
-                                   value="{{ config('filesystems.disks.s3.bucket') }}" placeholder="Ex: botble">
+                                   value="{{ config('filesystems.disks.s3.bucket') }}" placeholder="Ex: RealDriss">
                         </div>
                         <div class="form-group" style="margin-bottom: 1rem;">
                             <label class="text-title-field"
                                    for="media_aws_url">{{ trans('core/setting::setting.media.aws_url') }}</label>
                             <input type="text" class="next-input" name="media_aws_url" id="media_aws_url"
-                                   value="{{ config('filesystems.disks.s3.url') }}" placeholder="Ex: https://s3-ap-southeast-1.amazonaws.com/botble">
+                                   value="{{ config('filesystems.disks.s3.url') }}" placeholder="Ex: https://s3-ap-southeast-1.amazonaws.com/RealDriss">
                         </div>
                     </div>
 
@@ -88,7 +88,7 @@
                             <label class="text-title-field"
                                    for="media_do_spaces_bucket">{{ trans('core/setting::setting.media.do_spaces_bucket') }}</label>
                             <input type="text" class="next-input" name="media_do_spaces_bucket" id="media_do_spaces_bucket"
-                                   value="{{ config('filesystems.disks.do_spaces.bucket') }}" placeholder="Ex: botble">
+                                   value="{{ config('filesystems.disks.do_spaces.bucket') }}" placeholder="Ex: RealDriss">
                         </div>
                         <div class="form-group">
                             <label class="text-title-field"
@@ -134,7 +134,7 @@
                             <label class="text-title-field"
                                    for="media_wasabi_bucket">{{ trans('core/setting::setting.media.wasabi_bucket') }}</label>
                             <input type="text" class="next-input" name="media_wasabi_bucket" id="media_wasabi_bucket"
-                                   value="{{ config('filesystems.disks.wasabi.bucket') }}" placeholder="Ex: botble">
+                                   value="{{ config('filesystems.disks.wasabi.bucket') }}" placeholder="Ex: RealDriss">
                         </div>
                         <div class="form-group">
                             <label class="text-title-field"

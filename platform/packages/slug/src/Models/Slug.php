@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Models;
+namespace RealDriss\Slug\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Slug extends BaseModel

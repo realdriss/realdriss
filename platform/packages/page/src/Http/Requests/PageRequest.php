@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Page\Http\Requests;
+namespace RealDriss\Page\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Page\Supports\Template;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Page\Supports\Template;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class PageRequest extends Request

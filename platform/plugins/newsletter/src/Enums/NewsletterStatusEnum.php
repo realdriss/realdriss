@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Enums;
+namespace RealDriss\Newsletter\Enums;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 use Html;
 
 /**

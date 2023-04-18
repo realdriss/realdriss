@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Analytics;
+namespace RealDriss\Analytics;
 
-use Botble\Analytics\Exceptions\InvalidPeriod;
+use RealDriss\Analytics\Exceptions\InvalidPeriod;
 use DateTime;
 use DateTimeInterface;
 

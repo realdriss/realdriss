@@ -3,7 +3,7 @@
 return [
     'pattern'   => '--slug--',
     'supported' => [
-        'Botble\Page\Models\Page' => 'Pages',
+        'RealDriss\Page\Models\Page' => 'Pages',
     ],
     'prefixes'  => [
 

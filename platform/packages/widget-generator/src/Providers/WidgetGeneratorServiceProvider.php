@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\WidgetGenerator\Providers;
+namespace RealDriss\WidgetGenerator\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

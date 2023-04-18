@@ -24,6 +24,8 @@ $app = new Illuminate\Foundation\Application(  //we are able to call this class 
 | we will be able to resolve them when needed. The kernels serve the
 | incoming requests to this application from both the web and CLI.
 |
+| These two kernels serve as the central location that all requests flow through.
+|
 */
 
 $app->singleton(

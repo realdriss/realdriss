@@ -1,3 +1,3 @@
 $(document).ready(() => {
-    Botble.initCodeEditor('custom_css');
+    RealDriss.initCodeEditor('custom_css');
 });

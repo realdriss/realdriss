@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Commands;
+namespace RealDriss\Slug\Commands;
 
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
 use Illuminate\Console\Command;
 
 class ChangeSlugPrefixCommand extends Command

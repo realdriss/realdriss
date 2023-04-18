@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Support\Http\Requests;
+namespace RealDriss\Support\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Concerns\InteractsWithInput;

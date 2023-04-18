@@ -1,16 +1,16 @@
 <?php
 
-namespace Botble\Translation\Http\Controllers;
+namespace RealDriss\Translation\Http\Controllers;
 
 use Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Language;
-use Botble\Base\Supports\PclZip as Zip;
-use Botble\Translation\Http\Requests\LocaleRequest;
-use Botble\Translation\Http\Requests\TranslationRequest;
-use Botble\Translation\Manager;
-use Botble\Translation\Models\Translation;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Supports\Language;
+use RealDriss\Base\Supports\PclZip as Zip;
+use RealDriss\Translation\Http\Requests\LocaleRequest;
+use RealDriss\Translation\Http\Requests\TranslationRequest;
+use RealDriss\Translation\Manager;
+use RealDriss\Translation\Models\Translation;
 use File;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -173,6 +173,7 @@ class TranslationController extends BaseController
 
         $existingLocales = Language::getAvailableLocales();
         $languages = Language::getListLanguages();
+        dump($languages);
         $flags = Language::getListLanguageFlags();
 
         $locales = [];
@@ -333,6 +334,8 @@ class TranslationController extends BaseController
             if (File::exists($jsonFile)) {
                 $translations = get_file_data($jsonFile, true);
             }
+
+            // dump($translations);
 
             if ($group['locale'] != 'en') {
                 $defaultEnglishFile = theme_path(Theme::getThemeName() . '/lang/en.json');

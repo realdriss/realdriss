@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Repositories\Interfaces;
+namespace RealDriss\Dashboard\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface DashboardWidgetInterface extends RepositoryInterface
 {

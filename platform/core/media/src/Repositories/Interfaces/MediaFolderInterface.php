@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Repositories\Interfaces;
+namespace RealDriss\Media\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface MediaFolderInterface extends RepositoryInterface
 {

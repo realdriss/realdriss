@@ -126,7 +126,7 @@ class CropAvatar {
 
     submit() {
         if (!this.$avatarSrc.val() && !this.$avatarInput.val()) {
-            Botble.showError('Please select image!');
+            RealDriss.showError('Please select image!');
             return false;
         }
 
@@ -250,17 +250,17 @@ class CropAvatar {
                 }
 
                 this.$avatarInput.val('');
-                Botble.showSuccess(data.message);
+                RealDriss.showSuccess(data.message);
             } else {
-                Botble.showError(data.message);
+                RealDriss.showError(data.message);
             }
         } else {
-            Botble.showError(data.message);
+            RealDriss.showError(data.message);
         }
     }
 
     static submitFail(errors) {
-        Botble.handleError(errors);
+        RealDriss.handleError(errors);
     }
 
     submitEnd() {

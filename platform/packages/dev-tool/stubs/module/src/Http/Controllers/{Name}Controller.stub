@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\{Module}\Http\Controllers;
+namespace RealDriss\{Module}\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\{Module}\Http\Requests\{Name}Request;
-use Botble\{Module}\Repositories\Interfaces\{Name}Interface;
-use Botble\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\{Module}\Http\Requests\{Name}Request;
+use RealDriss\{Module}\Repositories\Interfaces\{Name}Interface;
+use RealDriss\Base\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
 use Exception;
-use Botble\{Module}\Tables\{Name}Table;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\{Module}\Forms\{Name}Form;
-use Botble\Base\Forms\FormBuilder;
+use RealDriss\{Module}\Tables\{Name}Table;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\{Module}\Forms\{Name}Form;
+use RealDriss\Base\Forms\FormBuilder;
 
 class {Name}Controller extends BaseController
 {

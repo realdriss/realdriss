@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Payment\Http\Requests;
+namespace RealDriss\Payment\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class PayPalPaymentCallbackRequest extends Request
 {

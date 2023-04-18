@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Theme\Facades\AdminBarFacade;
-use Botble\Theme\Facades\ThemeOptionFacade;
+use RealDriss\Theme\Facades\AdminBarFacade;
+use RealDriss\Theme\Facades\ThemeOptionFacade;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 
 if (!function_exists('sanitize_html_class')) {
@@ -18,6 +18,7 @@ if (!function_exists('sanitize_html_class')) {
         //Limit to A-Z,a-z,0-9,_,-
         $sanitized = preg_replace('/[^A-Za-z0-9_-]/', '', $sanitized);
 
+        //if the sanitized string is exhaustively sanitized to '', return the fallback
         if ('' == $sanitized && $fallback) {
             return sanitize_html_class($fallback);
         }
@@ -28,7 +29,7 @@ if (!function_exists('sanitize_html_class')) {
          * @param string $sanitized The sanitized HTML class.
          * @param string $class HTML class before sanitization.
          * @param string $fallback The fallback string.
-         * @since 2.8.0
+         * @since 2.8.0 //correct the version progress flow
          */
         return apply_filters('sanitize_html_class', $sanitized, $class, $fallback);
     }
@@ -83,7 +84,7 @@ if (!function_exists('theme')) {
 
 if (!function_exists('theme_option')) {
     /**
-     * @return \Botble\Theme\ThemeOption|string
+     * @return \RealDriss\Theme\ThemeOption|string
      */
     function theme_option($key = null, $default = '')
     {
@@ -111,7 +112,7 @@ if (!function_exists('theme_path')) {
 
 if (!function_exists('admin_bar')) {
     /**
-     * @return Botble\Theme\Supports\AdminBar
+     * @return RealDriss\Theme\Supports\AdminBar
      */
     function admin_bar()
     {

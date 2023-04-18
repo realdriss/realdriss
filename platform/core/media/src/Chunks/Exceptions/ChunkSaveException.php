@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Chunks\Exceptions;
+namespace RealDriss\Media\Chunks\Exceptions;
 
 use Exception;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Setting\Http\Requests;
+namespace RealDriss\Setting\Http\Requests;
 
 use Assets;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 use DateTimeZone;
 use Illuminate\Validation\Rule;
 

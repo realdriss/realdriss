@@ -1,7 +1,7 @@
 {
-  "name": "botble/captcha",
+  "name": "realdriss/captcha",
   "description": "Captcha for higher security",
-  "homepage": "https://botble.com",
+  "homepage": "https://RealDriss.com",
   "require": {
     "google/recaptcha": "^1.2"
   }

@@ -438,7 +438,7 @@
                         $('.coupon-code-input').closest('div').find('.invalid-feedback').remove();
                     })
                     .catch(res => {
-                        Botble.handleError(res.response.data);
+                        RealDriss.handleError(res.response.data);
                     });
             },
             changeDiscountType: function () {
@@ -494,7 +494,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -541,7 +541,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -559,7 +559,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },
@@ -577,7 +577,7 @@
                             context.loading = false;
                         })
                         .catch(res => {
-                            Botble.handleError(res.response.data);
+                            RealDriss.handleError(res.response.data);
                         });
                 }
             },

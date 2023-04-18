@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\{Module}\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\{Module}\Http\Controllers', 'middleware' => ['web', 'core']], function () {
 
     Route::group(['prefix' => BaseHelper::getAdminPrefix(), 'middleware' => 'auth'], function () {
 

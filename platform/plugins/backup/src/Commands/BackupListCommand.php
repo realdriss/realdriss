@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Backup\Commands;
+namespace RealDriss\Backup\Commands;
 
-use Botble\Backup\Supports\Backup;
+use RealDriss\Backup\Supports\Backup;
 use Exception;
 use Illuminate\Console\Command;
 

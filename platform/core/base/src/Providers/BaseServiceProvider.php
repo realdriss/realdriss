@@ -1,23 +1,25 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
-use Botble\Base\Exceptions\Handler;
-use Botble\Base\Facades\MacroableModelsFacade;
-use Botble\Base\Http\Middleware\CoreMiddleware;
-use Botble\Base\Http\Middleware\DisableInDemoModeMiddleware;
-use Botble\Base\Http\Middleware\HttpsProtocolMiddleware;
-use Botble\Base\Http\Middleware\LocaleMiddleware;
-use Botble\Base\Models\MetaBox as MetaBoxModel;
-use Botble\Base\Repositories\Caches\MetaBoxCacheDecorator;
-use Botble\Base\Repositories\Eloquent\MetaBoxRepository;
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
-use Botble\Base\Supports\BreadcrumbsManager;
-use Botble\Base\Supports\CustomResourceRegistrar;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\Providers\SettingServiceProvider;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Exceptions\Handler;
+use RealDriss\Base\Facades\MacroableModelsFacade;
+use RealDriss\Base\Http\Middleware\CoreMiddleware;
+use RealDriss\Base\Http\Middleware\DisableInDemoModeMiddleware;
+use RealDriss\Base\Http\Middleware\HttpsProtocolMiddleware;
+use RealDriss\Base\Http\Middleware\LocaleMiddleware;
+use RealDriss\Base\Models\MetaBox as MetaBoxModel; //prevents conflicting with /MetaBox
+use RealDriss\Base\Repositories\Caches\MetaBoxCacheDecorator;
+use RealDriss\Base\Repositories\Eloquent\MetaBoxRepository;
+use RealDriss\Base\Repositories\Interfaces\MetaBoxInterface;
+use RealDriss\Base\Supports\BreadcrumbsManager;
+use RealDriss\Base\Supports\CustomResourceRegistrar;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Setting\Providers\SettingServiceProvider;
+use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use DateTimeZone;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Contracts\Container\BindingResolutionException;
@@ -68,7 +70,7 @@ class BaseServiceProvider extends ServiceProvider
         });
 
         $this->app->make('config')->set([
-            'session.cookie'                                     => 'botble_session',
+            'session.cookie'                                     => 'RealDriss_session',
             'purifier.settings.default.AutoFormat.AutoParagraph' => false,
             'purifier.settings.default.AutoFormat.RemoveEmpty'   => false,
             'ziggy.except'                                       => ['debugbar.*'],

@@ -27,13 +27,13 @@ class SettingManagement {
                 },
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                 }
             });
         });
@@ -56,16 +56,16 @@ class SettingManagement {
                 data: _self.closest('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#send-test-email-modal').modal('show');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
 
                     _self.text(defaultText);
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.text(defaultText);
                 }
             });
@@ -85,15 +85,15 @@ class SettingManagement {
                 },
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     _self.closest('.modal').modal('hide');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                     _self.closest('.modal').modal('hide');
                 }
@@ -101,7 +101,7 @@ class SettingManagement {
         });
 
         if (typeof CodeMirror !== 'undefined') {
-            Botble.initCodeEditor('mail-template-editor');
+            RealDriss.initCodeEditor('mail-template-editor');
         }
 
         $(document).on('click', '.btn-trigger-reset-to-default', event => {
@@ -126,18 +126,18 @@ class SettingManagement {
                 },
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         setTimeout(() => {
                             window.location.reload();
                         }, 1000);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#reset-template-to-default-modal').modal('hide');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

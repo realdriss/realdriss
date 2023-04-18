@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Analytics\Facades;
+namespace RealDriss\Analytics\Facades;
 
-use Botble\Analytics\Analytics;
+use RealDriss\Analytics\Analytics;
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Botble\Analytics\Analytics
+ * @see \RealDriss\Analytics\Analytics
  */
 class AnalyticsFacade extends Facade
 {

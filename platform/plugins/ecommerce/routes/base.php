@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductTag;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Ecommerce\Models\ProductTag;
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix() . '/ecommerce', 'middleware' => 'auth'], function () {
         Route::get('settings', [
             'as'   => 'ecommerce.settings',
@@ -168,7 +168,7 @@ Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'middleware' =
     });
 });
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers\Fronts', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers\Fronts', 'middleware' => ['web', 'core']], function () {
     Route::group(apply_filters(BASE_FILTER_GROUP_PUBLIC_ROUTE, []), function () {
 
         Route::get(SlugHelper::getPrefix(Product::class, 'products'), [

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Blog\Http\Requests;
+namespace RealDriss\Blog\Http\Requests;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CategoryRequest extends Request

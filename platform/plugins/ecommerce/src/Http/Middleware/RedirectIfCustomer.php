@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Middleware;
+namespace RealDriss\Ecommerce\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

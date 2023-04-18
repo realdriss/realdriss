@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SeoHelper\Helpers;
+namespace RealDriss\SeoHelper\Helpers;
 
-use Botble\SeoHelper\Contracts\Helpers\MetaContract;
-use Botble\SeoHelper\Exceptions\InvalidArgumentException;
+use RealDriss\SeoHelper\Contracts\Helpers\MetaContract;
+use RealDriss\SeoHelper\Exceptions\InvalidArgumentException;
 use Illuminate\Support\Str;
 
 class Meta implements MetaContract

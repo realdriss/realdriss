@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace RealDriss\Blog\Http\Controllers;
 
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Services\BlogService;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Blog\Services\BlogService;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

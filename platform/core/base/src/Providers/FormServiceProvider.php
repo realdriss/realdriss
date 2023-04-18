@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
 use Form;
 use Illuminate\Support\ServiceProvider;

@@ -1,20 +1,20 @@
 {
-    "name": "botble/page",
+    "name": "realdriss/page",
     "description": "Page package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Page\\": "src"
+            "RealDriss\\Page\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/revision": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/revision": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Page\\Providers\\PageServiceProvider"
+                "RealDriss\\Page\\Providers\\PageServiceProvider"
             ]
         }
     }

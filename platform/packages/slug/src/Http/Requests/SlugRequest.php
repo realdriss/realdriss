@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Slug\Http\Requests;
+namespace RealDriss\Slug\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class SlugRequest extends Request
 {

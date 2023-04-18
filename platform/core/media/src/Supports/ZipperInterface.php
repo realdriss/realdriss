@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Media\Supports;
+namespace RealDriss\Media\Supports;
 
 /**
  * RepositoryInterface that needs to be implemented by every Repository

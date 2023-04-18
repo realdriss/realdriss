@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\Fields\MultiCheckListField;
-use Botble\Base\Forms\Fields\TagField;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Forms\Fields\CategoryMultiField;
-use Botble\Ecommerce\Http\Requests\ProductRequest;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\BrandInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
-use Botble\Ecommerce\Repositories\Interfaces\TaxInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\Fields\MultiCheckListField;
+use RealDriss\Base\Forms\Fields\TagField;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Forms\Fields\CategoryMultiField;
+use RealDriss\Ecommerce\Http\Requests\ProductRequest;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Interfaces\BrandInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCollectionInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\TaxInterface;
 use EcommerceHelper;
 use Illuminate\Support\Collection;
 

@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(function () {
-    window.botbleCookieConsent = (function () {
+    window.RealDrissCookieConsent = (function () {
 
         const COOKIE_VALUE = 1;
         const COOKIE_NAME = $('div[data-site-cookie-name]').data('site-cookie-name');

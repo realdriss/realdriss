@@ -1,7 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
+// implement the realavatar from here.
 class Gravatar
 {
     /**

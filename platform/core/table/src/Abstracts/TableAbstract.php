@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Table\Abstracts;
+namespace RealDriss\Table\Abstracts;
 
 use Assets;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
-use Botble\Table\Supports\TableExportHandler;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Table\Supports\TableExportHandler;
 use Carbon\Carbon;
 use Form;
 use Html;

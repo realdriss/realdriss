@@ -15,7 +15,7 @@
                             @foreach ($shipping as $shippingItem)
                                 <div class="wrap-table-shipping-{{ $shippingItem->id }}">
                                     <div class="pd-all-20 p-none-b">
-                                        <label class="p-none-r">{{ trans('plugins/ecommerce::shipping.country') }}: <strong>{{ Arr::get(\Botble\Base\Supports\Helper::countries(), $shippingItem->title, $shippingItem->title) }}</strong></label>
+                                        <label class="p-none-r">{{ trans('plugins/ecommerce::shipping.country') }}: <strong>{{ Arr::get(\RealDriss\Base\Supports\Helper::countries(), $shippingItem->title, $shippingItem->title) }}</strong></label>
                                         <a href="#" class="btn-change-link float-right pl20 btn-add-shipping-rule-trigger" data-shipping-id="{{ $shippingItem->id }}">{{ trans('plugins/ecommerce::shipping.add_shipping_rule') }}</a>
                                         &nbsp;&nbsp;&nbsp;
                                         <a href="#" class="btn-change-link float-right excerpt btn-confirm-delete-region-item-modal-trigger text-danger" data-id="{{ $shippingItem->id }}" data-name="{{ $shippingItem->title }}">{{ trans('plugins/ecommerce::shipping.delete') }}</a>
@@ -41,5 +41,5 @@
     <div data-delete-rule-item-url="{{ route('shipping_methods.region.rule.destroy') }}"></div>
     <div data-delete-shipping-method-item-url="{{ route('shipping_methods.delete_method') }}"></div>
 
-    {!! Form::modalAction('select-country-modal', trans('plugins/ecommerce::shipping.add_shipping_region'), 'info', FormBuilder::create(\Botble\Ecommerce\Forms\AddShippingRegionForm::class)->renderForm(), 'add-shipping-region-button', trans('plugins/ecommerce::shipping.save'), 'modal-xs') !!}
+    {!! Form::modalAction('select-country-modal', trans('plugins/ecommerce::shipping.add_shipping_region'), 'info', FormBuilder::create(\RealDriss\Ecommerce\Forms\AddShippingRegionForm::class)->renderForm(), 'add-shipping-region-button', trans('plugins/ecommerce::shipping.save'), 'modal-xs') !!}
 @stop

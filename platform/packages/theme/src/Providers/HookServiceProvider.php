@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Providers;
+namespace RealDriss\Theme\Providers;
 
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
 use Html;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;

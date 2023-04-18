@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Tax;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Tax;
 
 class TaxSeeder extends BaseSeeder
 {

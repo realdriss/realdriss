@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\{Module}\Forms;
+namespace RealDriss\{Module}\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\{Module}\Http\Requests\{Name}Request;
-use Botble\{Module}\Models\{Name};
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\{Module}\Http\Requests\{Name}Request;
+use RealDriss\{Module}\Models\{Name};
 
 class {Name}Form extends FormAbstract
 {

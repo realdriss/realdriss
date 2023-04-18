@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace RealDriss\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
 use Cart;
 use Illuminate\Routing\Controller;
 use Response;

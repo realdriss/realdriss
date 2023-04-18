@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\SimpleSlider\Models\SimpleSlider;
+use RealDriss\SimpleSlider\Models\SimpleSliderItem;
 use Illuminate\Support\Arr;
 use MetaBox;
 
@@ -32,17 +32,17 @@ class SimpleSliderSeeder extends BaseSeeder
             [
                 'title'       => 'Woman Fashion',
                 'description' => 'Get up to 50% off Today Only!',
-                'button_text' => 'Shop now',
+                'button_text' => 'Collect',
             ],
             [
-                'title'       => 'Man Fashion',
-                'description' => '50% off in all products',
-                'button_text' => 'Discover now',
+                'title'       => 'Men Fashion',
+                'description' => '50% off on all men products',
+                'button_text' => 'Discover',
             ],
             [
                 'title'       => 'Summer Sale',
-                'description' => 'Taking your Viewing Experience to Next Level',
-                'button_text' => 'Shop now',
+                'description' => 'Taking your Viewing Experience to the Next Level',
+                'button_text' => 'Explore',
             ],
         ];
 
@@ -50,7 +50,7 @@ class SimpleSliderSeeder extends BaseSeeder
             $item['order'] = $index + 1;
             $item['simple_slider_id'] = 1;
             $item['image'] = 'sliders/' . ($index + 1) . '.jpg';
-            $item['link'] = '/products';
+            $item['link'] = '/products'; //implement unique links
 
             $sliderItem = SimpleSliderItem::create(Arr::except($item, ['button_text']));
 

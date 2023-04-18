@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Slug\Models\Slug;
 use Illuminate\Support\Str;
 use SlugHelper;
 
@@ -28,18 +28,6 @@ class BrandSeeder extends BaseSeeder
             ],
             [
                 'name' => 'Mestonix',
-            ],
-            [
-                'name' => 'Sunshine',
-            ],
-            [
-                'name' => 'Pure',
-            ],
-            [
-                'name' => 'Anfold',
-            ],
-            [
-                'name' => 'Automotive',
             ],
         ];
 

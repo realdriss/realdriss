@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace RealDriss\Translation\Console;
 
-use Botble\Translation\Manager;
-use Botble\Translation\Models\Translation;
+use RealDriss\Translation\Manager;
+use RealDriss\Translation\Models\Translation;
 use File;
 use Illuminate\Console\Command;
 use Illuminate\Support\Arr;

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\SimpleSlider\Forms;
+namespace RealDriss\SimpleSlider\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderRequest;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Tables\SimpleSliderItemTable;
-use Botble\Table\TableBuilder;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\SimpleSlider\Http\Requests\SimpleSliderRequest;
+use RealDriss\SimpleSlider\Models\SimpleSlider;
+use RealDriss\SimpleSlider\Tables\SimpleSliderItemTable;
+use RealDriss\Table\TableBuilder;
 
 class SimpleSliderForm extends FormAbstract
 {

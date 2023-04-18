@@ -20,20 +20,20 @@ $(document).ready(function () {
             type: 'DELETE',
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
                     if (data.data) {
                         languageTable.find('i[data-locale=' + data.data + ']').unwrap();
                         $('.tooltip').remove();
                     }
                     languageTable.find('a[data-url="' + deleteURL + '"]').closest('tr').remove();
-                    Botble.showSuccess(data.message);
+                    RealDriss.showSuccess(data.message);
                 }
                 $(this).prop('disabled', false).removeClass('button-loading');
             },
             error: data => {
                 $(this).prop('disabled', false).removeClass('button-loading');
-                Botble.handleError(data);
+                RealDriss.handleError(data);
             }
         });
     });
@@ -52,17 +52,17 @@ $(document).ready(function () {
             processData: false,
             success: res => {
                 if (!res.error) {
-                    Botble.showSuccess(res.message);
+                    RealDriss.showSuccess(res.message);
                     languageTable.load(window.location.href + ' .table-language > *');
                 } else {
-                    Botble.showError(res.message);
+                    RealDriss.showError(res.message);
                 }
 
                 $(this).prop('disabled', false).removeClass('button-loading');
             },
             error: res => {
                 $(this).prop('disabled', false).removeClass('button-loading');
-                Botble.handleError(res);
+                RealDriss.handleError(res);
             }
         });
     });

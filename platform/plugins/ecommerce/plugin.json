@@ -1,9 +1,9 @@
 {
     "name": "Ecommerce",
-    "namespace": "Botble\\Ecommerce\\",
-    "provider": "Botble\\Ecommerce\\Providers\\EcommerceServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Ecommerce\\",
+    "provider": "RealDriss\\Ecommerce\\Providers\\EcommerceServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "1.3",
     "description": "Plugin for E-commerce features"
 }

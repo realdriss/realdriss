@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\JsValidation\Javascript;
+namespace RealDriss\JsValidation\Javascript;
 
 trait JavascriptRulesTrait
 {

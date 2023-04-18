@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Commands;
+namespace RealDriss\Base\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Filesystem\Filesystem;

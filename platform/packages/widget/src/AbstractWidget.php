@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Widget;
+namespace RealDriss\Widget;
 
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\Collection;
@@ -89,7 +89,7 @@ abstract class AbstractWidget
      */
     public function run()
     {
-        $widgetGroup = app('botble.widget-group-collection');
+        $widgetGroup = app('RealDriss.widget-group-collection');
         $widgetGroup->load();
         $widgetGroupData = $widgetGroup->getData();
 
@@ -137,7 +137,7 @@ abstract class AbstractWidget
     {
         Theme::uses(Theme::getThemeName());
         if (!empty($sidebarId)) {
-            $widgetGroup = app('botble.widget-group-collection');
+            $widgetGroup = app('RealDriss.widget-group-collection');
             $widgetGroup->load();
             $widgetGroupData = $widgetGroup->getData();
 

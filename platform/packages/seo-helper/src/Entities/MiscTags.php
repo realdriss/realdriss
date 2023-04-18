@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace RealDriss\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\MetaCollectionContract;
-use Botble\SeoHelper\Contracts\Entities\MiscTagsContract;
+use RealDriss\SeoHelper\Contracts\Entities\MetaCollectionContract;
+use RealDriss\SeoHelper\Contracts\Entities\MiscTagsContract;
 
 class MiscTags implements MiscTagsContract
 {

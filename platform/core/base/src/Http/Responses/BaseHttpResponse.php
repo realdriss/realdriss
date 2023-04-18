@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Base\Http\Responses;
+namespace RealDriss\Base\Http\Responses;
 
 use Illuminate\Contracts\Support\Responsable;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
-use URL;
+use URL; //Illuminate\Support\Facades\URL
 
 class BaseHttpResponse implements Responsable
 {
@@ -211,4 +211,12 @@ class BaseHttpResponse implements Responsable
             ->to($url)
             ->with($this->error ? 'error_msg' : 'success_msg', $this->message);
     }
+
+     //start dev section
+    public static function dev()
+    {
+        //test code here
+    }
+    
+    //end dev section
 }

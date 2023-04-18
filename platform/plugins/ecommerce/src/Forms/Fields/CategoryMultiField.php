@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Forms\Fields;
+namespace RealDriss\Ecommerce\Forms\Fields;
 
 use Kris\LaravelFormBuilder\Fields\FormField;
 

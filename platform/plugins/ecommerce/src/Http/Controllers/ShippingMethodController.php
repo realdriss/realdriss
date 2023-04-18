@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Http\Requests\AddShippingRegionRequest;
-use Botble\Ecommerce\Http\Requests\ShippingRuleRequest;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Http\Requests\AddShippingRegionRequest;
+use RealDriss\Ecommerce\Http\Requests\ShippingRuleRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleItemInterface;
+use RealDriss\Setting\Supports\SettingStore;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

@@ -1,9 +1,9 @@
 {
     "name": "Newsletter",
-    "namespace": "Botble\\Newsletter\\",
-    "provider": "Botble\\Newsletter\\Providers\\NewsletterServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Newsletter\\",
+    "provider": "RealDriss\\Newsletter\\Providers\\NewsletterServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Newsletter"
 }

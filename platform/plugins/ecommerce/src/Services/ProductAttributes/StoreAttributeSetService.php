@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Ecommerce\Services\ProductAttributes;
+namespace RealDriss\Ecommerce\Services\ProductAttributes;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Ecommerce\Models\ProductAttributeSet;
-use Botble\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
-use Botble\Ecommerce\Repositories\Eloquent\ProductAttributeSetRepository;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Ecommerce\Models\ProductAttributeSet;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductAttributeSetRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;

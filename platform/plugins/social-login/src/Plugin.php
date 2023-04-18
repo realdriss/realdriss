@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SocialLogin;
+namespace RealDriss\SocialLogin;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Models\Setting;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\Setting\Models\Setting;
 
 class Plugin extends PluginOperationAbstract
 {

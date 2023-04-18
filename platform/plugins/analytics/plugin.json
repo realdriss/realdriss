@@ -1,9 +1,9 @@
 {
     "name": "Analytics",
-    "namespace": "Botble\\Analytics\\",
-    "provider": "Botble\\Analytics\\Providers\\AnalyticsServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Analytics\\",
+    "provider": "RealDriss\\Analytics\\Providers\\AnalyticsServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Tracking data from Google Analytics"
 }

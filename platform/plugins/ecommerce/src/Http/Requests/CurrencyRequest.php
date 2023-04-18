@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace RealDriss\Ecommerce\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Support\Arr;
 use Route;
 

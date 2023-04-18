@@ -1,11 +1,11 @@
 // Add into function register()
-$this->app->bind(\Botble\{Module}\Repositories\Interfaces\{Name}Interface::class, function () {
-    return new \Botble\{Module}\Repositories\Caches\{Name}CacheDecorator(
-        new \Botble\{Module}\Repositories\Eloquent\{Name}Repository(new \Botble\{Module}\Models\{Name})
+$this->app->bind(\RealDriss\{Module}\Repositories\Interfaces\{Name}Interface::class, function () {
+    return new \RealDriss\{Module}\Repositories\Caches\{Name}CacheDecorator(
+        new \RealDriss\{Module}\Repositories\Eloquent\{Name}Repository(new \RealDriss\{Module}\Models\{Name})
     );
 });
 // Add after this line: if (defined('LANGUAGE_MODULE_SCREEN_NAME')) {
-\Language::registerModule([\Botble\{Module}\Models\{Name}::class]);
+\Language::registerModule([\RealDriss\{Module}\Models\{Name}::class]);
 
 // Add after this line: Event::listen(RouteMatched::class, function () {
 dashboard_menu()->registerItem([

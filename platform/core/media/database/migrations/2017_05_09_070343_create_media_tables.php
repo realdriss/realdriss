@@ -20,7 +20,7 @@ class CreateMediaTables extends Migration
             $table->string('slug')->nullable();
             $table->integer('parent_id')->default(0);
             $table->timestamps();
-            $table->softDeletes();
+            $table->softDeletes(); //deleted_at
         });
 
         Schema::create('media_files', function (Blueprint $table) {

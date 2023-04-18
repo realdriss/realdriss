@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Listeners;
+namespace RealDriss\Menu\Listeners;
 
-use Botble\Menu\Repositories\Interfaces\MenuNodeInterface;
-use Botble\Slug\Events\UpdatedSlugEvent;
+use RealDriss\Menu\Repositories\Interfaces\MenuNodeInterface;
+use RealDriss\Slug\Events\UpdatedSlugEvent;
 use Exception;
 use Menu;
 

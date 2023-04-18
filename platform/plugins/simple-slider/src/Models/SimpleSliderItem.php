@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Models;
+namespace RealDriss\SimpleSlider\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 
 class SimpleSliderItem extends BaseModel
 {

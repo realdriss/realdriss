@@ -1,18 +1,18 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Forms\ProductLabelForm;
-use Botble\Ecommerce\Http\Requests\ProductLabelRequest;
-use Botble\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
-use Botble\Ecommerce\Tables\ProductLabelTable;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Forms\ProductLabelForm;
+use RealDriss\Ecommerce\Http\Requests\ProductLabelRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductLabelInterface;
+use RealDriss\Ecommerce\Tables\ProductLabelTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

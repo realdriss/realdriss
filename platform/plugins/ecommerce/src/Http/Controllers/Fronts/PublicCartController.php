@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace RealDriss\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Http\Requests\CartRequest;
-use Botble\Ecommerce\Http\Requests\UpdateCartRequest;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Services\HandleApplyPromotionsService;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Http\Requests\CartRequest;
+use RealDriss\Ecommerce\Http\Requests\UpdateCartRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Services\HandleApplyPromotionsService;
 use Cart;
 use EcommerceHelper;
 use Exception;

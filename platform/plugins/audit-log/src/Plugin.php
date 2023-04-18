@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog;
+namespace RealDriss\AuditLog;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

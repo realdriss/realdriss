@@ -72,7 +72,7 @@
                             </div>
                         </div>
                         <div class="text-center">
-                            {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \Botble\Ecommerce\Models\Customer::class) !!}
+                            {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \RealDriss\Ecommerce\Models\Customer::class) !!}
                         </div>
                     </form>
                 </div>

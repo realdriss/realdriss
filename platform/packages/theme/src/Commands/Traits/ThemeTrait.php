@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Commands\Traits;
+namespace RealDriss\Theme\Commands\Traits;
 
 trait ThemeTrait
 {

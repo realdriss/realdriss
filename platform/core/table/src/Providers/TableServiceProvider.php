@@ -1,9 +1,11 @@
 <?php
 
-namespace Botble\Table\Providers;
+namespace RealDriss\Table\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\ServiceProvider;
 
 class TableServiceProvider extends ServiceProvider

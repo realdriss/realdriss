@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\TaxInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\TaxInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class TaxRepository extends RepositoriesAbstract implements TaxInterface
 {

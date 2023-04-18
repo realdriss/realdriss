@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Shipping;
-use Botble\Ecommerce\Models\ShippingRule;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Shipping;
+use RealDriss\Ecommerce\Models\ShippingRule;
 use Illuminate\Support\Facades\DB;
 
 class ShippingSeeder extends BaseSeeder

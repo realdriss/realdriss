@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Setting\Supports\SettingStore;
 use Carbon\Carbon;
 use Exception;
 use GuzzleHttp\Client;
@@ -110,7 +110,7 @@ class MembershipAuthorization
      */
     protected function processAuthorize(): bool
     {
-        $this->client->post('https://botble.com/membership/authorize', [
+        $this->client->post('https://realdriss.com/membership/authorize', [
             'form_params' => [
                 'website' => $this->url,
             ],

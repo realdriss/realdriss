@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
 use App\Http\Controllers\Controller;
-use Botble\ACL\Traits\ResetsPasswords;
+use RealDriss\ACL\Traits\ResetsPasswords;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Http\Request;

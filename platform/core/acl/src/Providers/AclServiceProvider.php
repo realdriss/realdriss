@@ -1,21 +1,23 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace RealDriss\ACL\Providers;
 
-use Botble\ACL\Http\Middleware\Authenticate;
-use Botble\ACL\Http\Middleware\RedirectIfAuthenticated;
-use Botble\ACL\Models\Activation;
-use Botble\ACL\Models\Role;
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Caches\RoleCacheDecorator;
-use Botble\ACL\Repositories\Eloquent\ActivationRepository;
-use Botble\ACL\Repositories\Eloquent\RoleRepository;
-use Botble\ACL\Repositories\Eloquent\UserRepository;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\ACL\Repositories\Interfaces\RoleInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\ACL\Http\Middleware\Authenticate;
+use RealDriss\ACL\Http\Middleware\RedirectIfAuthenticated;
+use RealDriss\ACL\Models\Activation;
+use RealDriss\ACL\Models\Role;
+use RealDriss\ACL\Models\User;
+use RealDriss\ACL\Repositories\Caches\RoleCacheDecorator;
+use RealDriss\ACL\Repositories\Eloquent\ActivationRepository;
+use RealDriss\ACL\Repositories\Eloquent\RoleRepository;
+use RealDriss\ACL\Repositories\Eloquent\UserRepository;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\ACL\Repositories\Interfaces\RoleInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+// EO RealDriss namespaced classes.
+
 use EmailHandler;
 use Exception;
 use Illuminate\Contracts\Container\BindingResolutionException;

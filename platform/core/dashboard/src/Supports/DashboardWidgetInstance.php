@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Supports;
+namespace RealDriss\Dashboard\Supports;
 
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Throwable;

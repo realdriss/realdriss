@@ -1,16 +1,18 @@
 <?php
 
-namespace Botble\Setting\Providers;
+namespace RealDriss\Setting\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Setting\Facades\SettingFacade;
-use Botble\Setting\Models\Setting as SettingModel;
-use Botble\Setting\Repositories\Caches\SettingCacheDecorator;
-use Botble\Setting\Repositories\Eloquent\SettingRepository;
-use Botble\Setting\Repositories\Interfaces\SettingInterface;
-use Botble\Setting\Supports\SettingsManager;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Setting\Facades\SettingFacade;
+use RealDriss\Setting\Models\Setting as SettingModel;
+use RealDriss\Setting\Repositories\Caches\SettingCacheDecorator;
+use RealDriss\Setting\Repositories\Eloquent\SettingRepository;
+use RealDriss\Setting\Repositories\Interfaces\SettingInterface;
+use RealDriss\Setting\Supports\SettingsManager;
+use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use EmailHandler;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Foundation\AliasLoader;

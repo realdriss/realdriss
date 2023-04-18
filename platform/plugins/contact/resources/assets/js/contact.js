@@ -40,7 +40,7 @@ class ContactPluginManagement {
                         } else if (CKEDITOR.instances['message'] && typeof CKEDITOR.instances['message'] !== 'undefined') {
                             CKEDITOR.instances['message'].setData('');
                         }
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#reply-wrapper').load(window.location.href + ' #reply-wrapper > *');
                     }
 
@@ -48,7 +48,7 @@ class ContactPluginManagement {
                 },
                 error: res =>  {
                     $(event.currentTarget).removeClass('button-loading');
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                 }
             });
         });

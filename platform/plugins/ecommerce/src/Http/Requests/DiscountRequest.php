@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace RealDriss\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\DiscountTypeOptionEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Ecommerce\Enums\DiscountTypeOptionEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class DiscountRequest extends Request

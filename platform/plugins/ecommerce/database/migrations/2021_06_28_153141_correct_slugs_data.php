@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Slug\Models\Slug;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Slug\Models\Slug;
 use Illuminate\Database\Migrations\Migration;
 
 class CorrectSlugsData extends Migration

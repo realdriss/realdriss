@@ -28,14 +28,14 @@ class PaymentMethodManagement {
                             _self.closest('tbody').find('.btn-text-trigger-save').removeClass('hidden');
                             _self.addClass('hidden');
                             $(event.currentTarget).closest('.modal').modal('hide');
-                            Botble.showSuccess(res.message);
+                            RealDriss.showSuccess(res.message);
                         } else {
-                            Botble.showError(res.message);
+                            RealDriss.showError(res.message);
                         }
                         $(event.currentTarget).removeClass('button-loading');
                     },
                     error: res => {
-                        Botble.handleError(res);
+                        RealDriss.handleError(res);
                         $(event.currentTarget).removeClass('button-loading');
                     }
                 });
@@ -67,14 +67,14 @@ class PaymentMethodManagement {
                         _self.closest('tbody').find('.save-payment-item-btn-trigger').addClass('hidden');
                         _self.closest('tbody').find('.btn-text-trigger-update').removeClass('hidden');
                         _self.closest('tbody').find('.btn-text-trigger-save').addClass('hidden');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -91,14 +91,14 @@ class PaymentMethodManagement {
                 data: _self.closest('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

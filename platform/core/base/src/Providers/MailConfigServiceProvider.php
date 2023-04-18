@@ -1,8 +1,10 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Setting\Supports\SettingStore;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\ServiceProvider;
 
 class MailConfigServiceProvider extends ServiceProvider

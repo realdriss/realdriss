@@ -1,27 +1,27 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Fronts;
+namespace RealDriss\Ecommerce\Http\Controllers\Fronts;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Supports\Helper;
-use Botble\Ecommerce\Http\Requests\ReviewRequest;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Ecommerce\Repositories\Interfaces\BrandInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductTagInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ReviewInterface;
-use Botble\Ecommerce\Services\Products\GetProductService;
-use Botble\SeoHelper\SeoOpenGraph;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Ecommerce\Http\Requests\ReviewRequest;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Ecommerce\Models\ProductTag;
+use RealDriss\Ecommerce\Repositories\Interfaces\BrandInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductCategoryInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductTagInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
+use RealDriss\Ecommerce\Services\Products\GetProductService;
+use RealDriss\SeoHelper\SeoOpenGraph;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
 use EcommerceHelper;
 use Exception;
 use Illuminate\Http\RedirectResponse;
@@ -34,7 +34,7 @@ use RvMedia;
 use SeoHelper;
 use SlugHelper;
 use Theme;
-use Botble\Ecommerce\Http\Resources\ProductVariationResource;
+use RealDriss\Ecommerce\Http\Resources\ProductVariationResource;
 
 class PublicProductController
 {

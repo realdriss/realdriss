@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace RealDriss\Base\Listeners;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Repositories\Interfaces\MetaBoxInterface;
 use Exception;
 
 class DeletedContentListener

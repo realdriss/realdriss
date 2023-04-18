@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Controllers;
+namespace RealDriss\SimpleSlider\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\SimpleSlider\Forms\SimpleSliderItemForm;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
-use Botble\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\SimpleSlider\Forms\SimpleSliderItemForm;
+use RealDriss\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
+use RealDriss\Base\Http\Controllers\BaseController;
 use Illuminate\Http\Request;
 use Exception;
-use Botble\SimpleSlider\Tables\SimpleSliderItemTable;
+use RealDriss\SimpleSlider\Tables\SimpleSliderItemTable;
 
 class SimpleSliderItemController extends BaseController
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\API;
+namespace RealDriss\Blog\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Blog\Http\Resources\TagResource;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Blog\Http\Resources\TagResource;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
 use Illuminate\Http\Request;
 
 class TagController extends Controller

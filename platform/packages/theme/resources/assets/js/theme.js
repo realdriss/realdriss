@@ -13,15 +13,15 @@ class ThemeManagement {
                 type: 'POST',
                 success: data =>  {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         window.location.reload();
                     }
                     _self.removeClass('button-loading');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     _self.removeClass('button-loading');
                 }
             });
@@ -43,16 +43,16 @@ class ThemeManagement {
                 type: 'POST',
                 success: data =>  {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         window.location.reload();
                     }
                     _self.removeClass('button-loading');
                     $('#remove-theme-modal').modal('hide');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     _self.removeClass('button-loading');
                     $('#remove-theme-modal').modal('hide');
                 }

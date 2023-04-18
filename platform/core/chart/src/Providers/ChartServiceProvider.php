@@ -1,8 +1,10 @@
 <?php
 
-namespace Botble\Chart\Providers;
+namespace RealDriss\Chart\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\ServiceProvider;
 
 class ChartServiceProvider extends ServiceProvider

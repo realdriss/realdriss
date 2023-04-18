@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers\Customers;
+namespace RealDriss\Ecommerce\Http\Controllers\Customers;
 
 use App\Http\Controllers\Controller;
-use Botble\ACL\Traits\SendsPasswordResetEmails;
+use RealDriss\ACL\Traits\SendsPasswordResetEmails;
 use Illuminate\Contracts\Auth\PasswordBroker;
 use Password;
 use Response;
@@ -23,7 +23,7 @@ class ForgotPasswordController extends Controller
     |
     */
 
-    use SendsPasswordResetEmails;
+    use SendsPasswordResetEmails; //later integrate SMS notifs.
 
     /**
      * Create a new controller instance.
@@ -44,7 +44,7 @@ class ForgotPasswordController extends Controller
 
         Theme::breadcrumb()
             ->add(__('Home'), route('public.index'))
-            ->add(__('Login'), route('customer.password.reset'));
+            ->add(__('Reset Password'), route('customer.password.reset'));
 
         return Theme::scope('ecommerce.customers.passwords.email', [],
             'plugins/ecommerce::themes.customers.passwords.email')

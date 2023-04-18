@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\SimpleSlider\Repositories\Caches;
+namespace RealDriss\SimpleSlider\Repositories\Caches;
 
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class SimpleSliderItemCacheDecorator extends CacheAbstractDecorator implements SimpleSliderItemInterface
 {

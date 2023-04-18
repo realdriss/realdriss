@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Translation\Console;
+namespace RealDriss\Translation\Console;
 
-use Botble\Translation\Manager;
+use RealDriss\Translation\Manager;
 use Illuminate\Console\Command;
 
 class CleanCommand extends Command

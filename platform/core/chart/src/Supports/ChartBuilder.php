@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Chart\Supports;
+namespace RealDriss\Chart\Supports;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Container\Container;

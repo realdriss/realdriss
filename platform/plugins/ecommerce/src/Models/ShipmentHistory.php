@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class ShipmentHistory extends BaseModel

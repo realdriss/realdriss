@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Interfaces;
+namespace RealDriss\Ecommerce\Repositories\Interfaces;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;

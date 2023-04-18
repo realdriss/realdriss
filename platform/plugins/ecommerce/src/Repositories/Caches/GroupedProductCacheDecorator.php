@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace RealDriss\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class GroupedProductCacheDecorator extends CacheAbstractDecorator implements GroupedProductInterface
 {

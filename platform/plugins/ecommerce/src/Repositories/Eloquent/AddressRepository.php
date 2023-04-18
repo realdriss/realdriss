@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class AddressRepository extends RepositoriesAbstract implements AddressInterface
 {

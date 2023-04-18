@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Facades;
+namespace RealDriss\Ecommerce\Facades;
 
-use Botble\Ecommerce\Supports\EcommerceHelper;
+use RealDriss\Ecommerce\Supports\EcommerceHelper;
 use Illuminate\Support\Facades\Facade;
 
 class EcommerceHelperFacade extends Facade

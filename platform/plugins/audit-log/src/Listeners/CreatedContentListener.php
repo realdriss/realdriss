@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Listeners;
+namespace RealDriss\AuditLog\Listeners;
 
-use Botble\AuditLog\Events\AuditHandlerEvent;
-use Botble\Base\Events\CreatedContentEvent;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
 use Exception;
 use AuditLog;
 

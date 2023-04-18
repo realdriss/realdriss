@@ -1,17 +1,19 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\SendMailEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Listeners\BeforeEditContentListener;
-use Botble\Base\Listeners\CreatedContentListener;
-use Botble\Base\Listeners\DeletedContentListener;
-use Botble\Base\Listeners\SendMailListener;
-use Botble\Base\Listeners\UpdatedContentListener;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\SendMailEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Listeners\BeforeEditContentListener;
+use RealDriss\Base\Listeners\CreatedContentListener;
+use RealDriss\Base\Listeners\DeletedContentListener;
+use RealDriss\Base\Listeners\SendMailListener;
+use RealDriss\Base\Listeners\UpdatedContentListener;
+// EO RealDriss namespaced classes.
+
 use Illuminate\Support\Facades\Event;
 use File;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;

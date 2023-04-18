@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\SimpleSlider\Providers;
+namespace RealDriss\SimpleSlider\Providers;
 
 use Illuminate\Routing\Events\RouteMatched;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\SimpleSlider\Models\SimpleSlider;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
-use Botble\SimpleSlider\Repositories\Caches\SimpleSliderItemCacheDecorator;
-use Botble\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\SimpleSlider\Models\SimpleSlider;
+use RealDriss\SimpleSlider\Models\SimpleSliderItem;
+use RealDriss\SimpleSlider\Repositories\Caches\SimpleSliderItemCacheDecorator;
+use RealDriss\SimpleSlider\Repositories\Eloquent\SimpleSliderItemRepository;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderItemInterface;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use Botble\SimpleSlider\Repositories\Caches\SimpleSliderCacheDecorator;
-use Botble\SimpleSlider\Repositories\Eloquent\SimpleSliderRepository;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
-use Botble\Base\Supports\Helper;
+use RealDriss\SimpleSlider\Repositories\Caches\SimpleSliderCacheDecorator;
+use RealDriss\SimpleSlider\Repositories\Eloquent\SimpleSliderRepository;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
+use RealDriss\Base\Supports\Helper;
 use Language;
 
 class SimpleSliderServiceProvider extends ServiceProvider

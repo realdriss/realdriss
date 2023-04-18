@@ -75,7 +75,7 @@
         className: 'buttons-excel',
 
         text: dt => {
-            return '<i class="far fa-file-excel"></i> ' + dt.i18n('buttons.excel', BotbleVariables.languages.tables.excel ? BotbleVariables.languages.tables.excel : 'Excel');
+            return '<i class="far fa-file-excel"></i> ' + dt.i18n('buttons.excel', RealDrissVariables.languages.tables.excel ? RealDrissVariables.languages.tables.excel : 'Excel');
         },
 
         action: (e, dt) => {
@@ -87,7 +87,7 @@
         className: 'buttons-excel',
 
         text: dt => {
-            return '<i class="far fa-file-excel"></i> ' + dt.i18n('buttons.excel', BotbleVariables.languages.tables.excel ? BotbleVariables.languages.tables.excel : 'Excel');
+            return '<i class="far fa-file-excel"></i> ' + dt.i18n('buttons.excel', RealDrissVariables.languages.tables.excel ? RealDrissVariables.languages.tables.excel : 'Excel');
         },
 
         action: (e, dt) => {
@@ -104,7 +104,7 @@
         className: 'buttons-export',
 
         text: dt => {
-            return '<i class="fa fa-download"></i> ' + dt.i18n('buttons.export', BotbleVariables.languages.tables.export ? BotbleVariables.languages.tables.export : 'Export') + '&nbsp;<span class="caret"/>';
+            return '<i class="fa fa-download"></i> ' + dt.i18n('buttons.export', RealDrissVariables.languages.tables.export ? RealDrissVariables.languages.tables.export : 'Export') + '&nbsp;<span class="caret"/>';
         },
 
         buttons: ['csv', 'excel']
@@ -114,7 +114,7 @@
         className: 'buttons-csv',
 
         text: dt => {
-            return '<i class="fas fa-file-csv"></i> ' + dt.i18n('buttons.csv', BotbleVariables.languages.tables.csv ? BotbleVariables.languages.tables.csv : 'CSV');
+            return '<i class="fas fa-file-csv"></i> ' + dt.i18n('buttons.csv', RealDrissVariables.languages.tables.csv ? RealDrissVariables.languages.tables.csv : 'CSV');
         },
 
         action: (e, dt) => {
@@ -126,7 +126,7 @@
         className: 'buttons-csv',
 
         text: dt => {
-            return '<i class="fas fa-file-csv"></i> ' + dt.i18n('buttons.csv', BotbleVariables.languages.tables.csv ? BotbleVariables.languages.tables.csv : 'CSV');
+            return '<i class="fas fa-file-csv"></i> ' + dt.i18n('buttons.csv', RealDrissVariables.languages.tables.csv ? RealDrissVariables.languages.tables.csv : 'CSV');
         },
 
         action: (e, dt) => {
@@ -168,7 +168,7 @@
         className: 'buttons-print',
 
         text: dt => {
-            return '<i class="fa fa-print"></i> ' + dt.i18n('buttons.print', BotbleVariables.languages.tables.print ? BotbleVariables.languages.tables.print : 'Print');
+            return '<i class="fa fa-print"></i> ' + dt.i18n('buttons.print', RealDrissVariables.languages.tables.print ? RealDrissVariables.languages.tables.print : 'Print');
         },
 
         action: (e, dt) => {
@@ -180,7 +180,7 @@
         className: 'buttons-reset',
 
         text: dt => {
-            return '<i class="fa fa-undo"></i> ' + dt.i18n('buttons.reset', BotbleVariables.languages.tables.reset ? BotbleVariables.languages.tables.reset : 'Reset');
+            return '<i class="fa fa-undo"></i> ' + dt.i18n('buttons.reset', RealDrissVariables.languages.tables.reset ? RealDrissVariables.languages.tables.reset : 'Reset');
         },
 
         action: () => {
@@ -193,7 +193,7 @@
         className: 'buttons-reload',
 
         text: dt => {
-            return '<i class="fas fa-sync"></i> ' + dt.i18n('buttons.reload', BotbleVariables.languages.tables.reload ? BotbleVariables.languages.tables.reload : 'Reload');
+            return '<i class="fas fa-sync"></i> ' + dt.i18n('buttons.reload', RealDrissVariables.languages.tables.reload ? RealDrissVariables.languages.tables.reload : 'Reload');
         },
 
         action: (e, dt) => {
@@ -308,17 +308,17 @@
                     type: 'DELETE',
                     success: data => {
                         if (data.error) {
-                            Botble.showError(data.message);
+                            RealDriss.showError(data.message);
                         } else {
                             window.LaravelDataTables[_self.data('parent-table')].row($('a[data-section="' + deleteURL + '"]').closest('tr')).remove().draw();
-                            Botble.showSuccess(data.message);
+                            RealDriss.showSuccess(data.message);
                         }
 
                         _self.closest('.modal').modal('hide');
                         _self.removeClass('button-loading');
                     },
                     error: data => {
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                         _self.removeClass('button-loading');
                     }
                 });
@@ -336,7 +336,7 @@
                 });
 
                 if (ids.length === 0) {
-                    Botble.showError(BotbleVariables.languages.tables.please_select_record ? BotbleVariables.languages.tables.please_select_record : 'Please select at least one record to perform this action!');
+                    RealDriss.showError(RealDrissVariables.languages.tables.please_select_record ? RealDrissVariables.languages.tables.please_select_record : 'Please select at least one record to perform this action!');
                     return false;
                 }
 
@@ -370,9 +370,9 @@
                     },
                     success: data => {
                         if (data.error) {
-                            Botble.showError(data.message);
+                            RealDriss.showError(data.message);
                         } else {
-                            Botble.showSuccess(data.message);
+                            RealDriss.showSuccess(data.message);
                         }
 
                         $table.find('.table-check-all').prop('checked', false);
@@ -381,7 +381,7 @@
                         _self.removeClass('button-loading');
                     },
                     error: data => {
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                         _self.removeClass('button-loading');
                     }
                 });
@@ -399,7 +399,7 @@
                 });
 
                 if (ids.length === 0) {
-                    Botble.showError(BotbleVariables.languages.tables.please_select_record ? BotbleVariables.languages.tables.please_select_record : 'Please select at least one record to perform this action!');
+                    RealDriss.showError(RealDrissVariables.languages.tables.please_select_record ? RealDrissVariables.languages.tables.please_select_record : 'Please select at least one record to perform this action!');
                     return false;
                 }
 
@@ -439,9 +439,9 @@
                     },
                     success: data => {
                         if (data.error) {
-                            Botble.showError(data.message);
+                            RealDriss.showError(data.message);
                         } else {
-                            Botble.showSuccess(data.message);
+                            RealDriss.showSuccess(data.message);
                         }
 
                         $table.find('.table-check-all').prop('checked', false);
@@ -452,7 +452,7 @@
                         _self.removeClass('button-loading');
                     },
                     error: data => {
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                         _self.removeClass('button-loading');
                     }
                 });
@@ -481,10 +481,10 @@
                         $input.data('typeahead').source = data;
                     }
 
-                    Botble.initResources();
+                    RealDriss.initResources();
                 },
                 error: error => {
-                    Botble.handleError(error);
+                    RealDriss.handleError(error);
                 }
             });
         }
@@ -515,7 +515,7 @@
                         a.remove();
                     },
                     error: error => {
-                        Botble.handleError(error);
+                        RealDriss.handleError(error);
                     }
                 });
             });

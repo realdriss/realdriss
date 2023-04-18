@@ -14,14 +14,14 @@ class OrderAdminManagement {
                     if (!res.error) {
                         $('#main-order-content').load(window.location.href + ' #main-order-content > *');
                         _self.closest('div').remove();
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -45,15 +45,15 @@ class OrderAdminManagement {
                 url: _self.data('action'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                     $('#resend-order-confirmation-email-modal').modal('hide');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -66,7 +66,7 @@ class OrderAdminManagement {
             $formBody.toggleClass('hidden');
             if (!$formBody.hasClass('shipment-data-loaded')) {
 
-                Botble.blockUI({
+                RealDriss.blockUI({
                     target: $formBody,
                     iconOnly: true,
                     overlayColor: 'none'
@@ -77,17 +77,17 @@ class OrderAdminManagement {
                     type: 'GET',
                     success: res => {
                         if (res.error) {
-                            Botble.showError(res.message);
+                            RealDriss.showError(res.message);
                         } else {
                             $formBody.html(res.data);
                             $formBody.addClass('shipment-data-loaded');
-                            Botble.initResources();
+                            RealDriss.initResources();
                         }
-                        Botble.unblockUI($formBody);
+                        RealDriss.unblockUI($formBody);
                     },
                     error: data => {
-                        Botble.handleError(data);
-                        Botble.unblockUI($formBody);
+                        RealDriss.handleError(data);
+                        RealDriss.unblockUI($formBody);
                     },
                 });
             }
@@ -95,29 +95,29 @@ class OrderAdminManagement {
 
         $(document).on('change', '#store_id', event => {
             let $formBody = $('.shipment-create-wrap');
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
             });
 
             $('#select-shipping-provider').load($('.btn-trigger-shipment').data('target') + '?view=true&store_id=' + $(event.currentTarget).val() + ' #select-shipping-provider > *', () => {
-                Botble.unblockUI($formBody);
-                Botble.initResources();
+                RealDriss.unblockUI($formBody);
+                RealDriss.initResources();
             });
         });
 
         $(document).on('change', '.shipment-form-weight', event => {
             let $formBody = $('.shipment-create-wrap');
-            Botble.blockUI({
+            RealDriss.blockUI({
                 target: $formBody,
                 iconOnly: true,
                 overlayColor: 'none'
             });
 
             $('#select-shipping-provider').load($('.btn-trigger-shipment').data('target') + '?view=true&store_id=' + $('#store_id').val() + '&weight=' + $(event.currentTarget).val() + ' #select-shipping-provider > *', () => {
-                Botble.unblockUI($formBody);
-                Botble.initResources();
+                RealDriss.unblockUI($formBody);
+                RealDriss.initResources();
             });
         });
 
@@ -141,16 +141,16 @@ class OrderAdminManagement {
                 data: _self.closest('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#main-order-content').load(window.location.href + ' #main-order-content > *');
                         $('.btn-trigger-shipment').remove();
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -175,18 +175,18 @@ class OrderAdminManagement {
                 url: _self.data('action'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('.carrier-status').addClass('carrier-status-' + res.data.status).text(res.data.status_text);
                         $('#cancel-shipment-modal').modal('hide');
                         $('#order-history-wrapper').load(window.location.href + ' #order-history-wrapper > *');
                         $('.shipment-actions-wrapper').remove();
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -215,28 +215,28 @@ class OrderAdminManagement {
                 data: _self.closest('.modal-content').find('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#update-shipping-address-modal').modal('hide');
                         $('.shipment-address-box-1').html(res.data.line);
                         $('.text-infor-subdued.shipping-address-info').html(res.data.detail);
                         let $formBody = $('.shipment-create-wrap');
-                        Botble.blockUI({
+                        RealDriss.blockUI({
                             target: $formBody,
                             iconOnly: true,
                             overlayColor: 'none'
                         });
 
                         $('#select-shipping-provider').load($('.btn-trigger-shipment').data('target') + '?view=true #select-shipping-provider > *', () => {
-                            Botble.unblockUI($formBody);
-                            Botble.initResources();
+                            RealDriss.unblockUI($formBody);
+                            RealDriss.initResources();
                         });
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -255,14 +255,14 @@ class OrderAdminManagement {
                 data: _self.closest('form').serialize(),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -286,16 +286,16 @@ class OrderAdminManagement {
                 url: _self.data('target'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#main-order-content').load(window.location.href + ' #main-order-content > *');
                         $('#cancel-order-modal').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -319,16 +319,16 @@ class OrderAdminManagement {
                 url: _self.data('target'),
                 success: res => {
                     if (!res.error) {
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         $('#main-order-content').load(window.location.href + ' #main-order-content > *');
                         $('#confirm-payment-modal').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });
@@ -346,7 +346,7 @@ class OrderAdminManagement {
             if (!number || isNaN(number)) {
                 number = 0;
             }
-            $(event.currentTarget).closest('.page-content').find($(event.currentTarget).data('target')).text(Botble.numberFormat(parseFloat(number), 2));
+            $(event.currentTarget).closest('.page-content').find($(event.currentTarget).data('target')).text(RealDriss.numberFormat(parseFloat(number), 2));
         });
 
         $(document).on('click', '.btn-trigger-refund', event => {
@@ -380,15 +380,15 @@ class OrderAdminManagement {
                 success: res => {
                     if (!res.error) {
                         $('#main-order-content').load(window.location.href + ' #main-order-content > *');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                         _self.closest('.modal').modal('hide');
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

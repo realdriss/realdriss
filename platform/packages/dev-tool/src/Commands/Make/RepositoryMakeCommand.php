@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands\Make;
+namespace RealDriss\DevTool\Commands\Make;
 
-use Botble\DevTool\Commands\Abstracts\BaseMakeCommand;
+use RealDriss\DevTool\Commands\Abstracts\BaseMakeCommand;
 use File;
 use Illuminate\Support\Str;
 use League\Flysystem\FileNotFoundException;

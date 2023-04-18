@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Dashboard\Models;
+namespace RealDriss\Dashboard\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class DashboardWidgetSetting extends BaseModel

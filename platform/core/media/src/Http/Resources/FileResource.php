@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Http\Resources;
+namespace RealDriss\Media\Http\Resources;
 
 use BaseHelper;
-use Botble\Media\Models\MediaFile;
+use RealDriss\Media\Models\MediaFile;
 use File;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;

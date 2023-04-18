@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace RealDriss\ACL\Providers;
 
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
 use Throwable;

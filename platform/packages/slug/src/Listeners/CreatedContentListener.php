@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Slug\Listeners;
+namespace RealDriss\Slug\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Slug\Services\SlugService;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Slug\Services\SlugService;
 use Exception;
 use Illuminate\Support\Str;
 use SlugHelper;

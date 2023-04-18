@@ -118,9 +118,9 @@ $(() => {
 
     function reloadForm(data) {
         $('.tree-form-body').html(data);
-        Botble.initResources();
-        Botble.handleCounterUp();
-        Botble.initMediaIntegrate();
+        RealDriss.initResources();
+        RealDriss.handleCounterUp();
+        RealDriss.initMediaIntegrate();
         if (window.EditorManagement) {
             new EditorManagement().init();
         }
@@ -169,13 +169,13 @@ $(() => {
             },
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
                     reloadForm(data.data);
                 }
             },
             error: data => {
-                Botble.handleError(data);
+                RealDriss.handleError(data);
             },
             complete: () => {
                 $formLoading.addClass('d-none');
@@ -216,13 +216,13 @@ $(() => {
             },
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
                     reloadForm(data.data);
                 }
             },
             error: data => {
-                Botble.handleError(data);
+                RealDriss.handleError(data);
             },
             complete: () => {
                 $formLoading.addClass('d-none');
@@ -237,7 +237,7 @@ $(() => {
             type: 'GET',
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
                     $tree.html(data.data);
                     loadTree(activeId);
@@ -255,7 +255,7 @@ $(() => {
                 }
             },
             error: data => {
-                Botble.handleError(data);
+                RealDriss.handleError(data);
             }
         });
     }
@@ -286,9 +286,9 @@ $(() => {
             },
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
-                    Botble.showSuccess(data.message);
+                    RealDriss.showSuccess(data.message);
 
                     const activeId = saveAndEdit && data.data.model ? data.data.model.id : null;
                     reloadTree(activeId, callback1);
@@ -310,7 +310,7 @@ $(() => {
                 }
             },
             error: data => {
-                Botble.handleError(data);
+                RealDriss.handleError(data);
                 $formLoading.addClass('d-none');
             },
         });
@@ -337,9 +337,9 @@ $(() => {
             type: 'DELETE',
             success: data => {
                 if (data.error) {
-                    Botble.showError(data.message);
+                    RealDriss.showError(data.message);
                 } else {
-                    Botble.showSuccess(data.message);
+                    RealDriss.showSuccess(data.message);
                     reloadTree();
                     if ($('.tree-categories-create').length) {
                         $('.tree-categories-create').trigger('click');
@@ -352,7 +352,7 @@ $(() => {
                 _self.removeClass('button-loading');
             },
             error: data => {
-                Botble.handleError(data);
+                RealDriss.handleError(data);
                 _self.removeClass('button-loading');
             }
         });

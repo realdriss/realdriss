@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\ACL\Providers;
+namespace RealDriss\ACL\Providers;
 
-use Botble\ACL\Commands\UserCreateCommand;
+use RealDriss\ACL\Commands\UserCreateCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

@@ -30,5 +30,5 @@
     @php
         Assets::addScripts(['form-validation']);
     @endphp
-    {!! JsValidator::formRequest(\Botble\Ecommerce\Http\Requests\DiscountRequest::class) !!}
+    {!! JsValidator::formRequest(\RealDriss\Ecommerce\Http\Requests\DiscountRequest::class) !!}
 @endpush

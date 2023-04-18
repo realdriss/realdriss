@@ -1,23 +1,23 @@
 {
-    "name": "botble/seo-helper",
+    "name": "realdriss/seo-helper",
     "description": "SEO helper package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\SeoHelper\\": "src"
+            "RealDriss\\SeoHelper\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/theme": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/theme": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\SeoHelper\\Providers\\SeoHelperServiceProvider"
+                "RealDriss\\SeoHelper\\Providers\\SeoHelperServiceProvider"
             ],
             "aliases": {
-                "SeoHelper": "Botble\\SeoHelper\\Facades\\SeoHelperFacade"
+                "SeoHelper": "RealDriss\\SeoHelper\\Facades\\SeoHelperFacade"
             }
         }
     }

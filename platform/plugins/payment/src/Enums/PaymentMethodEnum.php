@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Enums;
+namespace RealDriss\Payment\Enums;
 
-use Botble\Base\Supports\Enum;
-use Botble\Payment\Services\Gateways\PayPalPaymentService;
-use Botble\Payment\Services\Gateways\StripePaymentService;
+use RealDriss\Base\Supports\Enum;
+use RealDriss\Payment\Services\Gateways\PayPalPaymentService;
+use RealDriss\Payment\Services\Gateways\StripePaymentService;
 
 /**
  * @method static PaymentMethodEnum STRIPE()

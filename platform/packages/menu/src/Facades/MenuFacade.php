@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Facades;
+namespace RealDriss\Menu\Facades;
 
-use Botble\Menu\Menu;
+use RealDriss\Menu\Menu;
 use Illuminate\Support\Facades\Facade;
 
 class MenuFacade extends Facade

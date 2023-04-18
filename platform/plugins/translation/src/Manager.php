@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Translation;
+namespace RealDriss\Translation;
 
-use Botble\Base\Supports\MountManager;
-use Botble\Translation\Models\Translation;
+use RealDriss\Base\Supports\MountManager;
+use RealDriss\Translation\Models\Translation;
 use Exception;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\PluginManagement\Http\Controllers;
+namespace RealDriss\PluginManagement\Http\Controllers;
 
 use Assets;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\PluginManagement\Services\PluginService;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\PluginManagement\Services\PluginService;
 use Exception;
 use File;
 use Illuminate\Contracts\Foundation\Application;

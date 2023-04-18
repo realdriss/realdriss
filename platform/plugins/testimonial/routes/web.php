@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Testimonial\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Testimonial\Http\Controllers', 'middleware' => ['web', 'core']], function () {
 
     Route::group(['prefix' => config('core.base.general.admin_dir'), 'middleware' => 'auth'], function () {
 

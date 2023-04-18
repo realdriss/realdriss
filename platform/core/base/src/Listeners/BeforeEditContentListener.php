@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace RealDriss\Base\Listeners;
 
-use Botble\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\BeforeEditContentEvent;
 use Exception;
 
 class BeforeEditContentListener

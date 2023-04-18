@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
+use RealDriss\Ecommerce\Models\StoreLocator;
+use RealDriss\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
 use Illuminate\Config\Repository;
 
 if (!function_exists('array_equal')) {

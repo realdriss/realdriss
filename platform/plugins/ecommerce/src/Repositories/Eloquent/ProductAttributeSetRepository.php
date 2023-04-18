@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Illuminate\Support\Facades\DB;
 
 class ProductAttributeSetRepository extends RepositoriesAbstract implements ProductAttributeSetInterface

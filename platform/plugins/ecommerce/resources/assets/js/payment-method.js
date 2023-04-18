@@ -28,14 +28,14 @@ class PaymentMethodManagement {
                             _self.closest('tbody').find('.btn-text-trigger-save').removeClass('hidden');
                             _self.addClass('hidden');
                             $('#confirm-disable-payment-method-modal').modal('hide');
-                            Botble.showSuccess(res.message);
+                            RealDriss.showSuccess(res.message);
                         } else {
-                            Botble.showError(res.message);
+                            RealDriss.showError(res.message);
                         }
                         $('#confirm-disable-payment-method-button').removeClass('button-loading');
                     },
                     error: res => {
-                        Botble.handleError(res);
+                        RealDriss.handleError(res);
                         $('#confirm-disable-payment-method-button').removeClass('button-loading');
                     }
                 });
@@ -60,14 +60,14 @@ class PaymentMethodManagement {
                         _self.closest('tbody').find('.save-payment-item-btn-trigger').addClass('hidden');
                         _self.closest('tbody').find('.btn-text-trigger-update').removeClass('hidden');
                         _self.closest('tbody').find('.btn-text-trigger-save').addClass('hidden');
-                        Botble.showSuccess(res.message);
+                        RealDriss.showSuccess(res.message);
                     } else {
-                        Botble.showError(res.message);
+                        RealDriss.showError(res.message);
                     }
                     _self.removeClass('button-loading');
                 },
                 error: res => {
-                    Botble.handleError(res);
+                    RealDriss.handleError(res);
                     _self.removeClass('button-loading');
                 }
             });

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Chart\Interfaces;
+namespace RealDriss\Chart\Interfaces;
 
 interface ChartInterface
 {

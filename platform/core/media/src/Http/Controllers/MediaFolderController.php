@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Media\Http\Controllers;
+namespace RealDriss\Media\Http\Controllers;
 
-use Botble\Media\Http\Requests\MediaFolderRequest;
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
+use RealDriss\Media\Http\Requests\MediaFolderRequest;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Repositories\Interfaces\MediaFolderInterface;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller;

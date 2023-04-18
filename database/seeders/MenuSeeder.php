@@ -2,18 +2,18 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Tag;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Ecommerce\Models\ProductTag;
-use Botble\Menu\Models\Menu as MenuModel;
-use Botble\Menu\Models\MenuLocation;
-use Botble\Menu\Models\MenuNode;
-use Botble\Page\Models\Page;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Tag;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Ecommerce\Models\ProductTag;
+use RealDriss\Menu\Models\Menu as MenuModel;
+use RealDriss\Menu\Models\MenuLocation;
+use RealDriss\Menu\Models\MenuNode;
+use RealDriss\Page\Models\Page;
 use Illuminate\Support\Arr;
-use Menu;
+use Menu; // RealDriss\Menu\Facades\MenuFacade
 
 class MenuSeeder extends BaseSeeder
 {
@@ -43,7 +43,7 @@ class MenuSeeder extends BaseSeeder
                         'url'      => '#',
                         'children' => [
                             [
-                                'title'          => 'Product Category',
+                                'title'          => 'Category',
                                 'reference_id'   => 1,
                                 'reference_type' => ProductCategory::class,
                             ],
@@ -53,12 +53,12 @@ class MenuSeeder extends BaseSeeder
                                 'reference_type' => Brand::class,
                             ],
                             [
-                                'title'          => 'Product Tag',
+                                'title'          => 'Tag',
                                 'reference_id'   => 1,
                                 'reference_type' => ProductTag::class,
                             ],
                             [
-                                'title' => 'Product Single',
+                                'title' => 'Product',
                                 'url'   => 'products/beat-headphone',
                             ],
                         ],
@@ -69,22 +69,22 @@ class MenuSeeder extends BaseSeeder
                         'reference_type' => Page::class,
                         'children'       => [
                             [
-                                'title'          => 'Blog Left Sidebar',
+                                'title'          => 'Home',
                                 'reference_id'   => 3,
                                 'reference_type' => Page::class,
                             ],
                             [
-                                'title'          => 'Blog Category',
+                                'title'          => 'Category',
                                 'reference_id'   => 1,
                                 'reference_type' => Category::class,
                             ],
                             [
-                                'title'          => 'Blog Tag',
+                                'title'          => 'Tag',
                                 'reference_id'   => 1,
                                 'reference_type' => Tag::class,
                             ],
                             [
-                                'title' => 'Blog Single',
+                                'title' => 'Post',
                                 'url'   => 'news/4-expert-tips-on-how-to-choose-the-right-mens-wallet',
                             ],
                         ],
@@ -210,6 +210,8 @@ class MenuSeeder extends BaseSeeder
      * @param array $menuNode
      * @param int $parentId
      */
+
+    // this function is recursive
     protected function createMenuNode(int $index, array $menuNode, int $parentId = 0): void
     {
         $menuNode['menu_id'] = $index + 1;

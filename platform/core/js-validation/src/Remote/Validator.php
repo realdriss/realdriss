@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\JsValidation\Remote;
+namespace RealDriss\JsValidation\Remote;
 
-use Botble\JsValidation\Support\AccessProtectedTrait;
-use Botble\JsValidation\Support\RuleListTrait;
+use RealDriss\JsValidation\Support\AccessProtectedTrait;
+use RealDriss\JsValidation\Support\RuleListTrait;
 use Illuminate\Http\Exceptions\HttpResponseException;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Arr;

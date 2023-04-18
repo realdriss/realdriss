@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug\Events;
+namespace RealDriss\Slug\Events;
 
-use Botble\Base\Events\Event;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Events\Event;
+use RealDriss\Slug\Models\Slug;
 use Eloquent;
 use Illuminate\Queue\SerializesModels;
 

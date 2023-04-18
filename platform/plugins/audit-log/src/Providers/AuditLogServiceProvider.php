@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace RealDriss\AuditLog\Providers;
 
-use Botble\AuditLog\Facades\AuditLogFacade;
-use Botble\AuditLog\Models\AuditHistory;
-use Botble\AuditLog\Repositories\Caches\AuditLogCacheDecorator;
-use Botble\AuditLog\Repositories\Eloquent\AuditLogRepository;
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\AuditLog\Facades\AuditLogFacade;
+use RealDriss\AuditLog\Models\AuditHistory;
+use RealDriss\AuditLog\Repositories\Caches\AuditLogCacheDecorator;
+use RealDriss\AuditLog\Repositories\Eloquent\AuditLogRepository;
+use RealDriss\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\AliasLoader;

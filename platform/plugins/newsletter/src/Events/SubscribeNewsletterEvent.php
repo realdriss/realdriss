@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Events;
+namespace RealDriss\Newsletter\Events;
 
-use Botble\Newsletter\Models\Newsletter;
+use RealDriss\Newsletter\Models\Newsletter;
 use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;

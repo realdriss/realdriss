@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace RealDriss\AuditLog\Providers;
 
-use Botble\AuditLog\Commands\ActivityLogClearCommand;
-use Botble\AuditLog\Commands\CleanOldLogsCommand;
+use RealDriss\AuditLog\Commands\ActivityLogClearCommand;
+use RealDriss\AuditLog\Commands\CleanOldLogsCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

@@ -2,7 +2,7 @@
 
 if (!function_exists('shortcode')) {
     /**
-     * @return \Botble\Shortcode\Shortcode
+     * @return \RealDriss\Shortcode\Shortcode
      */
     function shortcode()
     {
@@ -16,7 +16,7 @@ if (!function_exists('add_shortcode')) {
      * @param string $name
      * @param null|string $description
      * @param Callable|string $callback
-     * @return \Botble\Shortcode\Shortcode
+     * @return \RealDriss\Shortcode\Shortcode
      */
     function add_shortcode($key, $name, $description = null, $callback = null)
     {

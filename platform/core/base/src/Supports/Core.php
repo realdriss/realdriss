@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
 use Exception;
 use GuzzleHttp\Client;

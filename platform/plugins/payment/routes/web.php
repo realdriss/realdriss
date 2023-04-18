@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Payment\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Payment\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => 'payments'], function () {
         Route::post('checkout', 'PaymentController@postCheckout')->name('payments.checkout');
 

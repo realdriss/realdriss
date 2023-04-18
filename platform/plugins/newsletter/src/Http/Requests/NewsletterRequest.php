@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Newsletter\Http\Requests;
+namespace RealDriss\Newsletter\Http\Requests;
 
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Newsletter\Enums\NewsletterStatusEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class NewsletterRequest extends Request

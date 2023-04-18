@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Captcha\Providers;
+namespace RealDriss\Captcha\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Captcha\Captcha;
-use Botble\Captcha\CaptchaV3;
-use Botble\Captcha\Facades\CaptchaFacade;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Captcha\Captcha;
+use RealDriss\Captcha\CaptchaV3;
+use RealDriss\Captcha\Facades\CaptchaFacade;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;

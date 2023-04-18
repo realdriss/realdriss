@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Http\Requests;
+namespace RealDriss\Contact\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class ContactRequest extends Request
 {

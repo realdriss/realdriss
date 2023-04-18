@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Supports;
+namespace RealDriss\Theme\Supports;
 
 use Throwable;
 

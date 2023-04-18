@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Services\Products;
+namespace RealDriss\Ecommerce\Services\Products;
 
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
-use Botble\Ecommerce\Repositories\Eloquent\ProductRepository;
-use Botble\Ecommerce\Repositories\Eloquent\ProductVariationRepository;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductAttributeRepository;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductRepository;
+use RealDriss\Ecommerce\Repositories\Eloquent\ProductVariationRepository;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
 
 class CreateProductVariationsService
 {

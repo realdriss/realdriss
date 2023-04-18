@@ -1,9 +1,9 @@
 {
     "name": "Testimonial",
-    "namespace": "Botble\\Testimonial\\",
-    "provider": "Botble\\Testimonial\\Providers\\TestimonialServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Testimonial\\",
+    "provider": "RealDriss\\Testimonial\\Providers\\TestimonialServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Customer testimonials"
 }

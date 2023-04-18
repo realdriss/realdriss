@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Analytics\Exceptions;
+namespace RealDriss\Analytics\Exceptions;
 
 use DateTimeInterface;
 use Exception;

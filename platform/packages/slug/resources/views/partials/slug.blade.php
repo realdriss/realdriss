@@ -5,7 +5,7 @@
     </div>
 @else
     <div class="form-group @if ($errors->has('slug')) has-error @endif">
-        {!! Form::permalink('slug', $object->slug, $object->slug_id, $prefix, SlugHelper::canPreview(get_class($object)) && $object->status != \Botble\Base\Enums\BaseStatusEnum::PUBLISHED) !!}
+        {!! Form::permalink('slug', $object->slug, $object->slug_id, $prefix, SlugHelper::canPreview(get_class($object)) && $object->status != \RealDriss\Base\Enums\BaseStatusEnum::PUBLISHED) !!}
         {!! Form::error('slug', $errors) !!}
     </div>
 @endif

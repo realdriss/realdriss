@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Ecommerce\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix() . '/ecommerce', 'middleware' => 'auth'], function () {
         Route::group(['prefix' => 'products', 'as' => 'products.'], function () {
             Route::resource('', 'ProductController')

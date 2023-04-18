@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\CookieConsent\Providers;
+namespace RealDriss\CookieConsent\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Cookie;
 use Illuminate\Contracts\View\View;
 use Illuminate\Cookie\Middleware\EncryptCookies;

@@ -25,14 +25,14 @@ class BackupManagement {
                 type: 'DELETE',
                 success: data => {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
                         table_backup.find('a[data-section="' + deleteURL + '"]').closest('tr').remove();
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                     }
                 },
                 error: data => {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         });
@@ -50,15 +50,15 @@ class BackupManagement {
                     _self.closest('.modal').modal('hide');
 
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         window.location.reload();
                     }
                 },
                 error: data => {
                     _self.removeClass('button-loading');
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                 }
             });
         });
@@ -80,11 +80,11 @@ class BackupManagement {
             let error = false;
             if (name === '' || name === null) {
                 error = true;
-                Botble.showError('Backup name is required!');
+                RealDriss.showError('Backup name is required!');
             }
             if (description === '' || description === null) {
                 error = true;
-                Botble.showError('Backup description is required!');
+                RealDriss.showError('Backup description is required!');
             }
 
             if (!error) {
@@ -100,16 +100,16 @@ class BackupManagement {
                         _self.closest('.modal').modal('hide');
 
                         if (data.error) {
-                            Botble.showError(data.message);
+                            RealDriss.showError(data.message);
                         } else {
                             table_backup.find('.no-backup-row').remove();
                             table_backup.find('tbody').append(data.data);
-                            Botble.showSuccess(data.message);
+                            RealDriss.showSuccess(data.message);
                         }
                     },
                     error: data => {
                         _self.removeClass('button-loading');
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                     }
                 });
             } else {

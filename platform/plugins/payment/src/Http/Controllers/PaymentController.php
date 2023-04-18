@@ -1,23 +1,23 @@
 <?php
 
-namespace Botble\Payment\Http\Controllers;
+namespace RealDriss\Payment\Http\Controllers;
 
 use Assets;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Http\Requests\CheckoutRequest;
-use Botble\Payment\Http\Requests\PaymentMethodRequest;
-use Botble\Payment\Http\Requests\PayPalPaymentCallbackRequest;
-use Botble\Payment\Http\Requests\UpdatePaymentRequest;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
-use Botble\Payment\Services\Gateways\BankTransferPaymentService;
-use Botble\Payment\Services\Gateways\CodPaymentService;
-use Botble\Payment\Services\Gateways\PayPalPaymentService;
-use Botble\Payment\Services\Gateways\StripePaymentService;
-use Botble\Payment\Tables\PaymentTable;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Http\Requests\CheckoutRequest;
+use RealDriss\Payment\Http\Requests\PaymentMethodRequest;
+use RealDriss\Payment\Http\Requests\PayPalPaymentCallbackRequest;
+use RealDriss\Payment\Http\Requests\UpdatePaymentRequest;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Payment\Services\Gateways\BankTransferPaymentService;
+use RealDriss\Payment\Services\Gateways\CodPaymentService;
+use RealDriss\Payment\Services\Gateways\PayPalPaymentService;
+use RealDriss\Payment\Services\Gateways\StripePaymentService;
+use RealDriss\Payment\Tables\PaymentTable;
+use RealDriss\Setting\Supports\SettingStore;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;

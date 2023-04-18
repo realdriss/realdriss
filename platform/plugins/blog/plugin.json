@@ -1,9 +1,9 @@
 {
     "name": "Blog",
-    "namespace": "Botble\\Blog\\",
-    "provider": "Botble\\Blog\\Providers\\BlogServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Blog\\",
+    "provider": "RealDriss\\Blog\\Providers\\BlogServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Manage posts, categories, tags"
 }

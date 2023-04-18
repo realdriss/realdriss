@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Testimonial\Models\Testimonial;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Testimonial\Models\Testimonial;
 use Faker\Factory;
 
 class TestimonialSeeder extends BaseSeeder
@@ -24,15 +24,11 @@ class TestimonialSeeder extends BaseSeeder
             ],
             [
                 'name'    => 'Rosalina D. William',
-                'company' => 'Founder, qux co.',
+                'company' => 'Founder, Qux co.',
             ],
             [
                 'name'    => 'John Becker',
                 'company' => 'CEO, Highlands coffee',
-            ],
-            [
-                'name'    => 'Browfish Dumble',
-                'company' => 'Founder, Condo',
             ],
         ];
 

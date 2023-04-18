@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\ProductAttribute;
-use Botble\Ecommerce\Models\ProductAttributeSet;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\ProductAttribute;
+use RealDriss\Ecommerce\Models\ProductAttributeSet;
 
 class ProductAttributeSeeder extends BaseSeeder
 {
@@ -63,22 +63,6 @@ class ProductAttributeSeeder extends BaseSeeder
                 'order'            => 3,
             ],
             [
-                'attribute_set_id' => 1,
-                'title'            => 'Black',
-                'slug'             => 'back',
-                'color'            => '#2F366C',
-                'is_default'       => false,
-                'order'            => 4,
-            ],
-            [
-                'attribute_set_id' => 1,
-                'title'            => 'Brown',
-                'slug'             => 'brown',
-                'color'            => '#87554B',
-                'is_default'       => false,
-                'order'            => 5,
-            ],
-            [
                 'attribute_set_id' => 2,
                 'title'            => 'S',
                 'slug'             => 's',
@@ -98,20 +82,6 @@ class ProductAttributeSeeder extends BaseSeeder
                 'slug'             => 'l',
                 'is_default'       => true,
                 'order'            => 3,
-            ],
-            [
-                'attribute_set_id' => 2,
-                'title'            => 'XL',
-                'slug'             => 'xl',
-                'is_default'       => true,
-                'order'            => 4,
-            ],
-            [
-                'attribute_set_id' => 2,
-                'title'            => 'XXL',
-                'slug'             => 'xxl',
-                'is_default'       => true,
-                'order'            => 5,
             ],
         ];
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\ACL\Tables;
+namespace RealDriss\ACL\Tables;
 
 use BaseHelper;
 use Html;
 use Illuminate\Support\Facades\Auth;
-use Botble\ACL\Repositories\Interfaces\RoleInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\ACL\Repositories\Interfaces\RoleInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Yajra\DataTables\DataTables;
 

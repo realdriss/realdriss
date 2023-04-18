@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace RealDriss\Media\Commands;
 
-use Botble\Media\Repositories\Interfaces\MediaFileInterface;
+use RealDriss\Media\Repositories\Interfaces\MediaFileInterface;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
@@ -52,16 +52,21 @@ class GenerateThumbnailCommand extends Command
 
         $errors = [];
 
+
+
+        $number = 1;
         foreach ($files as $file) {
             try {
                 RvMedia::generateThumbnails($file);
+                $this->info('Done generating thumb '. $number. '! ');
             } catch (Exception $exception) {
                 $errors[] = $file->url;
                 $this->error($exception->getMessage());
             }
+            $number ++;
         }
 
-        $this->info('Generated media thumbnails successfully!');
+        $this->info('Generated all media thumbnails successfully!');
 
         $errors = array_unique($errors);
 
@@ -70,7 +75,7 @@ class GenerateThumbnailCommand extends Command
         }, $errors);
 
         if ($errors) {
-            $this->info('We are unable to regenerate thumbnail for these files:');
+            $this->info('We are unable to regenerate thumbnails for these files:');
 
             $this->table(['File directory'], $errors);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Theme\Exceptions;
+namespace RealDriss\Theme\Exceptions;
 
 use UnexpectedValueException;
 

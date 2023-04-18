@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Menu\Models;
+namespace RealDriss\Menu\Models;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Menu extends BaseModel

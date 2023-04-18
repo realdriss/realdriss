@@ -25,21 +25,21 @@ class WidgetManagement {
                         sidebar_id: parentElement.data('id')
                     },
                     beforeSend: () => {
-                        Botble.showNotice('info', BotbleVariables.languages.notices_msg.processing_request);
+                        RealDriss.showNotice('info', RealDrissVariables.languages.notices_msg.processing_request);
                     },
                     success: data =>  {
                         if (data.error) {
-                            Botble.showError(data.message);
+                            RealDriss.showError(data.message);
                         } else {
                             parentElement.find('ul').html(data.data);
-                            Botble.callScroll($('.list-page-select-widget'));
-                            Botble.showSuccess(data.message);
+                            RealDriss.callScroll($('.list-page-select-widget'));
+                            RealDriss.showSuccess(data.message);
                         }
 
                         parentElement.find('.widget_save i').remove();
                     },
                     error: data =>  {
-                        Botble.handleError(data);
+                        RealDriss.handleError(data);
                         parentElement.find('.widget_save i').remove();
                     }
                 });
@@ -94,19 +94,19 @@ class WidgetManagement {
                     sidebar_id: _self.closest('.sidebar-item').data('id')
                 },
                 beforeSend: () => {
-                    Botble.showNotice('info', BotbleVariables.languages.notices_msg.processing_request);
+                    RealDriss.showNotice('info', RealDrissVariables.languages.notices_msg.processing_request);
                 },
                 success: data =>  {
                     if (data.error) {
-                        Botble.showError(data.message);
+                        RealDriss.showError(data.message);
                     } else {
-                        Botble.showSuccess(data.message);
+                        RealDriss.showSuccess(data.message);
                         widget.fadeOut().remove();
                     }
                     widget.find('.widget-control-delete').removeClass('button-loading');
                 },
                 error: data =>  {
-                    Botble.handleError(data);
+                    RealDriss.handleError(data);
                     widget.find('.widget-control-delete').removeClass('button-loading');
                 }
             });
@@ -127,7 +127,7 @@ class WidgetManagement {
             saveWidget(_self.closest('.sidebar-item'));
         });
 
-        Botble.callScroll($('.list-page-select-widget'));
+        RealDriss.callScroll($('.list-page-select-widget'));
     }
 }
 

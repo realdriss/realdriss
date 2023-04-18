@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Payment\Models;
+namespace RealDriss\Payment\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
 use Html;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 

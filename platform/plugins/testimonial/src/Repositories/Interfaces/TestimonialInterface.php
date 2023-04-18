@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Testimonial\Repositories\Interfaces;
+namespace RealDriss\Testimonial\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 
 interface TestimonialInterface extends RepositoryInterface
 {

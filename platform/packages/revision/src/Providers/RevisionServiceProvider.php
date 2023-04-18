@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Revision\Providers;
+namespace RealDriss\Revision\Providers;
 
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Support\ServiceProvider;
 
 class RevisionServiceProvider extends ServiceProvider

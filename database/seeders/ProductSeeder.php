@@ -2,20 +2,20 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderAddress;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\ProductVariation;
-use Botble\Ecommerce\Models\ProductVariationItem;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Ecommerce\Models\Wishlist;
-use Botble\Payment\Models\Payment;
-use Botble\Slug\Models\Slug;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Models\Order;
+use RealDriss\Ecommerce\Models\OrderAddress;
+use RealDriss\Ecommerce\Models\OrderHistory;
+use RealDriss\Ecommerce\Models\OrderProduct;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\ProductVariation;
+use RealDriss\Ecommerce\Models\ProductVariationItem;
+use RealDriss\Ecommerce\Models\Shipment;
+use RealDriss\Ecommerce\Models\ShipmentHistory;
+use RealDriss\Ecommerce\Models\Wishlist;
+use RealDriss\Payment\Models\Payment;
+use RealDriss\Slug\Models\Slug;
 use Faker\Factory;
 use File;
 use Illuminate\Support\Arr;
@@ -36,6 +36,7 @@ class ProductSeeder extends BaseSeeder
 
         $faker = Factory::create();
 
+        // define unique product props.
         $products = [
             [
                 'id'          => 1,
@@ -104,143 +105,6 @@ class ProductSeeder extends BaseSeeder
                 'sale_price'  => $faker->numberBetween(150, 200),
                 'is_featured' => true,
             ],
-            [
-                'id'          => 11,
-                'name'        => 'Apple Watch Serial 7',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 12,
-                'name'        => 'Macbook Pro 13 inch',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 13,
-                'name'        => 'Apple Keyboard',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 14,
-                'name'        => 'MacSafe 80W',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 15,
-                'name'        => 'Hand playstation',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 16,
-                'name'        => 'Apple Airpods Serial 3',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 17,
-                'name'        => 'Cool Smart Watches',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 18,
-                'name'        => 'Black Smart Watches',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 19,
-                'name'        => 'Leather Watch Band Serial 3',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 20,
-                'name'        => 'Macbook Pro 2015 13 inch',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 21,
-                'name'        => 'Historic Alarm Clock',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 22,
-                'name'        => 'Black Glasses',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 23,
-                'name'        => 'Phillips Mouse',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'          => 24,
-                'name'        => 'Gaming Keyboard',
-                'price'       => $faker->numberBetween(110, 130),
-                'sale_price'  => $faker->numberBetween(90, 100),
-                'is_featured' => true,
-            ],
-            [
-                'id'         => 25,
-                'name'       => 'Dual Camera 20MP',
-                'price'      => 80.25,
-                'sale_price' => 55,
-            ],
-            [
-                'id'         => 26,
-                'name'       => 'Smart Watches',
-                'price'      => 40.5,
-                'sale_price' => 35,
-            ],
-            [
-                'id'         => 27,
-                'name'       => 'Beat Headphone',
-                'price'      => 20,
-                'sale_price' => 15,
-            ],
-            [
-                'id'    => 28,
-                'name'  => 'Red & Black Headphone',
-                'price' => $faker->numberBetween(50, 60),
-            ],
-            [
-                'id'    => 29,
-                'name'  => 'Audio Equipment',
-                'price' => $faker->numberBetween(50, 60),
-            ],
-            [
-                'id'         => 30,
-                'name'       => 'Smart Televisions',
-                'price'      => $faker->numberBetween(110, 130),
-                'sale_price' => $faker->numberBetween(80, 100),
-            ],
-            [
-                'id'    => 31,
-                'name'  => 'Samsung Smart TV',
-                'price' => $faker->numberBetween(50, 60),
-            ],
         ];
 
         Product::truncate();
@@ -263,33 +127,8 @@ class ProductSeeder extends BaseSeeder
         Payment::truncate();
 
         foreach ($products as $key => $item) {
-            $item['description'] = '<p>Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline.</p>';
-            $item['content'] = '<p>Short Hooded Coat features a straight body, large pockets with button flaps, ventilation air holes, and a string detail along the hemline. The style is completed with a drawstring hood, featuring Rains&rsquo; signature built-in cap. Made from waterproof, matte PU, this lightweight unisex rain jacket is an ode to nostalgia through its classic silhouette and utilitarian design details.</p>
-                                <p>- Casual unisex fit</p>
-
-                                <p>- 64% polyester, 36% polyurethane</p>
-
-                                <p>- Water column pressure: 4000 mm</p>
-
-                                <p>- Model is 187cm tall and wearing a size S / M</p>
-
-                                <p>- Unisex fit</p>
-
-                                <p>- Drawstring hood with built-in cap</p>
-
-                                <p>- Front placket with snap buttons</p>
-
-                                <p>- Ventilation under armpit</p>
-
-                                <p>- Adjustable cuffs</p>
-
-                                <p>- Double welted front pockets</p>
-
-                                <p>- Adjustable elastic string at hempen</p>
-
-                                <p>- Ultrasonically welded seams</p>
-
-                                <p>This is a unisex item, please check our clothing &amp; footwear sizing guide for specific Rains jacket sizing information. RAINS comes from the rainy nation of Denmark at the edge of the European continent, close to the ocean and with prevailing westerly winds; all factors that contribute to an average of 121 rain days each year. Arising from these rainy weather conditions comes the attitude that a quick rain shower may be beautiful, as well as moody- but first and foremost requires the right outfit. Rains focus on the whole experience of going outside on rainy days, issuing an invitation to explore even in the most mercurial weather.</p>';
+            $item['description'] = '<p>Great description.</p>';
+            $item['content'] = '<p>Format the content neatly.</p>';
             $item['status'] = BaseStatusEnum::PUBLISHED;
             $item['sku'] = 'HS-' . $faker->numberBetween(100, 200);
             $item['brand_id'] = $faker->numberBetween(1, 7);

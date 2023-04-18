@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\AuditLog\Providers;
+namespace RealDriss\AuditLog\Providers;
 
 use Assets;
 use AuditLog;
-use Botble\ACL\Models\User;
+use RealDriss\ACL\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
-use Botble\AuditLog\Events\AuditHandlerEvent;
+use RealDriss\AuditLog\Events\AuditHandlerEvent;
 use Illuminate\Http\Request;
 use stdClass;
 use Throwable;

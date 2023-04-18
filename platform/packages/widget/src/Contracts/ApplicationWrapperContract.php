@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Widget\Contracts;
+namespace RealDriss\Widget\Contracts;
 
 interface ApplicationWrapperContract
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Slug;
+namespace RealDriss\Slug;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 

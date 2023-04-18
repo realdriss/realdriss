@@ -1,10 +1,10 @@
 <?php
 
-use Botble\Blog\Models\Category;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Models\Tag;
+use RealDriss\Blog\Models\Category;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Models\Tag;
 
-Route::group(['namespace' => 'Botble\Blog\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Blog\Http\Controllers', 'middleware' => ['web', 'core']], function () {
 
     Route::group(['prefix' => BaseHelper::getAdminPrefix() . '/blog', 'middleware' => 'auth'], function () {
 

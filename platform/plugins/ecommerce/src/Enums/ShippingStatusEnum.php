@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Enums;
+namespace RealDriss\Ecommerce\Enums;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 
 /**
  * @method static ShippingStatusEnum NOT_APPROVED()

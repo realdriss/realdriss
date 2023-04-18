@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
 use Assets;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\FlashSaleRequest;
-use Botble\Ecommerce\Models\FlashSale;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Http\Requests\FlashSaleRequest;
+use RealDriss\Ecommerce\Models\FlashSale;
 
 class FlashSaleForm extends FormAbstract
 {

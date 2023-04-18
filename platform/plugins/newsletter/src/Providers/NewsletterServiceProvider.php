@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Newsletter\Providers;
+namespace RealDriss\Newsletter\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Newsletter\Models\Newsletter;
-use Botble\Newsletter\Repositories\Caches\NewsletterCacheDecorator;
-use Botble\Newsletter\Repositories\Eloquent\NewsletterRepository;
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Newsletter\Models\Newsletter;
+use RealDriss\Newsletter\Repositories\Caches\NewsletterCacheDecorator;
+use RealDriss\Newsletter\Repositories\Eloquent\NewsletterRepository;
+use RealDriss\Newsletter\Repositories\Interfaces\NewsletterInterface;
 use EmailHandler;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Routing\Events\RouteMatched;

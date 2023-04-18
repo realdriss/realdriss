@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Providers;
+namespace RealDriss\Menu\Providers;
 
-use Botble\Menu\Commands\ClearMenuCacheCommand;
+use RealDriss\Menu\Commands\ClearMenuCacheCommand;
 use Illuminate\Support\ServiceProvider;
 
 class CommandServiceProvider extends ServiceProvider

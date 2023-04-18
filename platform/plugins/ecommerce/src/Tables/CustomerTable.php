@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Tables;
+namespace RealDriss\Ecommerce\Tables;
 
 use BaseHelper;
-use Botble\Ecommerce\Repositories\Interfaces\CustomerInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\CustomerInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;

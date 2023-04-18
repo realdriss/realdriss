@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Traits;
+namespace RealDriss\Base\Traits;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 
 trait EnumCastable
 {

@@ -39,7 +39,7 @@
                             <label class="text-title-field" for="store_country">{{ trans('plugins/ecommerce::ecommerce.setting.country') }}</label>
                             <div class="ui-select-wrapper">
                                 <select name="store_country" class="ui-select select-search-full" id="store_country">
-                                    @foreach(['' => trans('plugins/ecommerce::ecommerce.setting.select_country')] + \Botble\Base\Supports\Helper::countries() as $countryCode => $countryName)
+                                    @foreach(['' => trans('plugins/ecommerce::ecommerce.setting.select_country')] + \RealDriss\Base\Supports\Helper::countries() as $countryCode => $countryName)
                                         <option value="{{ $countryCode }}" @if (get_ecommerce_setting('store_country') == $countryCode) selected @endif>{{ $countryName }}</option>
                                     @endforeach
                                 </select>
@@ -433,7 +433,7 @@
                             <div class="form-group form-group-no-margin">
                                 <div class="multi-choices-widget list-item-checkbox">
                                     <ul>
-                                        @foreach (\Botble\Base\Supports\Helper::countries() as $key => $item)
+                                        @foreach (\RealDriss\Base\Supports\Helper::countries() as $key => $item)
                                             <li>
                                                 <input type="checkbox"
                                                        class="styled available-countries"

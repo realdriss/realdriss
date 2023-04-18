@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Repositories\Interfaces\ShipmentInterface;
-use Botble\Payment\Models\Payment;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Ecommerce\Enums\OrderStatusEnum;
+use RealDriss\Ecommerce\Enums\ShippingMethodEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShipmentInterface;
+use RealDriss\Payment\Models\Payment;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
 use EcommerceHelper;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;

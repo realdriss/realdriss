@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\AuditLog\Commands;
+namespace RealDriss\AuditLog\Commands;
 
-use Botble\AuditLog\Models\AuditHistory;
+use RealDriss\AuditLog\Models\AuditHistory;
 use Illuminate\Console\Command;
 use Throwable;
 

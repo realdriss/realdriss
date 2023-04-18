@@ -1,11 +1,11 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Supports\SortItemsWithChildrenHelper;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
-use Botble\Blog\Supports\PostFormat;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Supports\SortItemsWithChildrenHelper;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Blog\Supports\PostFormat;
 use Illuminate\Support\Arr;
 
 if (!function_exists('get_featured_posts')) {
@@ -184,7 +184,7 @@ if (!function_exists('get_popular_categories')) {
 if (!function_exists('get_category_by_id')) {
     /**
      * @param integer $id
-     * @return \Botble\Base\Models\BaseModel
+     * @return \RealDriss\Base\Models\BaseModel
      */
     function get_category_by_id($id)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Chart\Supports;
+namespace RealDriss\Chart\Supports;
 
 class ChartTypes
 {

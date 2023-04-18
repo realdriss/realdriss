@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Setting\Supports;
+namespace RealDriss\Setting\Supports;
 
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Filesystem\Filesystem;

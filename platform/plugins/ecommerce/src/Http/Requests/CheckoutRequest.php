@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Requests;
+namespace RealDriss\Ecommerce\Http\Requests;
 
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Ecommerce\Enums\ShippingMethodEnum;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class CheckoutRequest extends Request

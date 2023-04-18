@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Shortcode\View;
+namespace RealDriss\Shortcode\View;
 
 use ArrayAccess;
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
+use RealDriss\Shortcode\Compilers\ShortcodeCompiler;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\View\View as IlluminateView;
 

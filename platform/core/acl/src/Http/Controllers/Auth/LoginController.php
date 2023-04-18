@@ -1,14 +1,19 @@
 <?php
 
-namespace Botble\ACL\Http\Controllers\Auth;
+/**
+ * 
+ * Login controller for the admin page.
+ */
 
-use Assets;
+namespace RealDriss\ACL\Http\Controllers\Auth;
+
+use Assets; //injects assets like scripts to the view, permits call binding
 use BaseHelper;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\ACL\Traits\AuthenticatesUsers;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\ACL\Traits\AuthenticatesUsers;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -58,10 +63,11 @@ class LoginController extends BaseController
     /**
      * @return Factory|View
      */
-    public function showLoginForm()
+    public function showLoginForm() //shows the admin login page
     {
-        page_title()->setTitle(trans('core/acl::auth.login_title'));
+        page_title()->setTitle(trans('core/acl::auth.login_title')); //admin
 
+        // compiled assets
         Assets::addScripts(['jquery-validation'])
             ->addScriptsDirectly('vendor/core/core/acl/js/login.js')
             ->addStylesDirectly('vendor/core/core/acl/css/animate.min.css')

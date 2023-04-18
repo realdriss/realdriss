@@ -1,7 +1,7 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Repositories\Interfaces\BrandInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Repositories\Interfaces\BrandInterface;
 use Illuminate\Support\Collection;
 
 if (!function_exists('get_featured_brands')) {

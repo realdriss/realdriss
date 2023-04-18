@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Ecommerce\Cart\Exceptions;
+namespace RealDriss\Ecommerce\Cart\Exceptions;
 
 use RuntimeException;
 

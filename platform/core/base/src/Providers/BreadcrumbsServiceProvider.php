@@ -1,8 +1,10 @@
 <?php
 
-namespace Botble\Base\Providers;
+namespace RealDriss\Base\Providers;
 
-use Botble\Base\Supports\BreadcrumbsGenerator;
+use RealDriss\Base\Supports\BreadcrumbsGenerator;
+// EO RealDriss namespaced classes.
+
 use Breadcrumbs;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;

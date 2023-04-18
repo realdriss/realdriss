@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
-use Botble\Media\Models\MediaFile;
-use Botble\Media\Models\MediaFolder;
-use Botble\PluginManagement\Services\PluginService;
+use RealDriss\Media\Models\MediaFile;
+use RealDriss\Media\Models\MediaFolder;
+use RealDriss\PluginManagement\Services\PluginService;
 use Exception;
 use File;
 use Illuminate\Database\Seeder;

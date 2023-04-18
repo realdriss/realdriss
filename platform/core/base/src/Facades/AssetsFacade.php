@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Facades;
+namespace RealDriss\Base\Facades;
 
-use Botble\Base\Supports\Assets;
+use RealDriss\Base\Supports\Assets;
 use Illuminate\Support\Facades\Facade;
 
 class AssetsFacade extends Facade

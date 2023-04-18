@@ -1,12 +1,12 @@
 @extends('core/acl::auth.master')
-
+{{ dump(auth()->check()) }}
 @section('content')
     <p>{{ trans('core/acl::auth.sign_in_below') }}:</p>
 
     {!! Form::open(['route' => 'access.login', 'class' => 'login-form']) !!}
         <div class="form-group" id="emailGroup">
             <label>{{ trans('core/acl::auth.login.username') }}</label>
-            {!! Form::text('username', request()->input('email', old('username', app()->environment('demo') ? config('core.base.general.demo.account.username', 'botble') : null)), ['class' => 'form-control', 'placeholder' => trans('core/acl::auth.login.username')]) !!}
+            {!! Form::text('username', request()->input('email', old('username', app()->environment('demo') ? config('core.base.general.demo.account.username', 'RealDriss') : null)), ['class' => 'form-control', 'placeholder' => trans('core/acl::auth.login.username')]) !!}
         </div>
 
         <div class="form-group" id="passwordGroup">
@@ -29,7 +29,7 @@
         <br>
         <p><a class="lost-pass-link" href="{{ route('access.password.request') }}" title="{{ trans('core/acl::auth.forgot_password.title') }}">{{ trans('core/acl::auth.lost_your_password') }}</a></p>
 
-        {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \Botble\ACL\Models\User::class) !!}
+        {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \RealDriss\ACL\Models\User::class) !!}
 
     {!! Form::close() !!}
 @stop

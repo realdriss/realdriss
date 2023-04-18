@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands;
+namespace RealDriss\DevTool\Commands;
 
-use Botble\Base\Supports\Helper;
+use RealDriss\Base\Supports\Helper;
 use Illuminate\Support\Facades\DB;
 use Exception;
 use File;
@@ -65,7 +65,7 @@ class PackageRemoveCommand extends Command
 
         $this->line('<info>Removed package files successfully!</info>');
 
-        $this->line('<info>Remove</info> <comment>"botble/' . $package . '": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to remove this package!');
+        $this->line('<info>Remove</info> <comment>"RealDriss/' . $package . '": "*@dev"</comment> to composer.json then run <comment>composer update</comment> to remove this package!');
 
         return 0;
     }

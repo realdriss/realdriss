@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Page\Forms;
+namespace RealDriss\Page\Forms;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Forms\FormAbstract;
-use Botble\Page\Http\Requests\PageRequest;
-use Botble\Page\Models\Page;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Page\Http\Requests\PageRequest;
+use RealDriss\Page\Models\Page;
 
 class PageForm extends FormAbstract
 {

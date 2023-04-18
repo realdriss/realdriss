@@ -85,7 +85,7 @@
             </div>
             <div class="flexbox-grid-form flexbox-grid-form-item flexbox-grid-form-no-outside-padding rps-no-pd-none-l ps-relative max-width-220-px">
                 <div class="flexbox-grid-form-item">
-                    @if ($order->payment->payment_channel == \Botble\Payment\Enums\PaymentMethodEnum::COD && $order->payment->status !== \Botble\Payment\Enums\PaymentStatusEnum::COMPLETED)
+                    @if ($order->payment->payment_channel == \RealDriss\Payment\Enums\PaymentMethodEnum::COD && $order->payment->status !== \RealDriss\Payment\Enums\PaymentStatusEnum::COMPLETED)
                         <div class="form-group">
                             <label class="text-title-field">{{ trans('plugins/ecommerce::shipping.cod_amount') }}:</label>
                             <div class="next-input--stylized">

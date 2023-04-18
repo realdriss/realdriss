@@ -1,19 +1,19 @@
 {
-    "name": "botble/shortcode",
+    "name": "realdriss/shortcode",
     "description": "Shortcode package",
     "type": "package",
     "autoload": {
         "psr-4": {
-            "Botble\\Shortcode\\": "src"
+            "RealDriss\\Shortcode\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev"
+        "realdriss/platform": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\Shortcode\\Providers\\ShortcodeServiceProvider"
+                "RealDriss\\Shortcode\\Providers\\ShortcodeServiceProvider"
             ]
         }
     }

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Repositories\Eloquent;
+namespace RealDriss\Media\Repositories\Eloquent;
 
-use Botble\Media\Repositories\Interfaces\MediaFolderInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Media\Repositories\Interfaces\MediaFolderInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 use Eloquent;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Support\Str;

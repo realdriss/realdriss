@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Analytics;
+namespace RealDriss\Analytics;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Dashboard\Models\DashboardWidget;
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\Dashboard\Models\DashboardWidget;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
 use Exception;
 
 class Plugin extends PluginOperationAbstract

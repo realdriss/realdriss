@@ -1,9 +1,9 @@
 {
     "name": "Contact Form",
-    "namespace": "Botble\\Contact\\",
-    "provider": "Botble\\Contact\\Providers\\ContactServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\Contact\\",
+    "provider": "RealDriss\\Contact\\Providers\\ContactServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Contact Form"
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Ecommerce\Forms;
+namespace RealDriss\Ecommerce\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\Ecommerce\Http\Requests\CustomerCreateRequest;
-use Botble\Ecommerce\Models\Customer;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\Ecommerce\Http\Requests\CustomerCreateRequest;
+use RealDriss\Ecommerce\Models\Customer;
 
 class CustomerForm extends FormAbstract
 {

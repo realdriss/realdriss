@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\ACL\Listeners;
+namespace RealDriss\ACL\Listeners;
 
 use Exception;
 use Illuminate\Support\Facades\Auth;
-use Botble\ACL\Events\RoleAssignmentEvent;
+use RealDriss\ACL\Events\RoleAssignmentEvent;
 
 class RoleAssignmentListener
 {

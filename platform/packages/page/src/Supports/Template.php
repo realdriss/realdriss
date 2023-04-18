@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Page\Supports;
+namespace RealDriss\Page\Supports;
 
 use Theme;
 

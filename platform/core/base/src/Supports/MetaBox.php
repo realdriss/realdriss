@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
-use Botble\Base\Repositories\Interfaces\MetaBoxInterface;
+use RealDriss\Base\Repositories\Interfaces\MetaBoxInterface;
 use Exception;
 use Throwable;
 use Illuminate\Database\Eloquent\Model;
-use Botble\Base\Models\MetaBox as MetaBoxModel;
+use RealDriss\Base\Models\MetaBox as MetaBoxModel;
 
 class MetaBox
 {
@@ -270,4 +270,13 @@ class MetaBox
     {
         return $this->metaBoxes;
     }
+    
+     //start dev section
+    public function dev()
+    {
+        //test code here
+        
+    }
+    
+    //end dev section
 }

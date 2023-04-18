@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace RealDriss\Ecommerce\Supports;
 
-use Botble\Ecommerce\Models\Currency;
-use Botble\Ecommerce\Repositories\Interfaces\CurrencyInterface;
+use RealDriss\Ecommerce\Models\Currency;
+use RealDriss\Ecommerce\Repositories\Interfaces\CurrencyInterface;
 use Illuminate\Support\Collection;
 
 class CurrencySupport

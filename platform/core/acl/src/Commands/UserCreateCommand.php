@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Commands;
+namespace RealDriss\ACL\Commands;
 
-use Botble\ACL\Repositories\Interfaces\UserInterface;
-use Botble\ACL\Services\ActivateUserService;
+use RealDriss\ACL\Repositories\Interfaces\UserInterface;
+use RealDriss\ACL\Services\ActivateUserService;
 use Exception;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Validator;

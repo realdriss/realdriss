@@ -1,20 +1,27 @@
 {
-    "name": "botble/widget-generator",
+    "name": "realdriss/widget-generator",
     "description": "Widget generator",
     "type": "package",
+    
+    "authors": [
+        {
+            "name": "Godwin Waswa",
+            "email": "godwin@realdriss.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
-            "Botble\\WidgetGenerator\\": "src"
+            "RealDriss\\WidgetGenerator\\": "src"
         }
     },
     "require": {
-        "botble/platform": "*@dev",
-        "botble/widget": "*@dev"
+        "realdriss/platform": "*@dev",
+        "realdriss/widget": "*@dev"
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Botble\\WidgetGenerator\\Providers\\WidgetGeneratorServiceProvider"
+                "RealDriss\\WidgetGenerator\\Providers\\WidgetGeneratorServiceProvider"
             ]
         }
     }

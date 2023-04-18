@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Newsletter\Tables;
+namespace RealDriss\Newsletter\Tables;
 
 use BaseHelper;
-use Botble\Newsletter\Enums\NewsletterStatusEnum;
-use Botble\Newsletter\Repositories\Interfaces\NewsletterInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Newsletter\Enums\NewsletterStatusEnum;
+use RealDriss\Newsletter\Repositories\Interfaces\NewsletterInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;

@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Forms\FlashSaleForm;
-use Botble\Ecommerce\Http\Requests\FlashSaleRequest;
-use Botble\Ecommerce\Models\FlashSale;
-use Botble\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
-use Botble\Ecommerce\Tables\FlashSaleTable;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Forms\FlashSaleForm;
+use RealDriss\Ecommerce\Http\Requests\FlashSaleRequest;
+use RealDriss\Ecommerce\Models\FlashSale;
+use RealDriss\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
+use RealDriss\Ecommerce\Tables\FlashSaleTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Listeners;
+namespace RealDriss\Base\Listeners;
 
-use Botble\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
 use Exception;
 
 class CreatedContentListener

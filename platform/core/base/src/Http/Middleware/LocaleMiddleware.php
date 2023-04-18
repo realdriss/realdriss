@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Base\Http\Middleware;
+namespace RealDriss\Base\Http\Middleware;
 
-use Botble\Base\Supports\Language;
+use RealDriss\Base\Supports\Language;
 use Closure;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;
@@ -31,7 +31,7 @@ class LocaleMiddleware
      * @param Closure $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle(Request $request, Closure $next)
     {
         $this->app->setLocale(config('app.locale'));
 

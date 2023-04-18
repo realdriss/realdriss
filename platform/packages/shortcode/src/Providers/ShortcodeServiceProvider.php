@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Shortcode\Providers;
+namespace RealDriss\Shortcode\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Shortcode\Compilers\ShortcodeCompiler;
-use Botble\Shortcode\Shortcode;
-use Botble\Shortcode\View\Factory;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Shortcode\Compilers\ShortcodeCompiler;
+use RealDriss\Shortcode\Shortcode;
+use RealDriss\Shortcode\View\Factory;
 use Illuminate\Support\ServiceProvider;
 
 class ShortcodeServiceProvider extends ServiceProvider

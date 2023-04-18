@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Testimonial;
+namespace RealDriss\Testimonial;
 
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
 use Illuminate\Support\Facades\Schema;
 
 class Plugin extends PluginOperationAbstract

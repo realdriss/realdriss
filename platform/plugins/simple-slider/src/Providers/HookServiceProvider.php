@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SimpleSlider\Providers;
+namespace RealDriss\SimpleSlider\Providers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Shortcode\Compilers\Shortcode;
-use Botble\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Shortcode\Compilers\Shortcode;
+use RealDriss\SimpleSlider\Repositories\Interfaces\SimpleSliderInterface;
 use Illuminate\Support\ServiceProvider;
 use Theme;
 

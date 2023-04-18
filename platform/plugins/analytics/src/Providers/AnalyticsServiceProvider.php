@@ -1,15 +1,15 @@
 <?php
 
-namespace Botble\Analytics\Providers;
+namespace RealDriss\Analytics\Providers;
 
-use Botble\Analytics\Analytics;
-use Botble\Analytics\AnalyticsClient;
-use Botble\Analytics\AnalyticsClientFactory;
-use Botble\Analytics\Facades\AnalyticsFacade;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Analytics\Analytics;
+use RealDriss\Analytics\AnalyticsClient;
+use RealDriss\Analytics\AnalyticsClientFactory;
+use RealDriss\Analytics\Facades\AnalyticsFacade;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Botble\Analytics\Exceptions\InvalidConfiguration;
+use RealDriss\Analytics\Exceptions\InvalidConfiguration;
 
 class AnalyticsServiceProvider extends ServiceProvider
 {

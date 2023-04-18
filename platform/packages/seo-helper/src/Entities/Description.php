@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace RealDriss\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\DescriptionContract;
-use Botble\SeoHelper\Exceptions\InvalidArgumentException;
-use Botble\SeoHelper\Helpers\Meta;
+use RealDriss\SeoHelper\Contracts\Entities\DescriptionContract;
+use RealDriss\SeoHelper\Exceptions\InvalidArgumentException;
+use RealDriss\SeoHelper\Helpers\Meta;
 use Illuminate\Support\Str;
 
 class Description implements DescriptionContract

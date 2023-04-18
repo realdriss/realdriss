@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Ecommerce\Supports;
+namespace RealDriss\Ecommerce\Supports;
 
-use Botble\Base\Models\BaseModel;
-use Botble\Ecommerce\Cart\CartItem;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\AddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderAddressInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderInterface;
-use Botble\Ecommerce\Repositories\Interfaces\OrderProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Ecommerce\Cart\CartItem;
+use RealDriss\Ecommerce\Enums\OrderStatusEnum;
+use RealDriss\Ecommerce\Enums\ShippingMethodEnum;
+use RealDriss\Ecommerce\Models\Order;
+use RealDriss\Ecommerce\Models\OrderHistory;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Interfaces\AddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderAddressInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderHistoryInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\OrderProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ShippingRuleInterface;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
 use Cart;
 use EcommerceHelper as EcommerceHelperFacade;
 use EmailHandler;
@@ -130,7 +130,7 @@ class OrderHelper
 
     /**
      * @param Order $order
-     * @return \Botble\Base\Supports\EmailHandler
+     * @return \RealDriss\Base\Supports\EmailHandler
      * @throws Throwable
      */
     public function setEmailVariables($order)

@@ -1,11 +1,19 @@
 <?php
 
-use Botble\ACL\Http\Controllers\Auth\ForgotPasswordController;
-use Botble\ACL\Http\Controllers\Auth\LoginController;
-use Botble\ACL\Http\Controllers\Auth\ResetPasswordController;
-use Botble\ACL\Http\Controllers\UserController;
+use RealDriss\ACL\Http\Controllers\Auth\ForgotPasswordController;
+use RealDriss\ACL\Http\Controllers\Auth\LoginController;
+use RealDriss\ACL\Http\Controllers\Auth\ResetPasswordController;
+use RealDriss\ACL\Http\Controllers\UserController;
 
-Route::group(['namespace' => 'Botble\ACL\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+/**
+ * level 0 -> namespace { RealDriss\ACL\Http\Controllers }, middleware { web, core } //general
+ * level 0.0 -> prefix { BaseHelper::getAdminPrefix() } /admin
+ * level 0.0.0 -> middleware { guest } *authenticated == false
+ * level 0.0.1 -> middleware { auth } *authenticated == true
+ * level 0.1 -> prefix { BaseHelper::getAdminPrefix() }, middleware { auth }
+ * level 0.1.0 -> prefix {}
+*/
+Route::group(['namespace' => 'RealDriss\ACL\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix()], function () {
         Route::group(['middleware' => 'guest'], function () {
 
@@ -24,11 +32,14 @@ Route::group(['namespace' => 'Botble\ACL\Http\Controllers', 'middleware' => ['we
         });
 
         Route::group(['middleware' => 'auth'], function () {
-            Route::get('logout', [
-                'as'         => 'access.logout',
-                'uses'       => 'Auth\LoginController@logout',
-                'permission' => false,
-            ]);
+            Route::get('logout', [LoginController::class, 'logout'])
+                ->name('access.logout');
+
+            // Route::get('logout', [
+            //     'as'         => 'access.logout',
+            //     'uses'       => 'Auth\LoginController@logout',
+            //     'permission' => false,
+            // ]);
         });
     });
 

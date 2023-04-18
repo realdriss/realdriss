@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\{Module}\Models;
+namespace RealDriss\{Module}\Models;
 
-use Botble\Base\Traits\EnumCastable;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Models\BaseModel;
 
 class {Name} extends BaseModel
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\Blog\Tables;
+namespace RealDriss\Blog\Tables;
 
 use BaseHelper;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Blog\Repositories\Interfaces\CategoryInterface;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Blog\Repositories\Interfaces\CategoryInterface;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Html;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Facades\Auth;

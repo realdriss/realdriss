@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace RealDriss\Slug\Providers;
 
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Slug\Listeners\CreatedContentListener;
-use Botble\Slug\Listeners\DeletedContentListener;
-use Botble\Slug\Listeners\UpdatedContentListener;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Slug\Listeners\CreatedContentListener;
+use RealDriss\Slug\Listeners\DeletedContentListener;
+use RealDriss\Slug\Listeners\UpdatedContentListener;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
 class EventServiceProvider extends ServiceProvider

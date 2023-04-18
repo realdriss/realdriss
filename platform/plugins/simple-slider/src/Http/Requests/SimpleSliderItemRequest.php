@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SimpleSlider\Http\Requests;
+namespace RealDriss\SimpleSlider\Http\Requests;
 
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Support\Http\Requests\Request;
 
 class SimpleSliderItemRequest extends Request
 {

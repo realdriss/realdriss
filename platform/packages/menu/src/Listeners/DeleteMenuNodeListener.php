@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Menu\Listeners;
+namespace RealDriss\Menu\Listeners;
 
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Menu\Repositories\Interfaces\MenuNodeInterface;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Menu\Repositories\Interfaces\MenuNodeInterface;
 use Exception;
 use Menu;
 

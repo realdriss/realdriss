@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Blog\Models;
+namespace RealDriss\Blog\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Revision\RevisionableTrait;
-use Botble\Base\Models\BaseModel;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Revision\RevisionableTrait;
+use RealDriss\Base\Models\BaseModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphTo;

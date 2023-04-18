@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\ACL\Services;
+namespace RealDriss\ACL\Services;
 
-use Botble\ACL\Models\User;
-use Botble\ACL\Repositories\Interfaces\ActivationInterface;
+use RealDriss\ACL\Models\User;
+use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
 use InvalidArgumentException;
 
 class ActivateUserService

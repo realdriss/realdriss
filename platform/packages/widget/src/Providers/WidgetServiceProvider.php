@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Widget\Providers;
+namespace RealDriss\Widget\Providers;
 
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Widget\Factories\WidgetFactory;
-use Botble\Widget\Misc\LaravelApplicationWrapper;
-use Botble\Widget\Models\Widget;
-use Botble\Widget\Repositories\Caches\WidgetCacheDecorator;
-use Botble\Widget\Repositories\Eloquent\WidgetRepository;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
-use Botble\Widget\WidgetGroupCollection;
-use Botble\Widget\Widgets\Text;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Widget\Factories\WidgetFactory;
+use RealDriss\Widget\Misc\LaravelApplicationWrapper;
+use RealDriss\Widget\Models\Widget;
+use RealDriss\Widget\Repositories\Caches\WidgetCacheDecorator;
+use RealDriss\Widget\Repositories\Eloquent\WidgetRepository;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Widget\WidgetGroupCollection;
+use RealDriss\Widget\Widgets\Text;
 use Illuminate\Support\Facades\Event;
 use File;
 use Illuminate\Routing\Events\RouteMatched;
@@ -34,11 +34,11 @@ class WidgetServiceProvider extends ServiceProvider
             return new WidgetCacheDecorator(new WidgetRepository(new Widget));
         });
 
-        $this->app->bind('botble.widget', function () {
+        $this->app->bind('RealDriss.widget', function () {
             return new WidgetFactory(new LaravelApplicationWrapper);
         });
 
-        $this->app->singleton('botble.widget-group-collection', function () {
+        $this->app->singleton('RealDriss.widget-group-collection', function () {
             return new WidgetGroupCollection(new LaravelApplicationWrapper);
         });
 

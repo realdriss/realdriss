@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\DevTool\Commands\Abstracts;
+namespace RealDriss\DevTool\Commands\Abstracts;
 
-use Botble\Base\Supports\MountManager;
+use RealDriss\Base\Supports\MountManager;
 use File;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;

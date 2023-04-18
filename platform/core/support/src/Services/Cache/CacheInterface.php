@@ -1,6 +1,6 @@
 <?php
 
-namespace Botble\Support\Services\Cache;
+namespace RealDriss\Support\Services\Cache;
 
 interface CacheInterface
 {

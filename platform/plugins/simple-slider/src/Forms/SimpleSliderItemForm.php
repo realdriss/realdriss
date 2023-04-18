@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\SimpleSlider\Forms;
+namespace RealDriss\SimpleSlider\Forms;
 
-use Botble\Base\Forms\FormAbstract;
-use Botble\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
-use Botble\SimpleSlider\Models\SimpleSliderItem;
+use RealDriss\Base\Forms\FormAbstract;
+use RealDriss\SimpleSlider\Http\Requests\SimpleSliderItemRequest;
+use RealDriss\SimpleSlider\Models\SimpleSliderItem;
 
 class SimpleSliderItemForm extends FormAbstract
 {

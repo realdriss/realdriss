@@ -1,6 +1,6 @@
 <?php
 
-use Botble\Ecommerce\Models\Customer;
+use RealDriss\Ecommerce\Models\Customer;
 
 return [
     'supported' => [

@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Botble\Slug\Http\Controllers', 'middleware' => ['web', 'core']], function () {
+Route::group(['namespace' => 'RealDriss\Slug\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => 'ajax'], function () {
         Route::group(['prefix' => 'slug'], function () {
             Route::post('create', [

@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Base\Supports;
+namespace RealDriss\Base\Supports;
 
-use Botble\Base\Events\SendMailEvent;
-use Botble\Base\Jobs\SendMailJob;
-use Botble\Setting\Supports\SettingStore;
+use RealDriss\Base\Events\SendMailEvent;
+use RealDriss\Base\Jobs\SendMailJob;
+use RealDriss\Setting\Supports\SettingStore;
 use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Arr;

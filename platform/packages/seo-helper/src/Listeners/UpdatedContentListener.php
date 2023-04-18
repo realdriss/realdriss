@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Listeners;
+namespace RealDriss\SeoHelper\Listeners;
 
-use Botble\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
 use Exception;
 use SeoHelper;
 

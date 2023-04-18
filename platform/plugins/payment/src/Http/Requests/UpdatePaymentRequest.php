@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Payment\Http\Requests;
+namespace RealDriss\Payment\Http\Requests;
 
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Support\Http\Requests\Request;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Support\Http\Requests\Request;
 use Illuminate\Validation\Rule;
 
 class UpdatePaymentRequest extends Request

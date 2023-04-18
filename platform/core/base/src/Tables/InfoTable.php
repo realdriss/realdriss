@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Base\Tables;
+namespace RealDriss\Base\Tables;
 
-use Botble\Base\Supports\SystemManagement;
-use Botble\Table\Abstracts\TableAbstract;
+use RealDriss\Base\Supports\SystemManagement;
+use RealDriss\Table\Abstracts\TableAbstract;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Contracts\Routing\UrlGenerator;
 use Illuminate\Support\Collection;

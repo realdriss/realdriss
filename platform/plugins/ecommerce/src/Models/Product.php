@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce\Models;
+namespace RealDriss\Ecommerce\Models;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Traits\EnumCastable;
-use Botble\Ecommerce\Enums\StockStatusEnum;
-use Botble\Ecommerce\Services\Products\UpdateDefaultProductService;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Traits\EnumCastable;
+use RealDriss\Ecommerce\Enums\StockStatusEnum;
+use RealDriss\Ecommerce\Services\Products\UpdateDefaultProductService;
 use EcommerceHelper;
 use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;

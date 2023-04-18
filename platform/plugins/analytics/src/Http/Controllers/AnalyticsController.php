@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Analytics\Http\Controllers;
+namespace RealDriss\Analytics\Http\Controllers;
 
 use Analytics;
-use Botble\Analytics\Exceptions\InvalidConfiguration;
-use Botble\Analytics\Period;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Analytics\Exceptions\InvalidConfiguration;
+use RealDriss\Analytics\Period;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
 use Carbon\Carbon;
 use Exception;
 use Throwable;

@@ -6,10 +6,10 @@
                 <span>{{ $category->name }}</span>
                 @php
                     switch ($category->status->getValue()) {
-                        case \Botble\Base\Enums\BaseStatusEnum::DRAFT:
+                        case \RealDriss\Base\Enums\BaseStatusEnum::DRAFT:
                             $badge = 'bg-secondary';
                             break;
-                        case \Botble\Base\Enums\BaseStatusEnum::PENDING:
+                        case \RealDriss\Base\Enums\BaseStatusEnum::PENDING:
                             $badge = 'bg-warning';
                             break;
                         default:

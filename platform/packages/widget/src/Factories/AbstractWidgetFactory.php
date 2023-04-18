@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Widget\Factories;
+namespace RealDriss\Widget\Factories;
 
-use Botble\Widget\AbstractWidget;
-use Botble\Widget\Contracts\ApplicationWrapperContract;
-use Botble\Widget\Misc\InvalidWidgetClassException;
-use Botble\Widget\Misc\ViewExpressionTrait;
-use Botble\Widget\WidgetId;
+use RealDriss\Widget\AbstractWidget;
+use RealDriss\Widget\Contracts\ApplicationWrapperContract;
+use RealDriss\Widget\Misc\InvalidWidgetClassException;
+use RealDriss\Widget\Misc\ViewExpressionTrait;
+use RealDriss\Widget\WidgetId;
 use Exception;
 use Illuminate\Support\Str;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\AuditLog\Repositories\Caches;
+namespace RealDriss\AuditLog\Repositories\Caches;
 
-use Botble\AuditLog\Repositories\Interfaces\AuditLogInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\AuditLog\Repositories\Interfaces\AuditLogInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 /**
  * @since 16/09/2016 10:55 AM

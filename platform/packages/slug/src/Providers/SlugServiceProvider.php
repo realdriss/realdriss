@@ -1,17 +1,17 @@
 <?php
 
-namespace Botble\Slug\Providers;
+namespace RealDriss\Slug\Providers;
 
 use BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Page\Models\Page;
-use Botble\Slug\Models\Slug;
-use Botble\Slug\Repositories\Caches\SlugCacheDecorator;
-use Botble\Slug\Repositories\Eloquent\SlugRepository;
-use Botble\Slug\Repositories\Interfaces\SlugInterface;
-use Botble\Slug\SlugHelper;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Page\Models\Page;
+use RealDriss\Slug\Models\Slug;
+use RealDriss\Slug\Repositories\Caches\SlugCacheDecorator;
+use RealDriss\Slug\Repositories\Eloquent\SlugRepository;
+use RealDriss\Slug\Repositories\Interfaces\SlugInterface;
+use RealDriss\Slug\SlugHelper;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Routing\Events\RouteMatched;
 use Illuminate\Support\ServiceProvider;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Newsletter\Listeners;
+namespace RealDriss\Newsletter\Listeners;
 
-use Botble\Newsletter\Events\SubscribeNewsletterEvent;
+use RealDriss\Newsletter\Events\SubscribeNewsletterEvent;
 use EmailHandler;
 use Html;
 use Illuminate\Contracts\Queue\ShouldQueue;

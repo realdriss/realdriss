@@ -1,0 +1,8 @@
+{
+    "name": "RealDriss",
+    "namespace": "Theme\\RealDriss\\",
+    "description": "Ecommerce shopping theme",
+    "author": "Godwin Waswa",
+    "version": "v1.0.0",
+    "required_plugins": []
+}

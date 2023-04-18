@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Ecommerce;
+namespace RealDriss\Ecommerce;
 
-use Botble\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
-use Botble\Ecommerce\Models\Brand;
-use Botble\Ecommerce\Models\ProductCategory;
-use Botble\Menu\Repositories\Interfaces\MenuNodeInterface;
-use Botble\PluginManagement\Abstracts\PluginOperationAbstract;
-use Botble\Setting\Models\Setting;
+use RealDriss\Dashboard\Repositories\Interfaces\DashboardWidgetInterface;
+use RealDriss\Ecommerce\Models\Brand;
+use RealDriss\Ecommerce\Models\ProductCategory;
+use RealDriss\Menu\Repositories\Interfaces\MenuNodeInterface;
+use RealDriss\PluginManagement\Abstracts\PluginOperationAbstract;
+use RealDriss\Setting\Models\Setting;
 use Schema;
 
 class Plugin extends PluginOperationAbstract

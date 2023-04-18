@@ -1,9 +1,9 @@
 {
     "name": "Cookie Consent",
-    "namespace": "Botble\\CookieConsent\\",
-    "provider": "Botble\\CookieConsent\\Providers\\CookieConsentServiceProvider",
-    "author": "Botble Technologies",
-    "url": "https://botble.com",
+    "namespace": "RealDriss\\CookieConsent\\",
+    "provider": "RealDriss\\CookieConsent\\Providers\\CookieConsentServiceProvider",
+    "author": "RealDriss Technologies",
+    "url": "https://RealDriss.com",
     "version": "5.8",
     "description": "Cookie Consent"
 }

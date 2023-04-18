@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Media\Chunks;
+namespace RealDriss\Media\Chunks;
 
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use RealDriss\Media\Chunks\Storage\ChunkStorage;
 
 class ChunkFile
 {

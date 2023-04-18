@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Services;
+namespace RealDriss\Ecommerce\Services;
 
-use Botble\Ecommerce\Repositories\Interfaces\DiscountInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\DiscountInterface;
 use Illuminate\Support\Arr;
 use OrderHelper;
 

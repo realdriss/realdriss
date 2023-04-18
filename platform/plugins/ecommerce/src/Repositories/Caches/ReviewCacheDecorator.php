@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Caches;
+namespace RealDriss\Ecommerce\Repositories\Caches;
 
-use Botble\Ecommerce\Repositories\Interfaces\ReviewInterface;
-use Botble\Support\Repositories\Caches\CacheAbstractDecorator;
+use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
+use RealDriss\Support\Repositories\Caches\CacheAbstractDecorator;
 
 class ReviewCacheDecorator extends CacheAbstractDecorator implements ReviewInterface
 {

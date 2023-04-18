@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Ecommerce\Charts;
+namespace RealDriss\Ecommerce\Charts;
 
-use Botble\Chart\LineChart;
+use RealDriss\Chart\LineChart;
 
 class TimeChart extends LineChart
 {

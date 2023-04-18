@@ -1,14 +1,14 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers\API;
+namespace RealDriss\Blog\Http\Controllers\API;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Blog\Http\Resources\ListPostResource;
-use Botble\Blog\Http\Resources\PostResource;
-use Botble\Blog\Models\Post;
-use Botble\Blog\Repositories\Interfaces\PostInterface;
-use Botble\Blog\Supports\FilterPost;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Blog\Http\Resources\ListPostResource;
+use RealDriss\Blog\Http\Resources\PostResource;
+use RealDriss\Blog\Models\Post;
+use RealDriss\Blog\Repositories\Interfaces\PostInterface;
+use RealDriss\Blog\Supports\FilterPost;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts;
+namespace RealDriss\SeoHelper\Contracts;
 
-use Botble\SeoHelper\Contracts\Entities\OpenGraphContract;
+use RealDriss\SeoHelper\Contracts\Entities\OpenGraphContract;
 
 interface SeoOpenGraphContract extends RenderableContract
 {

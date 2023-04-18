@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Page\Listeners;
+namespace RealDriss\Page\Listeners;
 
-use Botble\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
 use SiteMapManager;
 
 class RenderingSiteMapListener

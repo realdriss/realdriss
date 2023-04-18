@@ -1,12 +1,12 @@
 <?php
 
-namespace Botble\Page\Providers;
+namespace RealDriss\Page\Providers;
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Dashboard\Supports\DashboardWidgetInstance;
-use Botble\Page\Models\Page;
-use Botble\Page\Repositories\Interfaces\PageInterface;
-use Botble\Page\Services\PageService;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Dashboard\Supports\DashboardWidgetInstance;
+use RealDriss\Page\Models\Page;
+use RealDriss\Page\Repositories\Interfaces\PageInterface;
+use RealDriss\Page\Services\PageService;
 use Eloquent;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\Collection;

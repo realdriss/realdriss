@@ -1,12 +1,12 @@
 <?php
 
-use Botble\Base\Enums\BaseStatusEnum;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
-use Botble\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
-use Botble\Ecommerce\Supports\RenderProductSwatchesSupport;
+use RealDriss\Base\Enums\BaseStatusEnum;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductAttributeSetInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
+use RealDriss\Ecommerce\Supports\RenderProductAttributeSetsOnSearchPageSupport;
+use RealDriss\Ecommerce\Supports\RenderProductSwatchesSupport;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Support\Collection;
 

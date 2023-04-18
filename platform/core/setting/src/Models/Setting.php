@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Setting\Models;
+namespace RealDriss\Setting\Models;
 
-use Botble\Base\Models\BaseModel;
+use RealDriss\Base\Models\BaseModel;
 
 class Setting extends BaseModel
 {

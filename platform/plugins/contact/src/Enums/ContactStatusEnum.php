@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Contact\Enums;
+namespace RealDriss\Contact\Enums;
 
-use Botble\Base\Supports\Enum;
+use RealDriss\Base\Supports\Enum;
 use Html;
 
 /**

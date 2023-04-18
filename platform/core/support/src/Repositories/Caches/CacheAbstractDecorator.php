@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Support\Repositories\Caches;
+namespace RealDriss\Support\Repositories\Caches;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
-use Botble\Support\Services\Cache\Cache;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Services\Cache\Cache;
 use Exception;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Database\Eloquent\Model;

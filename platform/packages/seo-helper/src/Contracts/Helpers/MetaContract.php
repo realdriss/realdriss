@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Contracts\Helpers;
+namespace RealDriss\SeoHelper\Contracts\Helpers;
 
-use Botble\SeoHelper\Contracts\RenderableContract;
+use RealDriss\SeoHelper\Contracts\RenderableContract;
 
 interface MetaContract extends RenderableContract
 {

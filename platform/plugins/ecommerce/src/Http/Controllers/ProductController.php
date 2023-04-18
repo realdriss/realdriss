@@ -1,21 +1,21 @@
 <?php
 
-namespace Botble\Ecommerce\Http\Controllers;
+namespace RealDriss\Ecommerce\Http\Controllers;
 
 use Assets;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Ecommerce\Forms\ProductForm;
-use Botble\Ecommerce\Http\Requests\ProductRequest;
-use Botble\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
-use Botble\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
-use Botble\Ecommerce\Services\Products\StoreAttributesOfProductService;
-use Botble\Ecommerce\Services\Products\StoreProductService;
-use Botble\Ecommerce\Services\StoreProductTagService;
-use Botble\Ecommerce\Tables\ProductTable;
-use Botble\Ecommerce\Traits\ProductActionsTrait;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Ecommerce\Forms\ProductForm;
+use RealDriss\Ecommerce\Http\Requests\ProductRequest;
+use RealDriss\Ecommerce\Repositories\Interfaces\GroupedProductInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
+use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationItemInterface;
+use RealDriss\Ecommerce\Services\Products\StoreAttributesOfProductService;
+use RealDriss\Ecommerce\Services\Products\StoreProductService;
+use RealDriss\Ecommerce\Services\StoreProductTagService;
+use RealDriss\Ecommerce\Tables\ProductTable;
+use RealDriss\Ecommerce\Traits\ProductActionsTrait;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\JsonResponse;

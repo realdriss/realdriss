@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Ecommerce\Repositories\Eloquent;
+namespace RealDriss\Ecommerce\Repositories\Eloquent;
 
-use Botble\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
-use Botble\Support\Repositories\Eloquent\RepositoriesAbstract;
+use RealDriss\Ecommerce\Repositories\Interfaces\StoreLocatorInterface;
+use RealDriss\Support\Repositories\Eloquent\RepositoriesAbstract;
 
 class StoreLocatorRepository extends RepositoriesAbstract implements StoreLocatorInterface
 {

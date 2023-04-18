@@ -13,12 +13,12 @@
         "ext-json": "*",
         "ext-zip": "*",
         "beyondcode/laravel-websockets": "^1.14",
-        "botble/menu": "*@dev",
-        "botble/page": "*@dev",
-        "botble/platform": "*@dev",
-        "botble/plugin-management": "*@dev",
-        "botble/shortcode": "*@dev",
-        "botble/theme": "*@dev",
+        "realdriss/menu": "*@dev",
+        "realdriss/page": "*@dev",
+        "realdriss/platform": "*@dev",
+        "realdriss/plugin-management": "*@dev",
+        "realdriss/shortcode": "*@dev",
+        "realdriss/theme": "*@dev",
         "doctrine/dbal": "^3.0",
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
@@ -27,18 +27,20 @@
         "laravel/framework": "^8.12",
         "league/flysystem-aws-s3-v3": "^1.0",
         "pusher/pusher-php-server": "~3.0",
+        "realdriss/sitemap": "*",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.6",
+        "beyondcode/laravel-dump-server": "^1.9",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.10",
         "laravel/sail": "^1.0.1",
+        "laravel/tinker": "^2.5",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.2",
-        "phpunit/phpunit": "^9.3.3",
-        "laravel/tinker": "^2.5",
-        "barryvdh/laravel-debugbar": "^3.2",
-        "barryvdh/laravel-ide-helper": "^2.6"
+        "phpunit/phpunit": "^9.3.3"
     },
     "autoload": {
         "psr-4": {
@@ -59,6 +61,7 @@
         },
         "merge-plugin": {
             "include": [
+                
                 "./platform/plugins/*/composer.json",
                 "./platform/themes/*/composer.json"
             ],
@@ -100,7 +103,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "repositories": [
-        {
+           {
             "type": "path",
             "url": "./platform/core"
         },
@@ -108,5 +111,6 @@
             "type": "path",
             "url": "./platform/packages/*"
         }
+
     ]
 }

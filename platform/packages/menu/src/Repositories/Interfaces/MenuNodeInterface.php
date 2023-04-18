@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Menu\Repositories\Interfaces;
+namespace RealDriss\Menu\Repositories\Interfaces;
 
-use Botble\Support\Repositories\Interfaces\RepositoryInterface;
+use RealDriss\Support\Repositories\Interfaces\RepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 interface MenuNodeInterface extends RepositoryInterface

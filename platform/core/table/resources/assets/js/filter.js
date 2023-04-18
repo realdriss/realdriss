@@ -20,10 +20,10 @@ class TableFilter {
                     $input.data('typeahead').source = data;
                 }
 
-                Botble.initResources();
+                RealDriss.initResources();
             },
             error: error => {
-                Botble.handleError(error);
+                RealDriss.handleError(error);
             }
         });
     }
@@ -53,7 +53,7 @@ class TableFilter {
             let html = $template.html();
 
             $(document).find('.filter-items-wrap').append(html.replace('<script>', '').replace('<\\/script>', ''));
-            Botble.initResources();
+            RealDriss.initResources();
 
             let element = $(document).find('.filter-items-wrap .filter-item:last-child').find('.filter-column-key');
             if ($(element).val()) {

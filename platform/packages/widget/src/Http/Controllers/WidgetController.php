@@ -1,13 +1,13 @@
 <?php
 
-namespace Botble\Widget\Http\Controllers;
+namespace RealDriss\Widget\Http\Controllers;
 
 use Assets;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Widget\Factories\AbstractWidgetFactory;
-use Botble\Widget\Repositories\Interfaces\WidgetInterface;
-use Botble\Widget\WidgetId;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Widget\Factories\AbstractWidgetFactory;
+use RealDriss\Widget\Repositories\Interfaces\WidgetInterface;
+use RealDriss\Widget\WidgetId;
 use Exception;
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
@@ -147,7 +147,7 @@ class WidgetController extends BaseController
     {
         $this->prepareGlobals($request);
 
-        $factory = $application->make('botble.widget');
+        $factory = $application->make('RealDriss.widget');
         $widgetName = $request->input('name', '');
         $widgetParams = $factory->decryptWidgetParams($request->input('params', ''));
 

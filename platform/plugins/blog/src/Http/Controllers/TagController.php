@@ -1,20 +1,20 @@
 <?php
 
-namespace Botble\Blog\Http\Controllers;
+namespace RealDriss\Blog\Http\Controllers;
 
-use Botble\ACL\Models\User;
-use Botble\Base\Events\BeforeEditContentEvent;
-use Botble\Base\Events\CreatedContentEvent;
-use Botble\Base\Events\DeletedContentEvent;
-use Botble\Base\Events\UpdatedContentEvent;
-use Botble\Base\Forms\FormBuilder;
-use Botble\Base\Http\Controllers\BaseController;
-use Botble\Base\Http\Responses\BaseHttpResponse;
-use Botble\Base\Traits\HasDeleteManyItemsTrait;
-use Botble\Blog\Forms\TagForm;
-use Botble\Blog\Http\Requests\TagRequest;
-use Botble\Blog\Repositories\Interfaces\TagInterface;
-use Botble\Blog\Tables\TagTable;
+use RealDriss\ACL\Models\User;
+use RealDriss\Base\Events\BeforeEditContentEvent;
+use RealDriss\Base\Events\CreatedContentEvent;
+use RealDriss\Base\Events\DeletedContentEvent;
+use RealDriss\Base\Events\UpdatedContentEvent;
+use RealDriss\Base\Forms\FormBuilder;
+use RealDriss\Base\Http\Controllers\BaseController;
+use RealDriss\Base\Http\Responses\BaseHttpResponse;
+use RealDriss\Base\Traits\HasDeleteManyItemsTrait;
+use RealDriss\Blog\Forms\TagForm;
+use RealDriss\Blog\Http\Requests\TagRequest;
+use RealDriss\Blog\Repositories\Interfaces\TagInterface;
+use RealDriss\Blog\Tables\TagTable;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\Request;

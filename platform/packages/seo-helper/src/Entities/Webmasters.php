@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\SeoHelper\Entities;
+namespace RealDriss\SeoHelper\Entities;
 
-use Botble\SeoHelper\Contracts\Entities\WebmastersContract;
+use RealDriss\SeoHelper\Contracts\Entities\WebmastersContract;
 
 class Webmasters implements WebmastersContract
 {

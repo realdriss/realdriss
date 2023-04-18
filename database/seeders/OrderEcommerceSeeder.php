@@ -2,24 +2,24 @@
 
 namespace Database\Seeders;
 
-use Botble\Base\Supports\BaseSeeder;
-use Botble\Ecommerce\Enums\OrderStatusEnum;
-use Botble\Ecommerce\Enums\ShippingCodStatusEnum;
-use Botble\Ecommerce\Enums\ShippingMethodEnum;
-use Botble\Ecommerce\Enums\ShippingStatusEnum;
-use Botble\Ecommerce\Models\Customer;
-use Botble\Ecommerce\Models\Order;
-use Botble\Ecommerce\Models\OrderAddress;
-use Botble\Ecommerce\Models\OrderHistory;
-use Botble\Ecommerce\Models\OrderProduct;
-use Botble\Ecommerce\Models\Product;
-use Botble\Ecommerce\Models\Shipment;
-use Botble\Ecommerce\Models\ShipmentHistory;
-use Botble\Ecommerce\Models\StoreLocator;
-use Botble\Ecommerce\Services\HandleShippingFeeService;
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Models\Payment;
+use RealDriss\Base\Supports\BaseSeeder;
+use RealDriss\Ecommerce\Enums\OrderStatusEnum;
+use RealDriss\Ecommerce\Enums\ShippingCodStatusEnum;
+use RealDriss\Ecommerce\Enums\ShippingMethodEnum;
+use RealDriss\Ecommerce\Enums\ShippingStatusEnum;
+use RealDriss\Ecommerce\Models\Customer;
+use RealDriss\Ecommerce\Models\Order;
+use RealDriss\Ecommerce\Models\OrderAddress;
+use RealDriss\Ecommerce\Models\OrderHistory;
+use RealDriss\Ecommerce\Models\OrderProduct;
+use RealDriss\Ecommerce\Models\Product;
+use RealDriss\Ecommerce\Models\Shipment;
+use RealDriss\Ecommerce\Models\ShipmentHistory;
+use RealDriss\Ecommerce\Models\StoreLocator;
+use RealDriss\Ecommerce\Services\HandleShippingFeeService;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Models\Payment;
 use EcommerceHelper;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
@@ -56,7 +56,7 @@ class OrderEcommerceSeeder extends BaseSeeder
 
         $customers = Customer::with(['addresses'])->get();
 
-        $total = 20;
+        $total = 10;
         for ($i = 0; $i < $total; $i++) {
             $customer = $customers->random();
             $address = $customer->addresses->first();

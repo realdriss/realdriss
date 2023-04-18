@@ -1,10 +1,10 @@
 <?php
 
-namespace Botble\Payment\Supports;
+namespace RealDriss\Payment\Supports;
 
-use Botble\Payment\Enums\PaymentMethodEnum;
-use Botble\Payment\Enums\PaymentStatusEnum;
-use Botble\Payment\Repositories\Interfaces\PaymentInterface;
+use RealDriss\Payment\Enums\PaymentMethodEnum;
+use RealDriss\Payment\Enums\PaymentStatusEnum;
+use RealDriss\Payment\Repositories\Interfaces\PaymentInterface;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace Botble\SeoHelper\Providers;
+namespace RealDriss\SeoHelper\Providers;
 
 use Assets;
 use BaseHelper;
-use Botble\Base\Models\BaseModel;
-use Botble\Page\Models\Page;
+use RealDriss\Base\Models\BaseModel;
+use RealDriss\Page\Models\Page;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\View\View;

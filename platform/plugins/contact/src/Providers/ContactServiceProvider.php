@@ -1,19 +1,19 @@
 <?php
 
-namespace Botble\Contact\Providers;
+namespace RealDriss\Contact\Providers;
 
 use EmailHandler;
 use Illuminate\Routing\Events\RouteMatched;
-use Botble\Base\Supports\Helper;
-use Botble\Base\Traits\LoadAndPublishDataTrait;
-use Botble\Contact\Models\ContactReply;
-use Botble\Contact\Repositories\Caches\ContactReplyCacheDecorator;
-use Botble\Contact\Repositories\Eloquent\ContactReplyRepository;
-use Botble\Contact\Repositories\Interfaces\ContactInterface;
-use Botble\Contact\Models\Contact;
-use Botble\Contact\Repositories\Caches\ContactCacheDecorator;
-use Botble\Contact\Repositories\Eloquent\ContactRepository;
-use Botble\Contact\Repositories\Interfaces\ContactReplyInterface;
+use RealDriss\Base\Supports\Helper;
+use RealDriss\Base\Traits\LoadAndPublishDataTrait;
+use RealDriss\Contact\Models\ContactReply;
+use RealDriss\Contact\Repositories\Caches\ContactReplyCacheDecorator;
+use RealDriss\Contact\Repositories\Eloquent\ContactReplyRepository;
+use RealDriss\Contact\Repositories\Interfaces\ContactInterface;
+use RealDriss\Contact\Models\Contact;
+use RealDriss\Contact\Repositories\Caches\ContactCacheDecorator;
+use RealDriss\Contact\Repositories\Eloquent\ContactRepository;
+use RealDriss\Contact\Repositories\Interfaces\ContactReplyInterface;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 

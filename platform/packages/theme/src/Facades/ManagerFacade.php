@@ -1,8 +1,8 @@
 <?php
 
-namespace Botble\Theme\Facades;
+namespace RealDriss\Theme\Facades;
 
-use Botble\Theme\Manager;
+use RealDriss\Theme\Manager;
 use Illuminate\Support\Facades\Facade;
 
 class ManagerFacade extends Facade

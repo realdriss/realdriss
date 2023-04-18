@@ -1,9 +1,9 @@
 <?php
 
-namespace Botble\Media\Commands;
+namespace RealDriss\Media\Commands;
 
-use Botble\Media\Chunks\ChunkFile;
-use Botble\Media\Chunks\Storage\ChunkStorage;
+use RealDriss\Media\Chunks\ChunkFile;
+use RealDriss\Media\Chunks\Storage\ChunkStorage;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Symfony\Component\Console\Output\OutputInterface;
