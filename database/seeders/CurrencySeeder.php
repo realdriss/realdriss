@@ -22,13 +22,13 @@ class CurrencySeeder extends BaseSeeder
                 'exchange_rate'    => 1,
             ],
             [
-                'title'            => 'EUR',
-                'symbol'           => '€',
+                'title'            => 'KES',
+                'symbol'           => 'Ksh.',
                 'is_prefix_symbol' => false,
                 'order'            => 1,
                 'decimals'         => 2,
                 'is_default'       => 0,
-                'exchange_rate'    => 0.84,
+                'exchange_rate'    => 125,
             ],
         ];
 

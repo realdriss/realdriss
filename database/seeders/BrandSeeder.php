@@ -29,18 +29,6 @@ class BrandSeeder extends BaseSeeder
             [
                 'name' => 'Mestonix',
             ],
-            [
-                'name' => 'Sunshine',
-            ],
-            [
-                'name' => 'Pure',
-            ],
-            [
-                'name' => 'Anfold',
-            ],
-            [
-                'name' => 'Automotive',
-            ],
         ];
 
         Brand::truncate();
