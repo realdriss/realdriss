@@ -168,7 +168,7 @@ class SystemController extends Controller
     }
 
     //start dev section
-    public function dev()
+    public static function dev()
     {
 
         BaseModel::dev();

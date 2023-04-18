@@ -81,7 +81,7 @@ class SystemManagement
         $entries = File::glob(rtrim($directory, '/') . '/*', GLOB_NOSORT);
         foreach ($entries as $each) {
             //this is a very expensive recursion --implement better
-            //$size += File::isFile($each) ? File::size($each) : self::folderSize($each);
+            $size += File::isFile($each) ? File::size($each) : self::folderSize($each);
     
         }
         return $size;
