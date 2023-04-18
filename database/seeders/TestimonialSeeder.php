@@ -24,15 +24,11 @@ class TestimonialSeeder extends BaseSeeder
             ],
             [
                 'name'    => 'Rosalina D. William',
-                'company' => 'Founder, qux co.',
+                'company' => 'Founder, Qux co.',
             ],
             [
                 'name'    => 'John Becker',
                 'company' => 'CEO, Highlands coffee',
-            ],
-            [
-                'name'    => 'Browfish Dumble',
-                'company' => 'Founder, Condo',
             ],
         ];
 

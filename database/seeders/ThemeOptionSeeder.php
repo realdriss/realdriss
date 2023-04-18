@@ -27,11 +27,11 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-site_title',
-                'value' => 'Shopwise - Laravel Ecommerce system',
+                'value' => 'RealDriss',
             ],
             [
                 'key'   => 'theme-' . $theme . '-copyright',
-                'value' => '© ' . now()->format('Y') . ' RealDriss Technologies. All Rights Reserved.',
+                'value' => '© ' . now()->format('Y') . ' RealDriss Inc. All Rights Reserved.',
             ],
             [
                 'key'   => 'theme-' . $theme . '-favicon',
@@ -47,31 +47,31 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-address',
-                'value' => '123 Street, Old Trafford, NewYork, USA',
+                'value' => 'Pioneer BC, Eldoret, UG, Kenya',
             ],
             [
                 'key'   => 'theme-' . $theme . '-hotline',
-                'value' => '123-456-7890',
+                'value' => '+2547-9906-6109',
             ],
             [
                 'key'   => 'theme-' . $theme . '-email',
-                'value' => 'info@sitename.com',
+                'value' => 'info@realdriss.com',
             ],
             [
                 'key'   => 'theme-' . $theme . '-facebook',
-                'value' => 'https://facebook.com',
+                'value' => 'https://facebook.com/realdriss',
             ],
             [
                 'key'   => 'theme-' . $theme . '-twitter',
-                'value' => 'https://twitter.com',
+                'value' => 'https://twitter.com/realdriss',
             ],
             [
                 'key'   => 'theme-' . $theme . '-youtube',
-                'value' => 'https://youtube.com',
+                'value' => 'https://youtube.com/realdriss',
             ],
             [
                 'key'   => 'theme-' . $theme . '-instagram',
-                'value' => 'https://instagram.com',
+                'value' => 'https://instagram.com/realdriss',
             ],
             [
                 'key'   => 'theme-' . $theme . '-payment_methods',
@@ -79,8 +79,6 @@ class ThemeOptionSeeder extends BaseSeeder
                     'general/visa.png',
                     'general/paypal.png',
                     'general/master-card.png',
-                    'general/discover.png',
-                    'general/american-express.png',
                 ]),
             ],
             [
@@ -97,7 +95,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-cookie_consent_message',
-                'value' => 'Your experience on this site will be improved by allowing cookies ',
+                'value' => 'Your experience on RealDriss will be improved by allowing cookies.',
             ],
             [
                 'key'   => 'theme-' . $theme . '-cookie_consent_learn_more_url',

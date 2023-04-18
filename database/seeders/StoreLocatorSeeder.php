@@ -17,13 +17,13 @@ class StoreLocatorSeeder extends Seeder
         StoreLocator::truncate();
 
         StoreLocator::create([
-            'name'                 => 'Shopwise',
-            'email'                => 'sales@RealDriss.com',
-            'phone'                => '123-456-7890',
-            'address'              => '123 Street, Old Trafford',
-            'state'                => 'New York',
-            'city'                 => 'New York',
-            'country'              => 'US',
+            'name'                 => 'RealDriss',
+            'email'                => 'sales@info.com',
+            'phone'                => '+2547-9906-6109',
+            'address'              => 'Pioneer Business Center',
+            'state'                => 'UG',
+            'city'                 => 'Eldoret',
+            'country'              => 'KE',
             'is_primary'           => 1,
             'is_shipping_location' => 1,
         ]);

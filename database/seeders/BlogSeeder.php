@@ -26,15 +26,15 @@ class BlogSeeder extends BaseSeeder
         $posts = [
             [
                 'name'        => '4 Expert Tips On How To Choose The Right Men’s Wallet',
-                'description' => 'You should pay more attention when you choose your wallets. There are a lot of them on the market with the different designs and styles. When you choose carefully, you would be able to buy a wallet that is catered to your needs. Not to mention that it will help to enhance your style significantly.',
+                'description' => 'Captivating description.',
             ],
             [
                 'name'        => 'Sexy Clutches: How to Buy & Wear a Designer Clutch Bag',
-                'description' => 'There isn’t much a girl can’t handle with the right accessories. That’s why the perfect women’s clutch bag is a wardrobe essential for first dates and spring weddings.',
+                'description' => 'Captivating description.',
             ],
             [
                 'name'        => 'The Top 2020 Handbag Trends to Know',
-                'description' => 'For the handbag obsessives, let\'s dive into the latter a little more. This year will bring a fresh array of bag designs, and already we\'ve gotten a sneak peek of what both spring and fall 2020 collections have to offer/',
+                'description' => 'Captivating description.',
             ],
         ];
 
@@ -46,7 +46,7 @@ class BlogSeeder extends BaseSeeder
                 'name' => 'Design',
             ],
             [
-                'name' => 'Jquery',
+                'name' => 'Software',
             ],
         ];
 

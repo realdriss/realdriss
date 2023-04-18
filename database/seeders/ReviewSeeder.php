@@ -25,7 +25,7 @@ class ReviewSeeder extends BaseSeeder
         $totalProducts = Product::count();
         $totalCustomers = Customer::count();
 
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             Review::create([
                 'product_id'  => $faker->numberBetween(1, $totalProducts),
                 'customer_id' => $faker->numberBetween(1, $totalCustomers),

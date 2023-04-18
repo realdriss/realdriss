@@ -13,7 +13,7 @@ use RealDriss\Menu\Models\MenuLocation;
 use RealDriss\Menu\Models\MenuNode;
 use RealDriss\Page\Models\Page;
 use Illuminate\Support\Arr;
-use Menu;
+use Menu; // RealDriss\Menu\Facades\MenuFacade
 
 class MenuSeeder extends BaseSeeder
 {
@@ -43,7 +43,7 @@ class MenuSeeder extends BaseSeeder
                         'url'      => '#',
                         'children' => [
                             [
-                                'title'          => 'Product Category',
+                                'title'          => 'Category',
                                 'reference_id'   => 1,
                                 'reference_type' => ProductCategory::class,
                             ],
@@ -53,12 +53,12 @@ class MenuSeeder extends BaseSeeder
                                 'reference_type' => Brand::class,
                             ],
                             [
-                                'title'          => 'Product Tag',
+                                'title'          => 'Tag',
                                 'reference_id'   => 1,
                                 'reference_type' => ProductTag::class,
                             ],
                             [
-                                'title' => 'Product Single',
+                                'title' => 'Product',
                                 'url'   => 'products/beat-headphone',
                             ],
                         ],
@@ -69,22 +69,22 @@ class MenuSeeder extends BaseSeeder
                         'reference_type' => Page::class,
                         'children'       => [
                             [
-                                'title'          => 'Blog Left Sidebar',
+                                'title'          => 'Home',
                                 'reference_id'   => 3,
                                 'reference_type' => Page::class,
                             ],
                             [
-                                'title'          => 'Blog Category',
+                                'title'          => 'Category',
                                 'reference_id'   => 1,
                                 'reference_type' => Category::class,
                             ],
                             [
-                                'title'          => 'Blog Tag',
+                                'title'          => 'Tag',
                                 'reference_id'   => 1,
                                 'reference_type' => Tag::class,
                             ],
                             [
-                                'title' => 'Blog Single',
+                                'title' => 'Post',
                                 'url'   => 'news/4-expert-tips-on-how-to-choose-the-right-mens-wallet',
                             ],
                         ],
@@ -210,6 +210,8 @@ class MenuSeeder extends BaseSeeder
      * @param array $menuNode
      * @param int $parentId
      */
+
+    // this function is recursive
     protected function createMenuNode(int $index, array $menuNode, int $parentId = 0): void
     {
         $menuNode['menu_id'] = $index + 1;

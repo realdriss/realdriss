@@ -56,7 +56,7 @@ class OrderEcommerceSeeder extends BaseSeeder
 
         $customers = Customer::with(['addresses'])->get();
 
-        $total = 20;
+        $total = 10;
         for ($i = 0; $i < $total; $i++) {
             $customer = $customers->random();
             $address = $customer->addresses->first();
