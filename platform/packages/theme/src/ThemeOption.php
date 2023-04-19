@@ -7,7 +7,7 @@ use Form;
 use Illuminate\Contracts\Filesystem\FileNotFoundException;
 use Illuminate\Support\Arr;
 use Language;
-use Setting;
+use Setting; //RealDriss\Setting\Facades\SettingFacade
 
 class ThemeOption
 {
@@ -245,7 +245,7 @@ class ThemeOption
             }
             $this->sections[$this->optName][$section['id']] = $section;
         } else {
-            $this->errors[$this->optName]['section']['empty'] = 'Unable to create a section due an empty section array or the section variable passed was not an array.';
+            $this->errors[$this->optName]['section']['empty'] = 'Unable to create a section due to an empty section array or the section variable passed was not an array.';
 
             return $this;
         }
