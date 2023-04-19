@@ -1,7 +1,7 @@
 @extends('core/acl::auth.master')
 @section('content')
 
-    <p>{{ trans('core/acl::auth.sign_in_below') }}:</p>
+    <h2>{{ trans('core/acl::auth.sign_in') }}</h2>
 
     {!! Form::open(['route' => 'access.login', 'class' => 'login-form']) !!}
         <div class="form-group" id="emailGroup">

@@ -2,7 +2,8 @@
 
 if (!function_exists('get_login_background')) {
     /**
-     * @return string
+     * @return string 
+     * @deprecated since v1.0.0 [removed from admin login view]
      */
     function get_login_background(): string
     {
