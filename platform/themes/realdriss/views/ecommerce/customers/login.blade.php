@@ -16,13 +16,13 @@
                          <form method="POST" action="{{ route('customer.login.post') }}">
                              @csrf
                              <div class="form-group">
-                                 <input class="form-control" name="email" id="txt-email" type="email" value="{{ old('email') }}" placeholder="{{ __('Your email.') }}">
+                                 <input class="form-control" name="email" id="txt-email" type="email" value="{{ old('email') }}" placeholder="{{ __('Enter your Email') }}">
                                  @if ($errors->has('email'))
                                      <span class="text-danger">{{ $errors->first('email') }}</span>
                                  @endif
                              </div>
                              <div class="form-group">
-                                 <input class="form-control" type="password" name="password" id="txt-password" placeholder="{{ __('Your password.') }}">
+                                 <input class="form-control" type="password" name="password" id="txt-password" placeholder="{{ __('Enter your Password') }}">
                                  @if ($errors->has('password'))
                                      <span class="text-danger">{{ $errors->first('password') }}</span>
                                  @endif
@@ -34,7 +34,7 @@
                                          <label class="form-check-label" for="remember-me"><span>{{ __('Remember me') }}</span></label>
                                      </div>
                                  </div>
-                                 <a href="{{ route('customer.password.reset') }}">{{ __('Forgot password?') }}</a>
+                                 <a href="{{ route('customer.password.reset') }}">{{ __('Reset Password?') }}</a>
                              </div>
                              <div class="form-group">
                                  <button type="submit" class="btn btn-fill-out btn-block">{{ __('Login') }}</button>
@@ -45,7 +45,7 @@
                              {!! apply_filters(BASE_FILTER_AFTER_LOGIN_OR_REGISTER_FORM, null, \RealDriss\Ecommerce\Models\Customer::class) !!}
                          </div>
 
-                         <div class="form-note text-center">{{ __("Don't Have an Account?") }} <a href="{{ route('customer.register') }}">{{ __('Register now') }}</a></div>
+                         <div class="form-note text-center">{{ __("Don't have an Account?") }} <a href="{{ route('customer.register') }}">{{ __('Register') }}</a></div>
                      </div>
                  </div>
              </div>

@@ -21,13 +21,25 @@ class BrandSeeder extends BaseSeeder
 
         $brands = [
             [
-                'name' => 'Fashion live',
+                'name' => 'Exotic',
             ],
             [
-                'name' => 'Hand crafted',
+                'name' => 'Local',
             ],
             [
-                'name' => 'Mestonix',
+                'name' => 'N-Vidia',
+            ],
+            [
+                'name' => 'Beats',
+            ],
+            [
+                'name' => 'Samsung',
+            ],
+            [
+                'name' => 'Apple',
+            ],
+            [
+                'name' => 'Tecno',
             ],
         ];
 
