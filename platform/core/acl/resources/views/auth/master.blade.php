@@ -1,7 +1,6 @@
 @extends('core/base::layouts.base')
 
 @section('body-class') login @stop
-{{-- @section('body-style') background-image: url({{ get_login_background() }}); @stop --}}
 
 @section ('page')
 <div class="login_register_wrap section">

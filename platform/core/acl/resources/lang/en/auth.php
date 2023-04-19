@@ -57,7 +57,7 @@ return [
     'login_title'           => 'Admin',
     'login_via_social'      => 'Login with social networks',
     'back_to_login'         => 'Back to login page',
-    'sign_in_below'         => 'Sign In Below',
+    'sign_in'         => 'Sign In',
     'languages'             => 'Languages',
     'reset_password'        => 'Reset Password',
     'settings'                   => [
