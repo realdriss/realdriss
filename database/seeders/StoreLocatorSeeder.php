@@ -18,9 +18,9 @@ class StoreLocatorSeeder extends Seeder
 
         StoreLocator::create([
             'name'                 => 'RealDriss',
-            'email'                => 'sales@info.com',
-            'phone'                => '+2547-9906-6109',
-            'address'              => 'Pioneer Business Center',
+            'email'                => 'info@realdriss.com',
+            'phone'                => '0799066109',
+            'address'              => 'Pioneer BC',
             'state'                => 'UG',
             'city'                 => 'Eldoret',
             'country'              => 'KE',

@@ -104,7 +104,7 @@ class PageSeeder extends BaseSeeder
             ],
             [
                 'name'     => 'About us',
-                'content'  => Html::tag('p', $faker->realText(500)),
+                'content'  => Html::tag('p', 'A decentralized marketplace for creating, listing and exchanging value effortlessly.'),
                 'template' => 'default',
                 'user_id'  => 1,
             ],

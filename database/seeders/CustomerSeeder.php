@@ -25,10 +25,10 @@ class CustomerSeeder extends BaseSeeder
 
         $customer = Customer::create([
             'name'     => 'Godwin Waswa',
-            'email'    => 'godwnwaswa.com',
+            'email'    => 'godwnwaswa@gmail.com',
             'password' => bcrypt('godwin@18'),
-            'phone'    => $faker->e164PhoneNumber,
-            'avatar'   => 'customers/1.jpg',
+            'phone'    => "0794057230",
+            'avatar'   => 'customers/godwin.jpg',
         ]);
 
         $customer->confirmed_at = now();
@@ -36,28 +36,15 @@ class CustomerSeeder extends BaseSeeder
 
         Address::create([
             'name'        => $customer->name,
-            'phone'       => $faker->e164PhoneNumber,
+            'phone'       => $customer->phone,
             'email'       => $customer->email,
-            'country'     => $faker->countryCode,
-            'state'       => $faker->state,
-            'city'        => $faker->city,
-            'address'     => $faker->streetAddress,
+            'country'     => "KE",
+            'state'       => "Uasin Gishu",
+            'city'        => "Eldoret",
+            'address'     => "Pioneer BC",
             'zip_code'    => $faker->postcode,
             'customer_id' => $customer->id,
             'is_default'  => true,
-        ]);
-
-        Address::create([
-            'name'        => $customer->name,
-            'phone'       => $faker->e164PhoneNumber,
-            'email'       => $customer->email,
-            'country'     => $faker->countryCode,
-            'state'       => $faker->state,
-            'city'        => $faker->city,
-            'address'     => $faker->streetAddress,
-            'zip_code'    => $faker->postcode,
-            'customer_id' => $customer->id,
-            'is_default'  => false,
         ]);
 
         for ($i = 0; $i < 3; $i++) {
@@ -74,9 +61,9 @@ class CustomerSeeder extends BaseSeeder
 
             Address::create([
                 'name'        => $customer->name,
-                'phone'       => $faker->e164PhoneNumber,
+                'phone'       => $customer->phone,
                 'email'       => $customer->email,
-                'country'     => $faker->countryCode,
+                'country'     => "KE",
                 'state'       => $faker->state,
                 'city'        => $faker->city,
                 'address'     => $faker->streetAddress,

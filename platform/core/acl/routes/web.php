@@ -5,14 +5,7 @@ use RealDriss\ACL\Http\Controllers\Auth\LoginController;
 use RealDriss\ACL\Http\Controllers\Auth\ResetPasswordController;
 use RealDriss\ACL\Http\Controllers\UserController;
 
-/**
- * level 0 -> namespace { RealDriss\ACL\Http\Controllers }, middleware { web, core } //general
- * level 0.0 -> prefix { BaseHelper::getAdminPrefix() } /admin
- * level 0.0.0 -> middleware { guest } *authenticated == false
- * level 0.0.1 -> middleware { auth } *authenticated == true
- * level 0.1 -> prefix { BaseHelper::getAdminPrefix() }, middleware { auth }
- * level 0.1.0 -> prefix {}
-*/
+
 Route::group(['namespace' => 'RealDriss\ACL\Http\Controllers', 'middleware' => ['web', 'core']], function () {
     Route::group(['prefix' => BaseHelper::getAdminPrefix()], function () {
         Route::group(['middleware' => 'guest'], function () {
