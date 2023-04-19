@@ -7,19 +7,16 @@
             <div class="col-xl-6 col-md-10">
                 <div class="login_wrap">
                     <div class="padding_eight_all bg-white">
-                       <!--  <div class="heading_s1">
-                            <h3>{{ __('Reset Password') }}</h3>
-                        </div> -->
                         <form method="POST" action="{{ route('customer.password.request') }}">
                             @csrf
                             <div class="form-group">
-                                <input class="form-control" name="email" id="txt-email" type="email" value="{{ old('email') }}" placeholder="{{ __('Your Email') }}">
+                                <input class="form-control" name="email" id="txt-email" type="email" value="{{ old('email') }}" placeholder="{{ __('Enter your Email') }}">
                                 @if ($errors->has('email'))
                                     <span class="text-danger">{{ $errors->first('email') }}</span>
                                 @endif
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="btn btn-fill-out btn-block">{{ __('Send Password Reset Link') }}</button>
+                                <button type="submit" class="btn btn-fill-out btn-block">{{ __('Send Reset Link') }}</button>
                             </div>
 
                             @if (session('status'))
@@ -28,6 +25,8 @@
                                 </div>
                             @endif
                         </form>
+
+                         <div class="form-note text-center">{{ __("Remember Password?") }} <a href="{{ route('customer.login') }}">{{ __('Login') }}</a></div>
                     </div>
                 </div>
             </div>
