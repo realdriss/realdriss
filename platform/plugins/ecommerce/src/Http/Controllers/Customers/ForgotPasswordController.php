@@ -40,7 +40,7 @@ class ForgotPasswordController extends Controller
      */
     public function showLinkRequestForm()
     {
-        SeoHelper::setTitle(__('Forgot Password'));
+        SeoHelper::setTitle(__('Reset Password'));
 
         Theme::breadcrumb()
             ->add(__('Home'), route('public.index'))
