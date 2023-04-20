@@ -8,7 +8,7 @@ class CreateUserRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the create user request.
      *
      * @return array
      */
