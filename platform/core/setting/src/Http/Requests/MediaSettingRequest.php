@@ -8,7 +8,7 @@ class MediaSettingRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the media setting request.
      * @return array
      */
     public function rules()

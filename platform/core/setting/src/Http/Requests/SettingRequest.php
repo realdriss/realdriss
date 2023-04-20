@@ -11,7 +11,7 @@ class SettingRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the setting request.
      * @return array
      */
     public function rules()

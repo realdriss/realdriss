@@ -56,12 +56,4 @@ class BaseModel extends Eloquent
         return MetaBoxSupport::getMetaData($field, $key, $single);
     }
 
-    //start dev section
-    public static function dev()
-    {
-        //test code here
-        MacroableModels::dev();
-    }
-    
-    //end dev section
 }

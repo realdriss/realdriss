@@ -8,7 +8,7 @@ class EmailTemplateRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the email template request.
      * @return array
      */
     public function rules()
