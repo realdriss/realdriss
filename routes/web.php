@@ -16,8 +16,8 @@ use App\Events\Test;
 
 
 
-Route::get('/broadcast', function () {
-	broadcast(new Test());
+Route::get('/dev', function () {
+	return response()->file("G:\Fastlane\RealDriss\about\justcreative_com_best_logos.pdf");
 });
 
 
