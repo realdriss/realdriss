@@ -1,6 +1,7 @@
 <?php
 
 use RealDriss\Theme\Theme;
+use RealDriss\Shortcode\View\View as ShortCodeView;
 
 return [
 
@@ -9,7 +10,7 @@ return [
     | Inherit from another theme
     |--------------------------------------------------------------------------
     |
-    | Set up inherit from another if the file is not exists,
+    | Set up inherit from another if the file does not exist,
     | this is work with "layouts", "partials" and "views"
     |
     | [Notice] assets cannot inherit.
@@ -26,19 +27,19 @@ return [
     | You can hook a theme when event fired on activities
     | this is cool feature to set up a title, meta, default styles and scripts.
     |
-    | [Notice] these event can be override by package config.
+    | [Notice] these events can be override by package config.
     |
     */
 
     'events' => [
 
-        // Listen on event before render a theme,
+        // Listen on event before rendering a theme,
         // this event should call to assign some assets,
         // breadcrumb template.
         'beforeRenderTheme' => function (Theme $theme)
         {
 
-            $version = '1.12.0';
+            $version = 'v1.0.0';
 
             // You may use this event to set up your assets.
             $theme->asset()->usePath()->add('animate', 'css/animate.css');
@@ -74,7 +75,7 @@ return [
             $theme->asset()->container('footer')->usePath()->add('countdown', 'js/jquery.countdown.min.js', ['jquery']);
 
             if (function_exists('shortcode')) {
-                $theme->composer(['index', 'page', 'post', 'ecommerce.product'], function (\RealDriss\Shortcode\View\View $view) use ($theme, $version) {
+                $theme->composer(['index', 'page', 'post', 'ecommerce.product'], function (ShortCodeView $view) use ($theme, $version) {
                     $theme->asset()->container('footer')->usePath()->add('app-js', 'js/app.js', ['jquery', 'carousel-js'], [], $version);
                     $view->withShortcodes();
                 });
