@@ -150,6 +150,7 @@ class SlugHelper
         }
 
         $config = Arr::get(config('packages.slug.general.prefixes', []), $model);
+        // dump($config);
 
         if ($config !== null) {
             return (string)$config;
