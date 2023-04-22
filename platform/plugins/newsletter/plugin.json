@@ -2,8 +2,8 @@
     "name": "Newsletter",
     "namespace": "RealDriss\\Newsletter\\",
     "provider": "RealDriss\\Newsletter\\Providers\\NewsletterServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
     "version": "5.8",
-    "description": "Newsletter"
+    "description": "Manage mailing lists."
 }

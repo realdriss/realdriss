@@ -2,8 +2,8 @@
     "name": "Testimonial",
     "namespace": "RealDriss\\Testimonial\\",
     "provider": "RealDriss\\Testimonial\\Providers\\TestimonialServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
-    "description": "Customer testimonials"
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
+    "description": "Manage customer testimonials"
 }

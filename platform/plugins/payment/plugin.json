@@ -2,8 +2,8 @@
     "name": "Payment",
     "namespace": "RealDriss\\Payment\\",
     "provider": "RealDriss\\Payment\\Providers\\PaymentServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "1.1",
-    "description": "Payment plugin"
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
+    "description": "Handles different payment options."
 }
