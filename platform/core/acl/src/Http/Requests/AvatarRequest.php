@@ -7,7 +7,7 @@ use RealDriss\Support\Http\Requests\Request;
 class AvatarRequest extends Request
 {
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the avatar request.
      *
      * @return array
      */

@@ -8,7 +8,7 @@ class RoleCreateRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the role create request.
      *
      * @return array
      */

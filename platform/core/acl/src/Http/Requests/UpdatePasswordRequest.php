@@ -9,7 +9,7 @@ class UpdatePasswordRequest extends Request
 {
 
     /**
-     * Get the validation rules that apply to the request.
+     * Get the validation rules that apply to the update password request.
      *
      * @return array
      */
