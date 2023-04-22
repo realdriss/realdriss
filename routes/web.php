@@ -18,6 +18,6 @@ use App\Events\Test;
 
 Route::get('/dev', function () {
 	return response()->file("G:\Fastlane\RealDriss\about\justcreative_com_best_logos.pdf");
-});
+})->name('dev');
 
 
