@@ -2,8 +2,8 @@
     "name": "Backup",
     "namespace": "RealDriss\\Backup\\",
     "provider": "RealDriss\\Backup\\Providers\\BackupServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
-    "description": "Backup & restore database, uploads folder"
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
+    "description": "Backup & restore database & uploads folder."
 }

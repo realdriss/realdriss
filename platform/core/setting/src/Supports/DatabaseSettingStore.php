@@ -92,11 +92,11 @@ class DatabaseSettingStore extends SettingStore
     }
 
     /**
-     * Transforms settings data into an array ready to be inserted into the
-     * database. Call array_dot on a multidimensional array before passing it
-     * into this method!
+     * Transforms settings data into an array ready to be inserted into the database.
+     *  Call array_dot on a multidimensional array before passing it to this method!
      *
-     * @param array $data Call array_dot on a multidimensional array before passing it into this method!
+     * @param array $data 
+     * Call array_dot on a multidimensional array before passing it to this method!
      *
      * @return array
      */

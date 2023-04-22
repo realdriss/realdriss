@@ -2,8 +2,8 @@
     "name": "Audit Log",
     "namespace": "RealDriss\\AuditLog\\",
     "provider": "RealDriss\\AuditLog\\Providers\\AuditLogServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
     "description": "Record activities logs"
 }

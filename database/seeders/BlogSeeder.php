@@ -21,7 +21,7 @@ class BlogSeeder extends BaseSeeder
      */
     public function run()
     {
-        $this->uploadFiles('news');
+        $this->uploadFiles('posts');
 
         $posts = [
             [
@@ -105,7 +105,7 @@ class BlogSeeder extends BaseSeeder
             $item['author_type'] = User::class;
             $item['views'] = $faker->numberBetween(100, 2500);
             $item['is_featured'] = true;
-            $item['image'] = 'news/' . ($index + 1) . '.jpg';
+            $item['image'] = 'posts/' . ($index + 1) . '.jpg';
 
             $post = Post::create($item);
 

@@ -2,8 +2,8 @@
     "name": "Contact Form",
     "namespace": "RealDriss\\Contact\\",
     "provider": "RealDriss\\Contact\\Providers\\ContactServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
-    "description": "Contact Form"
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
+    "description": "Manage Contact Forms"
 }

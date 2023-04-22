@@ -2,7 +2,7 @@
 
 namespace RealDriss\Support\Providers;
 
-use File;
+use File; // Illuminate\Support\Facades\File 
 use Illuminate\Support\ServiceProvider;
 
 class SupportServiceProvider extends ServiceProvider

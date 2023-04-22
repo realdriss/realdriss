@@ -2,8 +2,8 @@
     "name": "Social Login",
     "namespace": "RealDriss\\SocialLogin\\",
     "provider": "RealDriss\\SocialLogin\\Providers\\SocialLoginServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.7",
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
     "description": "Easier and faster login with Facebook, LinkedIn, Github or Google."
 }

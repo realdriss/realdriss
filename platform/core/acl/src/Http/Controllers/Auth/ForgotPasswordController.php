@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 
 class ForgotPasswordController extends BaseController
+//change name to PasswordResetController for consistency
 {
     /*
     |--------------------------------------------------------------------------
