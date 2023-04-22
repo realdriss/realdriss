@@ -2,8 +2,8 @@
     "name": "Blog",
     "namespace": "RealDriss\\Blog\\",
     "provider": "RealDriss\\Blog\\Providers\\BlogServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
-    "description": "Manage posts, categories, tags"
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
+    "description": "Manage blog posts, categories and tags"
 }

@@ -2,8 +2,8 @@
   "name": "Captcha",
   "namespace": "RealDriss\\Captcha\\",
   "provider": "RealDriss\\Captcha\\Providers\\CaptchaServiceProvider",
-  "author": "RealDriss Technologies",
-  "url": "https://RealDriss.com",
-  "version": "5.8",
-  "description": "Captcha for higher security"
+  "author": "Godwin Waswa",
+  "url": "https://realdriss.com",
+  "version": "v1.0.0",
+  "description": "Maintain the app's security."
 }

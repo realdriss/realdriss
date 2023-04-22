@@ -2,8 +2,8 @@
   "name": "Simple Slider",
   "namespace": "RealDriss\\SimpleSlider\\",
   "provider": "RealDriss\\SimpleSlider\\Providers\\SimpleSliderServiceProvider",
-  "author": "RealDriss Technologies",
-  "url": "https://RealDriss.com",
-  "version": "5.8",
-  "description": "A plugin to create sliders"
+  "author": "Godwin Waswa",
+  "url": "https://realdriss.com",
+  "version": "v1.0.0",
+  "description": "A plugin for simple slider features."
 }

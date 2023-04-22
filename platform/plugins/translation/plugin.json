@@ -2,8 +2,8 @@
     "name": "Translation",
     "namespace": "RealDriss\\Translation\\",
     "provider": "RealDriss\\Translation\\Providers\\TranslationServiceProvider",
-    "author": "RealDriss Technologies",
-    "url": "https://RealDriss.com",
-    "version": "5.8",
+    "author": "Godwin Waswa",
+    "url": "https://realdriss.com",
+    "version": "v1.0.0",
     "description": "Manage translation text"
 }
