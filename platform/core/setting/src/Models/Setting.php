@@ -24,5 +24,5 @@ class Setting extends BaseModel
     /**
      * @var bool
      */
-    public $timestamps = false;
+    public $timestamps = true;
 }

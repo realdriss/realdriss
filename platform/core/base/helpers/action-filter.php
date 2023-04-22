@@ -11,6 +11,7 @@ if (!function_exists('add_filter')) {
      */
     function add_filter($hook, $callback, $priority = 20, $arguments = 1)
     {
+        // RealDriss\Base\Facades\FilterFacade
         Filter::addListener($hook, $callback, $priority, $arguments);
     }
 }
