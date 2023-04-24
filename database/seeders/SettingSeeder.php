@@ -22,7 +22,7 @@ class SettingSeeder extends BaseSeeder
         SettingModel::insertOrIgnore([
             [
                 'key'   => SlugHelper::getPermalinkSettingKey(Post::class),
-                'value' => 'news',
+                'value' => 'posts',
             ],
             [
                 'key'   => SlugHelper::getPermalinkSettingKey(Category::class),
@@ -38,7 +38,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'payment_cod_description',
-                'value' => 'Please pay money directly to the vendor, if you use Cash On Delivery payment method(COD).',
+                'value' => 'Please pay money directly to the vendor, if you prefer Cash On Delivery.',
             ],
             [
                 'key'   => 'payment_bank_transfer_status',
@@ -46,7 +46,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'payment_bank_transfer_description',
-                'value' => 'Please send money to our bank account: ACB - 1990 404 19.',
+                'value' => 'Please send money to our bank account: RealDriss.',
             ],
             [
                 'key'   => 'plugins_ecommerce_customer_new_order_status',
@@ -62,15 +62,11 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'ecommerce_store_phone',
-                'value' => '+2547-9906-6109',
+                'value' => '0799066109',
             ],
             [
                 'key'   => 'ecommerce_store_address',
                 'value' => 'Pioneer Business Center',
-            ],
-            [
-                'key'   => 'USA',
-                'value' => 'New York',
             ],
             [
                 'key'   => 'Kenya',
@@ -82,8 +78,8 @@ class SettingSeeder extends BaseSeeder
             ],
         ]);
 
-        Slug::where('reference_type', Post::class)->update(['prefix' => 'news']);
-        Slug::where('reference_type', Category::class)->update(['prefix' => 'news']);
+        Slug::where('reference_type', Post::class)->update(['prefix' => 'posts']);
+        Slug::where('reference_type', Category::class)->update(['prefix' => 'posts']);
         Slug::where('reference_type', Tag::class)->update(['prefix' => 'tags']);
     }
 }

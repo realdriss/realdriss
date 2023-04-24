@@ -5,6 +5,7 @@
     </div>
     {!! Form::open(['route' => ['settings.edit']]) !!}
         <div class="max-width-1200">
+            <!-- start General Information -->
             <div class="flexbox-annotated-section">
 
                 <div class="flexbox-annotated-section-annotation">
@@ -92,7 +93,9 @@
                 </div>
 
             </div>
+            <!-- end General Information -->
 
+            <!-- start Admin appearance -->
             <div class="flexbox-annotated-section">
 
                 <div class="flexbox-annotated-section-annotation">
@@ -197,7 +200,9 @@
                     </div>
                 </div>
             </div>
+            <!-- end Admin appearance -->
 
+            <!-- start Cache -->
             <div class="flexbox-annotated-section">
                 <div class="flexbox-annotated-section-annotation">
                     <div class="annotated-section-title pd-all-20">
@@ -248,6 +253,7 @@
                     </div>
                 </div>
             </div>
+            <!-- end Cache -->
 
             {!! apply_filters(BASE_FILTER_AFTER_SETTING_CONTENT, null) !!}
 

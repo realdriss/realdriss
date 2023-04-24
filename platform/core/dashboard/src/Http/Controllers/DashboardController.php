@@ -59,7 +59,7 @@ class DashboardController extends BaseController
         //set the page title
         page_title()->setTitle(trans('core/dashboard::dashboard.title'));
 
-        //add scripts
+        //responsible for the manipulation of widgets in the dashboard UI
         Assets::addScripts(['blockui', 'sortable', 'equal-height', 'counterup'])
             ->addScriptsDirectly('vendor/core/core/dashboard/js/dashboard.js')
             ->addStylesDirectly('vendor/core/core/dashboard/css/dashboard.css');
@@ -82,6 +82,8 @@ class DashboardController extends BaseController
 
         $widgetData = apply_filters(DASHBOARD_FILTER_ADMIN_LIST, [], $widgets);
         ksort($widgetData);
+        
+        // dump($request->user()->getKey());
 
 
 
