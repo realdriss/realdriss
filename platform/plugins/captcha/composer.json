@@ -1,7 +1,7 @@
 {
   "name": "realdriss/captcha",
   "description": "Captcha for higher security",
-  "homepage": "https://RealDriss.com",
+  "homepage": "https://realdriss.com",
   "require": {
     "google/recaptcha": "^1.2"
   }
