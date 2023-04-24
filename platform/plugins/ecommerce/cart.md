@@ -30,7 +30,7 @@ As an optional fifth parameter you can pass it options, so you can add multiple 
 Cart::instance('cart')->add('293ad', 'Product 1', 1, 9.99, ['size' => 'large']);
 ```
 
-**The `add()` method will return an CartItem instance of the item you just added to the cart.**
+**The `add()` method will return a CartItem instance of the item you just added to the cart.**
 
 Maybe you prefer to add the item using an array? As long as the array contains the required keys, you can pass it to the method. The options key is optional.
 
@@ -39,7 +39,7 @@ Cart::instance('cart')->add(['id' => '293ad', 'name' => 'Product 1', 'qty' => 1,
 ```
 
 New in version 2 of the package is the possibility to work with the `Buyable` interface. The way this works is that you have a model implement the `Buyable` interface, which will make you implement a few methods so the package knows how to get the id, name and price from your model. 
-This way you can just pass the `add()` method a model and the quantity and it will automatically add it to the cart. 
+This way you can just pass the `add()` method to a model and the quantity and it will automatically add it to the cart. 
 
 **As an added bonus it will automatically associate the model with the CartItem**
 
