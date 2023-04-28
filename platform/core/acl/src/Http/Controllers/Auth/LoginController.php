@@ -7,7 +7,7 @@
 
 namespace RealDriss\ACL\Http\Controllers\Auth;
 
-use Assets; //injects assets like scripts to the view, permits call binding
+use Assets; 
 use BaseHelper;
 use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
 use RealDriss\ACL\Repositories\Interfaces\UserInterface;
@@ -28,7 +28,7 @@ class LoginController extends BaseController
     |--------------------------------------------------------------------------
     |
     | This controller handles authenticating users for the application and
-    | redirecting them to your home screen. The controller uses a trait
+    | redirecting them to the admin dashboard. The controller uses a trait
     | to conveniently provide its functionality to your applications.
     |
     */
@@ -63,11 +63,10 @@ class LoginController extends BaseController
     /**
      * @return Factory|View
      */
-    public function showLoginForm() //shows the admin login page
+    public function showLoginForm() 
     {
-        page_title()->setTitle(trans('core/acl::auth.login_title')); //admin
+        page_title()->setTitle(trans('core/acl::auth.login_title')); 
 
-        // compiled assets
         Assets::addScripts(['jquery-validation'])
             ->addScriptsDirectly('vendor/core/core/acl/js/login.js')
             ->addStylesDirectly('vendor/core/core/acl/css/animate.min.css')
@@ -103,16 +102,14 @@ class LoginController extends BaseController
 
         $this->validateLogin($request);
 
-        // If the class is using the ThrottlesLogins trait, we can automatically throttle
-        // the login attempts for this application. We'll key this by the username and
-        // the IP address of the client making these requests into this application.
         if ($this->hasTooManyLoginAttempts($request)) {
             $this->fireLockoutEvent($request);
-
             $this->sendLockoutResponse($request);
         }
 
         $user = app(UserInterface::class)->getFirstBy([$this->username() => $request->input($this->username())]);
+        dump($user);
+
         if (!empty($user)) {
             if (!app(ActivationInterface::class)->completed($user)) {
                 return $this->response
