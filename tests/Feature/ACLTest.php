@@ -15,7 +15,7 @@ class ACLTest extends TestCase
      *
      * @return void
      */
-    public function test_admin_login()
+    public function test_admin_login_with_empty_submission()
     {
         $response = $this->post(BaseHelper::getAdminPrefix().'/login', []);
         $response->assertSessionHasErrors();
