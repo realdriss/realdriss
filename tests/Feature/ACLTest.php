@@ -5,18 +5,19 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use Facades\RealDriss\Base\Helpers\BaseHelper;
 
 class ACLTest extends TestCase
 {
     /**
-     * A basic feature test example.
+     * The admin/post route requires email && password
+     * we're posting an empty submission to trigger an error.
      *
      * @return void
      */
-    public function test_example()
+    public function test_admin_login()
     {
-        $response = $this->get('/');
-
-        $response->assertStatus(200);
+        $response = $this->post(BaseHelper::getAdminPrefix().'/login', []);
+        $response->assertSessionHasErrors();
     }
 }
