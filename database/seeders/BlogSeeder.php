@@ -105,7 +105,7 @@ class BlogSeeder extends BaseSeeder
             $item['author_type'] = User::class;
             $item['views'] = $faker->numberBetween(100, 2500);
             $item['is_featured'] = true;
-            $item['image'] = 'posts/' . ($index + 1) . '.jpg';
+            $item['image'] = 'posts/' . ($index + 1) . '.png';
 
             $post = Post::create($item);
 
