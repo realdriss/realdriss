@@ -7,7 +7,7 @@
 
 namespace RealDriss\ACL\Http\Controllers\Auth;
 
-use Assets; //injects assets like scripts to the view, permits call binding
+use Assets; 
 use BaseHelper;
 use RealDriss\ACL\Repositories\Interfaces\ActivationInterface;
 use RealDriss\ACL\Repositories\Interfaces\UserInterface;

@@ -25,14 +25,14 @@ Route::group(['namespace' => 'RealDriss\ACL\Http\Controllers', 'middleware' => [
         });
 
         Route::group(['middleware' => 'auth'], function () {
-            Route::get('logout', [LoginController::class, 'logout'])
-                ->name('access.logout');
+            // Route::get('logout', [LoginController::class, 'logout'])
+            //     ->name('access.logout');
 
-            // Route::get('logout', [
-            //     'as'         => 'access.logout',
-            //     'uses'       => 'Auth\LoginController@logout',
-            //     'permission' => false,
-            // ]);
+            Route::get('logout', [
+                'as'         => 'access.logout',
+                'uses'       => 'Auth\LoginController@logout',
+                'permission' => false,
+            ]);
         });
     });
 
