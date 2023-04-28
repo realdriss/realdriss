@@ -100,13 +100,15 @@ interface RepositoryInterface
     public function allBy(array $condition, array $with = [], array $select = ['*']);
 
     /**
+     * Create a new model.
+     * 
      * @param array $data
      * @return mixed
      */
     public function create(array $data);
 
     /**
-     * Create a new model.
+     * Create a new model or update if it exists
      *
      * @param Model|array $data
      * @param array $condition

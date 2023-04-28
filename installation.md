@@ -78,7 +78,7 @@ page](https://laravel.com/docs) for more information.
 
 ## Installation steps
 
-1.Run -> git clone <https://github.com/RealDriss/core.git>
+1.Run -> git clone <https://github.com/realdriss/realdriss.git>
 2.Run -> a. composer install --prefer-source
 3.Configure the .env file
 4.Create an empty db - realdriss

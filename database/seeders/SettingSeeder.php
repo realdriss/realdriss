@@ -62,7 +62,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'ecommerce_store_phone',
-                'value' => '+2547-9906-6109',
+                'value' => '0799066109',
             ],
             [
                 'key'   => 'ecommerce_store_address',
