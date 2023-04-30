@@ -104,7 +104,7 @@ class PageSeeder extends BaseSeeder
             ],
             [
                 'name'     => 'About us',
-                'content'  => Html::tag('p', 'A decentralized marketplace utilizing peer liquidity to provide a safer, faster and scalable platform for buyers and sellers to create, list and exchange value effortlessly..'),
+                'content'  => Html::tag('p', 'A decentralized marketplace utilizing peer liquidity to provide a safer, faster and scalable platform for buyers and sellers to create, list and exchange value effortlessly.'),
                 'template' => 'default',
                 'user_id'  => 1,
             ],
