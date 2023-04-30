@@ -1,6 +1,6 @@
 # RealDriss
 
-Create, list and exchange value effortlessly.
+A decentralized marketplace for creating, listing and exchanging value effortlessly.
 
 ## About us
 
