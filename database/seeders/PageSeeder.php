@@ -79,7 +79,7 @@ class PageSeeder extends BaseSeeder
 
                 Html::tag(
                     'div', 
-                    '[our-features icon1="flaticon-shipped" title1="Free Delivery" subtitle1="Free shipping on all US order or order above $200" icon2="flaticon-money-back" title2="30 Day Returns Guarantee" subtitle2="Simply return it within 30 days for an exchange" icon3="flaticon-support" title3="27/4 Online Support" subtitle3="Contact us 24 hours a day, 7 days a week"][/our-features]'
+                    '[our-features icon1="flaticon-shipped" title1="Free Delivery" subtitle1="Free shipping on orders within Eldoret CBD or any order above Ksh. 1,000." icon2="flaticon-money-back" title2="30-Day Return Guarantee" subtitle2="Simply return it within 30 days for an exchange." icon3="flaticon-support" title3="27/4 Online Support" subtitle3="Contact us 24/7"][/our-features]'
                 ) .
                 
                 Html::tag(
@@ -104,7 +104,7 @@ class PageSeeder extends BaseSeeder
             ],
             [
                 'name'     => 'About us',
-                'content'  => Html::tag('p', 'A decentralized marketplace for creating, listing and exchanging value effortlessly.'),
+                'content'  => Html::tag('p', 'A decentralized marketplace utilizing peer liquidity to provide a safer, faster and scalable platform for buyers and sellers to create, list and exchange value effortlessly.'),
                 'template' => 'default',
                 'user_id'  => 1,
             ],
