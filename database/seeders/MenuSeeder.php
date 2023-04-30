@@ -101,7 +101,7 @@ class MenuSeeder extends BaseSeeder
                 'slug'  => 'useful-links',
                 'items' => [
                     [
-                        'title'          => 'About Us',
+                        'title'          => 'About us',
                         'reference_id'   => 4,
                         'reference_type' => Page::class,
                     ],

@@ -13,8 +13,8 @@ class CurrencySeeder extends BaseSeeder
 
         $currencies = [
             [
-                'title'            => 'USD',
-                'symbol'           => '$',
+                'title'            => 'KES',
+                'symbol'           => 'Ksh. ',
                 'is_prefix_symbol' => true,
                 'order'            => 0,
                 'decimals'         => 2,
@@ -22,13 +22,13 @@ class CurrencySeeder extends BaseSeeder
                 'exchange_rate'    => 1,
             ],
             [
-                'title'            => 'KES',
-                'symbol'           => 'Ksh.',
-                'is_prefix_symbol' => false,
+                'title'            => 'USD',
+                'symbol'           => '$',
+                'is_prefix_symbol' => true,
                 'order'            => 1,
                 'decimals'         => 2,
                 'is_default'       => 0,
-                'exchange_rate'    => 125,
+                'exchange_rate'    => 0.009,
             ],
         ];
 

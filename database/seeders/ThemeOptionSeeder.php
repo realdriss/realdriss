@@ -51,7 +51,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-hotline',
-                'value' => '+2547-9906-6109',
+                'value' => '0799066109',
             ],
             [
                 'key'   => 'theme-' . $theme . '-email',

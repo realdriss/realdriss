@@ -21,7 +21,7 @@ return [
     ],
     'forgot_password'       => [
         'title'   => 'Forgot Password',
-        'message' => '<p>Have you forgotten your password?</p><p>Please enter your email account. System will send a email with active link to reset your password.</p>',
+        'message' => '<p>Please enter your email account. An email will be sent with an active link to reset your password.</p>',
         'submit'  => 'Submit',
     ],
     'reset'                 => [
