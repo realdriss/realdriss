@@ -1,7 +1,8 @@
 /menu/public/*
 /plugin-management/public/*
-/dashboard/public/*
-/js-validation/public/*
-/media/public/*
-/setting/public/*
-/table/public/*
+/revision/public/*
+/seo-helper/public/*
+/sitemap/public/*
+/slug/public/*
+/theme/public/*
+/widget/public/*
