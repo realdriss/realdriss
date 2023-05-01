@@ -990,7 +990,150 @@ module.exports = function transformData(data, headers, fns) {
 /***/ }),
 
 /***/ "./node_modules/axios/lib/defaults.js":
-false,
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+/* provided dependency */ var process = __webpack_require__(/*! process/browser.js */ "./node_modules/process/browser.js");
+
+
+var utils = __webpack_require__(/*! ./utils */ "./node_modules/axios/lib/utils.js");
+var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ "./node_modules/axios/lib/helpers/normalizeHeaderName.js");
+var enhanceError = __webpack_require__(/*! ./core/enhanceError */ "./node_modules/axios/lib/core/enhanceError.js");
+
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(/*! ./adapters/xhr */ "./node_modules/axios/lib/adapters/xhr.js");
+  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(/*! ./adapters/http */ "./node_modules/axios/lib/adapters/xhr.js");
+  }
+  return adapter;
+}
+
+function stringifySafely(rawValue, parser, encoder) {
+  if (utils.isString(rawValue)) {
+    try {
+      (parser || JSON.parse)(rawValue);
+      return utils.trim(rawValue);
+    } catch (e) {
+      if (e.name !== 'SyntaxError') {
+        throw e;
+      }
+    }
+  }
+
+  return (encoder || JSON.stringify)(rawValue);
+}
+
+var defaults = {
+
+  transitional: {
+    silentJSONParsing: true,
+    forcedJSONParsing: true,
+    clarifyTimeoutError: false
+  },
+
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Accept');
+    normalizeHeaderName(headers, 'Content-Type');
+
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data) || (headers && headers['Content-Type'] === 'application/json')) {
+      setContentTypeIfUnset(headers, 'application/json');
+      return stringifySafely(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    var transitional = this.transitional;
+    var silentJSONParsing = transitional && transitional.silentJSONParsing;
+    var forcedJSONParsing = transitional && transitional.forcedJSONParsing;
+    var strictJSONParsing = !silentJSONParsing && this.responseType === 'json';
+
+    if (strictJSONParsing || (forcedJSONParsing && utils.isString(data) && data.length)) {
+      try {
+        return JSON.parse(data);
+      } catch (e) {
+        if (strictJSONParsing) {
+          if (e.name === 'SyntaxError') {
+            throw enhanceError(e, this, 'E_JSON_PARSE');
+          }
+          throw e;
+        }
+      }
+    }
+
+    return data;
+  }],
+
+  /**
+   * A timeout in milliseconds to abort a request. If set to 0 (default) a
+   * timeout is not created.
+   */
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+  maxBodyLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+
+/***/ }),
 
 /***/ "./node_modules/axios/lib/helpers/bind.js":
 /*!************************************************!*\
@@ -2495,9 +2638,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -2509,26 +2652,26 @@ var render = function render() {
       "data-margin": "30",
       "data-loop": "false",
       "data-autoplay": "true",
-      "data-responsive": "{\"0\":{\"items\": \"2\"}, \"480\":{\"items\": \"3\"}, \"767\":{\"items\": \"4\"}, \"991\":{\"items\": \"5\"}, \"1199\":{\"items\": \"6\"}}"
+      "data-responsive": '{"0":{"items": "2"}, "480":{"items": "3"}, "767":{"items": "4"}, "991":{"items": "5"}, "1199":{"items": "6"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _c('div', {
+    return _c("div", {
       staticClass: "item"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "cl_logo"
-    }, [item.website ? _c('a', {
+    }, [item.website ? _c("a", {
       attrs: {
-        "href": item.website
+        href: item.website
       }
-    }, [_c('img', {
+    }, [_c("img", {
       attrs: {
-        "src": item.logo,
-        "alt": item.name
+        src: item.logo,
+        alt: item.name
       }
-    })]) : _vm._e(), _vm._v(" "), !item.website ? _c('img', {
+    })]) : _vm._e(), _vm._v(" "), !item.website ? _c("img", {
       attrs: {
-        "src": item.logo,
-        "alt": item.name
+        src: item.logo,
+        alt: item.name
       }
     }) : _vm._e()])]);
   }), 0) : _vm._e()]);
@@ -2536,11 +2679,11 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -2564,48 +2707,48 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "row"
-  }, [_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]) : _vm._e(), _vm._v(" "), _vm._l(_vm.data, function (item) {
-    return !_vm.isLoading && _vm.data.length ? _c('div', {
+    return !_vm.isLoading && _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "col-lg-4 col-md-6"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "blog_post blog_style2 box_shadow1"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "blog_img"
-    }, [_c('a', {
+    }, [_c("a", {
       attrs: {
-        "href": item.url
+        href: item.url
       }
-    }, [_c('img', {
+    }, [_c("img", {
       attrs: {
-        "src": item.image,
-        "alt": item.name
+        src: item.image,
+        alt: item.name
       }
-    })])]), _vm._v(" "), _c('div', {
+    })])]), _vm._v(" "), _c("div", {
       staticClass: "blog_content bg-white"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "blog_text"
-    }, [_c('h5', {
+    }, [_c("h5", {
       staticClass: "blog_title"
-    }, [_c('a', {
+    }, [_c("a", {
       attrs: {
-        "href": item.url
+        href: item.url
       }
-    }, [_vm._v(_vm._s(item.name))])]), _vm._v(" "), _c('ul', {
+    }, [_vm._v(_vm._s(item.name))])]), _vm._v(" "), _c("ul", {
       staticClass: "list_none blog_meta"
-    }, [_c('li', [_c('i', {
+    }, [_c("li", [_c("i", {
       staticClass: "ti-calendar"
-    }), _vm._v(" " + _vm._s(item.created_at))]), _vm._v(" "), _c('li', [_c('i', {
+    }), _vm._v(" " + _vm._s(item.created_at))]), _vm._v(" "), _c("li", [_c("i", {
       staticClass: "eye"
-    }), _vm._v(" " + _vm._s(item.views))])]), _vm._v(" "), _c('p', [_vm._v(_vm._s(item.description))])])])])]) : _vm._e();
+    }), _vm._v(" " + _vm._s(item.views))])]), _vm._v(" "), _c("p", [_vm._v(_vm._s(item.description))])])])])]) : _vm._e();
   })], 2);
 };
 var staticRenderFns = [];
@@ -2629,9 +2772,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -2642,33 +2785,33 @@ var render = function render() {
       "data-dots": "false",
       "data-nav": "true",
       "data-margin": "30",
-      "data-responsive": "{\"0\":{\"items\": \"2\"}, \"480\":{\"items\": \"3\"}, \"576\":{\"items\": \"4\"}, \"768\":{\"items\": \"5\"}, \"991\":{\"items\": \"6\"}, \"1199\":{\"items\": \"7\"}}"
+      "data-responsive": '{"0":{"items": "2"}, "480":{"items": "3"}, "576":{"items": "4"}, "768":{"items": "5"}, "991":{"items": "6"}, "1199":{"items": "7"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _c('div', {
+    return _c("div", {
       staticClass: "item"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "categories_box"
-    }, [_c('a', {
+    }, [_c("a", {
       attrs: {
-        "href": item.url
+        href: item.url
       }
-    }, [_c('img', {
+    }, [_c("img", {
       attrs: {
-        "src": item.image,
-        "alt": item.name
+        src: item.image,
+        alt: item.name
       }
-    }), _vm._v(" "), _c('span', [_vm._v(_vm._s(item.name))])])])]);
+    }), _vm._v(" "), _c("span", [_vm._v(_vm._s(item.name))])])])]);
   }), 0) : _vm._e()]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -2692,9 +2835,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -2705,14 +2848,14 @@ var render = function render() {
       "data-dots": "false",
       "data-loop": "false",
       "data-margin": "20",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"380\":{\"items\": \"1\"}, \"640\":{\"items\": \"2\"}, \"991\":{\"items\": \"1\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "380":{"items": "1"}, "640":{"items": "2"}, "991":{"items": "1"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0) : _vm._e()]);
@@ -2720,11 +2863,11 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -2748,24 +2891,24 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-md-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
     }],
     staticClass: "product_slider carousel_slider owl-carousel owl-theme nav_style3",
     attrs: {
-      "id": _vm.id,
+      id: _vm.id,
       "data-loop": "false",
       "data-dots": "false",
       "data-nav": "true",
       "data-margin": "30",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"650\":{\"items\": \"2\"}, \"1199\":{\"items\": \"2\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "650":{"items": "2"}, "1199":{"items": "2"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       directives: [{
         name: "countDown",
         rawName: "v-countDown"
@@ -2773,7 +2916,7 @@ var render = function render() {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0) : _vm._e()]);
@@ -2781,11 +2924,11 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -2809,9 +2952,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -2822,14 +2965,14 @@ var render = function render() {
       "data-dots": "false",
       "data-loop": "false",
       "data-margin": "20",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"380\":{\"items\": \"1\"}, \"640\":{\"items\": \"2\"}, \"991\":{\"items\": \"1\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "380":{"items": "1"}, "640":{"items": "2"}, "991":{"items": "1"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0) : _vm._e()]);
@@ -2837,11 +2980,11 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -2865,57 +3008,57 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "container"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "heading_tab_header"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "heading_s2"
-  }, [_c('h4', [_vm._v(_vm._s(_vm.title))])]), _vm._v(" "), _c('div', {
+  }, [_c("h4", [_vm._v(_vm._s(_vm.title))])]), _vm._v(" "), _c("div", {
     staticClass: "tab-style2"
-  }, [_vm._m(0), _vm._v(" "), _c('ul', {
+  }, [_vm._m(0), _vm._v(" "), _c("ul", {
     staticClass: "nav nav-tabs justify-content-center justify-content-md-end",
     attrs: {
-      "id": "tabmenubar",
-      "role": "tablist"
+      id: "tabmenubar",
+      role: "tablist"
     }
   }, _vm._l(_vm.productCollections, function (item) {
-    return _c('li', {
+    return _c("li", {
       key: item.id,
       staticClass: "nav-item"
-    }, [_c('a', {
-      "class": _vm.productCollection.id === item.id ? 'nav-link  active' : 'nav-link',
+    }, [_c("a", {
+      "class": _vm.productCollection.id === item.id ? "nav-link  active" : "nav-link",
       attrs: {
-        "id": item.slug + '-tab',
+        id: item.slug + "-tab",
         "data-toggle": "tab",
-        "href": '#' + item.slug,
-        "role": "tab",
+        href: "#" + item.slug,
+        role: "tab",
         "aria-controls": item.slug,
         "aria-selected": "true"
       },
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.getData(item);
         }
       }
     }, [_vm._v(_vm._s(item.name))])]);
-  }), 0)])]), _vm._v(" "), _c('div', {
+  }), 0)])]), _vm._v(" "), _c("div", {
     staticClass: "tab_slider"
-  }, [_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
-  })]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  })]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     key: _vm.productCollection.id,
     staticClass: "tab-pane fade show active",
     attrs: {
-      "id": _vm.productCollection.slug,
-      "role": "tabpanel",
-      "aria-labelledby": _vm.productCollection.slug + '-tab'
+      id: _vm.productCollection.slug,
+      role: "tabpanel",
+      "aria-labelledby": _vm.productCollection.slug + "-tab"
     }
-  }, [_c('div', {
+  }, [_c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -2924,14 +3067,14 @@ var render = function render() {
     attrs: {
       "data-loop": "true",
       "data-margin": "20",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"481\":{\"items\": \"2\"}, \"768\":{\"items\": \"3\"}, \"991\":{\"items\": \"4\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0)]) : _vm._e()])]);
@@ -2939,15 +3082,15 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('button', {
+  return _c("button", {
     staticClass: "navbar-toggler",
     attrs: {
-      "type": "button",
+      type: "button",
       "data-toggle": "collapse",
       "data-target": "#tabmenubar",
       "aria-expanded": "false"
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "ion-android-menu"
   })]);
 }];
@@ -2971,100 +3114,100 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "block__content"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), _vm._l(_vm.data, function (item) {
-    return !_vm.isLoading && _vm.data.length ? _c('ul', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), _vm._l(_vm.data, function (item) {
+    return !_vm.isLoading && _vm.data.length ? _c("ul", {
       key: item.id,
       staticClass: "list_none comment_list mt-4"
-    }, [_c('li', [_c('div', {
+    }, [_c("li", [_c("div", {
       staticClass: "comment_img"
-    }, [_c('img', {
+    }, [_c("img", {
       attrs: {
-        "src": item.user_avatar,
-        "alt": item.user_name,
-        "width": "60"
+        src: item.user_avatar,
+        alt: item.user_name,
+        width: "60"
       }
-    })]), _vm._v(" "), _c('div', {
+    })]), _vm._v(" "), _c("div", {
       staticClass: "comment_block"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "rating_wrap"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "rating"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "product_rate",
       style: {
-        width: item.star * 20 + '%'
+        width: item.star * 20 + "%"
       }
-    })])]), _vm._v(" "), _c('p', {
+    })])]), _vm._v(" "), _c("p", {
       staticClass: "customer_meta"
-    }, [_c('span', {
+    }, [_c("span", {
       staticClass: "review_author"
-    }, [_vm._v(_vm._s(item.user_name))]), _vm._v(" "), _c('span', {
+    }, [_vm._v(_vm._s(item.user_name))]), _vm._v(" "), _c("span", {
       staticClass: "comment-date"
-    }, [_vm._v(_vm._s(item.created_at))])]), _vm._v(" "), _c('div', {
+    }, [_vm._v(_vm._s(item.created_at))])]), _vm._v(" "), _c("div", {
       staticClass: "description"
-    }, [_c('p', [_vm._v(_vm._s(item.comment))])])]), _vm._v(" "), _c('div', {
+    }, [_c("p", [_vm._v(_vm._s(item.comment))])])]), _vm._v(" "), _c("div", {
       staticClass: "clearfix"
     })])]) : _vm._e();
-  }), _vm._v(" "), _c('br'), _vm._v(" "), !_vm.isLoading && _vm.meta.last_page > 1 ? _c('div', {
+  }), _vm._v(" "), _c("br"), _vm._v(" "), !_vm.isLoading && _vm.meta.last_page > 1 ? _c("div", {
     staticClass: "mt-3 justify-content-center pagination_style1"
-  }, [_c('ul', {
+  }, [_c("ul", {
     staticClass: "pagination"
-  }, [_c('li', {
+  }, [_c("li", {
     staticClass: "page-item"
-  }, [_c('a', {
+  }, [_c("a", {
     staticClass: "page-link",
     attrs: {
       "aria-hidden": "true",
-      "rel": "previous",
+      rel: "previous",
       "aria-label": "« Previous"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.getData(_vm.meta.current_page > 1 ? _vm.meta.current_page - 1 : 1);
       }
     }
   }, [_vm._v("‹")])]), _vm._v(" "), _vm._l(_vm.meta.last_page, function (n) {
-    return Math.abs(n - _vm.meta.current_page) < 3 || n === _vm.meta.last_page || n === 1 ? _c('li', {
-      "class": n === _vm.meta.current_page ? 'page-item active' : 'page-item'
-    }, [n === 1 && Math.abs(n - _vm.meta.current_page) > 3 ? _c('span', {
+    return Math.abs(n - _vm.meta.current_page) < 3 || n === _vm.meta.last_page || n === 1 ? _c("li", {
+      "class": n === _vm.meta.current_page ? "page-item active" : "page-item"
+    }, [n === 1 && Math.abs(n - _vm.meta.current_page) > 3 ? _c("span", {
       staticClass: "first-page"
-    }, [_vm._v("...")]) : _vm._e(), _vm._v(" "), n === _vm.meta.current_page ? _c('span', {
+    }, [_vm._v("...")]) : _vm._e(), _vm._v(" "), n === _vm.meta.current_page ? _c("span", {
       staticClass: "page-link"
-    }, [_vm._v(_vm._s(n))]) : _vm._e(), _vm._v(" "), n === _vm.meta.last_page && Math.abs(n - _vm.meta.current_page) > 3 ? _c('span', {
+    }, [_vm._v(_vm._s(n))]) : _vm._e(), _vm._v(" "), n === _vm.meta.last_page && Math.abs(n - _vm.meta.current_page) > 3 ? _c("span", {
       staticClass: "last-page"
-    }, [_vm._v("...")]) : _vm._e(), _vm._v(" "), n !== _vm.meta.current_page && !(n === 1 && Math.abs(n - _vm.meta.current_page) > 3) && !(n === _vm.meta.last_page && Math.abs(n - _vm.meta.current_page) > 3) ? _c('a', {
+    }, [_vm._v("...")]) : _vm._e(), _vm._v(" "), n !== _vm.meta.current_page && !(n === 1 && Math.abs(n - _vm.meta.current_page) > 3) && !(n === _vm.meta.last_page && Math.abs(n - _vm.meta.current_page) > 3) ? _c("a", {
       staticClass: "page-link",
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.getData(n);
         }
       }
     }, [_vm._v(_vm._s(n))]) : _vm._e()]) : _vm._e();
-  }), _vm._v(" "), _c('li', {
+  }), _vm._v(" "), _c("li", {
     staticClass: "page-item"
-  }, [_c('a', {
+  }, [_c("a", {
     staticClass: "page-link",
     attrs: {
-      "rel": "next",
+      rel: "next",
       "aria-label": "Next »"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.getData(_vm.meta.current_page + 1);
       }
     }
-  }, [_vm._v("›")])])], 2)]) : _vm._e(), _vm._v(" "), _c('br')], 2);
+  }, [_vm._v("›")])])], 2)]) : _vm._e(), _vm._v(" "), _c("br")], 2);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -3088,9 +3231,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-lg-9"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -3105,36 +3248,36 @@ var render = function render() {
       "data-items": "1"
     }
   }, _vm._l(_vm.data, function (item) {
-    return _c('div', {
+    return _c("div", {
       staticClass: "testimonial_box"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "testimonial_desc"
-    }, [_c('p', {
+    }, [_c("p", {
       domProps: {
-        "innerHTML": _vm._s(item.content)
+        innerHTML: _vm._s(item.content)
       }
-    })]), _vm._v(" "), _c('div', {
+    })]), _vm._v(" "), _c("div", {
       staticClass: "author_wrap"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "author_img"
-    }, [_c('img', {
+    }, [_c("img", {
       attrs: {
-        "src": item.image,
-        "alt": item.name
+        src: item.image,
+        alt: item.name
       }
-    })]), _vm._v(" "), _c('div', {
+    })]), _vm._v(" "), _c("div", {
       staticClass: "author_name"
-    }, [_c('h6', [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c('span', [_vm._v(_vm._s(item.company))])])])]);
+    }, [_c("h6", [_vm._v(_vm._s(item.name))]), _vm._v(" "), _c("span", [_vm._v(_vm._s(item.company))])])])]);
   }), 0) : _vm._e()]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -3158,9 +3301,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -3171,14 +3314,14 @@ var render = function render() {
       "data-dots": "false",
       "data-loop": "false",
       "data-margin": "20",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"380\":{\"items\": \"1\"}, \"640\":{\"items\": \"2\"}, \"991\":{\"items\": \"1\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "380":{"items": "1"}, "640":{"items": "2"}, "991":{"items": "1"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0) : _vm._e()]);
@@ -3186,11 +3329,11 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
@@ -3214,9 +3357,9 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "col-12"
-  }, [_vm.isLoading ? _c('div', [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", [_vm._m(0)]) : _vm._e(), _vm._v(" "), !_vm.isLoading ? _c("div", {
     directives: [{
       name: "carousel",
       rawName: "v-carousel"
@@ -3225,14 +3368,14 @@ var render = function render() {
     attrs: {
       "data-loop": "true",
       "data-margin": "20",
-      "data-responsive": "{\"0\":{\"items\": \"1\"}, \"481\":{\"items\": \"2\"}, \"768\":{\"items\": \"3\"}, \"991\":{\"items\": \"4\"}}"
+      "data-responsive": '{"0":{"items": "1"}, "481":{"items": "2"}, "768":{"items": "3"}, "991":{"items": "4"}}'
     }
   }, _vm._l(_vm.data, function (item) {
-    return _vm.data.length ? _c('div', {
+    return _vm.data.length ? _c("div", {
       key: item.id,
       staticClass: "item",
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
     }) : _vm._e();
   }), 0) : _vm._e()]);
@@ -3240,15 +3383,209 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "half-circle-spinner"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "circle circle-1"
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "circle circle-2"
   })]);
 }];
 render._withStripped = true;
+
+
+/***/ }),
+
+/***/ "./node_modules/process/browser.js":
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+// shim for using process in browser
+var process = module.exports = {};
+
+// cached from whatever global is present so that test runners that stub it
+// don't break things.  But we need to wrap it in a try catch in case it is
+// wrapped in strict mode code which doesn't define any globals.  It's inside a
+// function because try/catches deoptimize in certain engines.
+
+var cachedSetTimeout;
+var cachedClearTimeout;
+
+function defaultSetTimout() {
+    throw new Error('setTimeout has not been defined');
+}
+function defaultClearTimeout () {
+    throw new Error('clearTimeout has not been defined');
+}
+(function () {
+    try {
+        if (typeof setTimeout === 'function') {
+            cachedSetTimeout = setTimeout;
+        } else {
+            cachedSetTimeout = defaultSetTimout;
+        }
+    } catch (e) {
+        cachedSetTimeout = defaultSetTimout;
+    }
+    try {
+        if (typeof clearTimeout === 'function') {
+            cachedClearTimeout = clearTimeout;
+        } else {
+            cachedClearTimeout = defaultClearTimeout;
+        }
+    } catch (e) {
+        cachedClearTimeout = defaultClearTimeout;
+    }
+} ())
+function runTimeout(fun) {
+    if (cachedSetTimeout === setTimeout) {
+        //normal enviroments in sane situations
+        return setTimeout(fun, 0);
+    }
+    // if setTimeout wasn't available but was latter defined
+    if ((cachedSetTimeout === defaultSetTimout || !cachedSetTimeout) && setTimeout) {
+        cachedSetTimeout = setTimeout;
+        return setTimeout(fun, 0);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedSetTimeout(fun, 0);
+    } catch(e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't trust the global object when called normally
+            return cachedSetTimeout.call(null, fun, 0);
+        } catch(e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error
+            return cachedSetTimeout.call(this, fun, 0);
+        }
+    }
+
+
+}
+function runClearTimeout(marker) {
+    if (cachedClearTimeout === clearTimeout) {
+        //normal enviroments in sane situations
+        return clearTimeout(marker);
+    }
+    // if clearTimeout wasn't available but was latter defined
+    if ((cachedClearTimeout === defaultClearTimeout || !cachedClearTimeout) && clearTimeout) {
+        cachedClearTimeout = clearTimeout;
+        return clearTimeout(marker);
+    }
+    try {
+        // when when somebody has screwed with setTimeout but no I.E. maddness
+        return cachedClearTimeout(marker);
+    } catch (e){
+        try {
+            // When we are in I.E. but the script has been evaled so I.E. doesn't  trust the global object when called normally
+            return cachedClearTimeout.call(null, marker);
+        } catch (e){
+            // same as above but when it's a version of I.E. that must have the global object for 'this', hopfully our context correct otherwise it will throw a global error.
+            // Some versions of I.E. have different rules for clearTimeout vs setTimeout
+            return cachedClearTimeout.call(this, marker);
+        }
+    }
+
+
+
+}
+var queue = [];
+var draining = false;
+var currentQueue;
+var queueIndex = -1;
+
+function cleanUpNextTick() {
+    if (!draining || !currentQueue) {
+        return;
+    }
+    draining = false;
+    if (currentQueue.length) {
+        queue = currentQueue.concat(queue);
+    } else {
+        queueIndex = -1;
+    }
+    if (queue.length) {
+        drainQueue();
+    }
+}
+
+function drainQueue() {
+    if (draining) {
+        return;
+    }
+    var timeout = runTimeout(cleanUpNextTick);
+    draining = true;
+
+    var len = queue.length;
+    while(len) {
+        currentQueue = queue;
+        queue = [];
+        while (++queueIndex < len) {
+            if (currentQueue) {
+                currentQueue[queueIndex].run();
+            }
+        }
+        queueIndex = -1;
+        len = queue.length;
+    }
+    currentQueue = null;
+    draining = false;
+    runClearTimeout(timeout);
+}
+
+process.nextTick = function (fun) {
+    var args = new Array(arguments.length - 1);
+    if (arguments.length > 1) {
+        for (var i = 1; i < arguments.length; i++) {
+            args[i - 1] = arguments[i];
+        }
+    }
+    queue.push(new Item(fun, args));
+    if (queue.length === 1 && !draining) {
+        runTimeout(drainQueue);
+    }
+};
+
+// v8 likes predictible objects
+function Item(fun, array) {
+    this.fun = fun;
+    this.array = array;
+}
+Item.prototype.run = function () {
+    this.fun.apply(null, this.array);
+};
+process.title = 'browser';
+process.browser = true;
+process.env = {};
+process.argv = [];
+process.version = ''; // empty string to avoid regexp issues
+process.versions = {};
+
+function noop() {}
+
+process.on = noop;
+process.addListener = noop;
+process.once = noop;
+process.off = noop;
+process.removeListener = noop;
+process.removeAllListeners = noop;
+process.emit = noop;
+process.prependListener = noop;
+process.prependOnceListener = noop;
+
+process.listeners = function (name) { return [] }
+
+process.binding = function (name) {
+    throw new Error('process.binding is not supported');
+};
+
+process.cwd = function () { return '/' };
+process.chdir = function (dir) {
+    throw new Error('process.chdir is not supported');
+};
+process.umask = function() { return 0; };
 
 
 /***/ }),

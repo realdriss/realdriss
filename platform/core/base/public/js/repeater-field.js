@@ -118,37 +118,37 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "repeater-group"
   }, [_vm._l(_vm.items, function (item, index) {
-    return _c('div', {
+    return _c("div", {
       staticClass: "form-group"
-    }, [_c('div', {
+    }, [_c("div", {
       domProps: {
-        "innerHTML": _vm._s(item)
+        innerHTML: _vm._s(item)
       }
-    }), _vm._v(" "), _c('span', {
+    }), _vm._v(" "), _c("span", {
       staticClass: "remove-item-button",
       attrs: {
-        "type": "button"
+        type: "button"
       },
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.deleteRow(index);
         }
       }
-    }, [_c('i', {
+    }, [_c("i", {
       staticClass: "fa fa-times"
     })])]);
-  }), _vm._v(" "), _c('button', {
+  }), _vm._v(" "), _c("button", {
     staticClass: "btn btn-info",
     attrs: {
-      "type": "button"
+      type: "button"
     },
     on: {
-      "click": _vm.addRow
+      click: _vm.addRow
     }
-  }, [_vm._v(_vm._s(_vm.__('Add new')))])], 2);
+  }, [_vm._v(_vm._s(_vm.__("Add new")))])], 2);
 };
 var staticRenderFns = [];
 render._withStripped = true;

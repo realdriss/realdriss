@@ -124,33 +124,33 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "max-width-1200"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "flexbox-annotated-section"
-  }, [_vm._m(0), _vm._v(" "), _c('div', {
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "flexbox-annotated-section-content"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "wrapper-content pd-all-20"
-  }, [_vm.isLoading ? _c('div', {
+  }, [_vm.isLoading ? _c("div", {
     staticStyle: {
-      "margin": "auto",
-      "width": "30px"
+      margin: "auto",
+      width: "30px"
     }
-  }, [_c('half-circle-spinner', {
+  }, [_c("half-circle-spinner", {
     attrs: {
       "animation-duration": 1000,
-      "size": 15,
-      "color": "#808080"
+      size: 15,
+      color: "#808080"
     }
-  })], 1) : _vm._e(), _vm._v(" "), !_vm.isLoading && !_vm.verified ? _c('div', [_vm._m(1), _vm._v(" "), _c('div', {
+  })], 1) : _vm._e(), _vm._v(" "), !_vm.isLoading && !_vm.verified ? _c("div", [_vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "form-group"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field",
     attrs: {
       "for": "buyer"
     }
-  }, [_vm._v("Your username on Envato")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("Your username on Envato")]), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -159,22 +159,22 @@ var render = function render() {
     }],
     staticClass: "next-input",
     attrs: {
-      "type": "text",
-      "id": "buyer",
-      "placeholder": "Your Envato's username"
+      type: "text",
+      id: "buyer",
+      placeholder: "Your Envato's username"
     },
     domProps: {
-      "value": _vm.buyer
+      value: _vm.buyer
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.buyer = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
-  }, [_vm._m(3), _vm._v(" "), _c('input', {
+  }, [_vm._m(3), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -183,22 +183,22 @@ var render = function render() {
     }],
     staticClass: "next-input",
     attrs: {
-      "type": "text",
-      "id": "purchase_code",
-      "placeholder": "Ex: 10101010-10aa-0101-a1b1010a01b10"
+      type: "text",
+      id: "purchase_code",
+      placeholder: "Ex: 10101010-10aa-0101-a1b1010a01b10"
     },
     domProps: {
-      "value": _vm.purchaseCode
+      value: _vm.purchaseCode
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.purchaseCode = $event.target.value;
       }
     }
-  })]), _vm._v(" "), _c('div', {
+  })]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
-  }, [_c('label', [_c('input', {
+  }, [_c("label", [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -206,15 +206,15 @@ var render = function render() {
       expression: "licenseRulesAgreement"
     }],
     attrs: {
-      "type": "checkbox",
-      "name": "license_rules_agreement",
-      "value": "1"
+      type: "checkbox",
+      name: "license_rules_agreement",
+      value: "1"
     },
     domProps: {
-      "checked": Array.isArray(_vm.licenseRulesAgreement) ? _vm._i(_vm.licenseRulesAgreement, "1") > -1 : _vm.licenseRulesAgreement
+      checked: Array.isArray(_vm.licenseRulesAgreement) ? _vm._i(_vm.licenseRulesAgreement, "1") > -1 : _vm.licenseRulesAgreement
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$a = _vm.licenseRulesAgreement,
           $$el = $event.target,
           $$c = $$el.checked ? true : false;
@@ -231,35 +231,35 @@ var render = function render() {
         }
       }
     }
-  }), _vm._v("Confirm that, according to the Envato License Terms, each license entitles one person for a single project. Creating multiple unregistered installations is a copyright violation.\n                            "), _c('a', {
+  }), _vm._v("Confirm that, according to the Envato License Terms, each license entitles one person for a single project. Creating multiple unregistered installations is a copyright violation.\n                            "), _c("a", {
     attrs: {
-      "href": "https://codecanyon.net/licenses/standard",
-      "target": "_blank",
-      "rel": "nofollow"
+      href: "https://codecanyon.net/licenses/standard",
+      target: "_blank",
+      rel: "nofollow"
     }
-  }, [_vm._v("More info")]), _vm._v(".")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("More info")]), _vm._v(".")])]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
-  }, [_c('button', {
-    "class": _vm.activating ? 'btn btn-info button-loading' : 'btn btn-info',
+  }, [_c("button", {
+    "class": _vm.activating ? "btn btn-info button-loading" : "btn btn-info",
     attrs: {
-      "type": "button"
+      type: "button"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.activateLicense();
       }
     }
-  }, [_vm._v("Activate license")])]), _vm._v(" "), _c('hr'), _vm._v(" "), _vm._m(4)]) : _vm._e(), _vm._v(" "), !_vm.isLoading && _vm.verified ? _c('div', [_c('p', {
+  }, [_vm._v("Activate license")])]), _vm._v(" "), _c("hr"), _vm._v(" "), _vm._m(4)]) : _vm._e(), _vm._v(" "), !_vm.isLoading && _vm.verified ? _c("div", [_c("p", {
     staticClass: "text-info"
-  }, [_vm._v("Licensed to " + _vm._s(_vm.license.licensed_to) + ". Activated since " + _vm._s(_vm.license.activated_at) + ".")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Licensed to " + _vm._s(_vm.license.licensed_to) + ". Activated since " + _vm._s(_vm.license.activated_at) + ".")]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
-  }, [_c('button', {
-    "class": _vm.deactivating ? 'btn btn-warning button-loading' : 'btn btn-warning',
+  }, [_c("button", {
+    "class": _vm.deactivating ? "btn btn-warning button-loading" : "btn btn-warning",
     attrs: {
-      "type": "button"
+      type: "button"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.deactivateLicense();
       }
     }
@@ -268,62 +268,62 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "flexbox-annotated-section-annotation"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "annotated-section-title pd-all-20"
-  }, [_c('h2', [_vm._v("License")])]), _vm._v(" "), _c('div', {
+  }, [_c("h2", [_vm._v("License")])]), _vm._v(" "), _c("div", {
     staticClass: "annotated-section-description pd-all-20 p-none-t"
-  }, [_c('p', {
+  }, [_c("p", {
     staticClass: "color-note"
   }, [_vm._v("Setup license code")])])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "note note-warning"
-  }, [_c('p', [_vm._v("Your license is invalid. Please activate your license!")])]);
+  }, [_c("p", [_vm._v("Your license is invalid. Please activate your license!")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', [_c('small', [_vm._v("If your profile page is "), _c('a', {
+  return _c("div", [_c("small", [_vm._v("If your profile page is "), _c("a", {
     attrs: {
-      "href": "https://codecanyon.net/user/john-smith",
-      "rel": "nofollow"
+      href: "https://codecanyon.net/user/john-smith",
+      rel: "nofollow"
     }
-  }, [_vm._v("https://codecanyon.net/user/john-smith")]), _vm._v(", then your username on Envato is "), _c('strong', [_vm._v("john-smith")]), _vm._v(".")])]);
+  }, [_vm._v("https://codecanyon.net/user/john-smith")]), _vm._v(", then your username on Envato is "), _c("strong", [_vm._v("john-smith")]), _vm._v(".")])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', [_c('div', {
+  return _c("div", [_c("div", {
     staticClass: "float-left"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field",
     attrs: {
       "for": "purchase_code"
     }
-  }, [_vm._v("Purchase code")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("Purchase code")])]), _vm._v(" "), _c("div", {
     staticClass: "float-right text-right"
-  }, [_c('small', [_c('a', {
+  }, [_c("small", [_c("a", {
     attrs: {
-      "href": "https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code",
-      "target": "_blank"
+      href: "https://help.market.envato.com/hc/en-us/articles/202822600-Where-Is-My-Purchase-Code",
+      target: "_blank"
     }
-  }, [_vm._v("What's this?")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v("What's this?")])])]), _vm._v(" "), _c("div", {
     staticClass: "clearfix"
   })]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "form-group"
-  }, [_c('p', [_c('small', {
+  }, [_c("p", [_c("small", {
     staticClass: "text-danger"
-  }, [_vm._v("Note: Your site IP will be added to blacklist after 5 failed attempts.")])]), _vm._v(" "), _c('p', [_c('small', [_vm._v("A purchase code (license) is only valid for One Domain. Are you using this theme on a new domain? Purchase a\n                            "), _c('a', {
+  }, [_vm._v("Note: Your site IP will be added to blacklist after 5 failed attempts.")])]), _vm._v(" "), _c("p", [_c("small", [_vm._v("A purchase code (license) is only valid for One Domain. Are you using this theme on a new domain? Purchase a\n                            "), _c("a", {
     attrs: {
-      "href": "https://codecanyon.net/user/RealDriss/portfolio",
-      "target": "_blank",
-      "rel": "nofollow"
+      href: "https://codecanyon.net/user/RealDriss/portfolio",
+      target: "_blank",
+      rel: "nofollow"
     }
   }, [_vm._v("new license here")]), _vm._v(" to get a new purchase code.")])])]);
 }];
@@ -5218,10 +5218,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"atom-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner"},[_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_vm._v(" "),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_vm._v(" "),_c('div',{staticClass:"spinner-line",style:(_vm.lineStyle)}),_vm._v(" "),_c('div',{staticClass:"spinner-circle",style:(_vm.circleStyle)},[_vm._v("\n      ●\n    ")])])])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c("div", { staticClass: "atom-spinner", style: _vm.spinnerStyle }, [
+    _c("div", { staticClass: "spinner-inner" }, [
+      _c("div", { staticClass: "spinner-line", style: _vm.lineStyle }),
+      _vm._v(" "),
+      _c("div", { staticClass: "spinner-line", style: _vm.lineStyle }),
+      _vm._v(" "),
+      _c("div", { staticClass: "spinner-line", style: _vm.lineStyle }),
+      _vm._v(" "),
+      _c("div", { staticClass: "spinner-circle", style: _vm.circleStyle }, [
+        _vm._v("\n      ●\n    "),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5237,10 +5253,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"breeding-rhombus-spinner",style:(_vm.spinnerStyle)},[_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{key:index,staticClass:"rhombus",class:`child-${index + 1}`,style:(rs)})}),_vm._v(" "),_c('div',{staticClass:"rhombus big",style:(_vm.bigRhombusStyle)})],2)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "breeding-rhombus-spinner", style: _vm.spinnerStyle },
+    [
+      _vm._l(_vm.rhombusesStyles, function (rs, index) {
+        return _c("div", {
+          key: index,
+          staticClass: "rhombus",
+          class: `child-${index + 1}`,
+          style: rs,
+        })
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "rhombus big", style: _vm.bigRhombusStyle }),
+    ],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5256,10 +5292,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"circles-to-rhombuses-spinner",style:(_vm.spinnertStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "circles-to-rhombuses-spinner", style: _vm.spinnertStyle },
+    _vm._l(_vm.circlesStyles, function (cs, index) {
+      return _c("div", { key: index, staticClass: "circle", style: cs })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5275,10 +5322,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"fingerprint-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"spinner-ring",style:(rs)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "fingerprint-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.ringsStyles, function (rs, index) {
+      return _c("div", { key: index, staticClass: "spinner-ring", style: rs })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5294,10 +5352,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"flower-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"dots-container",style:(_vm.dotsContainerStyle)},[_c('div',{staticClass:"big-dot",style:(_vm.biggerDotStyle)},[_c('div',{staticClass:"small-dot",style:(_vm.smallerDotStyle)})])])])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c("div", { staticClass: "flower-spinner", style: _vm.spinnerStyle }, [
+    _c(
+      "div",
+      { staticClass: "dots-container", style: _vm.dotsContainerStyle },
+      [
+        _c("div", { staticClass: "big-dot", style: _vm.biggerDotStyle }, [
+          _c("div", { staticClass: "small-dot", style: _vm.smallerDotStyle }),
+        ]),
+      ]
+    ),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5313,10 +5385,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"fulfilling-bouncing-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle",style:(_vm.circleStyle)}),_vm._v(" "),_c('div',{staticClass:"orbit",style:(_vm.orbitStyle)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    {
+      staticClass: "fulfilling-bouncing-circle-spinner",
+      style: _vm.spinnerStyle,
+    },
+    [
+      _c("div", { staticClass: "circle", style: _vm.circleStyle }),
+      _vm._v(" "),
+      _c("div", { staticClass: "orbit", style: _vm.orbitStyle }),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5332,10 +5419,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"fulfilling-square-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinner-inner",style:(_vm.spinnerInnerStyle)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "fulfilling-square-spinner", style: _vm.spinnerStyle },
+    [_c("div", { staticClass: "spinner-inner", style: _vm.spinnerInnerStyle })]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5351,10 +5446,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"half-circle-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle-1",style:(_vm.circle1Style)}),_vm._v(" "),_c('div',{staticClass:"circle circle-2",style:(_vm.circle2Style)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "half-circle-spinner", style: _vm.spinnerStyle },
+    [
+      _c("div", { staticClass: "circle circle-1", style: _vm.circle1Style }),
+      _vm._v(" "),
+      _c("div", { staticClass: "circle circle-2", style: _vm.circle2Style }),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5370,10 +5477,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"hollow-dots-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.dotsStyles),function(ds,index){return _c('div',{key:index,staticClass:"dot",style:(ds)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "hollow-dots-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.dotsStyles, function (ds, index) {
+      return _c("div", { key: index, staticClass: "dot", style: ds })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5389,10 +5507,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"intersecting-circles-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spinnerBlock",style:(_vm.spinnerBlockStyle)},_vm._l((_vm.circleStyles),function(cs,index){return _c('span',{key:index,staticClass:"circle",style:(cs)})}),0)])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "intersecting-circles-spinner", style: _vm.spinnerStyle },
+    [
+      _c(
+        "div",
+        { staticClass: "spinnerBlock", style: _vm.spinnerBlockStyle },
+        _vm._l(_vm.circleStyles, function (cs, index) {
+          return _c("span", { key: index, staticClass: "circle", style: cs })
+        }),
+        0
+      ),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5408,10 +5543,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"looping-rhombuses-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.rhombusesStyles),function(rs,index){return _c('div',{staticClass:"rhombus",style:(rs),attrs:{"ikey":index}})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "looping-rhombuses-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.rhombusesStyles, function (rs, index) {
+      return _c("div", {
+        staticClass: "rhombus",
+        style: rs,
+        attrs: { ikey: index },
+      })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5427,10 +5577,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"orbit-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"orbit one",style:(_vm.orbitStyle)}),_vm._v(" "),_c('div',{staticClass:"orbit two",style:(_vm.orbitStyle)}),_vm._v(" "),_c('div',{staticClass:"orbit three",style:(_vm.orbitStyle)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c("div", { staticClass: "orbit-spinner", style: _vm.spinnerStyle }, [
+    _c("div", { staticClass: "orbit one", style: _vm.orbitStyle }),
+    _vm._v(" "),
+    _c("div", { staticClass: "orbit two", style: _vm.orbitStyle }),
+    _vm._v(" "),
+    _c("div", { staticClass: "orbit three", style: _vm.orbitStyle }),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5446,10 +5606,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"pixel-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"pixel-spinner-inner",style:(_vm.spinnerInnerStyle)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c("div", { staticClass: "pixel-spinner", style: _vm.spinnerStyle }, [
+    _c("div", {
+      staticClass: "pixel-spinner-inner",
+      style: _vm.spinnerInnerStyle,
+    }),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5465,10 +5634,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"radar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.circlesStyles),function(cs,index){return _c('div',{key:index,staticClass:"circle",style:(cs)},[_c('div',{staticClass:"circle-inner-container",style:(_vm.circleInnerContainerStyle)},[_c('div',{staticClass:"circle-inner",style:(_vm.circleInnerStyle)})])])}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "radar-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.circlesStyles, function (cs, index) {
+      return _c("div", { key: index, staticClass: "circle", style: cs }, [
+        _c(
+          "div",
+          {
+            staticClass: "circle-inner-container",
+            style: _vm.circleInnerContainerStyle,
+          },
+          [
+            _c("div", {
+              staticClass: "circle-inner",
+              style: _vm.circleInnerStyle,
+            }),
+          ]
+        ),
+      ])
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5484,10 +5678,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"scaling-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:`square-${index + 1}`,style:(ss)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "scaling-squares-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.squaresStyles, function (ss, index) {
+      return _c("div", {
+        key: index,
+        staticClass: "square",
+        class: `square-${index + 1}`,
+        style: ss,
+      })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5503,10 +5713,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"self-building-square-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:{'clear': index && index % 3 === 0},style:(ss)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "self-building-square-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.squaresStyles, function (ss, index) {
+      return _c("div", {
+        key: index,
+        staticClass: "square",
+        class: { clear: index && index % 3 === 0 },
+        style: ss,
+      })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5522,10 +5748,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"semipolar-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.ringsStyles),function(rs,index){return _c('div',{key:index,staticClass:"ring",style:(rs)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "semipolar-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.ringsStyles, function (rs, index) {
+      return _c("div", { key: index, staticClass: "ring", style: rs })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5541,10 +5778,39 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"spring-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"spring-spinner-part top",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})]),_vm._v(" "),_c('div',{staticClass:"spring-spinner-part bottom",style:(_vm.spinnerPartStyle)},[_c('div',{staticClass:"spring-spinner-rotator",style:(_vm.rotatorStyle)})])])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c("div", { staticClass: "spring-spinner", style: _vm.spinnerStyle }, [
+    _c(
+      "div",
+      { staticClass: "spring-spinner-part top", style: _vm.spinnerPartStyle },
+      [
+        _c("div", {
+          staticClass: "spring-spinner-rotator",
+          style: _vm.rotatorStyle,
+        }),
+      ]
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "spring-spinner-part bottom",
+        style: _vm.spinnerPartStyle,
+      },
+      [
+        _c("div", {
+          staticClass: "spring-spinner-rotator",
+          style: _vm.rotatorStyle,
+        }),
+      ]
+    ),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5560,10 +5826,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"swapping-squares-spinner",style:(_vm.spinnerStyle)},_vm._l((_vm.squaresStyles),function(ss,index){return _c('div',{key:index,staticClass:"square",class:`square-${index + 1}`,style:(ss)})}),0)
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "swapping-squares-spinner", style: _vm.spinnerStyle },
+    _vm._l(_vm.squaresStyles, function (ss, index) {
+      return _c("div", {
+        key: index,
+        staticClass: "square",
+        class: `square-${index + 1}`,
+        style: ss,
+      })
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
@@ -5579,10 +5861,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render),
 /* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
 /* harmony export */ });
-var render = function render(){var _vm=this,_c=_vm._self._c;return _c('div',{staticClass:"trinity-rings-spinner",style:(_vm.spinnerStyle)},[_c('div',{staticClass:"circle circle1",style:(_vm.ring1Style)}),_vm._v(" "),_c('div',{staticClass:"circle circle2",style:(_vm.ring2Style)}),_vm._v(" "),_c('div',{staticClass:"circle circle3",style:(_vm.ring3Style)})])
+var render = function render() {
+  var _vm = this,
+    _c = _vm._self._c
+  return _c(
+    "div",
+    { staticClass: "trinity-rings-spinner", style: _vm.spinnerStyle },
+    [
+      _c("div", { staticClass: "circle circle1", style: _vm.ring1Style }),
+      _vm._v(" "),
+      _c("div", { staticClass: "circle circle2", style: _vm.ring2Style }),
+      _vm._v(" "),
+      _c("div", { staticClass: "circle circle3", style: _vm.ring3Style }),
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
+
 
 
 /***/ }),
