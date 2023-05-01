@@ -1,1 +1,160 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,o){for(var r=0;r<o.length;r++){var i=o[r];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(t,(n=i.key,a=void 0,a=function(t,o){if("object"!==e(t)||null===t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var i=r.call(t,o||"default");if("object"!==e(i))return i;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===o?String:Number)(t)}(n,"string"),"symbol"===e(a)?a:String(a)),i)}var n,a}var o=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var o,r,i;return o=e,(r=[{key:"init",value:function(){var e=[{name:"wrap-widgets",pull:"clone",put:!1}];$.each($(".sidebar-item"),(function(){e.push({name:"wrap-widgets",pull:!0,put:!0})}));var t=function(e){if(e.length>0){var t=[];$.each(e.find("li"),(function(e,o){t.push($(o).find("form").serialize())})),$.ajax({type:"POST",cache:!1,url:BWidget.routes.save_widgets_sidebar,data:{items:t,sidebar_id:e.data("id")},beforeSend:function(){RealDriss.showNotice("info",RealDrissVariables.languages.notices_msg.processing_request)},success:function(t){t.error?RealDriss.showError(t.message):(e.find("ul").html(t.data),RealDriss.callScroll($(".list-page-select-widget")),RealDriss.showSuccess(t.message)),e.find(".widget_save i").remove()},error:function(t){RealDriss.handleError(t),e.find(".widget_save i").remove()}})}};e.forEach((function(e,o){Sortable.create(document.getElementById("wrap-widget-"+(o+1)),{sort:0!==o,group:e,delay:0,disabled:!1,store:null,animation:150,handle:".widget-handle",ghostClass:"sortable-ghost",chosenClass:"sortable-chosen",dataIdAttr:"data-id",forceFallback:!1,fallbackClass:"sortable-fallback",fallbackOnBody:!1,scroll:!0,scrollSensitivity:30,scrollSpeed:10,onEnd:function(e){e.from!==e.to&&t($(e.from).closest(".sidebar-item")),t($(e.item).closest(".sidebar-item"))}})}));var o=$("#wrap-widgets");o.on("click",".widget-control-delete",(function(e){e.preventDefault();var t=$(e.currentTarget),o=t.closest("li");t.addClass("button-loading"),$.ajax({type:"DELETE",cache:!1,url:BWidget.routes.delete,data:{widget_id:o.data("id"),position:o.data("position"),sidebar_id:t.closest(".sidebar-item").data("id")},beforeSend:function(){RealDriss.showNotice("info",RealDrissVariables.languages.notices_msg.processing_request)},success:function(e){e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),o.fadeOut().remove()),o.find(".widget-control-delete").removeClass("button-loading")},error:function(e){RealDriss.handleError(e),o.find(".widget-control-delete").removeClass("button-loading")}})})),o.on("click","#added-widget .widget-handle",(function(e){var t=$(e.currentTarget);t.closest("li").find(".widget-content").slideToggle(300),t.find(".fa").toggleClass("fa-caret-up"),t.find(".fa").toggleClass("fa-caret-down")})),o.on("click",".widget_save",(function(e){e.preventDefault();var o=$(e.currentTarget);o.addClass("button-loading"),t(o.closest(".sidebar-item"))})),RealDriss.callScroll($(".list-page-select-widget"))}}])&&t(o.prototype,r),i&&t(o,i),Object.defineProperty(o,"prototype",{writable:!1}),e}();$(document).ready((function(){(new o).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!****************************************************************!*\
+  !*** ./platform/packages/widget/resources/assets/js/widget.js ***!
+  \****************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var WidgetManagement = /*#__PURE__*/function () {
+  function WidgetManagement() {
+    _classCallCheck(this, WidgetManagement);
+  }
+  _createClass(WidgetManagement, [{
+    key: "init",
+    value: function init() {
+      var listWidgets = [{
+        name: 'wrap-widgets',
+        pull: 'clone',
+        put: false
+      }];
+      $.each($('.sidebar-item'), function () {
+        listWidgets.push({
+          name: 'wrap-widgets',
+          pull: true,
+          put: true
+        });
+      });
+      var saveWidget = function saveWidget(parentElement) {
+        if (parentElement.length > 0) {
+          var items = [];
+          $.each(parentElement.find('li'), function (index, widget) {
+            items.push($(widget).find('form').serialize());
+          });
+          $.ajax({
+            type: 'POST',
+            cache: false,
+            url: BWidget.routes.save_widgets_sidebar,
+            data: {
+              items: items,
+              sidebar_id: parentElement.data('id')
+            },
+            beforeSend: function beforeSend() {
+              RealDriss.showNotice('info', RealDrissVariables.languages.notices_msg.processing_request);
+            },
+            success: function success(data) {
+              if (data.error) {
+                RealDriss.showError(data.message);
+              } else {
+                parentElement.find('ul').html(data.data);
+                RealDriss.callScroll($('.list-page-select-widget'));
+                RealDriss.showSuccess(data.message);
+              }
+              parentElement.find('.widget_save i').remove();
+            },
+            error: function error(data) {
+              RealDriss.handleError(data);
+              parentElement.find('.widget_save i').remove();
+            }
+          });
+        }
+      };
+      listWidgets.forEach(function (groupOpts, i) {
+        Sortable.create(document.getElementById('wrap-widget-' + (i + 1)), {
+          sort: i !== 0,
+          group: groupOpts,
+          delay: 0,
+          // time in milliseconds to define when the sorting should start
+          disabled: false,
+          // Disables the sortable if set to true.
+          store: null,
+          // @see Store
+          animation: 150,
+          // ms, animation speed moving items when sorting, `0` — without animation
+          handle: '.widget-handle',
+          ghostClass: 'sortable-ghost',
+          // Class name for the drop placeholder
+          chosenClass: 'sortable-chosen',
+          // Class name for the chosen item
+          dataIdAttr: 'data-id',
+          forceFallback: false,
+          // ignore the HTML5 DnD behaviour and force the fallback to kick in
+          fallbackClass: "sortable-fallback",
+          // Class name for the cloned DOM Element when using forceFallback
+          fallbackOnBody: false,
+          // Appends the cloned DOM Element into the Document's Body
+
+          scroll: true,
+          // or HTMLElement
+          scrollSensitivity: 30,
+          // px, how near the mouse must be to an edge to start scrolling.
+          scrollSpeed: 10,
+          // px
+
+          // dragging ended
+          onEnd: function onEnd(evt) {
+            if (evt.from !== evt.to) {
+              saveWidget($(evt.from).closest('.sidebar-item'));
+            }
+            saveWidget($(evt.item).closest('.sidebar-item'));
+          }
+        });
+      });
+      var widgetWrap = $('#wrap-widgets');
+      widgetWrap.on('click', '.widget-control-delete', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        var widget = _self.closest('li');
+        _self.addClass('button-loading');
+        $.ajax({
+          type: 'DELETE',
+          cache: false,
+          url: BWidget.routes["delete"],
+          data: {
+            widget_id: widget.data('id'),
+            position: widget.data('position'),
+            sidebar_id: _self.closest('.sidebar-item').data('id')
+          },
+          beforeSend: function beforeSend() {
+            RealDriss.showNotice('info', RealDrissVariables.languages.notices_msg.processing_request);
+          },
+          success: function success(data) {
+            if (data.error) {
+              RealDriss.showError(data.message);
+            } else {
+              RealDriss.showSuccess(data.message);
+              widget.fadeOut().remove();
+            }
+            widget.find('.widget-control-delete').removeClass('button-loading');
+          },
+          error: function error(data) {
+            RealDriss.handleError(data);
+            widget.find('.widget-control-delete').removeClass('button-loading');
+          }
+        });
+      });
+      widgetWrap.on('click', '#added-widget .widget-handle', function (event) {
+        var _self = $(event.currentTarget);
+        _self.closest('li').find('.widget-content').slideToggle(300);
+        _self.find('.fa').toggleClass('fa-caret-up');
+        _self.find('.fa').toggleClass('fa-caret-down');
+      });
+      widgetWrap.on('click', '.widget_save', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        saveWidget(_self.closest('.sidebar-item'));
+      });
+      RealDriss.callScroll($('.list-page-select-widget'));
+    }
+  }]);
+  return WidgetManagement;
+}();
+$(document).ready(function () {
+  new WidgetManagement().init();
+});
+/******/ })()
+;

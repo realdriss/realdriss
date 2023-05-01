@@ -1,1 +1,117 @@
-(()=>{function t(a){return t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},t(a)}function a(a,n){for(var o=0;o<n.length;o++){var e=n[o];e.enumerable=e.enumerable||!1,e.configurable=!0,"value"in e&&(e.writable=!0),Object.defineProperty(a,(i=e.key,r=void 0,r=function(a,n){if("object"!==t(a)||null===a)return a;var o=a[Symbol.toPrimitive];if(void 0!==o){var e=o.call(a,n||"default");if("object"!==t(e))return e;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(a)}(i,"string"),"symbol"===t(r)?r:String(r)),e)}var i,r}var n=function(){function t(){!function(t,a){if(!(t instanceof a))throw new TypeError("Cannot call a class as a function")}(this,t)}var n,o,e;return n=t,e=[{key:"setAnimation",value:function(t,a){t.each((function(){var t=$(this),n="animated "+t.data("animation-"+a);t.addClass(n).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",(function(){t.removeClass(n)}))}))}}],(o=[{key:"init",value:function(){var a=$(document).find(".owl-slider");a.length>0&&a.each((function(){var n=$(this),o=n.data("owl-auto"),e=n.data("owl-loop"),i=n.data("owl-speed"),r=n.data("owl-gap"),l=n.data("owl-nav"),d=n.data("owl-dots"),m=n.data("owl-animate-in")?n.data("owl-animate-in"):"",u=n.data("owl-animate-out")?n.data("owl-animate-out"):"",s=n.data("owl-item"),c=n.data("owl-item-xs"),f=n.data("owl-item-sm"),w=n.data("owl-item-md"),v=n.data("owl-item-lg"),p=n.data("owl-item-xl"),y=n.data("owl-nav-left")?n.data("owl-nav-left"):'<i class="fa fa-angle-left"></i>',g=n.data("owl-nav-right")?n.data("owl-nav-right"):'<i class="fa fa-angle-right"></i>',h=n.data("owl-duration"),b="on"===n.data("owl-mousedrag"),S=n.data("owl-center");a.children("div, span, a, img, h1, h2, h3, h4, h5, h5").length>=2&&(n.owlCarousel({rtl:"rtl"===$("body").prop("dir"),animateIn:m,animateOut:u,margin:r,autoplay:o,autoplayTimeout:i,autoplayHoverPause:!0,loop:e,nav:l,mouseDrag:b,touchDrag:!0,autoplaySpeed:h,navSpeed:h,dotsSpeed:h,dragEndSpeed:h,navText:[y,g],dots:d,items:s,center:Boolean(S),responsive:{0:{items:c},480:{items:f},768:{items:w},992:{items:v},1200:{items:p},1680:{items:s}}}),n.on("change.owl.carousel",(function(a){var o=$(".owl-item",n).eq(a.item.index).find("[data-animation-out]");t.setAnimation(o,"out")})),n.on("changed.owl.carousel",(function(a){var o=$(".owl-item",n).eq(a.item.index).find("[data-animation-in]");t.setAnimation(o,"in")})))}))}}])&&a(n.prototype,o),e&&a(n,e),Object.defineProperty(n,"prototype",{writable:!1}),t}();$(document).ready((function(){(new n).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*****************************************************************************!*\
+  !*** ./platform/plugins/simple-slider/resources/assets/js/simple-slider.js ***!
+  \*****************************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var SimpleSliderManagement = /*#__PURE__*/function () {
+  function SimpleSliderManagement() {
+    _classCallCheck(this, SimpleSliderManagement);
+  }
+  _createClass(SimpleSliderManagement, [{
+    key: "init",
+    value: function init() {
+      var target = $(document).find('.owl-slider');
+      if (target.length > 0) {
+        target.each(function () {
+          var el = $(this),
+            dataAuto = el.data('owl-auto'),
+            dataLoop = el.data('owl-loop'),
+            dataSpeed = el.data('owl-speed'),
+            dataGap = el.data('owl-gap'),
+            dataNav = el.data('owl-nav'),
+            dataDots = el.data('owl-dots'),
+            dataAnimateIn = el.data('owl-animate-in') ? el.data('owl-animate-in') : '',
+            dataAnimateOut = el.data('owl-animate-out') ? el.data('owl-animate-out') : '',
+            dataDefaultItem = el.data('owl-item'),
+            dataItemXS = el.data('owl-item-xs'),
+            dataItemSM = el.data('owl-item-sm'),
+            dataItemMD = el.data('owl-item-md'),
+            dataItemLG = el.data('owl-item-lg'),
+            dataItemXL = el.data('owl-item-xl'),
+            dataNavLeft = el.data('owl-nav-left') ? el.data('owl-nav-left') : '<i class="fa fa-angle-left"></i>',
+            dataNavRight = el.data('owl-nav-right') ? el.data('owl-nav-right') : '<i class="fa fa-angle-right"></i>',
+            duration = el.data('owl-duration'),
+            dataMouseDrag = el.data('owl-mousedrag') === 'on',
+            center = el.data('owl-center');
+          if (target.children('div, span, a, img, h1, h2, h3, h4, h5, h5').length >= 2) {
+            el.owlCarousel({
+              rtl: $('body').prop('dir') === 'rtl',
+              animateIn: dataAnimateIn,
+              animateOut: dataAnimateOut,
+              margin: dataGap,
+              autoplay: dataAuto,
+              autoplayTimeout: dataSpeed,
+              autoplayHoverPause: true,
+              loop: dataLoop,
+              nav: dataNav,
+              mouseDrag: dataMouseDrag,
+              touchDrag: true,
+              autoplaySpeed: duration,
+              navSpeed: duration,
+              dotsSpeed: duration,
+              dragEndSpeed: duration,
+              navText: [dataNavLeft, dataNavRight],
+              dots: dataDots,
+              items: dataDefaultItem,
+              center: Boolean(center),
+              responsive: {
+                0: {
+                  items: dataItemXS
+                },
+                480: {
+                  items: dataItemSM
+                },
+                768: {
+                  items: dataItemMD
+                },
+                992: {
+                  items: dataItemLG
+                },
+                1200: {
+                  items: dataItemXL
+                },
+                1680: {
+                  items: dataDefaultItem
+                }
+              }
+            });
+            el.on('change.owl.carousel', function (event) {
+              var $currentItem = $('.owl-item', el).eq(event.item.index);
+              var $elementsToAnimation = $currentItem.find('[data-animation-out]');
+              SimpleSliderManagement.setAnimation($elementsToAnimation, 'out');
+            });
+            el.on('changed.owl.carousel', function (event) {
+              var $currentItem = $('.owl-item', el).eq(event.item.index);
+              var $elementsToAnimation = $currentItem.find('[data-animation-in]');
+              SimpleSliderManagement.setAnimation($elementsToAnimation, 'in');
+            });
+          }
+        });
+      }
+    }
+  }], [{
+    key: "setAnimation",
+    value: function setAnimation(_elem, _InOut) {
+      var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+      _elem.each(function () {
+        var $elem = $(this);
+        var $animationType = 'animated ' + $elem.data('animation-' + _InOut);
+        $elem.addClass($animationType).one(animationEndEvent, function () {
+          $elem.removeClass($animationType);
+        });
+      });
+    }
+  }]);
+  return SimpleSliderManagement;
+}();
+$(document).ready(function () {
+  new SimpleSliderManagement().init();
+});
+/******/ })()
+;

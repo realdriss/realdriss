@@ -1,1 +1,130 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,o){for(var r=0;r<o.length;r++){var n=o[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(t,(a=n.key,c=void 0,c=function(t,o){if("object"!==e(t)||null===t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var n=r.call(t,o||"default");if("object"!==e(n))return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===o?String:Number)(t)}(a,"string"),"symbol"===e(c)?c:String(c)),n)}var a,c}var o=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var o,r,n;return o=e,(r=[{key:"init",value:function(){var e=$("#table-backups");e.on("click",".deleteDialog",(function(e){e.preventDefault(),$(".delete-crud-entry").data("section",$(e.currentTarget).data("section")),$(".modal-confirm-delete").modal("show")})),e.on("click",".restoreBackup",(function(e){e.preventDefault(),$("#restore-backup-button").data("section",$(e.currentTarget).data("section")),$("#restore-backup-modal").modal("show")})),$(".delete-crud-entry").on("click",(function(t){t.preventDefault(),$(".modal-confirm-delete").modal("hide");var o=$(t.currentTarget).data("section");$.ajax({url:o,type:"DELETE",success:function(t){t.error?RealDriss.showError(t.message):(e.find('a[data-section="'+o+'"]').closest("tr").remove(),RealDriss.showSuccess(t.message))},error:function(e){RealDriss.handleError(e)}})})),$("#restore-backup-button").on("click",(function(e){e.preventDefault();var t=$(e.currentTarget);t.addClass("button-loading"),$.ajax({url:t.data("section"),type:"GET",success:function(e){t.removeClass("button-loading"),t.closest(".modal").modal("hide"),e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),window.location.reload())},error:function(e){t.removeClass("button-loading"),RealDriss.handleError(e)}})})),$(document).on("click","#generate_backup",(function(e){e.preventDefault(),$("#name").val(""),$("#description").val(""),$("#create-backup-modal").modal("show")})),$("#create-backup-modal").on("click","#create-backup-button",(function(t){t.preventDefault();var o=$(t.currentTarget);o.addClass("button-loading");var r=$("#name").val(),n=$("#description").val(),a=!1;""!==r&&null!==r||(a=!0,RealDriss.showError("Backup name is required!")),""!==n&&null!==n||(a=!0,RealDriss.showError("Backup description is required!")),a?o.removeClass("button-loading"):$.ajax({url:$("div[data-route-create]").data("route-create"),type:"POST",data:{name:r,description:n},success:function(t){o.removeClass("button-loading"),o.closest(".modal").modal("hide"),t.error?RealDriss.showError(t.message):(e.find(".no-backup-row").remove(),e.find("tbody").append(t.data),RealDriss.showSuccess(t.message))},error:function(e){o.removeClass("button-loading"),RealDriss.handleError(e)}})}))}}])&&t(o.prototype,r),n&&t(o,n),Object.defineProperty(o,"prototype",{writable:!1}),e}();$(document).ready((function(){(new o).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!***************************************************************!*\
+  !*** ./platform/plugins/backup/resources/assets/js/backup.js ***!
+  \***************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var BackupManagement = /*#__PURE__*/function () {
+  function BackupManagement() {
+    _classCallCheck(this, BackupManagement);
+  }
+  _createClass(BackupManagement, [{
+    key: "init",
+    value: function init() {
+      var table_backup = $('#table-backups');
+      table_backup.on('click', '.deleteDialog', function (event) {
+        event.preventDefault();
+        $('.delete-crud-entry').data('section', $(event.currentTarget).data('section'));
+        $('.modal-confirm-delete').modal('show');
+      });
+      table_backup.on('click', '.restoreBackup', function (event) {
+        event.preventDefault();
+        $('#restore-backup-button').data('section', $(event.currentTarget).data('section'));
+        $('#restore-backup-modal').modal('show');
+      });
+      $('.delete-crud-entry').on('click', function (event) {
+        event.preventDefault();
+        $('.modal-confirm-delete').modal('hide');
+        var deleteURL = $(event.currentTarget).data('section');
+        $.ajax({
+          url: deleteURL,
+          type: 'DELETE',
+          success: function success(data) {
+            if (data.error) {
+              RealDriss.showError(data.message);
+            } else {
+              table_backup.find('a[data-section="' + deleteURL + '"]').closest('tr').remove();
+              RealDriss.showSuccess(data.message);
+            }
+          },
+          error: function error(data) {
+            RealDriss.handleError(data);
+          }
+        });
+      });
+      $('#restore-backup-button').on('click', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        $.ajax({
+          url: _self.data('section'),
+          type: 'GET',
+          success: function success(data) {
+            _self.removeClass('button-loading');
+            _self.closest('.modal').modal('hide');
+            if (data.error) {
+              RealDriss.showError(data.message);
+            } else {
+              RealDriss.showSuccess(data.message);
+              window.location.reload();
+            }
+          },
+          error: function error(data) {
+            _self.removeClass('button-loading');
+            RealDriss.handleError(data);
+          }
+        });
+      });
+      $(document).on('click', '#generate_backup', function (event) {
+        event.preventDefault();
+        $('#name').val('');
+        $('#description').val('');
+        $('#create-backup-modal').modal('show');
+      });
+      $('#create-backup-modal').on('click', '#create-backup-button', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        var name = $('#name').val();
+        var description = $('#description').val();
+        var error = false;
+        if (name === '' || name === null) {
+          error = true;
+          RealDriss.showError('Backup name is required!');
+        }
+        if (description === '' || description === null) {
+          error = true;
+          RealDriss.showError('Backup description is required!');
+        }
+        if (!error) {
+          $.ajax({
+            url: $('div[data-route-create]').data('route-create'),
+            type: 'POST',
+            data: {
+              name: name,
+              description: description
+            },
+            success: function success(data) {
+              _self.removeClass('button-loading');
+              _self.closest('.modal').modal('hide');
+              if (data.error) {
+                RealDriss.showError(data.message);
+              } else {
+                table_backup.find('.no-backup-row').remove();
+                table_backup.find('tbody').append(data.data);
+                RealDriss.showSuccess(data.message);
+              }
+            },
+            error: function error(data) {
+              _self.removeClass('button-loading');
+              RealDriss.handleError(data);
+            }
+          });
+        } else {
+          _self.removeClass('button-loading');
+        }
+      });
+    }
+  }]);
+  return BackupManagement;
+}();
+$(document).ready(function () {
+  new BackupManagement().init();
+});
+/******/ })()
+;

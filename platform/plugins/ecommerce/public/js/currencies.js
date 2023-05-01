@@ -1,1 +1,85 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,i){for(var a=0;a<i.length;a++){var r=i[a];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,(n=r.key,l=void 0,l=function(t,i){if("object"!==e(t)||null===t)return t;var a=t[Symbol.toPrimitive];if(void 0!==a){var r=a.call(t,i||"default");if("object"!==e(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===i?String:Number)(t)}(n,"string"),"symbol"===e(l)?l:String(l)),r)}var n,l}var i=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),this.template=$("#currency_template").html(),this.totalItem=0,this.deletedItems=[],this.initData(),this.handleForm()}var i,a,r;return i=e,(a=[{key:"initData",value:function(){var e=this,t=$.parseJSON($("#currencies").html());$.each(t,(function(t,i){var a=e.template.replace(/__id__/gi,i.id).replace(/__position__/gi,i.order).replace(/__isPrefixSymbolChecked__/gi,1==i.is_prefix_symbol?"selected":"").replace(/__notIsPrefixSymbolChecked__/gi,0==i.is_prefix_symbol?"selected":"").replace(/__isDefaultChecked__/gi,1==i.is_default?"checked":"").replace(/__title__/gi,i.title).replace(/__decimals__/gi,i.decimals).replace(/__exchangeRate__/gi,i.exchange_rate).replace(/__symbol__/gi,i.symbol);$(".swatches-container .swatches-list").append(a),e.totalItem++}))}},{key:"addNewAttribute",value:function(){var e=this,t=e.template.replace(/__id__/gi,0).replace(/__position__/gi,e.totalItem).replace(/__isPrefixSymbolChecked__/gi,"").replace(/__notIsPrefixSymbolChecked__/gi,"").replace(/__isDefaultChecked__/gi,0==e.totalItem?"checked":"").replace(/__title__/gi,"").replace(/__decimals__/gi,0).replace(/__exchangeRate__/gi,1).replace(/__symbol__/gi,"");$(".swatches-container .swatches-list").append(t),e.totalItem++}},{key:"exportData",value:function(){var e=[];return $(".swatches-container .swatches-list li").each((function(t,i){var a=$(i);e.push({id:a.data("id"),is_default:a.find("[data-type=is_default] input[type=radio]").is(":checked")?1:0,order:a.index(),title:a.find("[data-type=title] input").val(),symbol:a.find("[data-type=symbol] input").val(),decimals:a.find("[data-type=decimals] input").val(),exchange_rate:a.find("[data-type=exchange_rate] input").val(),is_prefix_symbol:a.find("[data-type=is_prefix_symbol] select").val()})})),e}},{key:"handleForm",value:function(){var e=this;$(".swatches-container .swatches-list").sortable(),$("body").on("submit",".main-setting-form",(function(){var t=e.exportData();$("#currencies").val(JSON.stringify(t)),$("#deleted_currencies").val(JSON.stringify(e.deletedItems))})).on("click",".js-add-new-attribute",(function(t){t.preventDefault(),e.addNewAttribute()})).on("click",".swatches-container .swatches-list li .remove-item a",(function(t){t.preventDefault();var i=$(t.currentTarget).closest("li");e.deletedItems.push(i.data("id")),i.remove()}))}}])&&t(i.prototype,a),r&&t(i,r),Object.defineProperty(i,"prototype",{writable:!1}),e}();$(window).on("load",(function(){new i}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!**********************************************************************!*\
+  !*** ./platform/plugins/ecommerce/resources/assets/js/currencies.js ***!
+  \**********************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Currencies = /*#__PURE__*/function () {
+  function Currencies() {
+    _classCallCheck(this, Currencies);
+    this.template = $('#currency_template').html();
+    this.totalItem = 0;
+    this.deletedItems = [];
+    this.initData();
+    this.handleForm();
+  }
+  _createClass(Currencies, [{
+    key: "initData",
+    value: function initData() {
+      var _self = this;
+      var data = $.parseJSON($('#currencies').html());
+      $.each(data, function (index, item) {
+        var template = _self.template.replace(/__id__/gi, item.id).replace(/__position__/gi, item.order).replace(/__isPrefixSymbolChecked__/gi, item.is_prefix_symbol == 1 ? 'selected' : '').replace(/__notIsPrefixSymbolChecked__/gi, item.is_prefix_symbol == 0 ? 'selected' : '').replace(/__isDefaultChecked__/gi, item.is_default == 1 ? 'checked' : '').replace(/__title__/gi, item.title).replace(/__decimals__/gi, item.decimals).replace(/__exchangeRate__/gi, item.exchange_rate).replace(/__symbol__/gi, item.symbol);
+        $('.swatches-container .swatches-list').append(template);
+        _self.totalItem++;
+      });
+    }
+  }, {
+    key: "addNewAttribute",
+    value: function addNewAttribute() {
+      var _self = this;
+      var template = _self.template.replace(/__id__/gi, 0).replace(/__position__/gi, _self.totalItem).replace(/__isPrefixSymbolChecked__/gi, '').replace(/__notIsPrefixSymbolChecked__/gi, '').replace(/__isDefaultChecked__/gi, _self.totalItem == 0 ? 'checked' : '').replace(/__title__/gi, '').replace(/__decimals__/gi, 0).replace(/__exchangeRate__/gi, 1).replace(/__symbol__/gi, '');
+      $('.swatches-container .swatches-list').append(template);
+      _self.totalItem++;
+    }
+  }, {
+    key: "exportData",
+    value: function exportData() {
+      var data = [];
+      $('.swatches-container .swatches-list li').each(function (index, item) {
+        var $current = $(item);
+        data.push({
+          id: $current.data('id'),
+          is_default: $current.find('[data-type=is_default] input[type=radio]').is(':checked') ? 1 : 0,
+          order: $current.index(),
+          title: $current.find('[data-type=title] input').val(),
+          symbol: $current.find('[data-type=symbol] input').val(),
+          decimals: $current.find('[data-type=decimals] input').val(),
+          exchange_rate: $current.find('[data-type=exchange_rate] input').val(),
+          is_prefix_symbol: $current.find('[data-type=is_prefix_symbol] select').val()
+        });
+      });
+      return data;
+    }
+  }, {
+    key: "handleForm",
+    value: function handleForm() {
+      var _self = this;
+      $('.swatches-container .swatches-list').sortable();
+      $('body').on('submit', '.main-setting-form', function () {
+        var data = _self.exportData();
+        $('#currencies').val(JSON.stringify(data));
+        $('#deleted_currencies').val(JSON.stringify(_self.deletedItems));
+      }).on('click', '.js-add-new-attribute', function (event) {
+        event.preventDefault();
+        _self.addNewAttribute();
+      }).on('click', '.swatches-container .swatches-list li .remove-item a', function (event) {
+        event.preventDefault();
+        var $item = $(event.currentTarget).closest('li');
+        _self.deletedItems.push($item.data('id'));
+        $item.remove();
+      });
+    }
+  }]);
+  return Currencies;
+}();
+$(window).on('load', function () {
+  new Currencies();
+});
+/******/ })()
+;

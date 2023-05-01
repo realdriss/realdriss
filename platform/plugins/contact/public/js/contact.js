@@ -1,1 +1,73 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n){for(var r=0;r<n.length;r++){var o=n[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,(a=o.key,i=void 0,i=function(t,n){if("object"!==e(t)||null===t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var o=r.call(t,n||"default");if("object"!==e(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(a,"string"),"symbol"===e(i)?i:String(i)),o)}var a,i}var n=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var n,r,o;return n=e,(r=[{key:"init",value:function(){$(document).on("click",".answer-trigger-button",(function(e){e.preventDefault(),e.stopPropagation();var t=$(".answer-wrapper");t.is(":visible")?t.fadeOut():t.fadeIn()})),$(document).on("click",".answer-send-button",(function(e){e.preventDefault(),e.stopPropagation(),$(e.currentTarget).addClass("button-loading");var t="";"undefined"!=typeof tinymce?t=tinymce.get("message").getContent():CKEDITOR.instances.message&&void 0!==CKEDITOR.instances.message&&(t=CKEDITOR.instances.message.getData()),$.ajax({type:"POST",cache:!1,url:route("contacts.reply",$("#input_contact_id").val()),data:{message:t},success:function(t){t.error||($(".answer-wrapper").fadeOut(),"undefined"!=typeof tinymce?tinymce.get("message").setContent(""):CKEDITOR.instances.message&&void 0!==CKEDITOR.instances.message&&CKEDITOR.instances.message.setData(""),RealDriss.showSuccess(t.message),$("#reply-wrapper").load(window.location.href+" #reply-wrapper > *")),$(e.currentTarget).removeClass("button-loading")},error:function(t){$(e.currentTarget).removeClass("button-loading"),RealDriss.handleError(t)}})}))}}])&&t(n.prototype,r),o&&t(n,o),Object.defineProperty(n,"prototype",{writable:!1}),e}();$(document).ready((function(){(new n).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*****************************************************************!*\
+  !*** ./platform/plugins/contact/resources/assets/js/contact.js ***!
+  \*****************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var ContactPluginManagement = /*#__PURE__*/function () {
+  function ContactPluginManagement() {
+    _classCallCheck(this, ContactPluginManagement);
+  }
+  _createClass(ContactPluginManagement, [{
+    key: "init",
+    value: function init() {
+      $(document).on('click', '.answer-trigger-button', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        var answerWrapper = $('.answer-wrapper');
+        if (answerWrapper.is(':visible')) {
+          answerWrapper.fadeOut();
+        } else {
+          answerWrapper.fadeIn();
+        }
+      });
+      $(document).on('click', '.answer-send-button', function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        $(event.currentTarget).addClass('button-loading');
+        var message = '';
+        if (typeof tinymce != 'undefined') {
+          message = tinymce.get('message').getContent();
+        } else if (CKEDITOR.instances['message'] && typeof CKEDITOR.instances['message'] !== 'undefined') {
+          message = CKEDITOR.instances['message'].getData();
+        }
+        $.ajax({
+          type: 'POST',
+          cache: false,
+          url: route('contacts.reply', $('#input_contact_id').val()),
+          data: {
+            message: message
+          },
+          success: function success(res) {
+            if (!res.error) {
+              $('.answer-wrapper').fadeOut();
+              if (typeof tinymce != 'undefined') {
+                tinymce.get('message').setContent('');
+              } else if (CKEDITOR.instances['message'] && typeof CKEDITOR.instances['message'] !== 'undefined') {
+                CKEDITOR.instances['message'].setData('');
+              }
+              RealDriss.showSuccess(res.message);
+              $('#reply-wrapper').load(window.location.href + ' #reply-wrapper > *');
+            }
+            $(event.currentTarget).removeClass('button-loading');
+          },
+          error: function error(res) {
+            $(event.currentTarget).removeClass('button-loading');
+            RealDriss.handleError(res);
+          }
+        });
+      });
+    }
+  }]);
+  return ContactPluginManagement;
+}();
+$(document).ready(function () {
+  new ContactPluginManagement().init();
+});
+/******/ })()
+;
