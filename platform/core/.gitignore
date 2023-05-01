@@ -1,7 +1,7 @@
-acl/public/*
-base/public/*
-dashboard/public/*
-js-validation/public/*
-media/public/*
-setting/public/*
-table/public/*
+/acl/public/*
+/base/public/*
+/dashboard/public/*
+/js-validation/public/*
+/media/public/*
+/setting/public/*
+/table/public/*
