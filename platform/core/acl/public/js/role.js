@@ -1,1 +1,49 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n){for(var r=0;r<n.length;r++){var o=n[r];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(t,(i=o.key,c=void 0,c=function(t,n){if("object"!==e(t)||null===t)return t;var r=t[Symbol.toPrimitive];if(void 0!==r){var o=r.call(t,n||"default");if("object"!==e(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(i,"string"),"symbol"===e(c)?c:String(c)),o)}var i,c}var n=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var n,r,o;return n=e,(r=[{key:"init",value:function(){$("#auto-checkboxes li").tree({onCheck:{node:"expand"},onUncheck:{node:"expand"},dnd:!1,selectable:!1}),$("#mainNode .checker").change((function(e){var t=$(e.currentTarget),n=t.attr("data-set"),r=t.is(":checked");$(n).each((function(e,t){r?$(t).attr("checked",!0):$(t).attr("checked",!1)}))}))}}])&&t(n.prototype,r),o&&t(n,o),Object.defineProperty(n,"prototype",{writable:!1}),e}();$(document).ready((function(){(new n).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*******************************************************!*\
+  !*** ./platform/core/acl/resources/assets/js/role.js ***!
+  \*******************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var Role = /*#__PURE__*/function () {
+  function Role() {
+    _classCallCheck(this, Role);
+  }
+  _createClass(Role, [{
+    key: "init",
+    value: function init() {
+      $('#auto-checkboxes li').tree({
+        onCheck: {
+          node: 'expand'
+        },
+        onUncheck: {
+          node: 'expand'
+        },
+        dnd: false,
+        selectable: false
+      });
+      $('#mainNode .checker').change(function (event) {
+        var _self = $(event.currentTarget);
+        var set = _self.attr('data-set');
+        var checked = _self.is(':checked');
+        $(set).each(function (index, el) {
+          if (checked) {
+            $(el).attr('checked', true);
+          } else {
+            $(el).attr('checked', false);
+          }
+        });
+      });
+    }
+  }]);
+  return Role;
+}();
+$(document).ready(function () {
+  new Role().init();
+});
+/******/ })()
+;

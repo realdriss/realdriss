@@ -1,1 +1,43 @@
-$(document).ready((function(){$(document).on("click",".button-save-theme-translations",(function(t){t.preventDefault();var a=$(t.currentTarget);a.addClass("button-loading");var e=a.closest("form"),n=[];$.each(e.find(".table tbody tr"),(function(t,a){n.push({key:$(a).find(".translation-key").val(),value:$(a).find(".translation-value").val()})})),$.ajax({url:e.prop("action"),type:"POST",data:{locale:e.find("input[name=locale]").val(),translations:JSON.stringify(n)},success:function(t){a.removeClass("button-loading"),t.error?RealDriss.showError(t.message):(RealDriss.showSuccess(t.message),e.removeClass("dirty"))},error:function(t){a.removeClass("button-loading"),RealDriss.handleError(t)}})}))}));
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!********************************************************************************!*\
+  !*** ./platform/plugins/translation/resources/assets/js/theme-translations.js ***!
+  \********************************************************************************/
+$(document).ready(function () {
+  $(document).on('click', '.button-save-theme-translations', function (event) {
+    event.preventDefault();
+    var _self = $(event.currentTarget);
+    _self.addClass('button-loading');
+    var $form = _self.closest('form');
+    var translations = [];
+    $.each($form.find('.table tbody tr'), function (index, el) {
+      translations.push({
+        key: $(el).find('.translation-key').val(),
+        value: $(el).find('.translation-value').val()
+      });
+    });
+    $.ajax({
+      url: $form.prop('action'),
+      type: 'POST',
+      data: {
+        locale: $form.find('input[name=locale]').val(),
+        translations: JSON.stringify(translations)
+      },
+      success: function success(data) {
+        _self.removeClass('button-loading');
+        if (data.error) {
+          RealDriss.showError(data.message);
+        } else {
+          RealDriss.showSuccess(data.message);
+          $form.removeClass('dirty');
+        }
+      },
+      error: function error(data) {
+        _self.removeClass('button-loading');
+        RealDriss.handleError(data);
+      }
+    });
+  });
+});
+/******/ })()
+;

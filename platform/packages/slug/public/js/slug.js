@@ -1,1 +1,95 @@
-(()=>{function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n){for(var a=0;a<n.length;a++){var l=n[a];l.enumerable=l.enumerable||!1,l.configurable=!0,"value"in l&&(l.writable=!0),Object.defineProperty(t,(r=l.key,o=void 0,o=function(t,n){if("object"!==e(t)||null===t)return t;var a=t[Symbol.toPrimitive];if(void 0!==a){var l=a.call(t,n||"default");if("object"!==e(l))return l;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(r,"string"),"symbol"===e(o)?o:String(o)),l)}var r,o}var n=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var n,a,l;return n=e,(a=[{key:"init",value:function(){$(document).on("click","#change_slug",(function(e){$(".default-slug").unwrap();var t=$("#editable-post-name");t.html('<input type="text" id="new-post-slug" class="form-control" value="'+t.text()+'" autocomplete="off">'),$("#edit-slug-box .cancel").show(),$("#edit-slug-box .save").show(),$(e.currentTarget).hide()})),$(document).on("click","#edit-slug-box .cancel",(function(){var e=$("#current-slug").val(),t=$("#sample-permalink");t.html('<a class="permalink" href="'+$("#slug_id").data("view")+e.replace("/","")+'">'+t.html()+"</a>"),$("#editable-post-name").text(e),$("#edit-slug-box .cancel").hide(),$("#edit-slug-box .save").hide(),$("#change_slug").show()}));var e=function(e,t,n){$.ajax({url:$("#slug_id").data("url"),type:"POST",data:{name:e,slug_id:t,model:$("input[name=model]").val()},success:function(e){var t=$("#sample-permalink"),a=$("#slug_id");n?t.find(".permalink").prop("href",a.data("view")+e.replace("/","")):t.html('<a class="permalink" target="_blank" href="'+a.data("view")+e.replace("/","")+'">'+t.html()+"</a>"),$(".page-url-seo p").text(a.data("view")+e.replace("/","")),$("#editable-post-name").text(e),$("#current-slug").val(e),$("#edit-slug-box .cancel").hide(),$("#edit-slug-box .save").hide(),$("#change_slug").show(),$("#edit-slug-box").removeClass("hidden")},error:function(e){RealDriss.handleError(e)}})};$(document).on("click","#edit-slug-box .save",(function(){var t=$("#new-post-slug"),n=t.val(),a=$("#slug_id").data("id");null==a&&(a=0),null!=n&&""!==n?e(n,a,!1):t.closest(".form-group").addClass("has-error")})),$(document).on("blur","#name",(function(t){if($("#edit-slug-box").hasClass("hidden")){var n=$(t.currentTarget).val();null!==n&&""!==n&&e(n,0,!0)}}))}}])&&t(n.prototype,a),l&&t(n,l),Object.defineProperty(n,"prototype",{writable:!1}),e}();$((function(){(new n).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!************************************************************!*\
+  !*** ./platform/packages/slug/resources/assets/js/slug.js ***!
+  \************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var SlugBoxManagement = /*#__PURE__*/function () {
+  function SlugBoxManagement() {
+    _classCallCheck(this, SlugBoxManagement);
+  }
+  _createClass(SlugBoxManagement, [{
+    key: "init",
+    value: function init() {
+      $(document).on('click', '#change_slug', function (event) {
+        $('.default-slug').unwrap();
+        var $slug_input = $('#editable-post-name');
+        $slug_input.html('<input type="text" id="new-post-slug" class="form-control" value="' + $slug_input.text() + '" autocomplete="off">');
+        $('#edit-slug-box .cancel').show();
+        $('#edit-slug-box .save').show();
+        $(event.currentTarget).hide();
+      });
+      $(document).on('click', '#edit-slug-box .cancel', function () {
+        var currentSlug = $('#current-slug').val();
+        var $permalink = $('#sample-permalink');
+        $permalink.html('<a class="permalink" href="' + $('#slug_id').data('view') + currentSlug.replace('/', '') + '">' + $permalink.html() + '</a>');
+        $('#editable-post-name').text(currentSlug);
+        $('#edit-slug-box .cancel').hide();
+        $('#edit-slug-box .save').hide();
+        $('#change_slug').show();
+      });
+      var createSlug = function createSlug(name, id, exist) {
+        $.ajax({
+          url: $('#slug_id').data('url'),
+          type: 'POST',
+          data: {
+            name: name,
+            slug_id: id,
+            model: $('input[name=model]').val()
+          },
+          success: function success(data) {
+            var $permalink = $('#sample-permalink');
+            var $slug_id = $('#slug_id');
+            if (exist) {
+              $permalink.find('.permalink').prop('href', $slug_id.data('view') + data.replace('/', ''));
+            } else {
+              $permalink.html('<a class="permalink" target="_blank" href="' + $slug_id.data('view') + data.replace('/', '') + '">' + $permalink.html() + '</a>');
+            }
+            $('.page-url-seo p').text($slug_id.data('view') + data.replace('/', ''));
+            $('#editable-post-name').text(data);
+            $('#current-slug').val(data);
+            $('#edit-slug-box .cancel').hide();
+            $('#edit-slug-box .save').hide();
+            $('#change_slug').show();
+            $('#edit-slug-box').removeClass('hidden');
+          },
+          error: function error(data) {
+            RealDriss.handleError(data);
+          }
+        });
+      };
+      $(document).on('click', '#edit-slug-box .save', function () {
+        var $post_slug = $('#new-post-slug');
+        var name = $post_slug.val();
+        var id = $('#slug_id').data('id');
+        if (id == null) {
+          id = 0;
+        }
+        if (name != null && name !== '') {
+          createSlug(name, id, false);
+        } else {
+          $post_slug.closest('.form-group').addClass('has-error');
+        }
+      });
+      $(document).on('blur', '#name', function (e) {
+        if ($('#edit-slug-box').hasClass('hidden')) {
+          var name = $(e.currentTarget).val();
+          if (name !== null && name !== '') {
+            createSlug(name, 0, true);
+          }
+        }
+      });
+    }
+  }]);
+  return SlugBoxManagement;
+}();
+$(function () {
+  new SlugBoxManagement().init();
+});
+/******/ })()
+;

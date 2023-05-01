@@ -1,1 +1,82 @@
-jQuery(document).ready((function(e){e(".editable").editable().on("hidden",(function(o,t){var r=e(event.currentTarget).data("locale");if("save"===t&&e(event.currentTarget).removeClass("status-0").addClass("status-1"),"save"===t||"nochange"===t){var a=e(event.currentTarget).closest("tr").next().find(".editable.locale-"+r);setTimeout((function(){a.editable("show")}),300)}})),e(".group-select").on("change",(function(o){var t=e(o.currentTarget).val();window.location.href=t?route("translations.index")+"?group="+encodeURI(e(o.currentTarget).val()):route("translations.index")})),e(".box-translation").on("click",".button-import-groups",(function(o){o.preventDefault();var t=e(o.currentTarget);t.addClass("button-loading");var r=t.closest("form");e.ajax({url:r.prop("action"),type:"POST",data:r.serialize(),success:function(e){t.removeClass("button-loading"),e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),r.removeClass("dirty"))},error:function(e){t.removeClass("button-loading"),RealDriss.handleError(e)}})})),e(document).on("click",".button-publish-groups",(function(o){o.preventDefault(),e("#confirm-publish-modal").modal("show")})),e("#confirm-publish-modal").on("click","#button-confirm-publish-groups",(function(o){o.preventDefault();var t=e(o.currentTarget);t.addClass("button-loading");var r=e(".button-publish-groups").closest("form");e.ajax({url:r.prop("action"),type:"POST",data:r.serialize(),success:function(e){t.removeClass("button-loading"),e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),r.removeClass("dirty")),t.closest(".modal").modal("hide")},error:function(e){t.removeClass("button-loading"),RealDriss.handleError(e)}})}))}));
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!*************************************************************************!*\
+  !*** ./platform/plugins/translation/resources/assets/js/translation.js ***!
+  \*************************************************************************/
+jQuery(document).ready(function ($) {
+  $('.editable').editable().on('hidden', function (e, reason) {
+    var locale = $(event.currentTarget).data('locale');
+    if (reason === 'save') {
+      $(event.currentTarget).removeClass('status-0').addClass('status-1');
+    }
+    if (reason === 'save' || reason === 'nochange') {
+      var $next = $(event.currentTarget).closest('tr').next().find('.editable.locale-' + locale);
+      setTimeout(function () {
+        $next.editable('show');
+      }, 300);
+    }
+  });
+  $('.group-select').on('change', function (event) {
+    var group = $(event.currentTarget).val();
+    if (group) {
+      window.location.href = route('translations.index') + '?group=' + encodeURI($(event.currentTarget).val());
+    } else {
+      window.location.href = route('translations.index');
+    }
+  });
+  $('.box-translation').on('click', '.button-import-groups', function (event) {
+    event.preventDefault();
+    var _self = $(event.currentTarget);
+    _self.addClass('button-loading');
+    var $form = _self.closest('form');
+    $.ajax({
+      url: $form.prop('action'),
+      type: 'POST',
+      data: $form.serialize(),
+      success: function success(data) {
+        _self.removeClass('button-loading');
+        if (data.error) {
+          RealDriss.showError(data.message);
+        } else {
+          RealDriss.showSuccess(data.message);
+          $form.removeClass('dirty');
+        }
+      },
+      error: function error(data) {
+        _self.removeClass('button-loading');
+        RealDriss.handleError(data);
+      }
+    });
+  });
+  $(document).on('click', '.button-publish-groups', function (event) {
+    event.preventDefault();
+    $('#confirm-publish-modal').modal('show');
+  });
+  $('#confirm-publish-modal').on('click', '#button-confirm-publish-groups', function (event) {
+    event.preventDefault();
+    var _self = $(event.currentTarget);
+    _self.addClass('button-loading');
+    var $form = $('.button-publish-groups').closest('form');
+    $.ajax({
+      url: $form.prop('action'),
+      type: 'POST',
+      data: $form.serialize(),
+      success: function success(data) {
+        _self.removeClass('button-loading');
+        if (data.error) {
+          RealDriss.showError(data.message);
+        } else {
+          RealDriss.showSuccess(data.message);
+          $form.removeClass('dirty');
+        }
+        _self.closest('.modal').modal('hide');
+      },
+      error: function error(data) {
+        _self.removeClass('button-loading');
+        RealDriss.handleError(data);
+      }
+    });
+  });
+});
+/******/ })()
+;

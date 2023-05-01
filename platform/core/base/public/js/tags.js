@@ -1,1 +1,52 @@
-(()=>{function t(e){return t="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(t){return typeof t}:function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},t(e)}function e(e,i){for(var n=0;n<i.length;n++){var o=i[n];o.enumerable=o.enumerable||!1,o.configurable=!0,"value"in o&&(o.writable=!0),Object.defineProperty(e,(r=o.key,a=void 0,a=function(e,i){if("object"!==t(e)||null===e)return e;var n=e[Symbol.toPrimitive];if(void 0!==n){var o=n.call(e,i||"default");if("object"!==t(o))return o;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===i?String:Number)(e)}(r,"string"),"symbol"===t(a)?a:String(a)),o)}var r,a}var i=function(){function t(){!function(t,e){if(!(t instanceof e))throw new TypeError("Cannot call a class as a function")}(this,t)}var i,n,o;return i=t,(n=[{key:"init",value:function(){$(document).find(".tags").each((function(t,e){var i=new Tagify(e,{keepInvalidTags:void 0===$(e).data("keep-invalid-tags")||$(e).data("keep-invalid-tags"),enforceWhitelist:void 0!==$(e).data("enforce-whitelist")&&$(e).data("enforce-whitelist"),delimiters:void 0!==$(e).data("delimiters")?$(e).data("delimiters"):",",whitelist:e.value.trim().split(/\s*,\s*/)});$(e).data("url")&&i.on("input",(function(t){i.settings.whitelist.length=0,i.loading(!0).dropdown.hide.call(i),$.ajax({type:"GET",url:$(e).data("url"),success:function(e){i.settings.whitelist=e,i.loading(!1).dropdown.show.call(i,t.detail.value)}})}))}))}}])&&e(i.prototype,n),o&&e(i,o),Object.defineProperty(i,"prototype",{writable:!1}),t}();$(document).ready((function(){(new i).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!********************************************************!*\
+  !*** ./platform/core/base/resources/assets/js/tags.js ***!
+  \********************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var TagsManager = /*#__PURE__*/function () {
+  function TagsManager() {
+    _classCallCheck(this, TagsManager);
+  }
+  _createClass(TagsManager, [{
+    key: "init",
+    value: function init() {
+      $(document).find('.tags').each(function (index, element) {
+        var tagify = new Tagify(element, {
+          keepInvalidTags: $(element).data('keep-invalid-tags') !== undefined ? $(element).data('keep-invalid-tags') : true,
+          enforceWhitelist: $(element).data('enforce-whitelist') !== undefined ? $(element).data('enforce-whitelist') : false,
+          delimiters: $(element).data('delimiters') !== undefined ? $(element).data('delimiters') : ',',
+          whitelist: element.value.trim().split(/\s*,\s*/)
+        });
+        if ($(element).data('url')) {
+          tagify.on('input', function (e) {
+            tagify.settings.whitelist.length = 0; // reset current whitelist
+            tagify.loading(true).dropdown.hide.call(tagify); // show the loader animation
+
+            $.ajax({
+              type: 'GET',
+              url: $(element).data('url'),
+              success: function success(data) {
+                tagify.settings.whitelist = data;
+
+                // render the suggestions dropdown.
+                tagify.loading(false).dropdown.show.call(tagify, e.detail.value);
+              }
+            });
+          });
+        }
+      });
+    }
+  }]);
+  return TagsManager;
+}();
+$(document).ready(function () {
+  new TagsManager().init();
+});
+/******/ })()
+;

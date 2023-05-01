@@ -1,1 +1,83 @@
-(()=>{function e(o){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(o)}function o(o,t){for(var n=0;n<t.length;n++){var r=t[n];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(o,(i=r.key,a=void 0,a=function(o,t){if("object"!==e(o)||null===o)return o;var n=o[Symbol.toPrimitive];if(void 0!==n){var r=n.call(o,t||"default");if("object"!==e(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(o)}(i,"string"),"symbol"===e(a)?a:String(a)),r)}var i,a}var t=function(){function e(){!function(e,o){if(!(e instanceof o))throw new TypeError("Cannot call a class as a function")}(this,e)}var t,n,r;return t=e,(n=[{key:"init",value:function(){$("#plugin-list").on("click",".btn-trigger-change-status",(function(e){e.preventDefault();var o=$(e.currentTarget);o.addClass("button-loading"),$.ajax({url:route("plugins.change.status",{name:o.data("plugin")}),type:"PUT",success:function(e){e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),$("#plugin-list #app-"+o.data("plugin")).load(window.location.href+" #plugin-list #app-"+o.data("plugin")+" > *"),window.location.reload()),o.removeClass("button-loading")},error:function(e){RealDriss.handleError(e),o.removeClass("button-loading")}})})),$(document).on("click",".btn-trigger-remove-plugin",(function(e){e.preventDefault(),$("#confirm-remove-plugin-button").data("plugin",$(e.currentTarget).data("plugin")),$("#remove-plugin-modal").modal("show")})),$(document).on("click","#confirm-remove-plugin-button",(function(e){e.preventDefault();var o=$(e.currentTarget);o.addClass("button-loading"),$.ajax({url:route("plugins.remove",{plugin:o.data("plugin")}),type:"DELETE",success:function(e){e.error?RealDriss.showError(e.message):(RealDriss.showSuccess(e.message),window.location.reload()),o.removeClass("button-loading"),$("#remove-plugin-modal").modal("hide")},error:function(e){RealDriss.handleError(e),o.removeClass("button-loading"),$("#remove-plugin-modal").modal("hide")}})}))}}])&&o(t.prototype,n),r&&o(t,r),Object.defineProperty(t,"prototype",{writable:!1}),e}();$(document).ready((function(){(new t).init()}))})();
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!***************************************************************************!*\
+  !*** ./platform/packages/plugin-management/resources/assets/js/plugin.js ***!
+  \***************************************************************************/
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var PluginManagement = /*#__PURE__*/function () {
+  function PluginManagement() {
+    _classCallCheck(this, PluginManagement);
+  }
+  _createClass(PluginManagement, [{
+    key: "init",
+    value: function init() {
+      $('#plugin-list').on('click', '.btn-trigger-change-status', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        $.ajax({
+          url: route('plugins.change.status', {
+            name: _self.data('plugin')
+          }),
+          type: 'PUT',
+          success: function success(data) {
+            if (data.error) {
+              RealDriss.showError(data.message);
+            } else {
+              RealDriss.showSuccess(data.message);
+              $('#plugin-list #app-' + _self.data('plugin')).load(window.location.href + ' #plugin-list #app-' + _self.data('plugin') + ' > *');
+              window.location.reload();
+            }
+            _self.removeClass('button-loading');
+          },
+          error: function error(data) {
+            RealDriss.handleError(data);
+            _self.removeClass('button-loading');
+          }
+        });
+      });
+      $(document).on('click', '.btn-trigger-remove-plugin', function (event) {
+        event.preventDefault();
+        $('#confirm-remove-plugin-button').data('plugin', $(event.currentTarget).data('plugin'));
+        $('#remove-plugin-modal').modal('show');
+      });
+      $(document).on('click', '#confirm-remove-plugin-button', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        $.ajax({
+          url: route('plugins.remove', {
+            plugin: _self.data('plugin')
+          }),
+          type: 'DELETE',
+          success: function success(data) {
+            if (data.error) {
+              RealDriss.showError(data.message);
+            } else {
+              RealDriss.showSuccess(data.message);
+              window.location.reload();
+            }
+            _self.removeClass('button-loading');
+            $('#remove-plugin-modal').modal('hide');
+          },
+          error: function error(data) {
+            RealDriss.handleError(data);
+            _self.removeClass('button-loading');
+            $('#remove-plugin-modal').modal('hide');
+          }
+        });
+      });
+    }
+  }]);
+  return PluginManagement;
+}();
+$(document).ready(function () {
+  new PluginManagement().init();
+});
+/******/ })()
+;

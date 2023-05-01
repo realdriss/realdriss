@@ -1,1 +1,127 @@
-(()=>{"use strict";function e(t){return e="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e(t)}function t(t,n){for(var o=0;o<n.length;o++){var r=n[o];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,(a=r.key,s=void 0,s=function(t,n){if("object"!==e(t)||null===t)return t;var o=t[Symbol.toPrimitive];if(void 0!==o){var r=o.call(t,n||"default");if("object"!==e(r))return r;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===n?String:Number)(t)}(a,"string"),"symbol"===e(s)?s:String(s)),r)}var a,s}var n=function(){function e(){!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e)}var n,o,r;return n=e,(o=[{key:"init",value:function(){$(".toggle-payment-item").off("click").on("click",(function(e){$(e.currentTarget).closest("tbody").find(".payment-content-item").toggleClass("hidden")})),$(".disable-payment-item").off("click").on("click",(function(e){e.preventDefault();var t=$(e.currentTarget);$("#confirm-disable-payment-method-modal").modal("show"),$("#confirm-disable-payment-method-button").on("click",(function(e){e.preventDefault(),$(e.currentTarget).addClass("button-loading"),$.ajax({type:"POST",cache:!1,url:route("payments.methods.update.status"),data:{type:t.closest("form").find(".payment_type").val()},success:function(n){n.error?RealDriss.showError(n.message):(t.closest("tbody").find(".payment-name-label-group").addClass("hidden"),t.closest("tbody").find(".edit-payment-item-btn-trigger").addClass("hidden"),t.closest("tbody").find(".save-payment-item-btn-trigger").removeClass("hidden"),t.closest("tbody").find(".btn-text-trigger-update").addClass("hidden"),t.closest("tbody").find(".btn-text-trigger-save").removeClass("hidden"),t.addClass("hidden"),$(e.currentTarget).closest(".modal").modal("hide"),RealDriss.showSuccess(n.message)),$(e.currentTarget).removeClass("button-loading")},error:function(t){RealDriss.handleError(t),$(e.currentTarget).removeClass("button-loading")}})}))})),$(".save-payment-item").off("click").on("click",(function(e){e.preventDefault();var t=$(e.currentTarget);if(t.addClass("button-loading"),"undefined"!=typeof CKEDITOR&&CKEDITOR.instances)for(var n in CKEDITOR.instances)CKEDITOR.instances[n].updateElement();$.ajax({type:"POST",cache:!1,url:t.closest("form").prop("action"),data:t.closest("form").serialize(),success:function(e){e.error?RealDriss.showError(e.message):(t.closest("tbody").find(".payment-name-label-group").removeClass("hidden"),t.closest("tbody").find(".method-name-label").text(t.closest("form").find("input.input-name").val()),t.closest("tbody").find(".disable-payment-item").removeClass("hidden"),t.closest("tbody").find(".edit-payment-item-btn-trigger").removeClass("hidden"),t.closest("tbody").find(".save-payment-item-btn-trigger").addClass("hidden"),t.closest("tbody").find(".btn-text-trigger-update").removeClass("hidden"),t.closest("tbody").find(".btn-text-trigger-save").addClass("hidden"),RealDriss.showSuccess(e.message)),t.removeClass("button-loading")},error:function(e){RealDriss.handleError(e),t.removeClass("button-loading")}})})),$(".button-save-payment-settings").off("click").on("click",(function(e){e.preventDefault();var t=$(e.currentTarget);t.addClass("button-loading"),$.ajax({type:"POST",cache:!1,url:t.closest("form").prop("action"),data:t.closest("form").serialize(),success:function(e){e.error?RealDriss.showError(e.message):RealDriss.showSuccess(e.message),t.removeClass("button-loading")},error:function(e){RealDriss.handleError(e),t.removeClass("button-loading")}})}))}}])&&t(n.prototype,o),r&&t(n,r),Object.defineProperty(n,"prototype",{writable:!1}),e}();$(document).ready((function(){(new n).init()}))})();
+/******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
+var __webpack_exports__ = {};
+/*!*************************************************************************!*\
+  !*** ./platform/plugins/payment/resources/assets/js/payment-methods.js ***!
+  \*************************************************************************/
+
+
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor); } }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+var PaymentMethodManagement = /*#__PURE__*/function () {
+  function PaymentMethodManagement() {
+    _classCallCheck(this, PaymentMethodManagement);
+  }
+  _createClass(PaymentMethodManagement, [{
+    key: "init",
+    value: function init() {
+      $('.toggle-payment-item').off('click').on('click', function (event) {
+        $(event.currentTarget).closest('tbody').find('.payment-content-item').toggleClass('hidden');
+      });
+      $('.disable-payment-item').off('click').on('click', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        $('#confirm-disable-payment-method-modal').modal('show');
+        $('#confirm-disable-payment-method-button').on('click', function (event) {
+          event.preventDefault();
+          $(event.currentTarget).addClass('button-loading');
+          $.ajax({
+            type: 'POST',
+            cache: false,
+            url: route('payments.methods.update.status'),
+            data: {
+              type: _self.closest('form').find('.payment_type').val()
+            },
+            success: function success(res) {
+              if (!res.error) {
+                _self.closest('tbody').find('.payment-name-label-group').addClass('hidden');
+                _self.closest('tbody').find('.edit-payment-item-btn-trigger').addClass('hidden');
+                _self.closest('tbody').find('.save-payment-item-btn-trigger').removeClass('hidden');
+                _self.closest('tbody').find('.btn-text-trigger-update').addClass('hidden');
+                _self.closest('tbody').find('.btn-text-trigger-save').removeClass('hidden');
+                _self.addClass('hidden');
+                $(event.currentTarget).closest('.modal').modal('hide');
+                RealDriss.showSuccess(res.message);
+              } else {
+                RealDriss.showError(res.message);
+              }
+              $(event.currentTarget).removeClass('button-loading');
+            },
+            error: function error(res) {
+              RealDriss.handleError(res);
+              $(event.currentTarget).removeClass('button-loading');
+            }
+          });
+        });
+      });
+      $('.save-payment-item').off('click').on('click', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        if (typeof CKEDITOR != 'undefined' && CKEDITOR.instances) {
+          for (var i in CKEDITOR.instances) {
+            CKEDITOR.instances[i].updateElement();
+          }
+        }
+        $.ajax({
+          type: 'POST',
+          cache: false,
+          url: _self.closest('form').prop('action'),
+          data: _self.closest('form').serialize(),
+          success: function success(res) {
+            if (!res.error) {
+              _self.closest('tbody').find('.payment-name-label-group').removeClass('hidden');
+              _self.closest('tbody').find('.method-name-label').text(_self.closest('form').find('input.input-name').val());
+              _self.closest('tbody').find('.disable-payment-item').removeClass('hidden');
+              _self.closest('tbody').find('.edit-payment-item-btn-trigger').removeClass('hidden');
+              _self.closest('tbody').find('.save-payment-item-btn-trigger').addClass('hidden');
+              _self.closest('tbody').find('.btn-text-trigger-update').removeClass('hidden');
+              _self.closest('tbody').find('.btn-text-trigger-save').addClass('hidden');
+              RealDriss.showSuccess(res.message);
+            } else {
+              RealDriss.showError(res.message);
+            }
+            _self.removeClass('button-loading');
+          },
+          error: function error(res) {
+            RealDriss.handleError(res);
+            _self.removeClass('button-loading');
+          }
+        });
+      });
+      $('.button-save-payment-settings').off('click').on('click', function (event) {
+        event.preventDefault();
+        var _self = $(event.currentTarget);
+        _self.addClass('button-loading');
+        $.ajax({
+          type: 'POST',
+          cache: false,
+          url: _self.closest('form').prop('action'),
+          data: _self.closest('form').serialize(),
+          success: function success(res) {
+            if (!res.error) {
+              RealDriss.showSuccess(res.message);
+            } else {
+              RealDriss.showError(res.message);
+            }
+            _self.removeClass('button-loading');
+          },
+          error: function error(res) {
+            RealDriss.handleError(res);
+            _self.removeClass('button-loading');
+          }
+        });
+      });
+    }
+  }]);
+  return PaymentMethodManagement;
+}();
+$(document).ready(function () {
+  new PaymentMethodManagement().init();
+});
+/******/ })()
+;
