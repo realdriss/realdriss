@@ -1,0 +1,12 @@
+/analytics/public/*
+/audit-log/public/*
+/backup/public/*
+/blog/public/*
+/contact/public/*
+/cookie-consent/public/*
+/ecommerce/public/*
+/newsletter/public/*
+/payment/public/*
+/simple-slider/public/*
+/social-login/public/*
+/translation/public/*

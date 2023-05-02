@@ -265,17 +265,17 @@ __webpack_require__.r(__webpack_exports__);
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('div', {
+  return _c("div", {
     staticClass: "flexbox-grid no-pd-none"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "flexbox-content"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "wrapper-content"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "pd-all-20 ws-nm"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "title-product-main text-no-bold"
-  }, [!_vm.is_promotion ? _c('span', [_vm._v(_vm._s(_vm.__('Create coupon code')))]) : _vm._e(), _vm.is_promotion ? _c('span', [_vm._v(_vm._s(_vm.__('Create discount promotion')))]) : _vm._e()]), _vm._v(" "), _c('a', {
+  }, [!_vm.is_promotion ? _c("span", [_vm._v(_vm._s(_vm.__("Create coupon code")))]) : _vm._e(), _vm.is_promotion ? _c("span", [_vm._v(_vm._s(_vm.__("Create discount promotion")))]) : _vm._e()]), _vm._v(" "), _c("a", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -284,16 +284,16 @@ var render = function render() {
     }],
     staticClass: "btn-change-link float-right",
     attrs: {
-      "href": "#"
+      href: "#"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.generateCouponCode($event);
       }
     }
-  }, [_vm._v(_vm._s(_vm.__('Generate coupon code')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Generate coupon code")))]), _vm._v(" "), _c("div", {
     staticClass: "form-group mt15 mb0"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -307,19 +307,19 @@ var render = function render() {
     }],
     staticClass: "next-input coupon-code-input",
     attrs: {
-      "type": "text",
-      "name": "code"
+      type: "text",
+      name: "code"
     },
     domProps: {
-      "value": _vm.code
+      value: _vm.code
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.code = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('input', {
+  }), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -333,20 +333,20 @@ var render = function render() {
     }],
     staticClass: "next-input",
     attrs: {
-      "type": "text",
-      "name": "title",
-      "placeholder": "Enter promotion name"
+      type: "text",
+      name: "title",
+      placeholder: "Enter promotion name"
     },
     domProps: {
-      "value": _vm.title
+      value: _vm.title
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.title = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('p', {
+  }), _vm._v(" "), _c("p", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -354,13 +354,13 @@ var render = function render() {
       expression: "!is_promotion"
     }],
     staticClass: "type-subdued mt5 mb0"
-  }, [_vm._v(_vm._s(_vm.__('Customers will enter this coupon code when they checkout')) + ".")])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Customers will enter this coupon code when they checkout")) + ".")])])]), _vm._v(" "), _c("div", {
     staticClass: "pd-all-20 border-top-color"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "title-product-main text-no-bold block-display"
-  }, [_vm._v(_vm._s(_vm.__('Select type of discount')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Select type of discount")))]), _vm._v(" "), _c("div", {
     staticClass: "ui-select-wrapper width-200-px-rsp-768 mt15"
-  }, [_c('select', {
+  }, [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -369,11 +369,11 @@ var render = function render() {
     }],
     staticClass: "ui-select",
     attrs: {
-      "id": "select-promotion",
-      "name": "type"
+      id: "select-promotion",
+      name: "type"
     },
     on: {
-      "change": [function ($event) {
+      change: [function ($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
           return o.selected;
         }).map(function (o) {
@@ -385,22 +385,22 @@ var render = function render() {
         return _vm.changeDiscountType();
       }]
     }
-  }, [_c('option', {
+  }, [_c("option", {
     attrs: {
-      "value": "coupon"
+      value: "coupon"
     }
-  }, [_vm._v(_vm._s(_vm.__('Coupon code')))]), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Coupon code")))]), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "promotion"
+      value: "promotion"
     }
-  }, [_vm._v(_vm._s(_vm.__('Promotion')))])]), _vm._v(" "), _c('svg', {
+  }, [_vm._v(_vm._s(_vm.__("Promotion")))])]), _vm._v(" "), _c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16"
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#select-chevron"
     }
-  })])]), _vm._v(" "), _c('div', {
+  })])]), _vm._v(" "), _c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -408,9 +408,9 @@ var render = function render() {
       expression: "!is_promotion"
     }],
     staticClass: "form-group mt15 mb0"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "next-label"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -419,15 +419,15 @@ var render = function render() {
     }],
     staticClass: "hrv-checkbox",
     attrs: {
-      "type": "checkbox",
-      "value": "1",
-      "name": "can_use_with_promotion"
+      type: "checkbox",
+      value: "1",
+      name: "can_use_with_promotion"
     },
     domProps: {
-      "checked": Array.isArray(_vm.can_use_with_promotion) ? _vm._i(_vm.can_use_with_promotion, "1") > -1 : _vm.can_use_with_promotion
+      checked: Array.isArray(_vm.can_use_with_promotion) ? _vm._i(_vm.can_use_with_promotion, "1") > -1 : _vm.can_use_with_promotion
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$a = _vm.can_use_with_promotion,
           $$el = $event.target,
           $$c = $$el.checked ? true : false;
@@ -444,9 +444,9 @@ var render = function render() {
         }
       }
     }
-  }), _vm._v(" "), _c('span', {
+  }), _vm._v(" "), _c("span", {
     staticClass: "pre-line"
-  }, [_vm._v(_vm._s(_vm.__('Can be used with promotion')))])])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Can be used with promotion")))])])]), _vm._v(" "), _c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -454,7 +454,7 @@ var render = function render() {
       expression: "!is_promotion"
     }],
     staticClass: "form-group mb0 mt15"
-  }, [_c('label', [_c('input', {
+  }, [_c("label", [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -463,15 +463,15 @@ var render = function render() {
     }],
     staticClass: "hrv-checkbox",
     attrs: {
-      "type": "checkbox",
-      "name": "is_unlimited",
-      "value": "1"
+      type: "checkbox",
+      name: "is_unlimited",
+      value: "1"
     },
     domProps: {
-      "checked": Array.isArray(_vm.is_unlimited) ? _vm._i(_vm.is_unlimited, "1") > -1 : _vm.is_unlimited
+      checked: Array.isArray(_vm.is_unlimited) ? _vm._i(_vm.is_unlimited, "1") > -1 : _vm.is_unlimited
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$a = _vm.is_unlimited,
           $$el = $event.target,
           $$c = $$el.checked ? true : false;
@@ -488,7 +488,7 @@ var render = function render() {
         }
       }
     }
-  }), _vm._v(_vm._s(_vm.__('Unlimited coupon')) + "\n                    ")])]), _vm._v(" "), _c('div', {
+  }), _vm._v(_vm._s(_vm.__("Unlimited coupon")) + "\n                    ")])]), _vm._v(" "), _c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -496,11 +496,11 @@ var render = function render() {
       expression: "!is_promotion && !is_unlimited"
     }],
     staticClass: "form-group mb0 mt15"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field"
-  }, [_vm._v(_vm._s(_vm.__('Enter number')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Enter number")))]), _vm._v(" "), _c("div", {
     staticClass: "limit-input-group"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -509,32 +509,32 @@ var render = function render() {
     }],
     staticClass: "form-control pl5 p-r5",
     attrs: {
-      "type": "text",
-      "name": "quantity",
-      "autocomplete": "off",
-      "disabled": _vm.is_unlimited
+      type: "text",
+      name: "quantity",
+      autocomplete: "off",
+      disabled: _vm.is_unlimited
     },
     domProps: {
-      "value": _vm.quantity
+      value: _vm.quantity
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.quantity = $event.target.value;
       }
     }
-  })])])]), _vm._v(" "), _c('div', {
+  })])])]), _vm._v(" "), _c("div", {
     staticClass: "pd-all-20 border-top-color"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "title-product-main text-no-bold block-display"
-  }, [_vm._v(_vm._s(_vm.__('Coupon type')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Coupon type")))]), _vm._v(" "), _c("div", {
     staticClass: "form-inline form-group discount-input mt15 mb0 ws-nm"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "ui-select-wrapper inline_block mb5",
     staticStyle: {
       "min-width": "200px"
     }
-  }, [_c('select', {
+  }, [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -543,11 +543,11 @@ var render = function render() {
     }],
     staticClass: "ui-select",
     attrs: {
-      "id": "discount-type-option",
-      "name": "type_option"
+      id: "discount-type-option",
+      name: "type_option"
     },
     on: {
-      "change": [function ($event) {
+      change: [function ($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
           return o.selected;
         }).map(function (o) {
@@ -559,36 +559,36 @@ var render = function render() {
         return _vm.handleChangeTypeOption();
       }]
     }
-  }, [_c('option', {
+  }, [_c("option", {
     attrs: {
-      "value": "amount"
+      value: "amount"
     }
-  }, [_vm._v(_vm._s(_vm.currency))]), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.currency))]), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "percentage"
+      value: "percentage"
     }
-  }, [_vm._v(_vm._s(_vm.__('Discount %')))]), _vm._v(" "), !_vm.is_promotion ? _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Discount %")))]), _vm._v(" "), !_vm.is_promotion ? _c("option", {
     attrs: {
-      "value": "shipping"
+      value: "shipping"
     }
-  }, [_vm._v(_vm._s(_vm.__('Free shipping')))]) : _vm._e(), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Free shipping")))]) : _vm._e(), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "same-price"
+      value: "same-price"
     }
-  }, [_vm._v(_vm._s(_vm.__('Same price')))])]), _vm._v(" "), _c('svg', {
+  }, [_vm._v(_vm._s(_vm.__("Same price")))])]), _vm._v(" "), _c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16"
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#select-chevron"
     }
-  })])]), _vm._v(" "), _c('span', {
+  })])]), _vm._v(" "), _c("span", {
     staticClass: "lb-dis"
-  }, [_c('span', [_vm._v(_vm._s(_vm.value_label))])]), _vm._v(" "), _c('div', {
+  }, [_c("span", [_vm._v(_vm._s(_vm.value_label))])]), _vm._v(" "), _c("div", {
     staticClass: "inline width20-rsp-768 mb5"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "next-input--stylized"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -597,48 +597,48 @@ var render = function render() {
     }],
     staticClass: "next-input next-input--invisible",
     attrs: {
-      "type": "text",
-      "name": "value",
-      "autocomplete": "off",
-      "placeholder": "0"
+      type: "text",
+      name: "value",
+      autocomplete: "off",
+      placeholder: "0"
     },
     domProps: {
-      "value": _vm.discount_value
+      value: _vm.discount_value
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.discount_value = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('span', {
+  }), _vm._v(" "), _c("span", {
     staticClass: "next-input-add-on next-input__add-on--after"
-  }, [_vm._v(_vm._s(_vm.discountUnit))])])]), _vm._v(" "), _c('span', {
+  }, [_vm._v(_vm._s(_vm.discountUnit))])])]), _vm._v(" "), _c("span", {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: _vm.type_option !== 'shipping' && _vm.type_option,
+      value: _vm.type_option !== "shipping" && _vm.type_option,
       expression: "type_option !== 'shipping' && type_option"
     }],
     staticClass: "lb-dis"
-  }, [_vm._v(" " + _vm._s(_vm.__('apply for')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(" " + _vm._s(_vm.__("apply for")))]), _vm._v(" "), _c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
-      value: _vm.type_option !== 'shipping' && _vm.type_option,
+      value: _vm.type_option !== "shipping" && _vm.type_option,
       expression: "type_option !== 'shipping' && type_option"
     }]
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "ui-select-wrapper inline_block mb5 min-width-150-px",
     staticStyle: {
       "margin-right": "10px"
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         return _vm.handleChangeTarget();
       }
     }
-  }, [_c('select', {
+  }, [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -647,11 +647,11 @@ var render = function render() {
     }],
     staticClass: "ui-select",
     attrs: {
-      "id": "select-offers",
-      "name": "target"
+      id: "select-offers",
+      name: "target"
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
           return o.selected;
         }).map(function (o) {
@@ -661,51 +661,51 @@ var render = function render() {
         _vm.target = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
       }
     }
-  }, [_vm.type_option !== 'same-price' ? _c('option', {
+  }, [_vm.type_option !== "same-price" ? _c("option", {
     attrs: {
-      "value": "all-orders"
+      value: "all-orders"
     }
-  }, [_vm._v(_vm._s(_vm.__('All orders')) + "\n                                ")]) : _vm._e(), _vm._v(" "), _vm.type_option !== 'same-price' ? _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("All orders")) + "\n                                ")]) : _vm._e(), _vm._v(" "), _vm.type_option !== "same-price" ? _c("option", {
     attrs: {
-      "value": "amount-minimum-order"
+      value: "amount-minimum-order"
     }
-  }, [_vm._v(_vm._s(_vm.__('Order amount from')) + "\n                                ")]) : _vm._e(), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Order amount from")) + "\n                                ")]) : _vm._e(), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "group-products"
+      value: "group-products"
     }
-  }, [_vm._v(_vm._s(_vm.__('Product collection')))]), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Product collection")))]), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "specific-product"
+      value: "specific-product"
     }
-  }, [_vm._v(_vm._s(_vm.__('Product')))]), _vm._v(" "), _vm.type_option !== 'same-price' ? _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Product")))]), _vm._v(" "), _vm.type_option !== "same-price" ? _c("option", {
     attrs: {
-      "value": "customer"
+      value: "customer"
     }
-  }, [_vm._v(_vm._s(_vm.__('Customer')))]) : _vm._e(), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("Customer")))]) : _vm._e(), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "product-variant"
+      value: "product-variant"
     }
-  }, [_vm._v(_vm._s(_vm.__('Variant')))])]), _vm._v(" "), _c('svg', {
+  }, [_vm._v(_vm._s(_vm.__("Variant")))])]), _vm._v(" "), _c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16"
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#select-chevron"
     }
-  })])]), _vm._v(" "), _vm.target === 'group-products' && _vm.type_option !== 'shipping' ? _c('div', {
+  })])]), _vm._v(" "), _vm.target === "group-products" && _vm.type_option !== "shipping" ? _c("div", {
     staticClass: "inline mb5",
     staticStyle: {
       "margin-right": "10px"
     },
     attrs: {
-      "id": "div-select-collection"
+      id: "div-select-collection"
     }
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "ui-select-wrapper",
     staticStyle: {
       "min-width": "200px"
     }
-  }, [_c('select', {
+  }, [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -714,10 +714,10 @@ var render = function render() {
     }],
     staticClass: "ui-select",
     attrs: {
-      "name": "product_collections"
+      name: "product_collections"
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
           return o.selected;
         }).map(function (o) {
@@ -728,29 +728,29 @@ var render = function render() {
       }
     }
   }, _vm._l(_vm.product_collections, function (product_collection) {
-    return _c('option', {
+    return _c("option", {
       domProps: {
-        "value": product_collection.id
+        value: product_collection.id
       }
     }, [_vm._v(_vm._s(product_collection.name) + "\n                                    ")]);
-  }), 0), _vm._v(" "), _c('svg', {
+  }), 0), _vm._v(" "), _c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16"
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#select-chevron"
     }
-  })])])]) : _vm._e(), _vm._v(" "), _vm.target === 'specific-product' && _vm.type_option !== 'shipping' ? _c('div', {
+  })])])]) : _vm._e(), _vm._v(" "), _vm.target === "specific-product" && _vm.type_option !== "shipping" ? _c("div", {
     staticClass: "inline mb5",
     staticStyle: {
       "margin-right": "10px"
     },
     attrs: {
-      "id": "div-select-product"
+      id: "div-select-product"
     }
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "drop-select-search drop-control dropdown dropdown-collection"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -758,36 +758,36 @@ var render = function render() {
       expression: "product_id"
     }],
     attrs: {
-      "type": "hidden",
-      "name": "products"
+      type: "hidden",
+      name: "products"
     },
     domProps: {
-      "value": _vm.product_id
+      value: _vm.product_id
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.product_id = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('button', {
+  }), _vm._v(" "), _c("button", {
     staticClass: "btn btn-secondary dropdown-toggle",
     attrs: {
-      "type": "button",
+      type: "button",
       "data-toggle": "dropdown",
       "aria-haspopup": "true",
       "aria-expanded": "false"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.loadListProductsForSelect();
       }
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "overflow-title max-250 p-r15"
-  }, [_vm._v(_vm._s(_vm.product_text))])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.product_text))])]), _vm._v(" "), _c("div", {
     staticClass: "dropdown-menu"
-  }, [_c('div', {
+  }, [_c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -795,10 +795,10 @@ var render = function render() {
       expression: "loading"
     }],
     staticClass: "has-loading"
-  }, [_c('i', {
+  }, [_c("i", {
     staticClass: "fa fa-spinner fa-spin"
   })]), _vm._v(" "), _vm._l(_vm.products, function (product) {
-    return _c('a', {
+    return _c("a", {
       directives: [{
         name: "show",
         rawName: "v-show",
@@ -807,23 +807,23 @@ var render = function render() {
       }],
       staticClass: "dropdown-item",
       attrs: {
-        "href": "#",
-        "value": product.id
+        href: "#",
+        value: product.id
       },
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.handleSelectProducts(product);
         }
       }
     }, [_vm._v(_vm._s(product.name))]);
-  })], 2)])]) : _vm._e(), _vm._v(" "), _vm.target === 'customer' && _vm.type_option !== 'shipping' ? _c('div', {
+  })], 2)])]) : _vm._e(), _vm._v(" "), _vm.target === "customer" && _vm.type_option !== "shipping" ? _c("div", {
     staticClass: "inline mb5",
     attrs: {
-      "id": "div-select-customer"
+      id: "div-select-customer"
     }
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "drop-select-search drop-control dropdown dropdown-collection"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -831,36 +831,36 @@ var render = function render() {
       expression: "customer_id"
     }],
     attrs: {
-      "type": "hidden",
-      "name": "customers"
+      type: "hidden",
+      name: "customers"
     },
     domProps: {
-      "value": _vm.customer_id
+      value: _vm.customer_id
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.customer_id = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('button', {
+  }), _vm._v(" "), _c("button", {
     staticClass: "btn btn-secondary dropdown-toggle",
     attrs: {
-      "type": "button",
+      type: "button",
       "data-toggle": "dropdown",
       "aria-haspopup": "true",
       "aria-expanded": "false"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.loadListCustomersForSelect();
       }
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "overflow-title max-250 p-r15"
-  }, [_vm._v(_vm._s(_vm.customer_name))])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.customer_name))])]), _vm._v(" "), _c("div", {
     staticClass: "dropdown-menu"
-  }, [_c('div', {
+  }, [_c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -868,10 +868,10 @@ var render = function render() {
       expression: "loading"
     }],
     staticClass: "has-loading"
-  }, [_c('i', {
+  }, [_c("i", {
     staticClass: "fa fa-spinner fa-spin"
   })]), _vm._v(" "), _vm._l(_vm.customers, function (customer) {
-    return _c('a', {
+    return _c("a", {
       directives: [{
         name: "show",
         rawName: "v-show",
@@ -880,53 +880,53 @@ var render = function render() {
       }],
       staticClass: "dropdown-item",
       attrs: {
-        "href": "#",
-        "value": customer.id
+        href: "#",
+        value: customer.id
       },
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.handleSelectCustomers(customer);
         }
       }
     }, [_vm._v(_vm._s(customer.name))]);
-  })], 2)])]) : _vm._e(), _vm._v(" "), _vm.target === 'product-variant' && _vm.type_option !== 'shipping' ? _c('div', {
+  })], 2)])]) : _vm._e(), _vm._v(" "), _vm.target === "product-variant" && _vm.type_option !== "shipping" ? _c("div", {
     staticClass: "inline mb5",
     staticStyle: {
       "margin-right": "10px"
     },
     attrs: {
-      "id": "div-select-product-variant"
+      id: "div-select-product-variant"
     }
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "box-search-advance product",
     staticStyle: {
       "min-width": "310px"
     }
-  }, [_c('input', {
+  }, [_c("input", {
     staticClass: "next-input textbox-advancesearch",
     attrs: {
-      "type": "text",
-      "placeholder": "Search product"
+      type: "text",
+      placeholder: "Search product"
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         return _vm.loadListProductsForSearch();
       },
-      "keyup": function keyup($event) {
+      keyup: function keyup($event) {
         return _vm.handleSearchProduct($event.target.value);
       }
     }
-  }), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _c("div", {
     staticClass: "panel panel-default",
     "class": {
       active: _vm.product_variants,
       hidden: _vm.hidden_product_search_panel
     }
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "panel-body"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "list-search-data"
-  }, [_c('div', {
+  }, [_c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -934,9 +934,9 @@ var render = function render() {
       expression: "loading"
     }],
     staticClass: "has-loading"
-  }, [_c('i', {
+  }, [_c("i", {
     staticClass: "fa fa-spinner fa-spin"
-  })]), _vm._v(" "), _c('ul', {
+  })]), _vm._v(" "), _c("ul", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -945,95 +945,95 @@ var render = function render() {
     }],
     staticClass: "clearfix"
   }, [_vm._l(_vm.product_variants.data, function (product_variant) {
-    return product_variant.variations.length ? _c('li', [_c('div', {
+    return product_variant.variations.length ? _c("li", [_c("div", {
       staticClass: "wrap-img inline_block vertical-align-t"
-    }, [_c('img', {
+    }, [_c("img", {
       staticClass: "thumb-image",
       attrs: {
-        "src": product_variant.image_url,
-        "title": product_variant.name
+        src: product_variant.image_url,
+        title: product_variant.name
       }
-    })]), _vm._v(" "), _c('label', {
+    })]), _vm._v(" "), _c("label", {
       staticClass: "inline_block ml10 mt10 ws-nm",
       staticStyle: {
-        "width": "calc(100% - 50px)",
-        "cursor": "pointer"
+        width: "calc(100% - 50px)",
+        cursor: "pointer"
       }
-    }, [_vm._v(_vm._s(product_variant.name))]), _vm._v(" "), _c('div', {
+    }, [_vm._v(_vm._s(product_variant.name))]), _vm._v(" "), _c("div", {
       staticClass: "clear"
-    }), _vm._v(" "), _c('ul', _vm._l(product_variant.variations, function (variation) {
-      return _c('li', {
+    }), _vm._v(" "), _c("ul", _vm._l(product_variant.variations, function (variation) {
+      return _c("li", {
         staticClass: "clearfix product-variant",
         on: {
-          "click": function click($event) {
+          click: function click($event) {
             return _vm.selectProductVariant(product_variant, variation);
           }
         }
-      }, [_c('a', {
+      }, [_c("a", {
         staticClass: "color_green float-left"
       }, _vm._l(variation.variation_items, function (variantItem, index) {
-        return _c('span', [_vm._v("\n                                                                    " + _vm._s(variantItem.attribute_title) + "\n                                                                    "), index !== variation.variation_items.length - 1 ? _c('span', [_vm._v("/")]) : _vm._e()]);
+        return _c("span", [_vm._v("\n                                                                    " + _vm._s(variantItem.attribute_title) + "\n                                                                    "), index !== variation.variation_items.length - 1 ? _c("span", [_vm._v("/")]) : _vm._e()]);
       }), 0)]);
     }), 0)]) : _vm._e();
-  }), _vm._v(" "), _vm.product_variants.data.length === 0 ? _c('li', [_c('span', [_vm._v(_vm._s(_vm.__('No products found!')))])]) : _vm._e()], 2)])]), _vm._v(" "), _vm.product_variants.next_page_url || _vm.product_variants.prev_page_url ? _c('div', {
+  }), _vm._v(" "), _vm.product_variants.data.length === 0 ? _c("li", [_c("span", [_vm._v(_vm._s(_vm.__("No products found!")))])]) : _vm._e()], 2)])]), _vm._v(" "), _vm.product_variants.next_page_url || _vm.product_variants.prev_page_url ? _c("div", {
     staticClass: "panel-footer"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "btn-group float-right"
-  }, [_c('button', {
+  }, [_c("button", {
     "class": {
-      'btn btn-secondary': _vm.product_variants.current_page !== 1,
-      'btn btn-secondary disable': _vm.product_variants.current_page === 1
+      "btn btn-secondary": _vm.product_variants.current_page !== 1,
+      "btn btn-secondary disable": _vm.product_variants.current_page === 1
     },
     attrs: {
-      "type": "button",
-      "disabled": _vm.product_variants.current_page === 1
+      type: "button",
+      disabled: _vm.product_variants.current_page === 1
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         _vm.loadListProductsForSearch(1, _vm.product_variants.prev_page_url ? _vm.product_variants.current_page - 1 : _vm.product_variants.current_page, true);
       }
     }
-  }, [_c('svg', {
+  }, [_c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16 svg-next-icon-rotate-180",
     attrs: {
-      "role": "img"
+      role: "img"
     }
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#next-chevron"
     }
-  })])]), _vm._v(" "), _c('button', {
+  })])]), _vm._v(" "), _c("button", {
     "class": {
-      'btn btn-secondary': _vm.product_variants.next_page_url,
-      'btn btn-secondary disable': !_vm.product_variants.next_page_url
+      "btn btn-secondary": _vm.product_variants.next_page_url,
+      "btn btn-secondary disable": !_vm.product_variants.next_page_url
     },
     attrs: {
-      "type": "button",
-      "disabled": !_vm.product_variants.next_page_url
+      type: "button",
+      disabled: !_vm.product_variants.next_page_url
     },
     on: {
-      "click": function click($event) {
+      click: function click($event) {
         _vm.loadListProductsForSearch(1, _vm.product_variants.next_page_url ? _vm.product_variants.current_page + 1 : _vm.product_variants.current_page, true);
       }
     }
-  }, [_c('svg', {
+  }, [_c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16",
     attrs: {
-      "role": "img"
+      role: "img"
     }
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#next-chevron"
     }
-  })])])]), _vm._v(" "), _c('div', {
+  })])])]), _vm._v(" "), _c("div", {
     staticClass: "clearfix"
-  })]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), !_vm.is_promotion && (_vm.target === 'group-products' || _vm.target === 'specific-product' || _vm.target === 'product-variant') && _vm.type_option === 'amount' ? _c('div', {
+  })]) : _vm._e()])])]) : _vm._e(), _vm._v(" "), !_vm.is_promotion && (_vm.target === "group-products" || _vm.target === "specific-product" || _vm.target === "product-variant") && _vm.type_option === "amount" ? _c("div", {
     staticClass: "inline mb5"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "ui-select-wrapper"
-  }, [_c('select', {
+  }, [_c("select", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1042,10 +1042,10 @@ var render = function render() {
     }],
     staticClass: "ui-select",
     attrs: {
-      "name": "discount_on"
+      name: "discount_on"
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$selectedVal = Array.prototype.filter.call($event.target.options, function (o) {
           return o.selected;
         }).map(function (o) {
@@ -1055,26 +1055,26 @@ var render = function render() {
         _vm.discount_on = $event.target.multiple ? $$selectedVal : $$selectedVal[0];
       }
     }
-  }, [_c('option', {
+  }, [_c("option", {
     attrs: {
-      "value": "per-order"
+      value: "per-order"
     }
-  }, [_vm._v(_vm._s(_vm.__('One time per order')))]), _vm._v(" "), _c('option', {
+  }, [_vm._v(_vm._s(_vm.__("One time per order")))]), _vm._v(" "), _c("option", {
     attrs: {
-      "value": "per-every-item"
+      value: "per-every-item"
     }
-  }, [_vm._v(_vm._s(_vm.__('One time per product in cart')))])]), _vm._v(" "), _c('svg', {
+  }, [_vm._v(_vm._s(_vm.__("One time per product in cart")))])]), _vm._v(" "), _c("svg", {
     staticClass: "svg-next-icon svg-next-icon-size-16"
-  }, [_c('use', {
+  }, [_c("use", {
     attrs: {
       "xmlns:xlink": "http://www.w3.org/1999/xlink",
       "xlink:href": "#select-chevron"
     }
-  })])])]) : _vm._e(), _vm._v(" "), _vm.target === 'amount-minimum-order' && _vm.type_option !== 'shipping' ? _c('div', {
+  })])])]) : _vm._e(), _vm._v(" "), _vm.target === "amount-minimum-order" && _vm.type_option !== "shipping" ? _c("div", {
     staticClass: "inline width-150-px mb5"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "next-input--stylized"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1083,21 +1083,21 @@ var render = function render() {
     }],
     staticClass: "next-input next-input--invisible",
     attrs: {
-      "type": "text",
-      "name": "min_order_price"
+      type: "text",
+      name: "min_order_price"
     },
     domProps: {
-      "value": _vm.min_order_price
+      value: _vm.min_order_price
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.min_order_price = $event.target.value;
       }
     }
-  }), _vm._v(" "), _c('span', {
+  }), _vm._v(" "), _c("span", {
     staticClass: "next-input-add-on next-input__add-on--after"
-  }, [_vm._v(_vm._s(_vm.currency))])])]) : _vm._e()]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.currency))])])]) : _vm._e()]), _vm._v(" "), _c("div", {
     directives: [{
       name: "show",
       rawName: "v-show",
@@ -1105,11 +1105,11 @@ var render = function render() {
       expression: "is_promotion"
     }],
     staticStyle: {
-      "margin": "10px 0"
+      margin: "10px 0"
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "lb-dis"
-  }, [_vm._v("  " + _vm._s(_vm.__('Number of products')) + ": ")]), _vm._v(" "), _c('input', {
+  }, [_vm._v("  " + _vm._s(_vm.__("Number of products")) + ": ")]), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1118,20 +1118,20 @@ var render = function render() {
     }],
     staticClass: "form-control width-100-px p-none-r",
     attrs: {
-      "type": "text",
-      "name": "product_quantity",
-      "id": "product-quantity"
+      type: "text",
+      name: "product_quantity",
+      id: "product-quantity"
     },
     domProps: {
-      "value": _vm.product_quantity
+      value: _vm.product_quantity
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.product_quantity = $event.target.value;
       }
     }
-  })])]), _vm._v(" "), _c('input', {
+  })])]), _vm._v(" "), _c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1139,87 +1139,87 @@ var render = function render() {
       expression: "variant_ids"
     }],
     attrs: {
-      "type": "hidden",
-      "name": "variants"
+      type: "hidden",
+      name: "variants"
     },
     domProps: {
-      "value": _vm.variant_ids
+      value: _vm.variant_ids
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.variant_ids = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm.variants.length && _vm.target === 'product-variant' ? _c('div', {
+  }), _vm._v(" "), _vm.variants.length && _vm.target === "product-variant" ? _c("div", {
     staticClass: "clearfix"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "mt20"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field"
-  }, [_vm._v(_vm._s(_vm.__('Selected products')) + ":")])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Selected products")) + ":")])]), _vm._v(" "), _c("div", {
     staticClass: "table-wrapper p-none mt10 mb20 ps-relative"
-  }, [_c('table', {
+  }, [_c("table", {
     staticClass: "table-normal"
-  }, [_c('tbody', _vm._l(_vm.variants, function (variant) {
-    return _c('tr', [_c('td', {
+  }, [_c("tbody", _vm._l(_vm.variants, function (variant) {
+    return _c("tr", [_c("td", {
       staticClass: "width-60-px min-width-60-px"
-    }, [_c('div', {
+    }, [_c("div", {
       staticClass: "wrap-img vertical-align-m-i"
-    }, [_c('img', {
+    }, [_c("img", {
       staticClass: "thumb-image",
       attrs: {
-        "src": variant.image_url,
-        "title": variant.product_name
+        src: variant.image_url,
+        title: variant.product_name
       }
-    })])]), _vm._v(" "), _c('td', {
+    })])]), _vm._v(" "), _c("td", {
       staticClass: "pl5 p-r5 min-width-200-px"
-    }, [_c('a', {
+    }, [_c("a", {
       staticClass: "hover-underline pre-line",
       attrs: {
-        "href": variant.product_link,
-        "target": "_blank"
+        href: variant.product_link,
+        target: "_blank"
       }
-    }, [_vm._v(_vm._s(variant.product_name))]), _vm._v(" "), _c('p', {
+    }, [_vm._v(_vm._s(variant.product_name))]), _vm._v(" "), _c("p", {
       staticClass: "type-subdued"
     }, _vm._l(variant.variation_items, function (variantItem, index) {
-      return _c('span', [_vm._v("\n                                            " + _vm._s(variantItem.attribute_title) + "\n                                            "), index !== variant.variation_items.length - 1 ? _c('span', [_vm._v("/")]) : _vm._e()]);
-    }), 0)]), _vm._v(" "), _c('td', {
+      return _c("span", [_vm._v("\n                                            " + _vm._s(variantItem.attribute_title) + "\n                                            "), index !== variant.variation_items.length - 1 ? _c("span", [_vm._v("/")]) : _vm._e()]);
+    }), 0)]), _vm._v(" "), _c("td", {
       staticClass: "pl5 p-r5 text-right width-20-px min-width-20-px"
-    }, [_c('a', {
+    }, [_c("a", {
       attrs: {
-        "href": "#"
+        href: "#"
       },
       on: {
-        "click": function click($event) {
+        click: function click($event) {
           return _vm.handleRemoveVariant($event, variant);
         }
       }
-    }, [_c('svg', {
+    }, [_c("svg", {
       staticClass: "svg-next-icon svg-next-icon-size-12"
-    }, [_c('use', {
+    }, [_c("use", {
       attrs: {
         "xmlns:xlink": "http://www.w3.org/1999/xlink",
         "xlink:href": "#next-remove"
       }
     })])])])]);
-  }), 0)])])]) : _vm._e()])])]), _vm._v(" "), _c('div', {
+  }), 0)])])]) : _vm._e()])])]), _vm._v(" "), _c("div", {
     staticClass: "flexbox-content flexbox-right"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "wrapper-content"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "pd-all-20"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "title-product-main text-no-bold"
-  }, [_vm._v(_vm._s(_vm.__('Time')))])]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Time")))])]), _vm._v(" "), _c("div", {
     staticClass: "pd-all-10-20 form-group mb0"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field"
-  }, [_vm._v(_vm._s(_vm.__('Start date')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("Start date")))]), _vm._v(" "), _c("div", {
     staticClass: "next-field__connected-wrapper z-index-9"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "input-group date form_datetime form_datetime bs-datetime"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1228,24 +1228,24 @@ var render = function render() {
     }],
     staticClass: "next-field--connected next-input z-index-9 datepicker",
     attrs: {
-      "type": "text",
-      "placeholder": "Select date...",
+      type: "text",
+      placeholder: "Select date...",
       "data-date-format": "dd-mm-yyyy",
-      "name": "start_date",
-      "autocomplete": "off"
+      name: "start_date",
+      autocomplete: "off"
     },
     domProps: {
-      "value": _vm.start_date
+      value: _vm.start_date
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.start_date = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _vm._m(0)]), _vm._v(" "), _c("div", {
     staticClass: "input-group"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1254,28 +1254,28 @@ var render = function render() {
     }],
     staticClass: "next-field--connected next-input z-index-9 time-picker timepicker timepicker-24",
     attrs: {
-      "type": "text",
-      "placeholder": "Select time...",
-      "name": "start_time"
+      type: "text",
+      placeholder: "Select time...",
+      name: "start_time"
     },
     domProps: {
-      "value": _vm.start_time
+      value: _vm.start_time
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.start_time = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm._m(1)])])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _vm._m(1)])])]), _vm._v(" "), _c("div", {
     staticClass: "pd-all-10-20 form-group mb0"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "text-title-field"
-  }, [_vm._v(_vm._s(_vm.__('End date')))]), _vm._v(" "), _c('div', {
+  }, [_vm._v(_vm._s(_vm.__("End date")))]), _vm._v(" "), _c("div", {
     staticClass: "next-field__connected-wrapper z-index-9"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "input-group date form_datetime form_datetime bs-datetime"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1284,24 +1284,24 @@ var render = function render() {
     }],
     staticClass: "next-field--connected next-input z-index-9 datepicker",
     attrs: {
-      "type": "text",
-      "placeholder": "Select date...",
+      type: "text",
+      placeholder: "Select date...",
       "data-date-format": "dd-mm-yyyy",
-      "name": "end_date",
-      "disabled": _vm.unlimited_time
+      name: "end_date",
+      disabled: _vm.unlimited_time
     },
     domProps: {
-      "value": _vm.end_date
+      value: _vm.end_date
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.end_date = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _vm._m(2)]), _vm._v(" "), _c("div", {
     staticClass: "input-group"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1310,25 +1310,25 @@ var render = function render() {
     }],
     staticClass: "next-field--connected next-input z-index-9 time-picker timepicker timepicker-24",
     attrs: {
-      "type": "text",
-      "placeholder": "Select time...",
-      "name": "end_time",
-      "disabled": _vm.unlimited_time
+      type: "text",
+      placeholder: "Select time...",
+      name: "end_time",
+      disabled: _vm.unlimited_time
     },
     domProps: {
-      "value": _vm.end_time
+      value: _vm.end_time
     },
     on: {
-      "input": function input($event) {
+      input: function input($event) {
         if ($event.target.composing) return;
         _vm.end_time = $event.target.value;
       }
     }
-  }), _vm._v(" "), _vm._m(3)])])]), _vm._v(" "), _c('div', {
+  }), _vm._v(" "), _vm._m(3)])])]), _vm._v(" "), _c("div", {
     staticClass: "pd-all-10-20"
-  }, [_c('label', {
+  }, [_c("label", {
     staticClass: "next-label disable-input-date-discount"
-  }, [_c('input', {
+  }, [_c("input", {
     directives: [{
       name: "model",
       rawName: "v-model",
@@ -1337,15 +1337,15 @@ var render = function render() {
     }],
     staticClass: "hrv-checkbox",
     attrs: {
-      "type": "checkbox",
-      "name": "unlimited_time",
-      "value": "1"
+      type: "checkbox",
+      name: "unlimited_time",
+      value: "1"
     },
     domProps: {
-      "checked": Array.isArray(_vm.unlimited_time) ? _vm._i(_vm.unlimited_time, "1") > -1 : _vm.unlimited_time
+      checked: Array.isArray(_vm.unlimited_time) ? _vm._i(_vm.unlimited_time, "1") > -1 : _vm.unlimited_time
     },
     on: {
-      "change": function change($event) {
+      change: function change($event) {
         var $$a = _vm.unlimited_time,
           $$el = $event.target,
           $$c = $$el.checked ? true : false;
@@ -1362,69 +1362,69 @@ var render = function render() {
         }
       }
     }
-  }), _vm._v(_vm._s(_vm.__('Never expired')) + "\n                ")])])]), _vm._v(" "), _c('br'), _vm._v(" "), _c('div', {
+  }), _vm._v(_vm._s(_vm.__("Never expired")) + "\n                ")])])]), _vm._v(" "), _c("br"), _vm._v(" "), _c("div", {
     staticClass: "wrapper-content"
-  }, [_c('div', {
+  }, [_c("div", {
     staticClass: "pd-all-20"
-  }, [_c('a', {
+  }, [_c("a", {
     staticClass: "btn btn-secondary",
     attrs: {
-      "href": "#"
+      href: "#"
     }
-  }, [_vm._v(_vm._s(_vm.__('Cancel')))]), _vm._v(" "), _c('button', {
+  }, [_vm._v(_vm._s(_vm.__("Cancel")))]), _vm._v(" "), _c("button", {
     staticClass: "btn btn-primary"
-  }, [_vm._v(_vm._s(_vm.__('Save')))])])])])]);
+  }, [_vm._v(_vm._s(_vm.__("Save")))])])])])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('span', {
+  return _c("span", {
     staticClass: "input-group-prepend"
-  }, [_c('button', {
+  }, [_c("button", {
     staticClass: "btn default",
     attrs: {
-      "type": "button"
+      type: "button"
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "fa fa-fw fa-calendar"
   })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('span', {
+  return _c("span", {
     staticClass: "input-group-prepend"
-  }, [_c('button', {
+  }, [_c("button", {
     staticClass: "btn default",
     attrs: {
-      "type": "button"
+      type: "button"
     }
-  }, [_c('i', {
+  }, [_c("i", {
     staticClass: "fa fa-clock"
   })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('span', {
+  return _c("span", {
     staticClass: "input-group-prepend"
-  }, [_c('button', {
+  }, [_c("button", {
     staticClass: "btn default",
     attrs: {
-      "type": "button"
+      type: "button"
     }
-  }, [_c('span', {
+  }, [_c("span", {
     staticClass: "fa fa-fw fa-calendar"
   })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c('span', {
+  return _c("span", {
     staticClass: "input-group-prepend"
-  }, [_c('button', {
+  }, [_c("button", {
     staticClass: "btn default",
     attrs: {
-      "type": "button"
+      type: "button"
     }
-  }, [_c('i', {
+  }, [_c("i", {
     staticClass: "fa fa-clock"
   })])]);
 }];
