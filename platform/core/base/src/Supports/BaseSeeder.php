@@ -5,6 +5,7 @@ namespace RealDriss\Base\Supports;
 use RealDriss\Media\Models\MediaFile;
 use RealDriss\Media\Models\MediaFolder;
 use RealDriss\Media\Models\MediaSetting;
+use RealDriss\Setting\Models\Setting;
 use RealDriss\PluginManagement\Services\PluginService;
 use Exception;
 use File;
@@ -62,6 +63,7 @@ class BaseSeeder extends Seeder
         MediaFolder::truncate();
         MediaFile::truncate();
         MediaSetting::truncate();
+        Setting::truncate();
 
     }
 }

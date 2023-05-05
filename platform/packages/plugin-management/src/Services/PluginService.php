@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Schema;
 
+use Illuminate\Support\Facades\Log;
+
 class PluginService
 {
 
@@ -52,6 +54,7 @@ class PluginService
     public function activate(string $plugin): array
     {
         $validate = $this->validate($plugin);
+        // Log::info($plugin, $validate);
 
         if ($validate['error']) {
             return $validate;
@@ -113,6 +116,8 @@ class PluginService
             $this->settingStore
                 ->set('activated_plugins', json_encode(array_values(array_merge($activatedPlugins, [$plugin]))))
                 ->save();
+
+            // Log::info();
 
             if (class_exists($content['namespace'] . 'Plugin')) {
                 call_user_func([$content['namespace'] . 'Plugin', 'activated']);

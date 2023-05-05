@@ -16,7 +16,7 @@ class FrontierSeeder extends BaseSeeder
      */
     public function run()
     {
-        $this->truncateKeyTables();
+        // $this->truncateKeyTables();
         $this->activateAllPlugins();
     }
 }
