@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "19370a93f0ad5feecfdf993f1acd985e",
+    "content-hash": "e90033ae28fb4b48f3d093b7b88984b4",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -6786,7 +6786,7 @@
         },
         {
             "name": "realdriss/menu",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/menu",
@@ -6819,7 +6819,7 @@
         },
         {
             "name": "realdriss/page",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/page",
@@ -6849,11 +6849,11 @@
         },
         {
             "name": "realdriss/platform",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/core",
-                "reference": "9ee8dc95a56dd8d5caba121ccec56f47e7054a7e"
+                "reference": "82ba68d45caf1365d222faea9bbee0b40a755ecc"
             },
             "require": {
                 "barryvdh/laravel-dompdf": "^0.9.0",
@@ -6917,8 +6917,8 @@
             ],
             "authors": [
                 {
-                    "name": "RealDriss Inc.",
-                    "email": "info@realdriss.com"
+                    "name": "Godwin Waswa",
+                    "email": "godwin@realdriss.com"
                 }
             ],
             "description": "The RealDriss Platform based on Laravel Framework.",
@@ -6938,7 +6938,7 @@
         },
         {
             "name": "realdriss/plugin-management",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/plugin-management",
@@ -6967,7 +6967,7 @@
         },
         {
             "name": "realdriss/revision",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/revision",
@@ -6996,7 +6996,7 @@
         },
         {
             "name": "realdriss/seo-helper",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/seo-helper",
@@ -7029,7 +7029,7 @@
         },
         {
             "name": "realdriss/shortcode",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/shortcode",
@@ -7058,7 +7058,7 @@
         },
         {
             "name": "realdriss/sitemap",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/sitemap",
@@ -7087,7 +7087,7 @@
         },
         {
             "name": "realdriss/slug",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/slug",
@@ -7119,7 +7119,7 @@
         },
         {
             "name": "realdriss/theme",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/theme",
@@ -7160,7 +7160,7 @@
         },
         {
             "name": "realdriss/widget",
-            "version": "dev-dev",
+            "version": "dev-main",
             "dist": {
                 "type": "path",
                 "url": "./platform/packages/widget",
