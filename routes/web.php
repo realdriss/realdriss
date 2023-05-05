@@ -14,11 +14,7 @@
 use Illuminate\Http\Request;
 use App\Events\Test;
 use App\Http\Controllers\JsonRpcController;
-
-
-Route::get('/dev', function () {
-	return response()->file("G:\Fastlane\RealDriss\about\justcreative_com_best_logos.pdf");
-})->name('dev');
+use App\Http\Controllers\RpcTestController;
 
 
 Route::post('/rpc', [JsonRpcController::class, 'handle']);
