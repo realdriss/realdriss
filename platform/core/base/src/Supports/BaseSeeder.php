@@ -11,7 +11,6 @@ use File;
 use Illuminate\Database\Seeder;
 use Mimey\MimeTypes;
 use RvMedia;
-use Illuminate\Support\Facades\DB;
 
 
 class BaseSeeder extends Seeder
@@ -63,6 +62,6 @@ class BaseSeeder extends Seeder
         MediaFolder::truncate();
         MediaFile::truncate();
         MediaSetting::truncate();
-        DB::table('settings')->truncate();
+
     }
 }
