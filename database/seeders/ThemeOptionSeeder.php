@@ -19,7 +19,6 @@ class ThemeOptionSeeder extends BaseSeeder
 
         $theme = Theme::getThemeName();
         SettingModel::where('key', 'LIKE', 'theme-' . $theme . '-%')->delete();
-
         SettingModel::insertOrIgnore([
             [
                 'key'   => 'theme',
@@ -31,7 +30,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-copyright',
-                'value' => '© ' . now()->format('Y') . ' RealDriss Inc. All Rights Reserved.',
+                'value' => '© ' . now()->format('Y') . ' RealDriss. All Rights Reserved.',
             ],
             [
                 'key'   => 'theme-' . $theme . '-favicon',
@@ -39,11 +38,11 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo',
-                'value' => 'general/logo.png',
+                'value' => 'general/logo-dark.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo_footer',
-                'value' => 'general/logo-light.png',
+                'value' => 'general/logo-light.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-address',
@@ -95,7 +94,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-cookie_consent_message',
-                'value' => 'Your experience on RealDriss will be improved by allowing cookies.',
+                'value' => 'Your experience on our site will be improved by allowing cookies.',
             ],
             [
                 'key'   => 'theme-' . $theme . '-cookie_consent_learn_more_url',
@@ -103,7 +102,7 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-cookie_consent_learn_more_text',
-                'value' => 'Cookie Policy',
+                'value' => 'Learn more',
             ],
         ]);
     }

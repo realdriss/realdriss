@@ -4,12 +4,15 @@ namespace RealDriss\Base\Supports;
 
 use RealDriss\Media\Models\MediaFile;
 use RealDriss\Media\Models\MediaFolder;
+use RealDriss\Media\Models\MediaSetting;
+use RealDriss\Setting\Models\Setting;
 use RealDriss\PluginManagement\Services\PluginService;
 use Exception;
 use File;
 use Illuminate\Database\Seeder;
 use Mimey\MimeTypes;
 use RvMedia;
+
 
 class BaseSeeder extends Seeder
 {
@@ -53,5 +56,14 @@ class BaseSeeder extends Seeder
         }
 
         return $plugins;
+    }
+
+    public function truncateKeyTables(): void
+    {
+        MediaFolder::truncate();
+        MediaFile::truncate();
+        MediaSetting::truncate();
+        Setting::truncate();
+
     }
 }

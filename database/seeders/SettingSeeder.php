@@ -66,7 +66,7 @@ class SettingSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'ecommerce_store_address',
-                'value' => 'Pioneer Business Center',
+                'value' => 'Pioneer BC',
             ],
             [
                 'key'   => 'Kenya',
