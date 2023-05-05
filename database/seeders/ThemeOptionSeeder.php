@@ -19,7 +19,6 @@ class ThemeOptionSeeder extends BaseSeeder
 
         $theme = Theme::getThemeName();
         SettingModel::where('key', 'LIKE', 'theme-' . $theme . '-%')->delete();
-
         SettingModel::insertOrIgnore([
             [
                 'key'   => 'theme',
@@ -39,11 +38,11 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo',
-                'value' => 'general/logo.svg',
+                'value' => 'general/logo_dark.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo_footer',
-                'value' => 'general/logo-light.svg',
+                'value' => 'general/logo_light.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-address',
