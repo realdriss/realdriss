@@ -17,5 +17,5 @@ use App\Http\Controllers\JsonRpcController;
 use App\Http\Controllers\RpcTestController;
 
 
-Route::post('/rpc', [JsonRpcController::class, 'handle']);
+Route::post('/handle', [JsonRpcController::class, 'handle']);
 
