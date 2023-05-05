@@ -38,11 +38,11 @@ class ThemeOptionSeeder extends BaseSeeder
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo',
-                'value' => 'general/logo_dark.svg',
+                'value' => 'general/logo-dark.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-logo_footer',
-                'value' => 'general/logo_light.svg',
+                'value' => 'general/logo-light.svg',
             ],
             [
                 'key'   => 'theme-' . $theme . '-address',

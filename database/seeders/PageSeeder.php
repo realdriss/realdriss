@@ -79,7 +79,7 @@ class PageSeeder extends BaseSeeder
 
                 Html::tag(
                     'div', 
-                    '[our-features icon1="flaticon-shipped" title1="Delivery policy" subtitle1="We provide free delivery on orders within Eldoret town or orders above Ksh. 1,000." icon2="flaticon-money-back" title2="Return policy" subtitle2="We accept returns within 3 days after delivery." icon3="flaticon-support" title3="Customer support" subtitle3="Contact us anytime via chat or phone."][/our-features]'
+                    '[our-features icon1="flaticon-shipped" title1="Delivery policy" subtitle1="Free delivery on orders within Eldoret town or orders above Ksh. 1,000." icon2="flaticon-money-back" title2="Return policy" subtitle2="Return an order within a span of 3 days after delivery." icon3="flaticon-support" title3="Customer support" subtitle3="Contact us anytime via chat or phone."][/our-features]'
                 ) .
                 
                 Html::tag(
