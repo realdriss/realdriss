@@ -1,6 +1,7 @@
 /node_modules
 /public/hot
 /public/storage
+!/public/storage/general/logo-dark.svg
 /storage/*.key
 /vendor
 .DS_Store
