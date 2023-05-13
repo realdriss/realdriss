@@ -1,7 +1,8 @@
 <?php
+
 return [
-    'detail'      => 'Detail',
-    'file'        => 'Files',
+    'detail' => 'Detail',
+    'file' => 'Files',
     'record_note' => 'Record Note',
-    'revision'    => 'Revision History',
+    'revision' => 'Revision History',
 ];

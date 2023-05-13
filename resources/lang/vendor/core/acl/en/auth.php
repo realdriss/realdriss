@@ -66,4 +66,5 @@ return [
             'description' => 'ACL email configuration',
         ],
     ],
+    'sign_in' => 'Sign In',
 ];

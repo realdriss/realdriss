@@ -1,11 +1,11 @@
 <?php
 
 return [
-    'name'   => 'Product attributes',
+    'name' => 'Product attributes',
     'create' => 'New product attribute',
-    'edit'   => 'Edit product attribute',
-    'intro'  => [
-        'title'       => 'Manage product attributes',
+    'edit' => 'Edit product attribute',
+    'intro' => [
+        'title' => 'Manage product attributes',
         'description' => 'Product attribute such as color, width, height ...',
         'button_text' => 'Create product attribute',
     ],
