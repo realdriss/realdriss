@@ -54,7 +54,7 @@ return [
     'not_member'            => 'Not a member yet?',
     'register_now'          => 'Register now',
     'lost_your_password'    => 'Lost your password?',
-    'login_title'           => 'Login',
+    'login_title'           => 'Sign In',
     'login_via_social'      => 'Login with social networks',
     'back_to_login'         => 'Back to login page',
     'sign_in'         => 'Sign In',
