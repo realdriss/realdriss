@@ -9,7 +9,7 @@ use RealDriss\Ecommerce\Repositories\Interfaces\FlashSaleInterface;
 use RealDriss\Ecommerce\Repositories\Interfaces\ProductVariationInterface;
 use RealDriss\Ecommerce\Repositories\Interfaces\ReviewInterface;
 use RealDriss\Testimonial\Repositories\Interfaces\TestimonialInterface;
-use RealDriss\Theme\Http\Controllers\PublicController;
+use RealDriss\Theme\Http\Controllers\PublicController; //<< / request stream
 use Cart;
 use DB;
 use EcommerceHelper;

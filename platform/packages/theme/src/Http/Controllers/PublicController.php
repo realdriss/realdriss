@@ -4,7 +4,7 @@ namespace RealDriss\Theme\Http\Controllers;
 
 use BaseHelper;
 use RealDriss\Page\Models\Page;
-use RealDriss\Page\Services\PageService;
+use RealDriss\Page\Services\PageService; // every route is handled by the page package
 use RealDriss\Theme\Events\RenderingHomePageEvent;
 use RealDriss\Theme\Events\RenderingSingleEvent;
 use RealDriss\Theme\Events\RenderingSiteMapEvent;
@@ -76,9 +76,11 @@ class PublicController extends Controller
 
             if ($homepageId) {
                 $slug = SlugHelper::getSlug(null, SlugHelper::getPrefix(Page::class), Page::class, $homepageId);
+                // dump($slug);
 
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
+                    dump($data);
                     //dd(Theme::scope($data['view'], $data['data'], $data['default_view']));
 
                     return Theme::scope($data['view'], $data['data'], $data['default_view'])->render();
