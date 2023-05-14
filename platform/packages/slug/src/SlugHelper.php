@@ -106,14 +106,9 @@ class SlugHelper
     /**
      * @param string|null $key
      * @param string $model
-     * @return mixed
+     * @return mixed >> RealDriss\Slug\Models\Slug
      */
-    public function getSlug(
-        ?string $key,
-        ?string $prefix = null,
-        ?string $model = null,
-        $referenceId = null
-    )
+    public function getSlug(?string $key, ?string $prefix = null, ?string $model = null, $referenceId = null)
     {
         $condition = [];
 
