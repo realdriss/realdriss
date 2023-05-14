@@ -13,6 +13,7 @@ class DatabaseSeeder extends BaseSeeder
      */
     public function run()
     {
+        $this->activateAllPlugins();
         $this->call(BrandSeeder::class);
         $this->call(CurrencySeeder::class);
         $this->call(ProductCategorySeeder::class);
