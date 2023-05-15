@@ -94,7 +94,7 @@ class PublicController extends Controller
         event(RenderingHomePageEvent::class);
 
 
-        //return Theme::scope('index')->render();
+        return Theme::scope('index')->render();
     }
 
     /**
