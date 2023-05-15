@@ -1,4 +1,4 @@
-@php Theme::set('pageName', __('Search result for ":query"', ['query' => request()->query('q')])) @endphp
+@php Theme::set('pageName', __('Results: ":query"', ['query' => request()->query('q')])) @endphp
 
 <div class="section">
     <form action="{{ URL::current() }}" method="GET">
