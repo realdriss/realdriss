@@ -40,12 +40,14 @@ class PageService
         }
 
         $page = app(PageInterface::class)->getFirstBy($condition, ['*'], ['slugable']);
+        // dump($page);
 
         if (empty($page)) {
             abort(404);
         }
 
         $meta = new SeoOpenGraph;
+        // dump($meta);
         if ($page->image) {
             $meta->setImage(RvMedia::getImageUrl($page->image));
         }
@@ -77,10 +79,11 @@ class PageService
         }
 
         if (function_exists('admin_bar') && Auth::check() && Auth::user()->hasPermission('pages.edit')) {
+            // dump(admin_bar()); RealDriss\Theme\Supports\AdminBar
             admin_bar()
                 ->registerLink(trans('packages/page::pages.edit_this_page'), route('pages.edit', $page->id));
         }
-
+        
         do_action(BASE_ACTION_PUBLIC_RENDER_SINGLE, PAGE_MODULE_SCREEN_NAME, $page);
 
         Theme::breadcrumb()

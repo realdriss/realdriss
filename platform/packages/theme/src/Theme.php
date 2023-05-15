@@ -823,11 +823,12 @@ class Theme implements ThemeContract
 
         // Add namespace to find in a theme path.
         $path = $this->getThemeNamespace($viewDir . '.' . $view);
+        // dump($path);
 
         if ($this->view->exists($path)) {
             return $this->setUpContent($path, $args);
         }
-
+        // default fallback
         if (!empty($default)) {
             return $this->of($default, $args);
         }
@@ -994,7 +995,7 @@ class Theme implements ThemeContract
         $content->withHeaders([
             'CMS-Version'       => get_cms_version(),
             'Authorization-At'  => setting('membership_authorization_at'),
-            'Activated-License' => !empty(setting('licensed_to')) ? 'Yes' : 'No',
+            //'Activated-License' => !empty(setting('licensed_to')) ? 'Yes' : 'No',
         ]);
 
         return $content;

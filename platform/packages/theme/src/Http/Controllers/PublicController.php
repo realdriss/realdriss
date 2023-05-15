@@ -80,8 +80,7 @@ class PublicController extends Controller
 
                 if ($slug) {
                     $data = (new PageService)->handleFrontRoutes($slug);
-                    dump($data);
-                    //dd(Theme::scope($data['view'], $data['data'], $data['default_view']));
+                    // dd(Theme::scope($data['view'], $data['data'], $data['default_view']));
 
                     return Theme::scope($data['view'], $data['data'], $data['default_view'])->render();
                 }
@@ -95,7 +94,7 @@ class PublicController extends Controller
         event(RenderingHomePageEvent::class);
 
 
-        return Theme::scope('index')->render();
+        //return Theme::scope('index')->render();
     }
 
     /**
