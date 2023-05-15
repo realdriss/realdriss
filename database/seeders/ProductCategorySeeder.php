@@ -94,18 +94,6 @@ class ProductCategorySeeder extends BaseSeeder
                 ],
             ],
             [
-                'name'        => 'Game',
-                'icon'        => 'flaticon-console',
-                'image'       => 'product-categories/p-5.png',
-                'is_featured' => true,
-            ],
-            [
-                'name'        => 'Camera',
-                'icon'        => 'flaticon-camera',
-                'image'       => 'product-categories/p-6.png',
-                'is_featured' => true,
-            ],
-            [
                 'name'        => 'Audio',
                 'icon'        => 'flaticon-music-system',
                 'image'       => 'product-categories/p-7.png',
@@ -124,16 +112,8 @@ class ProductCategorySeeder extends BaseSeeder
                 'icon' => 'flaticon-monitor',
             ],
             [
-                'name' => 'Printer',
-                'icon' => 'flaticon-printer',
-            ],
-            [
                 'name' => 'Computer',
                 'icon' => 'flaticon-tv',
-            ],
-            [
-                'name' => 'Mouse',
-                'icon' => 'flaticon-mouse',
             ],
         ];
 
