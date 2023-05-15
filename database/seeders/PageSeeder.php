@@ -84,7 +84,7 @@ class PageSeeder extends BaseSeeder
                 
                 Html::tag(
                     'div', 
-                    '[newsletter-form title="Subscribe to our email list." subtitle="To stay informed on new offers and other amazing deals."][/newsletter-form]'
+                    '[newsletter-form title="Join our mailing list." subtitle="To stay informed on new offers and other amazing deals."][/newsletter-form]'
                 ),
                 
                 'template' => 'homepage',
